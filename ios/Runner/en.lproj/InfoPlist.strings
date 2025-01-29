@@ -1,0 +1,3 @@
+NSFaceIDUsageDescription = "Moon Woulld like to use Biometrics to secure your payments";
+PermissionGroupNotification = "Moon would like to sent you notifaction updates";
+NSContactsUsageDescription = " Would you like to share Moon to your contacts";
