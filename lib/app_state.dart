@@ -1,0 +1,49 @@
+import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+class FFAppState extends ChangeNotifier {
+  static FFAppState _instance = FFAppState._internal();
+
+  factory FFAppState() {
+    return _instance;
+  }
+
+  FFAppState._internal();
+
+  static void reset() {
+    _instance = FFAppState._internal();
+  }
+
+  Future initializePersistedState() async {
+    prefs = await SharedPreferences.getInstance();
+    _safeInit(() {
+      _NavOpen = prefs.getBool('ff_NavOpen') ?? _NavOpen;
+    });
+  }
+
+  void update(VoidCallback callback) {
+    callback();
+    notifyListeners();
+  }
+
+  late SharedPreferences prefs;
+
+  bool _NavOpen = false;
+  bool get NavOpen => _NavOpen;
+  set NavOpen(bool value) {
+    _NavOpen = value;
+    prefs.setBool('ff_NavOpen', value);
+  }
+}
+
+void _safeInit(Function() initializeField) {
+  try {
+    initializeField();
+  } catch (_) {}
+}
+
+Future _safeInitAsync(Function() initializeField) async {
+  try {
+    await initializeField();
+  } catch (_) {}
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyC5QeMzD6DV37XuIhb7957OBwMBl4m1MXw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>289637494704</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Moon.com</string>
+	<key>PROJECT_ID</key>
+	<string>moon-tmn2dq</string>
+	<key>STORAGE_BUCKET</key>
+	<string>moon-tmn2dq.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:289637494704:ios:ed8378e5877ba70139f075</string>
+</dict>
+</plist>

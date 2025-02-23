@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "289637494704",
+    "project_id": "moon-tmn2dq",
+    "storage_bucket": "moon-tmn2dq.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289637494704:android:ccb48c987d1825fb39f075",
+        "android_client_info": {
+          "package_name": "Moon.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBixVJHRKR5d9Ilh4kaNxc6Mnj_Q1aWOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
