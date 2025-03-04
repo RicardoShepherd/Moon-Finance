@@ -58,3 +58,4 @@ export '/transactiondetails/transactiondetails_widget.dart'
     show TransactiondetailsWidget;
 export '/insurances/insurances_widget.dart' show InsurancesWidget;
 export '/wallet/wallet_widget.dart' show WalletWidget;
+export '/loans/loans_widget.dart' show LoansWidget;

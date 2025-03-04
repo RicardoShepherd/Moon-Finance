@@ -230,33 +230,6 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                     print('Button pressed ...');
                                   },
                                   text: FFLocalizations.of(context).getText(
-                                    'g2meom8y' /* Top charts */,
-                                  ),
-                                  options: FFButtonOptions(
-                                    height: 40.0,
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        16.0, 0.0, 16.0, 0.0),
-                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 0.0),
-                                    color: Colors.black,
-                                    textStyle: FlutterFlowTheme.of(context)
-                                        .titleSmall
-                                        .override(
-                                          fontFamily: 'Plus Jakarta Sans',
-                                          color: Colors.white,
-                                          fontSize: 11.0,
-                                          letterSpacing: 0.0,
-                                          fontWeight: FontWeight.w600,
-                                        ),
-                                    elevation: 0.0,
-                                    borderRadius: BorderRadius.circular(8.0),
-                                  ),
-                                ),
-                                FFButtonWidget(
-                                  onPressed: () {
-                                    print('Button pressed ...');
-                                  },
-                                  text: FFLocalizations.of(context).getText(
                                     'tbt5b9tg' /* Categories */,
                                   ),
                                   icon: FaIcon(
@@ -289,7 +262,7 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                     print('Button pressed ...');
                                   },
                                   text: FFLocalizations.of(context).getText(
-                                    '39h8egck' /* Offers */,
+                                    'g2meom8y' /* Top Deals */,
                                   ),
                                   options: FFButtonOptions(
                                     height: 40.0,
@@ -316,7 +289,61 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                     print('Button pressed ...');
                                   },
                                   text: FFLocalizations.of(context).getText(
-                                    '6d68edfa' /* Trending */,
+                                    '39h8egck' /* 10% Discounts */,
+                                  ),
+                                  options: FFButtonOptions(
+                                    height: 40.0,
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        16.0, 0.0, 16.0, 0.0),
+                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 0.0, 0.0, 0.0),
+                                    color: Colors.black,
+                                    textStyle: FlutterFlowTheme.of(context)
+                                        .titleSmall
+                                        .override(
+                                          fontFamily: 'Plus Jakarta Sans',
+                                          color: Colors.white,
+                                          fontSize: 11.0,
+                                          letterSpacing: 0.0,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                    elevation: 0.0,
+                                    borderRadius: BorderRadius.circular(8.0),
+                                  ),
+                                ),
+                                FFButtonWidget(
+                                  onPressed: () {
+                                    print('Button pressed ...');
+                                  },
+                                  text: FFLocalizations.of(context).getText(
+                                    '6d68edfa' /* Free Stuff */,
+                                  ),
+                                  options: FFButtonOptions(
+                                    height: 40.0,
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        16.0, 0.0, 16.0, 0.0),
+                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 0.0, 0.0, 0.0),
+                                    color: Colors.black,
+                                    textStyle: FlutterFlowTheme.of(context)
+                                        .titleSmall
+                                        .override(
+                                          fontFamily: 'Plus Jakarta Sans',
+                                          color: Colors.white,
+                                          fontSize: 11.0,
+                                          letterSpacing: 0.0,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                    elevation: 0.0,
+                                    borderRadius: BorderRadius.circular(8.0),
+                                  ),
+                                ),
+                                FFButtonWidget(
+                                  onPressed: () {
+                                    print('Button pressed ...');
+                                  },
+                                  text: FFLocalizations.of(context).getText(
+                                    'je9lc5vf' /* Poplar */,
                                   ),
                                   options: FFButtonOptions(
                                     height: 40.0,
@@ -384,8 +411,8 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                   alignment: AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
                                     padding: EdgeInsets.all(4.0),
-                                    child: FaIcon(
-                                      FontAwesomeIcons.featherAlt,
+                                    child: Icon(
+                                      Icons.travel_explore,
                                       color: Color(0xFF6BDC4F),
                                       size: 32.0,
                                     ),
@@ -395,7 +422,7 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                             ),
                             Text(
                               FFLocalizations.of(context).getText(
-                                '2xgunl9v' /* Waelth */,
+                                '2xgunl9v' /* Stays */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium

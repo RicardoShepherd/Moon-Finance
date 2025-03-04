@@ -701,24 +701,30 @@ class _HomeWidgetState extends State<HomeWidget> {
                                 Padding(
                                   padding: EdgeInsets.all(8.0),
                                   child: Container(
-                                    width: 388.9,
-                                    height: 113.0,
+                                    width: 369.4,
+                                    height: 197.4,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFF010909),
+                                      color: Color(0xFF10A741),
+                                      image: DecorationImage(
+                                        fit: BoxFit.cover,
+                                        image: Image.asset(
+                                          'assets/images/photo-1613970351372-9804e380bd09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxfHxzdGVlbHxlbnwwfHx8fDE3NDAzNTkyNjd8MA&ixlib=rb-4.0.3&q=80&w=1080',
+                                        ).image,
+                                      ),
                                       boxShadow: [
                                         BoxShadow(
-                                          blurRadius: 6.0,
-                                          color: Color(0x4B1A1F24),
+                                          blurRadius: 4.0,
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryBackground,
                                           offset: Offset(
                                             0.0,
                                             2.0,
                                           ),
                                         )
                                       ],
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(12.0),
                                       border: Border.all(
-                                        color: FlutterFlowTheme.of(context)
-                                            .accent4,
+                                        color: Color(0x98222121),
                                         width: 2.0,
                                       ),
                                     ),
@@ -731,78 +737,76 @@ class _HomeWidgetState extends State<HomeWidget> {
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
-                                          Row(
-                                            mainAxisSize: MainAxisSize.max,
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.spaceBetween,
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Column(
-                                                mainAxisSize: MainAxisSize.max,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.start,
-                                                children: [
-                                                  Text(
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                      'iceyx8je' /* Balance */,
+                                          Expanded(
+                                            child: Row(
+                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment
+                                                      .spaceBetween,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.end,
+                                              children: [
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          5.0, 0.0, 0.0, 50.0),
+                                                  child: ClipRRect(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            8.0),
+                                                    child: Image.asset(
+                                                      'assets/images/photo_2025-02-24_21.34.09.jpeg',
+                                                      width: 49.0,
+                                                      height: 33.0,
+                                                      fit: BoxFit.cover,
                                                     ),
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .labelSmall
-                                                        .override(
-                                                          fontFamily: 'Outfit',
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .secondaryText,
-                                                          letterSpacing: 0.0,
-                                                        ),
                                                   ),
-                                                  Padding(
-                                                    padding:
-                                                        EdgeInsetsDirectional
-                                                            .fromSTEB(0.0, 8.0,
-                                                                0.0, 0.0),
-                                                    child: Text(
+                                                ),
+                                                Column(
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
+                                                  children: [
+                                                    ClipRRect(
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              8.0),
+                                                      child: Image.asset(
+                                                        'assets/images/photo_2025-02-06_22.42.16.jpeg',
+                                                        width: 65.0,
+                                                        height: 36.78,
+                                                        fit: BoxFit.contain,
+                                                      ),
+                                                    ),
+                                                    Text(
                                                       FFLocalizations.of(
                                                               context)
                                                           .getText(
-                                                        'nejz2r5m' /* $14,502 */,
+                                                        'cbp1ydd5' /* Debit */,
                                                       ),
-                                                      style:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .displayMedium
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Outfit',
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .info,
-                                                                letterSpacing:
-                                                                    0.0,
-                                                              ),
+                                                      style: FlutterFlowTheme
+                                                              .of(context)
+                                                          .bodyMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Roboto Mono',
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .primaryBackground,
+                                                            fontSize: 14.0,
+                                                            letterSpacing: 0.0,
+                                                            fontWeight:
+                                                                FontWeight.w500,
+                                                          ),
                                                     ),
-                                                  ),
-                                                ],
-                                              ),
-                                              ClipRRect(
-                                                borderRadius:
-                                                    BorderRadius.circular(10.0),
-                                                child: Image.asset(
-                                                  'assets/images/photo_2025-02-06_22.42.16.jpeg',
-                                                  width: 65.0,
-                                                  height: 44.0,
-                                                  fit: BoxFit.contain,
+                                                  ],
                                                 ),
-                                              ),
-                                            ],
+                                              ],
+                                            ),
                                           ),
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 12.0, 0.0, 4.0),
+                                                    0.0, 0.0, 0.0, 4.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
@@ -812,7 +816,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                 Text(
                                                   FFLocalizations.of(context)
                                                       .getText(
-                                                    'wjbwmt72' /* **** 0149 */,
+                                                    '9s3z5pka' /* Ricardo Shepherd */,
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
@@ -820,23 +824,13 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                       .override(
                                                         fontFamily:
                                                             'Roboto Mono',
-                                                        color: Colors.white,
+                                                        color: FlutterFlowTheme
+                                                                .of(context)
+                                                            .secondaryBackground,
+                                                        fontSize: 12.0,
                                                         letterSpacing: 0.0,
-                                                      ),
-                                                ),
-                                                Text(
-                                                  FFLocalizations.of(context)
-                                                      .getText(
-                                                    '44ff8760' /* 05/25 */,
-                                                  ),
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            'Roboto Mono',
-                                                        color: Colors.white,
-                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FontWeight.normal,
                                                       ),
                                                 ),
                                               ],
@@ -849,173 +843,183 @@ class _HomeWidgetState extends State<HomeWidget> {
                                 ),
                                 Padding(
                                   padding: EdgeInsets.all(8.0),
-                                  child: InkWell(
-                                    splashColor: Colors.transparent,
-                                    focusColor: Colors.transparent,
-                                    hoverColor: Colors.transparent,
-                                    highlightColor: Colors.transparent,
-                                    onTap: () async {
-                                      logFirebaseEvent(
-                                          'HOME_PAGE_Container_ck21xf48_ON_TAP');
-                                      logFirebaseEvent('Container_navigate_to');
-
-                                      context.pushNamed(
-                                          MoonCreditcardWidget.routeName);
-                                    },
-                                    child: Container(
-                                      width: 117.0,
-                                      height: 113.0,
-                                      decoration: BoxDecoration(
-                                        color: Colors.white,
-                                        boxShadow: [
-                                          BoxShadow(
-                                            blurRadius: 4.0,
-                                            color: Color(0x33000000),
-                                            offset: Offset(
-                                              0.0,
-                                              2.0,
-                                            ),
-                                          )
-                                        ],
-                                        borderRadius:
-                                            BorderRadius.circular(12.0),
-                                        border: Border.all(
-                                          color: FlutterFlowTheme.of(context)
-                                              .accent4,
-                                          width: 2.0,
-                                        ),
+                                  child: Container(
+                                    width: 369.4,
+                                    height: 197.4,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      image: DecorationImage(
+                                        fit: BoxFit.cover,
+                                        image: Image.asset(
+                                          'assets/images/photo-1613970351372-9804e380bd09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxfHxzdGVlbHxlbnwwfHx8fDE3NDAzNTkyNjd8MA&ixlib=rb-4.0.3&q=80&w=1080',
+                                        ).image,
                                       ),
-                                      child: Padding(
-                                        padding: EdgeInsets.all(16.0),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceBetween,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Row(
+                                      boxShadow: [
+                                        BoxShadow(
+                                          blurRadius: 4.0,
+                                          color: Color(0xFF9A9DB1),
+                                          offset: Offset(
+                                            0.0,
+                                            2.0,
+                                          ),
+                                        )
+                                      ],
+                                      borderRadius: BorderRadius.circular(12.0),
+                                      border: Border.all(
+                                        color: Color(0x98222121),
+                                        width: 2.0,
+                                      ),
+                                    ),
+                                    child: Padding(
+                                      padding: EdgeInsets.all(16.0),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Expanded(
+                                            child: Row(
+                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.start,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.end,
+                                              children: [
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          5.0, 0.0, 0.0, 0.0),
+                                                  child: ClipRRect(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            8.0),
+                                                    child: Image.asset(
+                                                      'assets/images/photo_2025-02-24_21.34.09.jpeg',
+                                                      width: 49.0,
+                                                      height: 33.0,
+                                                      fit: BoxFit.cover,
+                                                    ),
+                                                  ),
+                                                ),
+                                                Expanded(
+                                                  child: Padding(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(150.0,
+                                                                0.0, 0.0, 50.0),
+                                                    child: Text(
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'tj0bvcw2' /* Socia Bank */,
+                                                      ),
+                                                      style: FlutterFlowTheme
+                                                              .of(context)
+                                                          .bodyMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Plus Jakarta Sans',
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .alternate,
+                                                            fontSize: 15.0,
+                                                            letterSpacing: 0.0,
+                                                            fontWeight:
+                                                                FontWeight.w500,
+                                                          ),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                          Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.start,
+                                            children: [
+                                              Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        5.0, 7.0, 0.0, 0.0),
+                                                child: Text(
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'j67rvhxc' /* ****9054 */,
+                                                  ),
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily:
+                                                            'Roboto Mono',
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .alternate,
+                                                        fontSize: 14.0,
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FontWeight.normal,
+                                                      ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                          Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.end,
+                                            children: [
+                                              ClipRRect(
+                                                borderRadius:
+                                                    BorderRadius.circular(8.0),
+                                                child: Image.asset(
+                                                  'assets/images/YzltM_gk_400x400.png',
+                                                  width: 65.0,
+                                                  height: 41.0,
+                                                  fit: BoxFit.cover,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 0.0, 4.0),
+                                            child: Row(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
                                                   MainAxisAlignment
                                                       .spaceBetween,
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
                                               children: [
-                                                Column(
-                                                  mainAxisSize:
-                                                      MainAxisSize.max,
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.start,
-                                                  children: [
-                                                    Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        'okz4wc9t' /* Balance */,
-                                                      ),
-                                                      style:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .labelSmall
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Outfit',
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .accent4,
-                                                                letterSpacing:
-                                                                    0.0,
-                                                              ),
-                                                    ),
-                                                    Padding(
-                                                      padding:
-                                                          EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  0.0,
-                                                                  8.0,
-                                                                  0.0,
-                                                                  0.0),
-                                                      child: Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          '2lbfznpe' /* $7,630 */,
-                                                        ),
-                                                        style:
+                                                Text(
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'o6wr50tq' /* Ricardo Shepherd */,
+                                                  ),
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily:
+                                                            'Roboto Mono',
+                                                        color:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .displayMedium
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Outfit',
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .primaryBackground,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                ),
+                                                                .alternate,
+                                                        fontSize: 12.0,
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FontWeight.normal,
                                                       ),
-                                                    ),
-                                                  ],
-                                                ),
-                                                Image.asset(
-                                                  'assets/images/YzltM_gk_400x400.png',
-                                                  width: 44.0,
-                                                  height: 44.0,
-                                                  fit: BoxFit.cover,
                                                 ),
                                               ],
                                             ),
-                                            Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      0.0, 12.0, 0.0, 4.0),
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .spaceBetween,
-                                                children: [
-                                                  Text(
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                      'p1ui46ar' /* **** 0149 */,
-                                                    ),
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              'Roboto Mono',
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primaryBackground,
-                                                          letterSpacing: 0.0,
-                                                        ),
-                                                  ),
-                                                  Text(
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                      'm8gea5ex' /* 05/25 */,
-                                                    ),
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              'Roboto Mono',
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primaryBackground,
-                                                          letterSpacing: 0.0,
-                                                        ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                          ],
-                                        ),
+                                          ),
+                                        ],
                                       ),
                                     ),
                                   ),
@@ -1029,7 +1033,13 @@ class _HomeWidgetState extends State<HomeWidget> {
                                         width: 369.4,
                                         height: 197.38,
                                         decoration: BoxDecoration(
-                                          color: Color(0xFFD076B7),
+                                          color: Color(0xFF293B2F),
+                                          image: DecorationImage(
+                                            fit: BoxFit.cover,
+                                            image: Image.asset(
+                                              'assets/images/photo-1613970351372-9804e380bd09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxfHxzdGVlbHxlbnwwfHx8fDE3NDAzNTkyNjd8MA&ixlib=rb-4.0.3&q=80&w=1080',
+                                            ).image,
+                                          ),
                                           boxShadow: [
                                             BoxShadow(
                                               blurRadius: 4.0,
@@ -1045,7 +1055,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                           borderRadius:
                                               BorderRadius.circular(12.0),
                                           border: Border.all(
-                                            color: Color(0x98000000),
+                                            color: Color(0x98222121),
                                             width: 2.0,
                                           ),
                                         ),
@@ -1058,79 +1068,119 @@ class _HomeWidgetState extends State<HomeWidget> {
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: [
-                                              Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .spaceBetween,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.start,
-                                                children: [
-                                                  Column(
-                                                    mainAxisSize:
-                                                        MainAxisSize.max,
-                                                    crossAxisAlignment:
-                                                        CrossAxisAlignment
-                                                            .start,
-                                                    children: [
-                                                      Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          'zo2d7bdq' /* Balance */,
+                                              Expanded(
+                                                child: Row(
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.start,
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.end,
+                                                  children: [
+                                                    Padding(
+                                                      padding:
+                                                          EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  5.0,
+                                                                  0.0,
+                                                                  0.0,
+                                                                  0.0),
+                                                      child: ClipRRect(
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(8.0),
+                                                        child: Image.asset(
+                                                          'assets/images/photo_2025-02-24_21.34.09.jpeg',
+                                                          width: 49.0,
+                                                          height: 33.0,
+                                                          fit: BoxFit.cover,
                                                         ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .labelSmall
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Outfit',
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .primaryText,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                ),
                                                       ),
-                                                      Padding(
+                                                    ),
+                                                    Expanded(
+                                                      child: Padding(
                                                         padding:
                                                             EdgeInsetsDirectional
                                                                 .fromSTEB(
+                                                                    180.0,
                                                                     0.0,
-                                                                    8.0,
                                                                     0.0,
-                                                                    0.0),
+                                                                    50.0),
                                                         child: Text(
                                                           FFLocalizations.of(
                                                                   context)
                                                               .getText(
-                                                            'tg1hi4nn' /* $17,630 */,
+                                                            'rpzo7525' /* Monzo */,
                                                           ),
                                                           style: FlutterFlowTheme
                                                                   .of(context)
-                                                              .displayMedium
+                                                              .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Outfit',
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .info,
+                                                                    'Plus Jakarta Sans',
+                                                                fontSize: 15.0,
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w500,
                                                               ),
                                                         ),
                                                       ),
-                                                    ],
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
+                                              Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.start,
+                                                children: [
+                                                  Padding(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(5.0, 7.0,
+                                                                0.0, 0.0),
+                                                    child: Text(
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'gvm3qb2t' /* ***1721 */,
+                                                      ),
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Roboto Mono',
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .secondaryText,
+                                                                fontSize: 14.0,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .normal,
+                                                              ),
+                                                    ),
                                                   ),
+                                                ],
+                                              ),
+                                              Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.end,
+                                                children: [
                                                   ClipRRect(
                                                     borderRadius:
                                                         BorderRadius.circular(
                                                             8.0),
                                                     child: Image.asset(
                                                       'assets/images/photo_2025-02-06_22.42.22.jpeg',
-                                                      width: 58.51,
-                                                      height: 50.3,
+                                                      width: 65.0,
+                                                      height: 41.0,
                                                       fit: BoxFit.cover,
                                                     ),
                                                   ),
@@ -1139,7 +1189,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                               Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
-                                                        0.0, 12.0, 0.0, 4.0),
+                                                        0.0, 0.0, 0.0, 4.0),
                                                 child: Row(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -1151,23 +1201,31 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                       FFLocalizations.of(
                                                               context)
                                                           .getText(
-                                                        '34k73chk' /* **** 0149 */,
+                                                        '34k73chk' /* Ricardo Shepherd */,
                                                       ),
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodyMedium
-                                                          .override(
-                                                            fontFamily:
-                                                                'Roboto Mono',
-                                                            color: Colors.white,
-                                                            letterSpacing: 0.0,
-                                                          ),
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Roboto Mono',
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .secondaryText,
+                                                                fontSize: 12.0,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .normal,
+                                                              ),
                                                     ),
                                                     Text(
                                                       FFLocalizations.of(
                                                               context)
                                                           .getText(
-                                                        '4olwjjif' /* 05/25 */,
+                                                        '4olwjjif' /* MasterCard */,
                                                       ),
                                                       style: FlutterFlowTheme
                                                               .of(context)
@@ -1175,8 +1233,13 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           .override(
                                                             fontFamily:
                                                                 'Roboto Mono',
-                                                            color: Colors.white,
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .secondaryText,
+                                                            fontSize: 11.0,
                                                             letterSpacing: 0.0,
+                                                            fontWeight:
+                                                                FontWeight.w500,
                                                           ),
                                                     ),
                                                   ],
@@ -1198,8 +1261,13 @@ class _HomeWidgetState extends State<HomeWidget> {
                                         width: 369.4,
                                         height: 197.4,
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .accent2,
+                                          color: Colors.black,
+                                          image: DecorationImage(
+                                            fit: BoxFit.cover,
+                                            image: Image.asset(
+                                              'assets/images/photo-1613970351372-9804e380bd09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxfHxzdGVlbHxlbnwwfHx8fDE3NDAzNTkyNjd8MA&ixlib=rb-4.0.3&q=80&w=1080',
+                                            ).image,
+                                          ),
                                           boxShadow: [
                                             BoxShadow(
                                               blurRadius: 4.0,
@@ -1215,7 +1283,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                           borderRadius:
                                               BorderRadius.circular(12.0),
                                           border: Border.all(
-                                            color: Color(0x98000000),
+                                            color: Color(0x98222121),
                                             width: 2.0,
                                           ),
                                         ),
@@ -1228,80 +1296,120 @@ class _HomeWidgetState extends State<HomeWidget> {
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: [
-                                              Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .spaceBetween,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.start,
-                                                children: [
-                                                  Column(
-                                                    mainAxisSize:
-                                                        MainAxisSize.max,
-                                                    crossAxisAlignment:
-                                                        CrossAxisAlignment
-                                                            .start,
-                                                    children: [
-                                                      Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          '0p5w6sp2' /* Balance */,
+                                              Expanded(
+                                                child: Row(
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.start,
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.end,
+                                                  children: [
+                                                    Padding(
+                                                      padding:
+                                                          EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  5.0,
+                                                                  0.0,
+                                                                  0.0,
+                                                                  0.0),
+                                                      child: ClipRRect(
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(8.0),
+                                                        child: Image.asset(
+                                                          'assets/images/photo_2025-02-24_21.34.09.jpeg',
+                                                          width: 49.0,
+                                                          height: 33.0,
+                                                          fit: BoxFit.cover,
                                                         ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .labelSmall
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Outfit',
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .primaryText,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                ),
                                                       ),
-                                                      Padding(
+                                                    ),
+                                                    Expanded(
+                                                      child: Padding(
                                                         padding:
                                                             EdgeInsetsDirectional
                                                                 .fromSTEB(
+                                                                    180.0,
                                                                     0.0,
-                                                                    8.0,
                                                                     0.0,
-                                                                    0.0),
+                                                                    50.0),
                                                         child: Text(
                                                           FFLocalizations.of(
                                                                   context)
                                                               .getText(
-                                                            'p8f5fsfa' /* $37,630 */,
+                                                            'lahvs6p8' /* Revolut */,
                                                           ),
                                                           style: FlutterFlowTheme
                                                                   .of(context)
-                                                              .displayMedium
+                                                              .bodyMedium
                                                               .override(
                                                                 fontFamily:
-                                                                    'Outfit',
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .info,
+                                                                    'Plus Jakarta Sans',
+                                                                fontSize: 18.0,
                                                                 letterSpacing:
                                                                     0.0,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w500,
                                                               ),
                                                         ),
                                                       ),
-                                                    ],
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
+                                              Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.start,
+                                                children: [
+                                                  Padding(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(5.0, 7.0,
+                                                                0.0, 0.0),
+                                                    child: Text(
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'vizllzt1' /* ***4528 */,
+                                                      ),
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Roboto Mono',
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .secondaryText,
+                                                                fontSize: 14.0,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .normal,
+                                                              ),
+                                                    ),
                                                   ),
+                                                ],
+                                              ),
+                                              Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.end,
+                                                children: [
                                                   ClipRRect(
                                                     borderRadius:
                                                         BorderRadius.circular(
                                                             8.0),
                                                     child: Image.asset(
-                                                      'assets/images/photo_2025-02-06_22.42.22.jpeg',
-                                                      width: 58.5,
-                                                      height: 50.3,
-                                                      fit: BoxFit.cover,
+                                                      'assets/images/photo_2025-02-06_22.42.16.jpeg',
+                                                      width: 65.0,
+                                                      height: 41.0,
+                                                      fit: BoxFit.contain,
                                                     ),
                                                   ),
                                                 ],
@@ -1309,7 +1417,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                               Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
-                                                        0.0, 12.0, 0.0, 4.0),
+                                                        0.0, 0.0, 0.0, 4.0),
                                                 child: Row(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -1321,33 +1429,25 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                       FFLocalizations.of(
                                                               context)
                                                           .getText(
-                                                        'uczas93s' /* **** 0149 */,
+                                                        'qercz1w8' /* Ricardo Shepherd */,
                                                       ),
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodyMedium
-                                                          .override(
-                                                            fontFamily:
-                                                                'Roboto Mono',
-                                                            color: Colors.white,
-                                                            letterSpacing: 0.0,
-                                                          ),
-                                                    ),
-                                                    Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        'ga85qx0i' /* 05/25 */,
-                                                      ),
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodyMedium
-                                                          .override(
-                                                            fontFamily:
-                                                                'Roboto Mono',
-                                                            color: Colors.white,
-                                                            letterSpacing: 0.0,
-                                                          ),
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Roboto Mono',
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .secondaryText,
+                                                                fontSize: 12.0,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .normal,
+                                                              ),
                                                     ),
                                                   ],
                                                 ),
@@ -1460,57 +1560,70 @@ class _HomeWidgetState extends State<HomeWidget> {
                           ),
                         ),
                         Expanded(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 0.0, 12.0),
-                                child: Container(
-                                  width: double.infinity,
-                                  height: 64.0,
-                                  decoration: BoxDecoration(
-                                    color: Colors.black,
-                                    boxShadow: [
-                                      BoxShadow(
-                                        blurRadius: 3.0,
-                                        color: Color(0x33000000),
-                                        offset: Offset(
-                                          0.0,
-                                          1.0,
-                                        ),
-                                      )
-                                    ],
-                                    borderRadius: BorderRadius.circular(12.0),
-                                    border: Border.all(
+                          child: InkWell(
+                            splashColor: Colors.transparent,
+                            focusColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            onTap: () async {
+                              logFirebaseEvent(
+                                  'HOME_PAGE_Column_90zpctma_ON_TAP');
+                              logFirebaseEvent('Column_navigate_to');
+
+                              context.pushNamed(LoansWidget.routeName);
+                            },
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 0.0, 12.0),
+                                  child: Container(
+                                    width: double.infinity,
+                                    height: 64.0,
+                                    decoration: BoxDecoration(
                                       color: Colors.black,
-                                      width: 1.0,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          blurRadius: 3.0,
+                                          color: Color(0x33000000),
+                                          offset: Offset(
+                                            0.0,
+                                            1.0,
+                                          ),
+                                        )
+                                      ],
+                                      borderRadius: BorderRadius.circular(12.0),
+                                      border: Border.all(
+                                        color: Colors.black,
+                                        width: 1.0,
+                                      ),
                                     ),
-                                  ),
-                                  child: Padding(
-                                    padding: EdgeInsets.all(4.0),
-                                    child: Icon(
-                                      Icons.currency_exchange,
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                      size: 32.0,
+                                    child: Padding(
+                                      padding: EdgeInsets.all(4.0),
+                                      child: Icon(
+                                        Icons.currency_exchange,
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryText,
+                                        size: 32.0,
+                                      ),
                                     ),
                                   ),
                                 ),
-                              ),
-                              Text(
-                                FFLocalizations.of(context).getText(
-                                  'v5saf24u' /* Loans */,
+                                Text(
+                                  FFLocalizations.of(context).getText(
+                                    'v5saf24u' /* Loans */,
+                                  ),
+                                  style: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .override(
+                                        fontFamily: 'Plus Jakarta Sans',
+                                        fontSize: 13.0,
+                                        letterSpacing: 0.0,
+                                      ),
                                 ),
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      fontFamily: 'Plus Jakarta Sans',
-                                      fontSize: 13.0,
-                                      letterSpacing: 0.0,
-                                    ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ),
                         Expanded(
@@ -2862,7 +2975,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                   Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      'ptivbay6' /* Moon */,
+                                                      'ptivbay6' /* Moon subcription */,
                                                     ),
                                                     textAlign: TextAlign.end,
                                                     style: FlutterFlowTheme.of(

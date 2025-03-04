@@ -331,6 +331,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: WalletWidget.routeName,
           path: WalletWidget.routePath,
           builder: (context, params) => WalletWidget(),
+        ),
+        FFRoute(
+          name: LoansWidget.routeName,
+          path: LoansWidget.routePath,
+          builder: (context, params) => LoansWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -516,9 +521,9 @@ class FFRoute {
               : builder(context, ffParams);
           final child = appStateNotifier.loading
               ? Container(
-                  color: Colors.black,
+                  color: Colors.transparent,
                   child: Image.asset(
-                    'assets/images/Brown_Neutral_Moon_Photograph_Inspirational_Quote_Instagram_Story.png',
+                    'assets/images/nt_Tyjjj.jpg',
                     fit: BoxFit.cover,
                   ),
                 )
