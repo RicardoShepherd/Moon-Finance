@@ -49,9 +49,9 @@ class _MoonDebitcardWidgetState extends State<MoonDebitcardWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.transparent,
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(30.0),
+          preferredSize: Size.fromHeight(40.0),
           child: AppBar(
             backgroundColor: Color(0xFF050509),
             automaticallyImplyLeading: false,
@@ -77,7 +77,7 @@ class _MoonDebitcardWidgetState extends State<MoonDebitcardWidget> {
                       child: Icon(
                         Icons.chevron_left,
                         color: FlutterFlowTheme.of(context).primaryText,
-                        size: 28.0,
+                        size: 32.0,
                       ),
                     ),
                     InkWell(
@@ -111,7 +111,7 @@ class _MoonDebitcardWidgetState extends State<MoonDebitcardWidget> {
                       child: Icon(
                         Icons.menu,
                         color: FlutterFlowTheme.of(context).primaryText,
-                        size: 27.0,
+                        size: 32.0,
                       ),
                     ),
                   ],
@@ -162,7 +162,7 @@ class _MoonDebitcardWidgetState extends State<MoonDebitcardWidget> {
                       Expanded(
                         child: Container(
                           width: 358.0,
-                          height: 199.0,
+                          height: 212.4,
                           decoration: BoxDecoration(
                             boxShadow: [
                               BoxShadow(
@@ -463,7 +463,7 @@ class _MoonDebitcardWidgetState extends State<MoonDebitcardWidget> {
                             width: 409.0,
                             height: 63.0,
                             decoration: BoxDecoration(
-                              color: Color(0xFF121419),
+                              color: Color(0xFF18181A),
                               borderRadius: BorderRadius.circular(24.0),
                             ),
                             child: Padding(
@@ -553,7 +553,7 @@ class _MoonDebitcardWidgetState extends State<MoonDebitcardWidget> {
                       maxWidth: 570.0,
                     ),
                     decoration: BoxDecoration(
-                      color: Color(0xFF121419),
+                      color: Color(0xFF18181A),
                       boxShadow: [
                         BoxShadow(
                           blurRadius: 3.0,
@@ -657,7 +657,7 @@ class _MoonDebitcardWidgetState extends State<MoonDebitcardWidget> {
                                 width: 100.0,
                                 height: 50.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFF121419),
+                                  color: Color(0xFF18181A),
                                   boxShadow: [
                                     BoxShadow(
                                       blurRadius: 0.0,
@@ -769,7 +769,7 @@ class _MoonDebitcardWidgetState extends State<MoonDebitcardWidget> {
                                 width: 100.0,
                                 height: 50.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFF121419),
+                                  color: Color(0xFF18181A),
                                   boxShadow: [
                                     BoxShadow(
                                       blurRadius: 0.0,
@@ -881,7 +881,7 @@ class _MoonDebitcardWidgetState extends State<MoonDebitcardWidget> {
                                 width: 100.0,
                                 height: 50.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFF121419),
+                                  color: Color(0xFF18181A),
                                   boxShadow: [
                                     BoxShadow(
                                       blurRadius: 0.0,
@@ -993,7 +993,7 @@ class _MoonDebitcardWidgetState extends State<MoonDebitcardWidget> {
                                 width: 100.0,
                                 height: 50.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFF121419),
+                                  color: Color(0xFF18181A),
                                   boxShadow: [
                                     BoxShadow(
                                       blurRadius: 0.0,
@@ -1105,7 +1105,7 @@ class _MoonDebitcardWidgetState extends State<MoonDebitcardWidget> {
                                 width: 100.0,
                                 height: 50.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFF121419),
+                                  color: Color(0xFF18181A),
                                   boxShadow: [
                                     BoxShadow(
                                       blurRadius: 0.0,
@@ -1217,7 +1217,7 @@ class _MoonDebitcardWidgetState extends State<MoonDebitcardWidget> {
                                 width: 100.0,
                                 height: 50.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFF121419),
+                                  color: Color(0xFF18181A),
                                   boxShadow: [
                                     BoxShadow(
                                       blurRadius: 0.0,
@@ -1329,7 +1329,7 @@ class _MoonDebitcardWidgetState extends State<MoonDebitcardWidget> {
                                 width: 100.0,
                                 height: 50.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFF121419),
+                                  color: Color(0xFF18181A),
                                   boxShadow: [
                                     BoxShadow(
                                       blurRadius: 0.0,

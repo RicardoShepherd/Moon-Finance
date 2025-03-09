@@ -683,7 +683,7 @@ class _PaymentWidgetState extends State<PaymentWidget> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -782,9 +782,8 @@ class _PaymentWidgetState extends State<PaymentWidget> {
                                 .displayLarge
                                 .override(
                                   fontFamily: 'Outfit',
-                                  fontSize: 117.0,
+                                  fontSize: 100.0,
                                   letterSpacing: 0.0,
-                                  fontWeight: FontWeight.bold,
                                 ),
                           ),
                         ),
@@ -1257,7 +1256,7 @@ class _PaymentWidgetState extends State<PaymentWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -1272,7 +1271,7 @@ class _PaymentWidgetState extends State<PaymentWidget> {
                               'ux90cwmt' /* Request */,
                             ),
                             options: FFButtonOptions(
-                              width: 200.0,
+                              width: 170.0,
                               height: 50.0,
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   50.0, 0.0, 50.0, 0.0),
@@ -1308,7 +1307,7 @@ class _PaymentWidgetState extends State<PaymentWidget> {
                               'abtzh1y7' /* Send */,
                             ),
                             options: FFButtonOptions(
-                              width: 200.0,
+                              width: 170.0,
                               height: 50.0,
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   50.0, 0.0, 50.0, 0.0),

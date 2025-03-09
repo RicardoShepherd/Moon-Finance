@@ -134,7 +134,7 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                               width: 390.0,
                               height: 51.0,
                               decoration: BoxDecoration(
-                                color: Color(0xFF121420),
+                                color: Color(0xFF18181A),
                                 borderRadius: BorderRadius.circular(24.0),
                               ),
                               child: Padding(
@@ -147,7 +147,7 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                   children: [
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          2.0, 0.0, 0.0, 0.0),
+                                          2.0, 0.0, 0.0, 3.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
                                           'ee2levtm' /* Search */,
@@ -156,7 +156,7 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Plus Jakarta Sans',
-                                              fontSize: 15.0,
+                                              fontSize: 14.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.w600,
                                             ),

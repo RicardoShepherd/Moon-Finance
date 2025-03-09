@@ -52,7 +52,7 @@ class _AddtowalletWidgetState extends State<AddtowalletWidget> {
           width: double.infinity,
           height: 275.0,
           decoration: BoxDecoration(
-            color: Colors.black,
+            color: Color(0xFF18181A),
             borderRadius: BorderRadius.circular(24.0),
           ),
           child: SingleChildScrollView(

@@ -47,7 +47,7 @@ class _AddcardWidgetState extends State<AddcardWidget> {
           width: double.infinity,
           height: 440.0,
           decoration: BoxDecoration(
-            color: Colors.black,
+            color: Color(0xFF18181A),
             boxShadow: [
               BoxShadow(
                 blurRadius: 4.0,

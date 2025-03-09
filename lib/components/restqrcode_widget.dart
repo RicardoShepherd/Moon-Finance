@@ -45,7 +45,7 @@ class _RestqrcodeWidgetState extends State<RestqrcodeWidget> {
         width: double.infinity,
         height: 244.0,
         decoration: BoxDecoration(
-          color: Color(0x001E5F83),
+          color: Color(0xFF18181A),
         ),
         alignment: AlignmentDirectional(0.0, 1.0),
         child: Column(
@@ -55,7 +55,7 @@ class _RestqrcodeWidgetState extends State<RestqrcodeWidget> {
             Container(
               width: double.infinity,
               decoration: BoxDecoration(
-                color: Colors.black,
+                color: Color(0xFF18181A),
                 boxShadow: [
                   BoxShadow(
                     blurRadius: 7.0,

@@ -43,7 +43,7 @@ class _SharemoonAffiliateWidgetState extends State<SharemoonAffiliateWidget> {
       width: double.infinity,
       height: 79.0,
       decoration: BoxDecoration(
-        color: FlutterFlowTheme.of(context).secondaryBackground,
+        color: Color(0xFF18181A),
       ),
       child: Padding(
         padding: EdgeInsets.all(14.0),

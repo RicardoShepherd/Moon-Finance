@@ -50,7 +50,7 @@ class _ShareqrcodeWidgetState extends State<ShareqrcodeWidget> {
           width: double.infinity,
           height: 335.0,
           decoration: BoxDecoration(
-            color: Colors.black,
+            color: Color(0xFF18181A),
             borderRadius: BorderRadius.circular(24.0),
           ),
           child: SingleChildScrollView(

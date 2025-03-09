@@ -50,57 +50,6 @@ class _PaylaterWidgetState extends State<PaylaterWidget> {
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: Colors.black,
-        appBar: PreferredSize(
-          preferredSize: Size.fromHeight(40.0),
-          child: AppBar(
-            backgroundColor: Color(0xFF050509),
-            automaticallyImplyLeading: false,
-            title: Align(
-              alignment: AlignmentDirectional(-1.0, 0.0),
-              child: Column(
-                mainAxisSize: MainAxisSize.max,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Expanded(
-                    child: Align(
-                      alignment: AlignmentDirectional(-1.0, 0.0),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 20.0),
-                            child: InkWell(
-                              splashColor: Colors.transparent,
-                              focusColor: Colors.transparent,
-                              hoverColor: Colors.transparent,
-                              highlightColor: Colors.transparent,
-                              onTap: () async {
-                                logFirebaseEvent(
-                                    'PAYLATER_PAGE_Icon_hqegtfcg_ON_TAP');
-                                logFirebaseEvent('Icon_navigate_back');
-                                context.safePop();
-                              },
-                              child: Icon(
-                                Icons.chevron_left,
-                                color: FlutterFlowTheme.of(context).primaryText,
-                                size: 30.0,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            actions: [],
-            centerTitle: false,
-            elevation: 0.0,
-          ),
-        ),
         body: SingleChildScrollView(
           child: Column(
             mainAxisSize: MainAxisSize.max,
@@ -111,189 +60,222 @@ class _PaylaterWidgetState extends State<PaylaterWidget> {
                   maxWidth: 470.0,
                 ),
                 decoration: BoxDecoration(),
-                child: Column(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                      child: Column(
-                        mainAxisSize: MainAxisSize.max,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    FFLocalizations.of(context).getText(
-                                      'ed0g0d1e' /* Avaiable Limit */,
-                                    ),
-                                    style: FlutterFlowTheme.of(context)
-                                        .labelMedium
-                                        .override(
-                                          fontFamily: 'Outfit',
-                                          fontSize: 16.0,
-                                          letterSpacing: 0.0,
-                                        ),
-                                  ),
-                                  Text(
-                                    FFLocalizations.of(context).getText(
-                                      'v0pz934q' /* $ 1,000 */,
-                                    ),
-                                    style: FlutterFlowTheme.of(context)
-                                        .displaySmall
-                                        .override(
-                                          fontFamily: 'Outfit',
-                                          letterSpacing: 0.0,
-                                        ),
-                                  ),
-                                ],
-                              ),
-                              Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 8.0, 16.0, 8.0),
-                                child: FlutterFlowIconButton(
-                                  borderColor: Colors.transparent,
-                                  borderRadius: 12.0,
-                                  borderWidth: 2.0,
-                                  buttonSize: 40.0,
-                                  icon: Icon(
-                                    Icons.menu,
+                child: Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Expanded(
+                        child: Align(
+                          alignment: AlignmentDirectional(-1.0, 0.0),
+                          child: Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                5.0, 10.0, 0.0, 0.0),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                InkWell(
+                                  splashColor: Colors.transparent,
+                                  focusColor: Colors.transparent,
+                                  hoverColor: Colors.transparent,
+                                  highlightColor: Colors.transparent,
+                                  onTap: () async {
+                                    logFirebaseEvent(
+                                        'PAYLATER_PAGE_Icon_1lqa54nb_ON_TAP');
+                                    logFirebaseEvent('Icon_navigate_back');
+                                    context.safePop();
+                                  },
+                                  child: Icon(
+                                    Icons.chevron_left,
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
-                                    size: 24.0,
+                                    size: 30.0,
                                   ),
-                                  onPressed: () async {
-                                    logFirebaseEvent(
-                                        'PAYLATER_PAGE_menu_ICN_ON_TAP');
-                                    logFirebaseEvent('IconButton_bottom_sheet');
-                                    await showModalBottomSheet(
-                                      isScrollControlled: true,
-                                      backgroundColor: Colors.transparent,
-                                      enableDrag: false,
-                                      context: context,
-                                      builder: (context) {
-                                        return GestureDetector(
-                                          onTap: () {
-                                            FocusScope.of(context).unfocus();
-                                            FocusManager.instance.primaryFocus
-                                                ?.unfocus();
-                                          },
-                                          child: Padding(
-                                            padding: MediaQuery.viewInsetsOf(
-                                                context),
-                                            child: MoonpaylatermenuWidget(),
-                                          ),
-                                        );
-                                      },
-                                    ).then((value) => safeSetState(() {}));
-                                  },
                                 ),
-                              ),
-                            ].divide(SizedBox(width: 8.0)),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Row(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              10.0, 20.0, 0.0, 0.0),
-                          child: Text(
-                            FFLocalizations.of(context).getText(
-                              'x1128ouh' /* Increase Limite */,
+                              ],
                             ),
-                            style: FlutterFlowTheme.of(context)
-                                .labelSmall
-                                .override(
-                                  fontFamily: 'Outfit',
-                                  fontSize: 13.0,
-                                  letterSpacing: 0.0,
-                                ),
                           ),
                         ),
-                      ],
-                    ),
-                    Padding(
-                      padding: EdgeInsets.all(14.0),
-                      child: Container(
-                        width: 541.0,
-                        height: 190.0,
-                        decoration: BoxDecoration(
-                          boxShadow: [
-                            BoxShadow(
-                              blurRadius: 6.0,
-                              color: Color(0x4B2E2F31),
-                              offset: Offset(
-                                0.0,
-                                2.0,
-                              ),
-                            )
-                          ],
-                          gradient: LinearGradient(
-                            colors: [Colors.black, Color(0xFFA87ADD)],
-                            stops: [0.0, 1.0],
-                            begin: AlignmentDirectional(0.94, -1.0),
-                            end: AlignmentDirectional(-0.94, 1.0),
-                          ),
-                          borderRadius: BorderRadius.circular(10.0),
-                          border: Border.all(
-                            width: 2.0,
-                          ),
-                        ),
-                        child: Padding(
-                          padding: EdgeInsets.all(16.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 11.0, 0.0, 0.0),
-                                    child: Text(
+                      ),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            16.0, 0.0, 16.0, 0.0),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.max,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
                                       FFLocalizations.of(context).getText(
-                                        '8b5lx9qx' /* Pay Later */,
+                                        'ed0g0d1e' /* Avaiable Limit */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
-                                          .labelSmall
+                                          .labelMedium
                                           .override(
                                             fontFamily: 'Outfit',
-                                            color: FlutterFlowTheme.of(context)
-                                                .primaryText,
-                                            fontSize: 15.0,
+                                            fontSize: 16.0,
                                             letterSpacing: 0.0,
-                                            fontWeight: FontWeight.w500,
                                           ),
                                     ),
+                                    Text(
+                                      FFLocalizations.of(context).getText(
+                                        'v0pz934q' /* $ 1,000 */,
+                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .displaySmall
+                                          .override(
+                                            fontFamily: 'Outfit',
+                                            letterSpacing: 0.0,
+                                          ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          10.0, 20.0, 0.0, 0.0),
+                                      child: Text(
+                                        FFLocalizations.of(context).getText(
+                                          'x1128ouh' /* Increase Limite */,
+                                        ),
+                                        style: FlutterFlowTheme.of(context)
+                                            .labelSmall
+                                            .override(
+                                              fontFamily: 'Outfit',
+                                              fontSize: 13.0,
+                                              letterSpacing: 0.0,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 8.0, 16.0, 8.0),
+                                  child: FlutterFlowIconButton(
+                                    borderColor: Colors.transparent,
+                                    borderRadius: 12.0,
+                                    borderWidth: 2.0,
+                                    buttonSize: 40.0,
+                                    icon: Icon(
+                                      Icons.menu,
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryText,
+                                      size: 24.0,
+                                    ),
+                                    onPressed: () async {
+                                      logFirebaseEvent(
+                                          'PAYLATER_PAGE_menu_ICN_ON_TAP');
+                                      logFirebaseEvent(
+                                          'IconButton_bottom_sheet');
+                                      await showModalBottomSheet(
+                                        isScrollControlled: true,
+                                        backgroundColor: Colors.transparent,
+                                        enableDrag: false,
+                                        context: context,
+                                        builder: (context) {
+                                          return GestureDetector(
+                                            onTap: () {
+                                              FocusScope.of(context).unfocus();
+                                              FocusManager.instance.primaryFocus
+                                                  ?.unfocus();
+                                            },
+                                            child: Padding(
+                                              padding: MediaQuery.viewInsetsOf(
+                                                  context),
+                                              child: MoonpaylatermenuWidget(),
+                                            ),
+                                          );
+                                        },
+                                      ).then((value) => safeSetState(() {}));
+                                    },
                                   ),
-                                  Image.asset(
-                                    'assets/images/Brown_Neutral_Moon_Photograph_Inspirational_Quote_Instagram_Story.png',
-                                    width: 44.0,
-                                    height: 44.0,
-                                    fit: BoxFit.cover,
-                                  ),
-                                ],
-                              ),
+                                ),
+                              ].divide(SizedBox(width: 8.0)),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(14.0),
+                        child: Container(
+                          width: 541.0,
+                          height: 190.0,
+                          decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                blurRadius: 6.0,
+                                color: Color(0x4B2E2F31),
+                                offset: Offset(
+                                  0.0,
+                                  2.0,
+                                ),
+                              )
                             ],
+                            gradient: LinearGradient(
+                              colors: [Colors.black, Color(0xFFA87ADD)],
+                              stops: [0.0, 1.0],
+                              begin: AlignmentDirectional(0.94, -1.0),
+                              end: AlignmentDirectional(-0.94, 1.0),
+                            ),
+                            borderRadius: BorderRadius.circular(10.0),
+                            border: Border.all(
+                              width: 2.0,
+                            ),
+                          ),
+                          child: Padding(
+                            padding: EdgeInsets.all(16.0),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0.0, 11.0, 0.0, 0.0),
+                                      child: Text(
+                                        FFLocalizations.of(context).getText(
+                                          '8b5lx9qx' /* Pay Later */,
+                                        ),
+                                        style: FlutterFlowTheme.of(context)
+                                            .labelSmall
+                                            .override(
+                                              fontFamily: 'Outfit',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryText,
+                                              fontSize: 15.0,
+                                              letterSpacing: 0.0,
+                                              fontWeight: FontWeight.w500,
+                                            ),
+                                      ),
+                                    ),
+                                    Image.asset(
+                                      'assets/images/Brown_Neutral_Moon_Photograph_Inspirational_Quote_Instagram_Story.png',
+                                      width: 44.0,
+                                      height: 44.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
               Padding(
@@ -312,7 +294,7 @@ class _PaylaterWidgetState extends State<PaylaterWidget> {
                               width: double.infinity,
                               height: 63.0,
                               decoration: BoxDecoration(
-                                color: Color(0xFF121419),
+                                color: Color(0xFF18181A),
                                 boxShadow: [
                                   BoxShadow(
                                     blurRadius: 3.0,
@@ -381,7 +363,7 @@ class _PaylaterWidgetState extends State<PaylaterWidget> {
                               width: double.infinity,
                               height: 52.0,
                               decoration: BoxDecoration(
-                                color: Color(0xFF121419),
+                                color: Color(0xFF18181A),
                                 boxShadow: [
                                   BoxShadow(
                                     blurRadius: 3.0,
@@ -449,7 +431,7 @@ class _PaylaterWidgetState extends State<PaylaterWidget> {
                               width: double.infinity,
                               height: 122.0,
                               decoration: BoxDecoration(
-                                color: Color(0xFF121419),
+                                color: Color(0xFF18181A),
                                 boxShadow: [
                                   BoxShadow(
                                     blurRadius: 3.0,
@@ -579,7 +561,7 @@ class _PaylaterWidgetState extends State<PaylaterWidget> {
                     maxWidth: 570.0,
                   ),
                   decoration: BoxDecoration(
-                    color: Color(0xFF121419),
+                    color: Color(0xFF18181A),
                     boxShadow: [
                       BoxShadow(
                         blurRadius: 3.0,
@@ -746,7 +728,7 @@ class _PaylaterWidgetState extends State<PaylaterWidget> {
                               width: 100.0,
                               height: 50.0,
                               decoration: BoxDecoration(
-                                color: Color(0xFF121419),
+                                color: Color(0xFF18181A),
                                 boxShadow: [
                                   BoxShadow(
                                     blurRadius: 0.0,
@@ -856,7 +838,7 @@ class _PaylaterWidgetState extends State<PaylaterWidget> {
                               width: 100.0,
                               height: 50.0,
                               decoration: BoxDecoration(
-                                color: Color(0xFF121419),
+                                color: Color(0xFF18181A),
                                 boxShadow: [
                                   BoxShadow(
                                     blurRadius: 0.0,
@@ -966,7 +948,7 @@ class _PaylaterWidgetState extends State<PaylaterWidget> {
                               width: 100.0,
                               height: 50.0,
                               decoration: BoxDecoration(
-                                color: Color(0xFF121419),
+                                color: Color(0xFF18181A),
                                 boxShadow: [
                                   BoxShadow(
                                     blurRadius: 0.0,

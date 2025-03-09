@@ -44,7 +44,7 @@ class _SelectCurrencyWidgetState extends State<SelectCurrencyWidget> {
       width: 395.0,
       height: 405.0,
       decoration: BoxDecoration(
-        color: Colors.black,
+        color: Color(0xFF18181A),
         borderRadius: BorderRadius.circular(24.0),
         border: Border.all(
           color: FlutterFlowTheme.of(context).alternate,

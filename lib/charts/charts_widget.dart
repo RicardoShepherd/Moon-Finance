@@ -180,7 +180,7 @@ class _ChartsWidgetState extends State<ChartsWidget> {
                           width: 130.0,
                           height: 238.55,
                           decoration: BoxDecoration(
-                            color: Color(0xFF13131C),
+                            color: Color(0xFF18181A),
                             borderRadius: BorderRadius.circular(24.0),
                           ),
                           child: Padding(
@@ -655,7 +655,7 @@ class _ChartsWidgetState extends State<ChartsWidget> {
                           iconAlignment: IconAlignment.start,
                           iconPadding: EdgeInsetsDirectional.fromSTEB(
                               2.0, 0.0, 5.0, 0.0),
-                          color: Color(0xFF161620),
+                          color: Color(0xFF18181A),
                           textStyle:
                               FlutterFlowTheme.of(context).titleSmall.override(
                                     fontFamily: 'Plus Jakarta Sans',
@@ -719,7 +719,7 @@ class _ChartsWidgetState extends State<ChartsWidget> {
                               16.0, 0.0, 16.0, 0.0),
                           iconPadding: EdgeInsetsDirectional.fromSTEB(
                               6.0, 0.0, 0.0, 0.0),
-                          color: Color(0xFF161620),
+                          color: Color(0xFF18181A),
                           textStyle:
                               FlutterFlowTheme.of(context).titleSmall.override(
                                     fontFamily: 'Plus Jakarta Sans',
@@ -758,7 +758,7 @@ class _ChartsWidgetState extends State<ChartsWidget> {
                           iconAlignment: IconAlignment.end,
                           iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          color: Color(0xFF161620),
+                          color: Color(0xFF18181A),
                           textStyle:
                               FlutterFlowTheme.of(context).labelMedium.override(
                                     fontFamily: 'Outfit',

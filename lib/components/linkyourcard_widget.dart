@@ -50,7 +50,7 @@ class _LinkyourcardWidgetState extends State<LinkyourcardWidget> {
           width: double.infinity,
           height: 220.0,
           decoration: BoxDecoration(
-            color: Colors.black,
+            color: Color(0xFF18181A),
             borderRadius: BorderRadius.circular(24.0),
           ),
           child: SingleChildScrollView(

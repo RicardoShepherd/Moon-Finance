@@ -48,7 +48,7 @@ class _MooncreditcardacceptWidgetState
         width: double.infinity,
         height: 244.0,
         decoration: BoxDecoration(
-          color: Color(0x007F919B),
+          color: Color(0xFF18181A),
         ),
         alignment: AlignmentDirectional(0.0, 1.0),
         child: Column(

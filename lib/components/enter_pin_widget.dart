@@ -79,7 +79,7 @@ class _EnterPinWidgetState extends State<EnterPinWidget>
       width: double.infinity,
       height: double.infinity,
       decoration: BoxDecoration(
-        color: FlutterFlowTheme.of(context).accent4,
+        color: Color(0xFF18181A),
       ),
       child: Column(
         mainAxisSize: MainAxisSize.max,
