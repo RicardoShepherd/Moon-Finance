@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'creditcard4_model.dart';
 export 'creditcard4_model.dart';
 
@@ -79,9 +80,11 @@ class _Creditcard4WidgetState extends State<Creditcard4Widget> {
                   '6j6sktr4' /* Bank Of America */,
                 ),
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                      fontFamily: 'Plus Jakarta Sans',
+                      fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
                       color: Colors.white,
                       letterSpacing: 0.0,
+                      useGoogleFonts: GoogleFonts.asMap().containsKey(
+                          FlutterFlowTheme.of(context).bodyMediumFamily),
                     ),
               ),
               Text(
@@ -89,10 +92,13 @@ class _Creditcard4WidgetState extends State<Creditcard4Widget> {
                   'ue9o2rqj' /* $2,630 */,
                 ),
                 style: FlutterFlowTheme.of(context).displaySmall.override(
-                      fontFamily: 'Outfit',
+                      fontFamily:
+                          FlutterFlowTheme.of(context).displaySmallFamily,
                       color: Colors.white,
                       fontSize: 32.0,
                       letterSpacing: 0.0,
+                      useGoogleFonts: GoogleFonts.asMap().containsKey(
+                          FlutterFlowTheme.of(context).displaySmallFamily),
                     ),
               ),
               Padding(
@@ -109,6 +115,8 @@ class _Creditcard4WidgetState extends State<Creditcard4Widget> {
                             fontFamily: 'Roboto Mono',
                             color: Colors.white,
                             letterSpacing: 0.0,
+                            useGoogleFonts:
+                                GoogleFonts.asMap().containsKey('Roboto Mono'),
                           ),
                     ),
                     Text(
@@ -119,6 +127,8 @@ class _Creditcard4WidgetState extends State<Creditcard4Widget> {
                             fontFamily: 'Roboto Mono',
                             color: Colors.white,
                             letterSpacing: 0.0,
+                            useGoogleFonts:
+                                GoogleFonts.asMap().containsKey('Roboto Mono'),
                           ),
                     ),
                   ],

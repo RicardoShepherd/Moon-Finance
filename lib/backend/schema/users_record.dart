@@ -80,6 +80,11 @@ class UsersRecord extends FirestoreRecord {
   String get userDateOfBirth => _userDateOfBirth ?? '';
   bool hasUserDateOfBirth() => _userDateOfBirth != null;
 
+  // "uid" field.
+  String? _uid;
+  String get uid => _uid ?? '';
+  bool hasUid() => _uid != null;
+
   void _initializeFields() {
     _displayName = snapshotData['display_name'] as String?;
     _email = snapshotData['email'] as String?;
@@ -94,6 +99,7 @@ class UsersRecord extends FirestoreRecord {
     _userFirstName = snapshotData['user_first_name'] as String?;
     _userLastName = snapshotData['user_last_name'] as String?;
     _userDateOfBirth = snapshotData['user_date_of_birth'] as String?;
+    _uid = snapshotData['uid'] as String?;
   }
 
   static CollectionReference get collection =>
@@ -143,6 +149,7 @@ Map<String, dynamic> createUsersRecordData({
   String? userFirstName,
   String? userLastName,
   String? userDateOfBirth,
+  String? uid,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -159,6 +166,7 @@ Map<String, dynamic> createUsersRecordData({
       'user_first_name': userFirstName,
       'user_last_name': userLastName,
       'user_date_of_birth': userDateOfBirth,
+      'uid': uid,
     }.withoutNulls,
   );
 
@@ -182,7 +190,8 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e1?.lastActiveTime == e2?.lastActiveTime &&
         e1?.userFirstName == e2?.userFirstName &&
         e1?.userLastName == e2?.userLastName &&
-        e1?.userDateOfBirth == e2?.userDateOfBirth;
+        e1?.userDateOfBirth == e2?.userDateOfBirth &&
+        e1?.uid == e2?.uid;
   }
 
   @override
@@ -199,7 +208,8 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e?.lastActiveTime,
         e?.userFirstName,
         e?.userLastName,
-        e?.userDateOfBirth
+        e?.userDateOfBirth,
+        e?.uid
       ]);
 
   @override

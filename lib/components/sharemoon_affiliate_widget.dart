@@ -2,6 +2,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'sharemoon_affiliate_model.dart';
 export 'sharemoon_affiliate_model.dart';
 
@@ -60,9 +61,11 @@ class _SharemoonAffiliateWidgetState extends State<SharemoonAffiliateWidget> {
             iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
             color: FlutterFlowTheme.of(context).primaryText,
             textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                  fontFamily: 'Plus Jakarta Sans',
+                  fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
                   color: FlutterFlowTheme.of(context).primaryBackground,
                   letterSpacing: 0.0,
+                  useGoogleFonts: GoogleFonts.asMap().containsKey(
+                      FlutterFlowTheme.of(context).titleSmallFamily),
                 ),
             elevation: 0.0,
             borderRadius: BorderRadius.circular(24.0),

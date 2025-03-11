@@ -5,6 +5,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:rive/rive.dart' hide LinearGradient;
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'affiliate_model.dart';
 export 'affiliate_model.dart';
 
@@ -88,6 +89,8 @@ class _AffiliateWidgetState extends State<AffiliateWidget> {
                       fontSize: 12.0,
                       letterSpacing: 0.0,
                       fontWeight: FontWeight.w500,
+                      useGoogleFonts:
+                          GoogleFonts.asMap().containsKey('Noto Sans JP'),
                     ),
                 elevation: 0.0,
                 borderRadius: BorderRadius.circular(24.0),
@@ -154,9 +157,17 @@ class _AffiliateWidgetState extends State<AffiliateWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .displaySmall
                                             .override(
-                                              fontFamily: 'Outfit',
+                                              fontFamily:
+                                                  FlutterFlowTheme.of(context)
+                                                      .displaySmallFamily,
                                               fontSize: 30.0,
                                               letterSpacing: 0.0,
+                                              useGoogleFonts: GoogleFonts
+                                                      .asMap()
+                                                  .containsKey(
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .displaySmallFamily),
                                             ),
                                       ),
                                     ),
@@ -179,6 +190,10 @@ class _AffiliateWidgetState extends State<AffiliateWidget> {
                                                 fontSize: 14.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.bold,
+                                                useGoogleFonts:
+                                                    GoogleFonts.asMap()
+                                                        .containsKey(
+                                                            'Montserrat'),
                                                 lineHeight: 1.5,
                                               ),
                                         )
@@ -186,9 +201,15 @@ class _AffiliateWidgetState extends State<AffiliateWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
-                                            fontFamily: 'Plus Jakarta Sans',
+                                            fontFamily:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleSmallFamily,
                                             color: Color(0xFF2222A2),
                                             letterSpacing: 0.0,
+                                            useGoogleFonts: GoogleFonts.asMap()
+                                                .containsKey(
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmallFamily),
                                           ),
                                     ),
                                     textAlign: TextAlign.center,
@@ -249,8 +270,16 @@ class _AffiliateWidgetState extends State<AffiliateWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily:
-                                                              'Plus Jakarta Sans',
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodyMediumFamily,
                                                           letterSpacing: 0.0,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMediumFamily),
                                                         ),
                                                   ),
                                                 ),
@@ -282,11 +311,19 @@ class _AffiliateWidgetState extends State<AffiliateWidget> {
                                                           .titleSmall
                                                           .override(
                                                             fontFamily:
-                                                                'Plus Jakarta Sans',
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .titleSmallFamily,
                                                             color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryBackground,
                                                             letterSpacing: 0.0,
+                                                            useGoogleFonts: GoogleFonts
+                                                                    .asMap()
+                                                                .containsKey(
+                                                                    FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleSmallFamily),
                                                           ),
                                                   elevation: 0.0,
                                                   borderRadius:

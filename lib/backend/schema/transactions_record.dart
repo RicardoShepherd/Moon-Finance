@@ -56,11 +56,6 @@ class TransactionsRecord extends FirestoreRecord {
   String get transactionReason => _transactionReason ?? '';
   bool hasTransactionReason() => _transactionReason != null;
 
-  // "budgetAssociated" field.
-  DocumentReference? _budgetAssociated;
-  DocumentReference? get budgetAssociated => _budgetAssociated;
-  bool hasBudgetAssociated() => _budgetAssociated != null;
-
   void _initializeFields() {
     _transactionName = snapshotData['transactionName'] as String?;
     _transactionAmount = snapshotData['transactionAmount'] as String?;
@@ -70,7 +65,6 @@ class TransactionsRecord extends FirestoreRecord {
     _user = snapshotData['user'] as DocumentReference?;
     _categoryName = getDataList(snapshotData['categoryName']);
     _transactionReason = snapshotData['transactionReason'] as String?;
-    _budgetAssociated = snapshotData['budgetAssociated'] as DocumentReference?;
   }
 
   static CollectionReference get collection =>
@@ -115,7 +109,6 @@ Map<String, dynamic> createTransactionsRecordData({
   DocumentReference? category,
   DocumentReference? user,
   String? transactionReason,
-  DocumentReference? budgetAssociated,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -126,7 +119,6 @@ Map<String, dynamic> createTransactionsRecordData({
       'category': category,
       'user': user,
       'transactionReason': transactionReason,
-      'budgetAssociated': budgetAssociated,
     }.withoutNulls,
   );
 
@@ -147,8 +139,7 @@ class TransactionsRecordDocumentEquality
         e1?.category == e2?.category &&
         e1?.user == e2?.user &&
         listEquality.equals(e1?.categoryName, e2?.categoryName) &&
-        e1?.transactionReason == e2?.transactionReason &&
-        e1?.budgetAssociated == e2?.budgetAssociated;
+        e1?.transactionReason == e2?.transactionReason;
   }
 
   @override
@@ -160,8 +151,7 @@ class TransactionsRecordDocumentEquality
         e?.category,
         e?.user,
         e?.categoryName,
-        e?.transactionReason,
-        e?.budgetAssociated
+        e?.transactionReason
       ]);
 
   @override

@@ -281,7 +281,25 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'iam0xgwx': {
+    '3n0uqws9': {
+      'en': 'User Name',
+      'ar': '',
+      'de': '',
+      'es': '',
+      'fr': '',
+      'it': '',
+      'ja': '',
+    },
+    '8f3hm5sj': {
+      'en': '',
+      'ar': 'عنوان البريد الالكترونى',
+      'de': 'E-Mail-Addresse',
+      'es': 'Dirección de correo electrónico',
+      'fr': '',
+      'it': '',
+      'ja': '',
+    },
+    'z5x12grr': {
       'en': 'Email',
       'ar': 'أدخل بريدك الإلكتروني ...',
       'de': 'Geben sie ihre E-Mail Adresse ein...',

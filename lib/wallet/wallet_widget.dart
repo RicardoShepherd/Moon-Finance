@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'wallet_model.dart';
 export 'wallet_model.dart';
 
@@ -151,13 +152,19 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                                   context)
                                                               .labelSmall
                                                               .override(
-                                                                fontFamily:
-                                                                    'Outfit',
+                                                                fontFamily: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelSmallFamily,
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .primaryText,
                                                                 letterSpacing:
                                                                     0.0,
+                                                                useGoogleFonts: GoogleFonts
+                                                                        .asMap()
+                                                                    .containsKey(
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .labelSmallFamily),
                                                               ),
                                                     ),
                                                     Padding(
@@ -179,13 +186,19 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                                     context)
                                                                 .displayMedium
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Outfit',
+                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .displayMediumFamily,
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .info,
                                                                   letterSpacing:
                                                                       0.0,
+                                                                  useGoogleFonts: GoogleFonts
+                                                                          .asMap()
+                                                                      .containsKey(
+                                                                          FlutterFlowTheme.of(context)
+                                                                              .displayMediumFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -227,6 +240,11 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                               'Roboto Mono',
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
+                                                          useGoogleFonts:
+                                                              GoogleFonts
+                                                                      .asMap()
+                                                                  .containsKey(
+                                                                      'Roboto Mono'),
                                                         ),
                                                   ),
                                                   Text(
@@ -242,6 +260,11 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                               'Roboto Mono',
                                                           color: Colors.white,
                                                           letterSpacing: 0.0,
+                                                          useGoogleFonts:
+                                                              GoogleFonts
+                                                                      .asMap()
+                                                                  .containsKey(
+                                                                      'Roboto Mono'),
                                                         ),
                                                   ),
                                                 ],
@@ -267,6 +290,10 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                         color: Colors.white,
                                                         fontSize: 9.0,
                                                         letterSpacing: 0.0,
+                                                        useGoogleFonts:
+                                                            GoogleFonts.asMap()
+                                                                .containsKey(
+                                                                    'Roboto Mono'),
                                                       ),
                                                 ),
                                                 Text(
@@ -283,6 +310,10 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                         color: Colors.white,
                                                         fontSize: 9.0,
                                                         letterSpacing: 0.0,
+                                                        useGoogleFonts:
+                                                            GoogleFonts.asMap()
+                                                                .containsKey(
+                                                                    'Roboto Mono'),
                                                       ),
                                                 ),
                                               ],
@@ -348,11 +379,20 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                             context)
                                                         .labelSmall
                                                         .override(
-                                                          fontFamily: 'Outfit',
+                                                          fontFamily:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .labelSmallFamily,
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryText,
                                                           letterSpacing: 0.0,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelSmallFamily),
                                                         ),
                                                   ),
                                                   Padding(
@@ -371,13 +411,19 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                                   context)
                                                               .displayMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Outfit',
+                                                                fontFamily: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .displayMediumFamily,
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .info,
                                                                 letterSpacing:
                                                                     0.0,
+                                                                useGoogleFonts: GoogleFonts
+                                                                        .asMap()
+                                                                    .containsKey(
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .displayMediumFamily),
                                                               ),
                                                     ),
                                                   ),
@@ -418,6 +464,10 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                             'Roboto Mono',
                                                         color: Colors.white,
                                                         letterSpacing: 0.0,
+                                                        useGoogleFonts:
+                                                            GoogleFonts.asMap()
+                                                                .containsKey(
+                                                                    'Roboto Mono'),
                                                       ),
                                                 ),
                                                 Text(
@@ -433,6 +483,10 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                             'Roboto Mono',
                                                         color: Colors.white,
                                                         letterSpacing: 0.0,
+                                                        useGoogleFonts:
+                                                            GoogleFonts.asMap()
+                                                                .containsKey(
+                                                                    'Roboto Mono'),
                                                       ),
                                                 ),
                                               ],
@@ -515,13 +569,19 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                                   context)
                                                               .labelSmall
                                                               .override(
-                                                                fontFamily:
-                                                                    'Outfit',
+                                                                fontFamily: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelSmallFamily,
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .accent4,
                                                                 letterSpacing:
                                                                     0.0,
+                                                                useGoogleFonts: GoogleFonts
+                                                                        .asMap()
+                                                                    .containsKey(
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .labelSmallFamily),
                                                               ),
                                                     ),
                                                     Padding(
@@ -543,13 +603,19 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                                     context)
                                                                 .displayMedium
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Outfit',
+                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .displayMediumFamily,
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .primaryBackground,
                                                                   letterSpacing:
                                                                       0.0,
+                                                                  useGoogleFonts: GoogleFonts
+                                                                          .asMap()
+                                                                      .containsKey(
+                                                                          FlutterFlowTheme.of(context)
+                                                                              .displayMediumFamily),
                                                                 ),
                                                       ),
                                                     ),
@@ -588,6 +654,11 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                                   .of(context)
                                                               .primaryBackground,
                                                           letterSpacing: 0.0,
+                                                          useGoogleFonts:
+                                                              GoogleFonts
+                                                                      .asMap()
+                                                                  .containsKey(
+                                                                      'Roboto Mono'),
                                                         ),
                                                   ),
                                                   Text(
@@ -605,6 +676,11 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                                   .of(context)
                                                               .primaryBackground,
                                                           letterSpacing: 0.0,
+                                                          useGoogleFonts:
+                                                              GoogleFonts
+                                                                      .asMap()
+                                                                  .containsKey(
+                                                                      'Roboto Mono'),
                                                         ),
                                                   ),
                                                 ],
@@ -679,13 +755,19 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                                     context)
                                                                 .labelSmall
                                                                 .override(
-                                                                  fontFamily:
-                                                                      'Outfit',
+                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelSmallFamily,
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .accent4,
                                                                   letterSpacing:
                                                                       0.0,
+                                                                  useGoogleFonts: GoogleFonts
+                                                                          .asMap()
+                                                                      .containsKey(
+                                                                          FlutterFlowTheme.of(context)
+                                                                              .labelSmallFamily),
                                                                 ),
                                                       ),
                                                       Padding(
@@ -706,13 +788,19 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                                   .of(context)
                                                               .displayMedium
                                                               .override(
-                                                                fontFamily:
-                                                                    'Outfit',
+                                                                fontFamily: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .displayMediumFamily,
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .info,
                                                                 letterSpacing:
                                                                     0.0,
+                                                                useGoogleFonts: GoogleFonts
+                                                                        .asMap()
+                                                                    .containsKey(
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .displayMediumFamily),
                                                               ),
                                                         ),
                                                       ),
@@ -751,6 +839,11 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                                 'Roboto Mono',
                                                             color: Colors.white,
                                                             letterSpacing: 0.0,
+                                                            useGoogleFonts:
+                                                                GoogleFonts
+                                                                        .asMap()
+                                                                    .containsKey(
+                                                                        'Roboto Mono'),
                                                           ),
                                                     ),
                                                     Text(
@@ -767,6 +860,11 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                                 'Roboto Mono',
                                                             color: Colors.white,
                                                             letterSpacing: 0.0,
+                                                            useGoogleFonts:
+                                                                GoogleFonts
+                                                                        .asMap()
+                                                                    .containsKey(
+                                                                        'Roboto Mono'),
                                                           ),
                                                     ),
                                                   ],
