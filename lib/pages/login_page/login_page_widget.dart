@@ -320,10 +320,29 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                         onPressed: () async {
                                           logFirebaseEvent(
                                               'LOGIN_PAGE_PAGE_LOGIN_BTN_ON_TAP');
+                                          logFirebaseEvent('Button_auth');
+                                          GoRouter.of(context)
+                                              .prepareAuthEvent();
+
+                                          final user =
+                                              await authManager.signInWithEmail(
+                                            context,
+                                            _model
+                                                .emailAddressLoginTextController
+                                                .text,
+                                            _model.passwordLoginTextController
+                                                .text,
+                                          );
+                                          if (user == null) {
+                                            return;
+                                          }
+
                                           logFirebaseEvent(
                                               'Button_navigate_to');
 
-                                          context.goNamed(HomeWidget.routeName);
+                                          context.goNamedAuth(
+                                              HomeWidget.routeName,
+                                              context.mounted);
                                         },
                                         text:
                                             FFLocalizations.of(context).getText(
