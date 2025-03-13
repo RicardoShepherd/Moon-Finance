@@ -99,7 +99,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                         height: 40.0,
                         child: CircularProgressIndicator(
                           valueColor: AlwaysStoppedAnimation<Color>(
-                            FlutterFlowTheme.of(context).primaryText,
+                            Color(0xFFEAE9ED),
                           ),
                         ),
                       ),

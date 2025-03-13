@@ -1,6 +1,8 @@
+import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_video_player.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
@@ -89,14 +91,14 @@ class _PhonenumberverficationWidgetState
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(8.0),
-                      child: Image.asset(
-                        'assets/images/HD-wallpaper-illumination-amoled-black-dark-minimal-minimalistic-natural-nature-thumbnail.jpg',
-                        width: 372.0,
-                        height: 312.0,
-                        fit: BoxFit.cover,
-                      ),
+                    FlutterFlowVideoPlayer(
+                      path: 'assets/videos/sms.mp4',
+                      videoType: VideoType.asset,
+                      autoPlay: true,
+                      looping: true,
+                      showControls: false,
+                      allowFullScreen: true,
+                      allowPlaybackSpeedMenu: false,
                     ),
                     Row(
                       mainAxisSize: MainAxisSize.max,
@@ -267,9 +269,28 @@ class _PhonenumberverficationWidgetState
                         onPressed: () async {
                           logFirebaseEvent(
                               'PHONENUMBERVERFICATION_SUBMIT_BTN_ON_TAP');
-                          logFirebaseEvent('Button_navigate_to');
+                          logFirebaseEvent('Button_auth');
+                          GoRouter.of(context).prepareAuthEvent();
+                          final smsCodeVal = _model.textController.text;
+                          if (smsCodeVal.isEmpty) {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: Text('Enter SMS verification code.'),
+                              ),
+                            );
+                            return;
+                          }
+                          final phoneVerifiedUser =
+                              await authManager.verifySmsCode(
+                            context: context,
+                            smsCode: smsCodeVal,
+                          );
+                          if (phoneVerifiedUser == null) {
+                            return;
+                          }
 
-                          context.pushNamed(HomeWidget.routeName);
+                          context.goNamedAuth(
+                              HomeWidget.routeName, context.mounted);
                         },
                         text: FFLocalizations.of(context).getText(
                           't3hqqg72' /* Submit */,

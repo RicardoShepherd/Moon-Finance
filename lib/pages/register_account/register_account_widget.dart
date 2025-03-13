@@ -155,8 +155,7 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                           child: CircularProgressIndicator(
                                             valueColor:
                                                 AlwaysStoppedAnimation<Color>(
-                                              FlutterFlowTheme.of(context)
-                                                  .primaryText,
+                                              Color(0xFFEAE9ED),
                                             ),
                                           ),
                                         ),

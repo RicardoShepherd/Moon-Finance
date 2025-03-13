@@ -53,10 +53,28 @@ class _PaymentWidgetState extends State<PaymentWidget> {
           child: Opacity(
             opacity: 0.9,
             child: Container(
-              width: 100.0,
+              width: 61.93,
               height: 100.0,
               decoration: BoxDecoration(
-                color: Colors.black,
+                boxShadow: [
+                  BoxShadow(
+                    blurRadius: 4.0,
+                    color: Color(0x571B1A1A),
+                    offset: Offset(
+                      0.0,
+                      2.0,
+                    ),
+                  )
+                ],
+                gradient: LinearGradient(
+                  colors: [Colors.black, Color(0xFF022222)],
+                  stops: [0.0, 1.0],
+                  begin: AlignmentDirectional(0.0, -1.0),
+                  end: AlignmentDirectional(0, 1.0),
+                ),
+                border: Border.all(
+                  color: Colors.black,
+                ),
               ),
               child: Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
@@ -187,7 +205,7 @@ class _PaymentWidgetState extends State<PaymentWidget> {
                                   iconAlignment: IconAlignment.end,
                                   iconPadding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 7.0, 0.0),
-                                  color: Color(0xFF083482),
+                                  color: Color(0xFF05565A),
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
@@ -277,7 +295,7 @@ class _PaymentWidgetState extends State<PaymentWidget> {
                                   iconAlignment: IconAlignment.end,
                                   iconPadding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 7.0, 0.0),
-                                  color: Color(0xFF083482),
+                                  color: Color(0xFF05565A),
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
@@ -367,7 +385,7 @@ class _PaymentWidgetState extends State<PaymentWidget> {
                                   iconAlignment: IconAlignment.end,
                                   iconPadding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 7.0, 0.0),
-                                  color: Color(0xFF083482),
+                                  color: Color(0xFF05565A),
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
@@ -688,6 +706,7 @@ class _PaymentWidgetState extends State<PaymentWidget> {
                                       .titleSmallFamily,
                                   color: FlutterFlowTheme.of(context)
                                       .primaryBackground,
+                                  fontSize: 16.0,
                                   letterSpacing: 0.0,
                                   useGoogleFonts: GoogleFonts.asMap()
                                       .containsKey(FlutterFlowTheme.of(context)
@@ -722,6 +741,7 @@ class _PaymentWidgetState extends State<PaymentWidget> {
                                       .titleSmallFamily,
                                   color: FlutterFlowTheme.of(context)
                                       .primaryBackground,
+                                  fontSize: 16.0,
                                   letterSpacing: 0.0,
                                   useGoogleFonts: GoogleFonts.asMap()
                                       .containsKey(FlutterFlowTheme.of(context)
@@ -742,17 +762,17 @@ class _PaymentWidgetState extends State<PaymentWidget> {
                             FaIcon(
                               FontAwesomeIcons.twitter,
                               color: FlutterFlowTheme.of(context).primaryText,
-                              size: 25.0,
+                              size: 22.0,
                             ),
                             FaIcon(
                               FontAwesomeIcons.instagram,
                               color: FlutterFlowTheme.of(context).primaryText,
-                              size: 29.0,
+                              size: 22.0,
                             ),
                             FaIcon(
                               FontAwesomeIcons.youtube,
                               color: FlutterFlowTheme.of(context).primaryText,
-                              size: 25.0,
+                              size: 22.0,
                             ),
                           ],
                         ),

@@ -1,6 +1,8 @@
+import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_video_player.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
@@ -36,6 +38,7 @@ class _PhoneNumberrequestWidgetState extends State<PhoneNumberrequestWidget> {
     _model.textController ??= TextEditingController();
     _model.textFieldFocusNode ??= FocusNode();
 
+    authManager.handlePhoneAuthStateChanges(context);
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
@@ -91,14 +94,14 @@ class _PhoneNumberrequestWidgetState extends State<PhoneNumberrequestWidget> {
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
-              ClipRRect(
-                borderRadius: BorderRadius.circular(8.0),
-                child: Image.asset(
-                  'assets/images/HD-wallpaper-black-artwork-dark-nature-landscape-thumbnail.jpg',
-                  width: 345.0,
-                  height: 320.0,
-                  fit: BoxFit.cover,
-                ),
+              FlutterFlowVideoPlayer(
+                path: 'assets/videos/Securty.mp4',
+                videoType: VideoType.asset,
+                autoPlay: true,
+                looping: true,
+                showControls: false,
+                allowFullScreen: false,
+                allowPlaybackSpeedMenu: false,
               ),
               Row(
                 mainAxisSize: MainAxisSize.max,
@@ -257,9 +260,31 @@ class _PhoneNumberrequestWidgetState extends State<PhoneNumberrequestWidget> {
                 child: FFButtonWidget(
                   onPressed: () async {
                     logFirebaseEvent('PHONE_NUMBERREQUEST_CONTINUE_BTN_ON_TAP');
-                    logFirebaseEvent('Button_navigate_to');
-
-                    context.pushNamed(PhonenumberverficationWidget.routeName);
+                    logFirebaseEvent('Button_auth');
+                    final phoneNumberVal =
+                        (_model.textFieldFocusNode?.hasFocus ?? false)
+                            .toString();
+                    if (phoneNumberVal.isEmpty ||
+                        !phoneNumberVal.startsWith('+')) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text(
+                              'Phone Number is required and has to start with +.'),
+                        ),
+                      );
+                      return;
+                    }
+                    await authManager.beginPhoneAuth(
+                      context: context,
+                      phoneNumber: phoneNumberVal,
+                      onCodeSent: (context) async {
+                        context.goNamedAuth(
+                          PhonenumberverficationWidget.routeName,
+                          context.mounted,
+                          ignoreRedirect: true,
+                        );
+                      },
+                    );
                   },
                   text: FFLocalizations.of(context).getText(
                     'k4hvioie' /* Continue */,
