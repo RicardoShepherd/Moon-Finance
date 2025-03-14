@@ -2334,7 +2334,7 @@ class _ChartsWidgetState extends State<ChartsWidget> {
                             ),
                             Text(
                               FFLocalizations.of(context).getText(
-                                'yhetd14d' /* Apple inc */,
+                                'yhetd14d' /* Moon Finance */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .labelSmall

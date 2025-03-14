@@ -5232,7 +5232,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ja': '',
     },
     'yhetd14d': {
-      'en': 'Apple inc',
+      'en': 'Moon Finance',
       'ar': '',
       'de': '',
       'es': '',
@@ -8984,7 +8984,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ja': '',
     },
     'ew5pd47d': {
-      'en': '\$122,310 USD',
+      'en': '\$81,3448 USD',
       'ar': '',
       'de': '',
       'es': '',
@@ -9003,6 +9003,24 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'hua7otxu': {
       'en': '\$122,210 USD',
+      'ar': '',
+      'de': '',
+      'es': '',
+      'fr': '',
+      'it': '',
+      'ja': '',
+    },
+    'tukk36zo': {
+      'en': 'Credit',
+      'ar': '',
+      'de': '',
+      'es': '',
+      'fr': '',
+      'it': '',
+      'ja': '',
+    },
+    'tgmjbnmu': {
+      'en': '\$40,862 USD',
       'ar': '',
       'de': '',
       'es': '',
