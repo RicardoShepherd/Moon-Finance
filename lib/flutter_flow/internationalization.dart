@@ -393,6 +393,15 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
+    'nvm5714r': {
+      'en': 'Country',
+      'ar': '',
+      'de': '',
+      'es': '',
+      'fr': '',
+      'it': '',
+      'ja': '',
+    },
     'ce30ctv5': {
       'en': 'Leagal First Name',
       'ar': '',
@@ -422,15 +431,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '29qt0fhm': {
       'en': 'Continue',
-      'ar': '',
-      'de': '',
-      'es': '',
-      'fr': '',
-      'it': '',
-      'ja': '',
-    },
-    'cf5syu1r': {
-      'en': 'Need Help? Email Us',
       'ar': '',
       'de': '',
       'es': '',
@@ -4330,15 +4330,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    '4eir23w1': {
-      'en': 'Need Help? Email Us',
-      'ar': '',
-      'de': '',
-      'es': '',
-      'fr': '',
-      'it': '',
-      'ja': '',
-    },
     'jyzg6p98': {
       'en': 'Home',
       'ar': '',
@@ -4380,15 +4371,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     't3hqqg72': {
       'en': 'Submit',
-      'ar': '',
-      'de': '',
-      'es': '',
-      'fr': '',
-      'it': '',
-      'ja': '',
-    },
-    'fjczitgx': {
-      'en': 'Need Help? Email Us',
       'ar': '',
       'de': '',
       'es': '',

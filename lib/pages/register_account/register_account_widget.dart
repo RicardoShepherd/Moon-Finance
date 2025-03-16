@@ -625,84 +625,95 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                       .asValidator(context),
                                 ),
                               ),
-                              Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 24.0, 100.0, 24.0),
-                                child: FFButtonWidget(
-                                  onPressed: () async {
-                                    logFirebaseEvent(
-                                        'REGISTER_ACCOUNT_PAGE_PROCEED_BTN_ON_TAP');
-                                    logFirebaseEvent('Button_auth');
-                                    GoRouter.of(context).prepareAuthEvent();
-                                    if (_model.passwordCreateTextController
-                                            .text !=
-                                        _model.passwordConfirmTextController
-                                            .text) {
-                                      ScaffoldMessenger.of(context)
-                                          .showSnackBar(
-                                        SnackBar(
-                                          content: Text(
-                                            'Passwords don\'t match!',
-                                          ),
-                                        ),
-                                      );
-                                      return;
-                                    }
-
-                                    final user = await authManager
-                                        .createAccountWithEmail(
-                                      context,
-                                      _model.usernameTextController.text,
-                                      _model.passwordCreateTextController.text,
-                                    );
-                                    if (user == null) {
-                                      return;
-                                    }
-
-                                    logFirebaseEvent('Button_backend_call');
-
-                                    await UserListRecord.collection
-                                        .doc()
-                                        .set(createUserListRecordData());
-                                    logFirebaseEvent('Button_navigate_to');
-
-                                    context.goNamedAuth(
-                                        CompleteProfileWidget.routeName,
-                                        context.mounted);
-                                  },
-                                  text: FFLocalizations.of(context).getText(
-                                    '5kmjfwsk' /* Proceed */,
-                                  ),
-                                  options: FFButtonOptions(
-                                    width: 160.0,
-                                    height: 50.0,
+                              Expanded(
+                                child: Align(
+                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 0.0),
-                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 0.0),
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryText,
-                                    textStyle: FlutterFlowTheme.of(context)
-                                        .titleSmall
-                                        .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmallFamily,
-                                          color: FlutterFlowTheme.of(context)
-                                              .secondaryBackground,
-                                          fontSize: 16.0,
-                                          letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
+                                        0.0, 24.0, 0.0, 24.0),
+                                    child: FFButtonWidget(
+                                      onPressed: () async {
+                                        logFirebaseEvent(
+                                            'REGISTER_ACCOUNT_PAGE_PROCEED_BTN_ON_TAP');
+                                        logFirebaseEvent('Button_auth');
+                                        GoRouter.of(context).prepareAuthEvent();
+                                        if (_model.passwordCreateTextController
+                                                .text !=
+                                            _model.passwordConfirmTextController
+                                                .text) {
+                                          ScaffoldMessenger.of(context)
+                                              .showSnackBar(
+                                            SnackBar(
+                                              content: Text(
+                                                'Passwords don\'t match!',
+                                              ),
+                                            ),
+                                          );
+                                          return;
+                                        }
+
+                                        final user = await authManager
+                                            .createAccountWithEmail(
+                                          context,
+                                          _model.usernameTextController.text,
+                                          _model.passwordCreateTextController
+                                              .text,
+                                        );
+                                        if (user == null) {
+                                          return;
+                                        }
+
+                                        logFirebaseEvent('Button_backend_call');
+
+                                        await UserListRecord.collection
+                                            .doc()
+                                            .set(createUserListRecordData());
+                                        logFirebaseEvent('Button_navigate_to');
+
+                                        context.pushNamedAuth(
+                                            CompleteProfileWidget.routeName,
+                                            context.mounted);
+                                      },
+                                      text: FFLocalizations.of(context).getText(
+                                        '5kmjfwsk' /* Proceed */,
+                                      ),
+                                      options: FFButtonOptions(
+                                        width: 160.0,
+                                        height: 50.0,
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 0.0, 0.0, 0.0),
+                                        iconPadding:
+                                            EdgeInsetsDirectional.fromSTEB(
+                                                0.0, 0.0, 0.0, 0.0),
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryText,
+                                        textStyle: FlutterFlowTheme.of(context)
+                                            .titleSmall
+                                            .override(
+                                              fontFamily:
                                                   FlutterFlowTheme.of(context)
-                                                      .titleSmallFamily),
+                                                      .titleSmallFamily,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryBackground,
+                                              fontSize: 16.0,
+                                              letterSpacing: 0.0,
+                                              useGoogleFonts: GoogleFonts
+                                                      .asMap()
+                                                  .containsKey(
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .titleSmallFamily),
+                                            ),
+                                        elevation: 3.0,
+                                        borderSide: BorderSide(
+                                          color: Colors.transparent,
+                                          width: 1.0,
                                         ),
-                                    elevation: 3.0,
-                                    borderSide: BorderSide(
-                                      color: Colors.transparent,
-                                      width: 1.0,
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                      ),
                                     ),
-                                    borderRadius: BorderRadius.circular(30.0),
                                   ),
                                 ),
                               ),

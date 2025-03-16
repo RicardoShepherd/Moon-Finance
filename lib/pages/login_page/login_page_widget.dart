@@ -88,7 +88,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                         child: Image.asset(
                           'assets/images/nt_Tyjjj.jpg',
                           width: 395.0,
-                          height: 373.0,
+                          height: 348.87,
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -365,8 +365,6 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                           return;
                                         }
 
-                                        logFirebaseEvent('Button_navigate_to');
-
                                         context.goNamedAuth(
                                             HomeWidget.routeName,
                                             context.mounted);
@@ -577,7 +575,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                   ),
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 40.0, 0.0, 0.0),
+                                        0.0, 10.0, 0.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
@@ -606,7 +604,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                   ),
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 30.0, 0.0, 0.0),
+                                        0.0, 10.0, 0.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment:
@@ -688,7 +686,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                   Expanded(
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 30.0, 0.0, 0.0),
+                                          0.0, 10.0, 0.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.min,
                                         mainAxisAlignment:
