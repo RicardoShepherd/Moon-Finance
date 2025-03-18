@@ -3,7 +3,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/random_data_util.dart' as random_data;
-import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -67,49 +66,23 @@ class _ChartsWidgetState extends State<ChartsWidget> {
                     Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                        InkWell(
-                          splashColor: Colors.transparent,
-                          focusColor: Colors.transparent,
-                          hoverColor: Colors.transparent,
-                          highlightColor: Colors.transparent,
-                          onTap: () async {
-                            logFirebaseEvent(
-                                'CHARTS_PAGE_Card_x0g8my7c_ON_TAP');
-                            logFirebaseEvent('Card_navigate_to');
-
-                            context.pushNamed(ProfileWidget.routeName);
-                          },
-                          child: Card(
-                            clipBehavior: Clip.antiAliasWithSaveLayer,
-                            color: Color(0x001B1D27),
-                            elevation: 0.0,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(8.0),
+                        Card(
+                          clipBehavior: Clip.antiAliasWithSaveLayer,
+                          color: Color(0x001B1D27),
+                          elevation: 0.0,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                          child: Container(
+                            width: 36.0,
+                            height: 36.0,
+                            clipBehavior: Clip.antiAlias,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
                             ),
-                            child: InkWell(
-                              splashColor: Colors.transparent,
-                              focusColor: Colors.transparent,
-                              hoverColor: Colors.transparent,
-                              highlightColor: Colors.transparent,
-                              onTap: () async {
-                                logFirebaseEvent(
-                                    'CHARTS_PAGE_CircleImage_oee1k2ld_ON_TAP');
-                                logFirebaseEvent('CircleImage_navigate_to');
-
-                                context.pushNamed(ProfileWidget.routeName);
-                              },
-                              child: Container(
-                                width: 36.0,
-                                height: 36.0,
-                                clipBehavior: Clip.antiAlias,
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                ),
-                                child: Image.asset(
-                                  'assets/images/2024-12-16_17.17.58.jpg',
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
+                            child: Image.asset(
+                              'assets/images/2024-12-16_17.17.58.jpg',
+                              fit: BoxFit.cover,
                             ),
                           ),
                         ),

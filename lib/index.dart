@@ -16,7 +16,6 @@ export '/bills/bills_widget.dart' show BillsWidget;
 export '/home/home_widget.dart' show HomeWidget;
 export '/my_subcriptions_account/my_subcriptions_account_widget.dart'
     show MySubcriptionsAccountWidget;
-export '/profile/profile_widget.dart' show ProfileWidget;
 export '/pages/payment/payment_widget.dart' show PaymentWidget;
 export '/cripto/cripto_widget.dart' show CriptoWidget;
 export '/menu/menu_widget.dart' show MenuWidget;

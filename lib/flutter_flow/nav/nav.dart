@@ -141,16 +141,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => MySubcriptionsAccountWidget(),
         ),
         FFRoute(
-          name: ProfileWidget.routeName,
-          path: ProfileWidget.routePath,
-          builder: (context, params) => ProfileWidget(
-            pieChart: params.getParam(
-              'pieChart',
-              ParamType.bool,
-            ),
-          ),
-        ),
-        FFRoute(
           name: PaymentWidget.routeName,
           path: PaymentWidget.routePath,
           builder: (context, params) => NavBarPage(
@@ -524,7 +514,7 @@ class FFRoute {
               ? Container(
                   color: Colors.transparent,
                   child: Image.asset(
-                    'assets/images/nt_Tyjjj.jpg',
+                    'assets/images/photo_2025-03-13_23.38.57.jpeg',
                     fit: BoxFit.cover,
                   ),
                 )

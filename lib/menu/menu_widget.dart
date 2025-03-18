@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
@@ -57,7 +58,7 @@ class _MenuWidgetState extends State<MenuWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFF050509),
+        backgroundColor: Colors.black,
         appBar: PreferredSize(
           preferredSize: Size.fromHeight(40.0),
           child: AppBar(
@@ -113,209 +114,262 @@ class _MenuWidgetState extends State<MenuWidget> {
               children: [
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 1.0, 0.0, 0.0),
-                  child: InkWell(
-                    splashColor: Colors.transparent,
-                    focusColor: Colors.transparent,
-                    hoverColor: Colors.transparent,
-                    highlightColor: Colors.transparent,
-                    onTap: () async {
-                      logFirebaseEvent('MENU_PAGE_Container_vth3fgt6_ON_TAP');
-                      logFirebaseEvent('Container_navigate_to');
-
-                      context.pushNamed(ProfileWidget.routeName);
-                    },
-                    child: Container(
-                      width: double.infinity,
-                      decoration: BoxDecoration(
-                        color: Color(0xFF050509),
-                        boxShadow: [
-                          BoxShadow(
-                            blurRadius: 3.0,
-                            color: Color(0x33000000),
-                            offset: Offset(
-                              0.0,
-                              1.0,
-                            ),
-                          )
-                        ],
-                      ),
-                      child: Padding(
-                        padding: EdgeInsets.all(16.0),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          children: [
-                            Container(
-                              width: 68.0,
-                              height: 68.0,
-                              decoration: BoxDecoration(
-                                color: Color(0x0039D2C0),
-                                shape: BoxShape.circle,
-                                border: Border.all(
-                                  color: Color(0x0039D2C0),
-                                  width: 3.0,
-                                ),
-                              ),
-                              child: Padding(
-                                padding: EdgeInsets.all(2.0),
-                                child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(24.0),
-                                  child: Image.asset(
-                                    'assets/images/2024-12-16_17.17.58.jpg',
-                                    width: 70.0,
-                                    height: 122.0,
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  16.0, 0.0, 0.0, 0.0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    FFLocalizations.of(context).getText(
-                                      'i5ns2n66' /* Ricardo Shepherd */,
-                                    ),
-                                    style: FlutterFlowTheme.of(context)
-                                        .headlineSmall
-                                        .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .headlineSmallFamily,
-                                          letterSpacing: 0.0,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .headlineSmallFamily),
-                                        ),
-                                  ),
-                                  Padding(
+                  child: Container(
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: Color(0xFF050509),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 3.0,
+                          color: Color(0x33000000),
+                          offset: Offset(
+                            0.0,
+                            1.0,
+                          ),
+                        )
+                      ],
+                    ),
+                    child: Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Expanded(
+                                child: Align(
+                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 4.0, 0.0, 0.0),
-                                    child: Text(
-                                      FFLocalizations.of(context).getText(
-                                        'ksoi9l5g' /* Ricardoshepherd49@gmail.com */,
+                                        0.0, 13.0, 0.0, 0.0),
+                                    child: InkWell(
+                                      splashColor: Colors.transparent,
+                                      focusColor: Colors.transparent,
+                                      hoverColor: Colors.transparent,
+                                      highlightColor: Colors.transparent,
+                                      onTap: () async {
+                                        logFirebaseEvent(
+                                            'MENU_PAGE_CircleImage_q37gu4u0_ON_TAP');
+                                        logFirebaseEvent(
+                                            'CircleImage_navigate_to');
+
+                                        context.pushNamed(
+                                            EditprofileWidget.routeName);
+                                      },
+                                      child: Container(
+                                        width: 80.0,
+                                        height: 80.0,
+                                        clipBehavior: Clip.antiAlias,
+                                        decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                        ),
+                                        child: Image.asset(
+                                          'assets/images/2024-12-16_17.17.58.jpg',
+                                          fit: BoxFit.cover,
+                                          alignment: Alignment(0.0, 0.0),
+                                        ),
                                       ),
-                                      style: FlutterFlowTheme.of(context)
-                                          .labelMedium
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          Expanded(
+                            child: Align(
+                              alignment: AlignmentDirectional(0.0, 0.0),
+                              child: Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 10.0, 0.0, 10.0),
+                                child: Text(
+                                  FFLocalizations.of(context).getText(
+                                    't9o7equy' /* Ricardo Shepherd */,
+                                  ),
+                                  style: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .override(
+                                        fontFamily: 'Roboto',
+                                        fontSize: 28.0,
+                                        letterSpacing: 0.0,
+                                        fontWeight: FontWeight.w500,
+                                        useGoogleFonts: GoogleFonts.asMap()
+                                            .containsKey('Roboto'),
+                                      ),
+                                ),
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 0.0, 0.0, 10.0),
+                            child: Text(
+                              FFLocalizations.of(context).getText(
+                                'cpnqzpin' /* Personal Account */,
+                              ),
+                              style: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .override(
+                                    fontFamily: 'Open Sans',
+                                    fontSize: 11.0,
+                                    letterSpacing: 0.0,
+                                    fontWeight: FontWeight.normal,
+                                    useGoogleFonts: GoogleFonts.asMap()
+                                        .containsKey('Open Sans'),
+                                  ),
+                            ),
+                          ),
+                          Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Expanded(
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      110.0, 5.0, 110.0, 0.0),
+                                  child: FFButtonWidget(
+                                    onPressed: () {
+                                      print('Button pressed ...');
+                                    },
+                                    text: FFLocalizations.of(context).getText(
+                                      'l87edgvh' /* Get your Moontag */,
+                                    ),
+                                    icon: Icon(
+                                      Icons.add_link,
+                                      color: Color(0xFF3BB9AA),
+                                      size: 21.0,
+                                    ),
+                                    options: FFButtonOptions(
+                                      height: 26.06,
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0.0, 0.0, 0.0, 0.0),
+                                      iconPadding:
+                                          EdgeInsetsDirectional.fromSTEB(
+                                              0.0, 0.0, 0.0, 0.0),
+                                      color: Color(0xFF0C305A),
+                                      textStyle: FlutterFlowTheme.of(context)
+                                          .headlineSmall
                                           .override(
                                             fontFamily:
                                                 FlutterFlowTheme.of(context)
-                                                    .labelMediumFamily,
+                                                    .headlineSmallFamily,
+                                            fontSize: 8.0,
                                             letterSpacing: 0.0,
                                             useGoogleFonts: GoogleFonts.asMap()
                                                 .containsKey(
                                                     FlutterFlowTheme.of(context)
-                                                        .labelMediumFamily),
+                                                        .headlineSmallFamily),
                                           ),
+                                      elevation: 0.0,
+                                      borderRadius: BorderRadius.circular(24.0),
                                     ),
                                   ),
-                                ],
+                                ),
                               ),
-                            ),
-                          ],
-                        ),
+                            ],
+                          ),
+                        ],
                       ),
                     ),
                   ),
                 ),
-                Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Expanded(
-                      child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            20.0, 0.0, 20.0, 0.0),
-                        child: Container(
-                          width: 389.0,
-                          height: 100.0,
-                          decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                            borderRadius: BorderRadius.circular(24.0),
-                            border: Border.all(
-                              color: Color(0xFF0D2624),
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Expanded(
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              20.0, 0.0, 20.0, 0.0),
+                          child: Container(
+                            width: 389.0,
+                            height: 100.0,
+                            decoration: BoxDecoration(
+                              color: Color(0xFF18181A),
+                              borderRadius: BorderRadius.circular(24.0),
+                              border: Border.all(
+                                color: Color(0xFFECECEC),
+                              ),
                             ),
-                          ),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Column(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Expanded(
-                                    child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Expanded(
+                                      child: Align(
+                                        alignment:
+                                            AlignmentDirectional(0.0, 0.0),
+                                        child: Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  20.0, 0.0, 0.0, 0.0),
+                                          child: Icon(
+                                            Icons.business_center_sharp,
+                                            color: FlutterFlowTheme.of(context)
+                                                .secondaryText,
+                                            size: 31.0,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      FFLocalizations.of(context).getText(
+                                        'u92r7p06' /* Open a new business account */,
+                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .titleMedium
+                                          .override(
+                                            fontFamily:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleMediumFamily,
+                                            fontSize: 16.0,
+                                            letterSpacing: 0.0,
+                                            fontWeight: FontWeight.normal,
+                                            useGoogleFonts: GoogleFonts.asMap()
+                                                .containsKey(
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleMediumFamily),
+                                          ),
+                                    ),
+                                  ],
+                                ),
+                                Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Align(
+                                      alignment: AlignmentDirectional(0.9, 0.0),
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
-                                            20.0, 0.0, 0.0, 0.0),
+                                            0.0, 0.0, 20.0, 0.0),
                                         child: Icon(
-                                          Icons.business_center_sharp,
+                                          Icons.arrow_forward_ios,
                                           color: FlutterFlowTheme.of(context)
-                                              .secondaryText,
-                                          size: 31.0,
+                                              .secondary,
+                                          size: 18.0,
                                         ),
                                       ),
                                     ),
-                                  ),
-                                ],
-                              ),
-                              Column(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    FFLocalizations.of(context).getText(
-                                      'u92r7p06' /* Open a new business account */,
-                                    ),
-                                    style: FlutterFlowTheme.of(context)
-                                        .titleMedium
-                                        .override(
-                                          fontFamily:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleMediumFamily,
-                                          fontSize: 16.0,
-                                          letterSpacing: 0.0,
-                                          fontWeight: FontWeight.normal,
-                                          useGoogleFonts: GoogleFonts.asMap()
-                                              .containsKey(
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleMediumFamily),
-                                        ),
-                                  ),
-                                ],
-                              ),
-                              Column(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Align(
-                                    alignment: AlignmentDirectional(0.9, 0.0),
-                                    child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 0.0, 20.0, 0.0),
-                                      child: Icon(
-                                        Icons.arrow_forward_ios,
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondary,
-                                        size: 18.0,
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
@@ -339,7 +393,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                     width: double.infinity,
                     height: 60.0,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      color: Color(0xFF18181A),
                       boxShadow: [
                         BoxShadow(
                           blurRadius: 5.0,
@@ -359,7 +413,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Icon(
-                            Icons.person_outlined,
+                            Icons.ballot,
                             color: FlutterFlowTheme.of(context).secondaryText,
                             size: 24.0,
                           ),
@@ -369,7 +423,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                                   12.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'bi26gcq2' /* Edit Profile */,
+                                  'bi26gcq2' /* Pay Bills */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyLarge
@@ -405,7 +459,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                     width: double.infinity,
                     height: 60.0,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      color: Color(0xFF18181A),
                       boxShadow: [
                         BoxShadow(
                           blurRadius: 5.0,
@@ -486,7 +540,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                             alignment: AlignmentDirectional(0.9, 0.0),
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
-                                  255.0, 0.0, 0.0, 0.0),
+                                  220.0, 0.0, 0.0, 0.0),
                               child: Icon(
                                 Icons.arrow_forward_ios,
                                 color:
@@ -507,7 +561,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                     width: double.infinity,
                     height: 60.0,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      color: Color(0xFF18181A),
                       boxShadow: [
                         BoxShadow(
                           blurRadius: 5.0,
@@ -584,7 +638,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                       width: double.infinity,
                       height: 60.0,
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
+                        color: Color(0xFF18181A),
                         boxShadow: [
                           BoxShadow(
                             blurRadius: 5.0,
@@ -652,7 +706,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                     width: double.infinity,
                     height: 60.0,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      color: Color(0xFF18181A),
                       boxShadow: [
                         BoxShadow(
                           blurRadius: 5.0,
@@ -667,7 +721,8 @@ class _MenuWidgetState extends State<MenuWidget> {
                       shape: BoxShape.rectangle,
                     ),
                     child: Padding(
-                      padding: EdgeInsets.all(8.0),
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -736,7 +791,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                             alignment: AlignmentDirectional(0.9, 0.0),
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
-                                  60.0, 0.0, 0.0, 0.0),
+                                  22.0, 0.0, 0.0, 0.0),
                               child: Icon(
                                 Icons.arrow_forward_ios,
                                 color:
@@ -757,7 +812,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                     width: double.infinity,
                     height: 60.0,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      color: Color(0xFF18181A),
                       boxShadow: [
                         BoxShadow(
                           blurRadius: 5.0,
@@ -779,8 +834,8 @@ class _MenuWidgetState extends State<MenuWidget> {
                           Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 5.0, 0.0),
-                            child: Icon(
-                              Icons.account_balance,
+                            child: FaIcon(
+                              FontAwesomeIcons.handsHelping,
                               color: FlutterFlowTheme.of(context).secondaryText,
                               size: 24.0,
                             ),
@@ -802,7 +857,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                                             12.0, 0.0, 0.0, 0.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
-                                            't3n69kaj' /* Connect Bank Accounts */,
+                                            't3n69kaj' /* Contact Us */,
                                           ),
                                           textAlign: TextAlign.start,
                                           style: FlutterFlowTheme.of(context)
@@ -867,7 +922,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                     width: double.infinity,
                     height: 60.0,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      color: Color(0xFF18181A),
                       boxShadow: [
                         BoxShadow(
                           blurRadius: 5.0,
@@ -933,7 +988,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                     width: double.infinity,
                     height: 60.0,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      color: Color(0xFF18181A),
                       boxShadow: [
                         BoxShadow(
                           blurRadius: 5.0,
@@ -999,7 +1054,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                     width: double.infinity,
                     height: 60.0,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      color: Color(0xFF18181A),
                       boxShadow: [
                         BoxShadow(
                           blurRadius: 5.0,
@@ -1065,7 +1120,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                     width: double.infinity,
                     height: 60.0,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      color: Color(0xFF18181A),
                       boxShadow: [
                         BoxShadow(
                           blurRadius: 5.0,
@@ -1128,7 +1183,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                     width: double.infinity,
                     height: 60.0,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      color: Color(0xFF18181A),
                       boxShadow: [
                         BoxShadow(
                           blurRadius: 5.0,
@@ -1208,7 +1263,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                     width: double.infinity,
                     height: 60.0,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      color: Color(0xFF18181A),
                       boxShadow: [
                         BoxShadow(
                           blurRadius: 5.0,
@@ -1288,7 +1343,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                     width: double.infinity,
                     height: 60.0,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      color: Color(0xFF18181A),
                       boxShadow: [
                         BoxShadow(
                           blurRadius: 5.0,
