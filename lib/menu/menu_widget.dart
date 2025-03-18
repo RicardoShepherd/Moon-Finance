@@ -78,8 +78,11 @@ class _MenuWidgetState extends State<MenuWidget> {
                     color: FlutterFlowTheme.of(context).primaryText,
                     size: 17.0,
                   ),
-                  onPressed: () {
-                    print('IconButton pressed ...');
+                  onPressed: () async {
+                    logFirebaseEvent('MENU_PAGE_angleLeft_ICN_ON_TAP');
+                    logFirebaseEvent('IconButton_navigate_to');
+
+                    context.pushNamed(HomeWidget.routeName);
                   },
                 ),
               ),
@@ -117,7 +120,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                   child: Container(
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      color: Color(0xFF050509),
+                      color: Colors.black,
                       boxShadow: [
                         BoxShadow(
                           blurRadius: 3.0,
@@ -240,7 +243,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                                       size: 21.0,
                                     ),
                                     options: FFButtonOptions(
-                                      height: 26.06,
+                                      height: 28.75,
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 0.0),
                                       iconPadding:

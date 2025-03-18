@@ -962,6 +962,9 @@ class _ChartsWidgetState extends State<ChartsWidget> {
                                   )
                                 ],
                                 chartStylingInfo: ChartStylingInfo(
+                                  enableTooltip: true,
+                                  tooltipBackgroundColor:
+                                      FlutterFlowTheme.of(context).primaryText,
                                   backgroundColor: Color(0x001B1D27),
                                   showBorder: false,
                                 ),

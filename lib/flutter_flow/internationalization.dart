@@ -2082,7 +2082,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // Cripto
   {
-    'm1e1zvk7': {
+    '341u1qjr': {
       'en': 'Wallet',
       'ar': '',
       'de': '',
@@ -2091,7 +2091,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'd1i7tubd': {
+    'h0h7xtbi': {
       'en': 'Markets',
       'ar': '',
       'de': '',
@@ -2100,7 +2100,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'nvqyol8q': {
+    'zx382pzq': {
       'en': 'ricardoshepherd.cb.id',
       'ar': '',
       'de': '',
@@ -2109,7 +2109,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    '3ksan1u7': {
+    'ml4gctv1': {
       'en': '',
       'ar': '',
       'de': '',
@@ -2118,7 +2118,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'ch4v5xxr': {
+    '5qfgagvb': {
       'en': 'USD 33,938.41',
       'ar': '',
       'de': '',
@@ -2127,7 +2127,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'hkzgd8eu': {
+    'tyq2637i': {
       'en': '\$1230.00  (34.54%)',
       'ar': '',
       'de': '',
@@ -2136,7 +2136,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    '9l8mnb96': {
+    '0ra7hqpl': {
       'en': '',
       'ar': '',
       'de': '',
@@ -2145,7 +2145,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    's57k1ay6': {
+    '8dwn0p4u': {
       'en': '',
       'ar': '',
       'de': '',
@@ -2154,7 +2154,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'oukepbns': {
+    'wfcjex7m': {
       'en': '',
       'ar': '',
       'de': '',
@@ -2163,7 +2163,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    '6tnxgbep': {
+    'k6b0gs88': {
       'en': '',
       'ar': '',
       'de': '',
@@ -2172,7 +2172,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'q4o55dr5': {
+    'cam7k669': {
       'en': '',
       'ar': '',
       'de': '',
@@ -2181,7 +2181,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'k26h0i4k': {
+    'j6r04xay': {
       'en': 'Buy',
       'ar': '',
       'de': '',
@@ -2190,7 +2190,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'cfuu6atj': {
+    '8z4vj7r7': {
       'en': 'Sell',
       'ar': '',
       'de': '',
@@ -2199,7 +2199,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'f4qzzjs4': {
+    'r1d4ilv5': {
       'en': 'Send',
       'ar': '',
       'de': '',
@@ -2208,7 +2208,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'k7w4cnz7': {
+    'eaoyywgw': {
       'en': 'Receive',
       'ar': '',
       'de': '',
@@ -2217,7 +2217,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'a06bnvwc': {
+    '6plpnk54': {
       'en': 'Swap',
       'ar': '',
       'de': '',
@@ -2226,7 +2226,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    '5a03pzrm': {
+    'nupdzy4a': {
       'en': 'Assets',
       'ar': '',
       'de': '',
@@ -2235,7 +2235,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'dr3tqa7m': {
+    'af0h0xsg': {
       'en': 'Sell All',
       'ar': '',
       'de': '',
@@ -2244,43 +2244,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'wusz66tr': {
-      'en': 'Teather',
-      'ar': '',
-      'de': '',
-      'es': '',
-      'fr': '',
-      'it': '',
-      'ja': '',
-    },
-    '80744m3z': {
-      'en': '⤢0.64%',
-      'ar': '',
-      'de': '',
-      'es': '',
-      'fr': '',
-      'it': '',
-      'ja': '',
-    },
-    'sjufh6xn': {
-      'en': 'USD \$300.50',
-      'ar': '',
-      'de': '',
-      'es': '',
-      'fr': '',
-      'it': '',
-      'ja': '',
-    },
-    'yrfj1v6l': {
-      'en': '300.494 USDT',
-      'ar': '',
-      'de': '',
-      'es': '',
-      'fr': '',
-      'it': '',
-      'ja': '',
-    },
-    'uwdiz2e2': {
+    'geuoj8jg': {
       'en': 'USDC',
       'ar': '',
       'de': '',
@@ -2289,7 +2253,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'bccb2ngh': {
+    '9zlqs9pg': {
       'en': '⤢2.11%',
       'ar': '',
       'de': '',
@@ -2298,7 +2262,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    '8vgx1ykw': {
+    'cirze604': {
       'en': 'USD \$100.50',
       'ar': '',
       'de': '',
@@ -2307,7 +2271,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'tyx6dofy': {
+    'uk2w03l3': {
       'en': '100.57 USDc',
       'ar': '',
       'de': '',
@@ -2316,7 +2280,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'yrzeumtx': {
+    'ma8szevh': {
       'en': 'Eathereum',
       'ar': '',
       'de': '',
@@ -2325,7 +2289,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    '7gptt7i0': {
+    'cz1iidav': {
       'en': '⤢4.64%',
       'ar': '',
       'de': '',
@@ -2334,7 +2298,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'd85qepqx': {
+    'al90y4gj': {
       'en': 'USD \$600.50',
       'ar': '',
       'de': '',
@@ -2343,7 +2307,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'mv86rvsj': {
+    '41huiblw': {
       'en': '.0494 ETH',
       'ar': '',
       'de': '',
@@ -2352,7 +2316,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'j9up81sp': {
+    'uagcbboc': {
       'en': 'DOGE',
       'ar': '',
       'de': '',
@@ -2361,7 +2325,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    '7pcv5r5h': {
+    'g7hjhrvf': {
       'en': '⤢0.64%',
       'ar': '',
       'de': '',
@@ -2370,7 +2334,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    '5ft0e1g0': {
+    'sbmpwup7': {
       'en': 'USD \$300.50',
       'ar': '',
       'de': '',
@@ -2379,7 +2343,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'p9ep3ckd': {
+    'zs8kpuj0': {
       'en': '300.494 DOGE',
       'ar': '',
       'de': '',
@@ -2388,7 +2352,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'v2khm84r': {
+    'o8oflfm1': {
       'en': 'AVAX',
       'ar': '',
       'de': '',
@@ -2397,7 +2361,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    '61rdk131': {
+    'sed1lb17': {
       'en': '⤢0.64%',
       'ar': '',
       'de': '',
@@ -2406,7 +2370,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'y4ymu44b': {
+    '9dusa3tw': {
       'en': 'USD \$44,00.50',
       'ar': '',
       'de': '',
@@ -2415,7 +2379,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'dgymhtj7': {
+    'hbr84one': {
       'en': '3000.494 AVAX',
       'ar': '',
       'de': '',
@@ -2424,7 +2388,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'q88fijw2': {
+    'kvkk13rp': {
       'en': 'Teather',
       'ar': '',
       'de': '',
@@ -2433,7 +2397,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'htdmau3u': {
+    'il0tyvni': {
       'en': '⤢0.64%',
       'ar': '',
       'de': '',
@@ -2442,7 +2406,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    '7ouwc9og': {
+    '27s6fy67': {
       'en': 'USD \$300.50',
       'ar': '',
       'de': '',
@@ -2451,7 +2415,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'ypoyknc8': {
+    'wvryo02v': {
       'en': '300.494 USDT',
       'ar': '',
       'de': '',
@@ -7501,7 +7465,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'yhg8xe25': {
+    '36439l45': {
       'en': 'Balance',
       'ar': '',
       'de': '',
@@ -7510,7 +7474,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    '99mgtvr8': {
+    '6uzy9d0z': {
       'en': '\$97,630',
       'ar': '',
       'de': '',
@@ -7519,8 +7483,35 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    '7mrsq23l': {
-      'en': 'Quick Payments',
+    'bjqowusj': {
+      'en': '0149 4856 ',
+      'ar': '',
+      'de': '',
+      'es': '',
+      'fr': '',
+      'it': '',
+      'ja': '',
+    },
+    'ktji9v3b': {
+      'en': '8620 34114',
+      'ar': '',
+      'de': '',
+      'es': '',
+      'fr': '',
+      'it': '',
+      'ja': '',
+    },
+    '3hyiuksj': {
+      'en': 'Account Number',
+      'ar': '',
+      'de': '',
+      'es': '',
+      'fr': '',
+      'it': '',
+      'ja': '',
+    },
+    'xwebsm1r': {
+      'en': 'Routing Number',
       'ar': '',
       'de': '',
       'es': '',
@@ -7538,7 +7529,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ja': '',
     },
     '4duhxtu1': {
-      'en': 'Pay Bill',
+      'en': 'Statement',
       'ar': '',
       'de': '',
       'es': '',

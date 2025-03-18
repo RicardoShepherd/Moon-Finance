@@ -50,11 +50,11 @@ class _MoonDebitcardWidgetState extends State<MoonDebitcardWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.black,
         appBar: PreferredSize(
           preferredSize: Size.fromHeight(40.0),
           child: AppBar(
-            backgroundColor: Color(0xFF050509),
+            backgroundColor: Colors.black,
             automaticallyImplyLeading: false,
             title: Column(
               mainAxisSize: MainAxisSize.max,
@@ -165,15 +165,16 @@ class _MoonDebitcardWidgetState extends State<MoonDebitcardWidget> {
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      Expanded(
+                      Padding(
+                        padding: EdgeInsets.all(8.0),
                         child: Container(
-                          width: 358.0,
-                          height: 212.4,
+                          width: 365.8,
+                          height: 208.27,
                           decoration: BoxDecoration(
                             boxShadow: [
                               BoxShadow(
                                 blurRadius: 4.0,
-                                color: Color(0xF8F5F2F2),
+                                color: Color(0x78343232),
                                 offset: Offset(
                                   0.0,
                                   2.0,
@@ -182,8 +183,8 @@ class _MoonDebitcardWidgetState extends State<MoonDebitcardWidget> {
                             ],
                             gradient: LinearGradient(
                               colors: [
-                                Color(0xFFEF6191),
-                                FlutterFlowTheme.of(context).secondary,
+                                Color(0xFF130E50),
+                                Color(0xFF3B9D92),
                                 Color(0xFFB73AA1),
                                 Color(0xFF213BF3)
                               ],
@@ -193,7 +194,7 @@ class _MoonDebitcardWidgetState extends State<MoonDebitcardWidget> {
                             ),
                             borderRadius: BorderRadius.circular(12.0),
                             border: Border.all(
-                              color: Color(0x5D151C20),
+                              color: Color(0x2B1E1D1D),
                               width: 2.0,
                             ),
                           ),
@@ -217,7 +218,7 @@ class _MoonDebitcardWidgetState extends State<MoonDebitcardWidget> {
                                       children: [
                                         Text(
                                           FFLocalizations.of(context).getText(
-                                            'yhg8xe25' /* Balance */,
+                                            '36439l45' /* Balance */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .labelSmall
@@ -243,7 +244,7 @@ class _MoonDebitcardWidgetState extends State<MoonDebitcardWidget> {
                                                   0.0, 8.0, 0.0, 0.0),
                                           child: Text(
                                             FFLocalizations.of(context).getText(
-                                              '99mgtvr8' /* $97,630 */,
+                                              '6uzy9d0z' /* $97,630 */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
                                                 .displayMedium
@@ -266,19 +267,94 @@ class _MoonDebitcardWidgetState extends State<MoonDebitcardWidget> {
                                         ),
                                       ],
                                     ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 30.0, 0.0, 0.0),
-                                      child: ClipRRect(
-                                        borderRadius:
-                                            BorderRadius.circular(12.0),
-                                        child: Image.asset(
-                                          'assets/images/Brown_Neutral_Moon_Photograph_Inspirational_Quote_Instagram_Story.png',
-                                          width: 44.0,
-                                          height: 44.0,
-                                          fit: BoxFit.contain,
-                                        ),
+                                    ClipRRect(
+                                      borderRadius: BorderRadius.circular(12.0),
+                                      child: Image.asset(
+                                        'assets/images/Brown_Neutral_Moon_Photograph_Inspirational_Quote_Instagram_Story.png',
+                                        width: 44.0,
+                                        height: 44.0,
+                                        fit: BoxFit.contain,
                                       ),
+                                    ),
+                                  ],
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 42.0, 0.0, 0.0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text(
+                                        FFLocalizations.of(context).getText(
+                                          'bjqowusj' /* 0149 4856  */,
+                                        ),
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Roboto Mono',
+                                              color: Colors.white,
+                                              letterSpacing: 0.0,
+                                              useGoogleFonts:
+                                                  GoogleFonts.asMap()
+                                                      .containsKey(
+                                                          'Roboto Mono'),
+                                            ),
+                                      ),
+                                      Text(
+                                        FFLocalizations.of(context).getText(
+                                          'ktji9v3b' /* 8620 34114 */,
+                                        ),
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Roboto Mono',
+                                              color: Colors.white,
+                                              letterSpacing: 0.0,
+                                              useGoogleFonts:
+                                                  GoogleFonts.asMap()
+                                                      .containsKey(
+                                                          'Roboto Mono'),
+                                            ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      FFLocalizations.of(context).getText(
+                                        '3hyiuksj' /* Account Number */,
+                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Roboto Mono',
+                                            color: Colors.white,
+                                            fontSize: 9.0,
+                                            letterSpacing: 0.0,
+                                            useGoogleFonts: GoogleFonts.asMap()
+                                                .containsKey('Roboto Mono'),
+                                          ),
+                                    ),
+                                    Text(
+                                      FFLocalizations.of(context).getText(
+                                        'xwebsm1r' /* Routing Number */,
+                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Roboto Mono',
+                                            color: Colors.white,
+                                            fontSize: 9.0,
+                                            letterSpacing: 0.0,
+                                            useGoogleFonts: GoogleFonts.asMap()
+                                                .containsKey('Roboto Mono'),
+                                          ),
                                     ),
                                   ],
                                 ),
@@ -286,27 +362,6 @@ class _MoonDebitcardWidgetState extends State<MoonDebitcardWidget> {
                             ),
                           ),
                         ),
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(15.0, 25.0, 0.0, 0.0),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Text(
-                        FFLocalizations.of(context).getText(
-                          '7mrsq23l' /* Quick Payments */,
-                        ),
-                        style: FlutterFlowTheme.of(context).labelLarge.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).labelLargeFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .labelLargeFamily),
-                            ),
                       ),
                     ],
                   ),
@@ -355,27 +410,34 @@ class _MoonDebitcardWidgetState extends State<MoonDebitcardWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 10.0),
                             child: FaIcon(
-                              FontAwesomeIcons.moneyCheckAlt,
+                              FontAwesomeIcons.moneyCheck,
                               color: FlutterFlowTheme.of(context).primaryText,
                               size: 34.0,
                             ),
                           ),
-                          Text(
-                            FFLocalizations.of(context).getText(
-                              '4duhxtu1' /* Pay Bill */,
-                            ),
-                            style: FlutterFlowTheme.of(context)
-                                .bodyMedium
-                                .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily,
-                                  fontSize: 16.0,
-                                  letterSpacing: 0.0,
-                                  fontWeight: FontWeight.w500,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .bodyMediumFamily),
+                          Expanded(
+                            child: Align(
+                              alignment: AlignmentDirectional(0.0, 0.0),
+                              child: Text(
+                                FFLocalizations.of(context).getText(
+                                  '4duhxtu1' /* Statement */,
                                 ),
+                                textAlign: TextAlign.center,
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .override(
+                                      fontFamily: FlutterFlowTheme.of(context)
+                                          .bodyMediumFamily,
+                                      fontSize: 16.0,
+                                      letterSpacing: 0.0,
+                                      fontWeight: FontWeight.w500,
+                                      useGoogleFonts: GoogleFonts.asMap()
+                                          .containsKey(
+                                              FlutterFlowTheme.of(context)
+                                                  .bodyMediumFamily),
+                                    ),
+                              ),
+                            ),
                           ),
                         ],
                       ),
@@ -692,7 +754,7 @@ class _MoonDebitcardWidgetState extends State<MoonDebitcardWidget> {
                                       iconPadding:
                                           EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
-                                      color: Color(0x22424244),
+                                      color: Color(0xFF18181A),
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
