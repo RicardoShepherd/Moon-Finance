@@ -1,9 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import '/index.dart';
-import 'insurances_widget.dart' show InsurancesWidget;
+import 'reviewoder_widget.dart' show ReviewoderWidget;
 import 'package:flutter/material.dart';
 
-class InsurancesModel extends FlutterFlowModel<InsurancesWidget> {
+class ReviewoderModel extends FlutterFlowModel<ReviewoderWidget> {
   @override
   void initState(BuildContext context) {}
 

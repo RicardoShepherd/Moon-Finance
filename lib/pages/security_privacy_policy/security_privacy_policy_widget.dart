@@ -3,7 +3,6 @@ import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'security_privacy_policy_model.dart';
 export 'security_privacy_policy_model.dart';
 
@@ -70,10 +69,8 @@ class _SecurityPrivacyPolicyWidgetState
             'alczfiiy' /* Security & Privacy Policy */,
           ),
           style: FlutterFlowTheme.of(context).headlineSmall.override(
-                fontFamily: FlutterFlowTheme.of(context).headlineSmallFamily,
+                font: FlutterFlowTheme.of(context).headlineSmall,
                 letterSpacing: 0.0,
-                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                    FlutterFlowTheme.of(context).headlineSmallFamily),
               ),
         ),
         actions: [],
@@ -120,13 +117,9 @@ class _SecurityPrivacyPolicyWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .headlineMedium
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .headlineMediumFamily,
+                                    font: FlutterFlowTheme.of(context)
+                                        .headlineMedium,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .headlineMediumFamily),
                                   ),
                             ),
                           ),
@@ -147,13 +140,9 @@ class _SecurityPrivacyPolicyWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .bodySmall
                                   .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodySmallFamily,
+                                    font:
+                                        FlutterFlowTheme.of(context).bodySmall,
                                     letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodySmallFamily),
                                   ),
                             ),
                           ),

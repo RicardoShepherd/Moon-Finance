@@ -36,7 +36,7 @@ export '/criptomarket/criptomarket_widget.dart' show CriptomarketWidget;
 export '/betting_market/betting_market_widget.dart' show BettingMarketWidget;
 export '/affiliate/affiliate_widget.dart' show AffiliateWidget;
 export '/paylater/paylater_widget.dart' show PaylaterWidget;
-export '/moon_debitcard/moon_debitcard_widget.dart' show MoonDebitcardWidget;
+export '/wallet/wallet_widget.dart' show WalletWidget;
 export '/linkyourbankaccount/linkyourbankaccount_widget.dart'
     show LinkyourbankaccountWidget;
 export '/moon_creditcard/moon_creditcard_widget.dart' show MoonCreditcardWidget;
@@ -55,6 +55,12 @@ export '/q_rcode/q_rcode_widget.dart' show QRcodeWidget;
 export '/netbalance/netbalance_widget.dart' show NetbalanceWidget;
 export '/transactiondetails/transactiondetails_widget.dart'
     show TransactiondetailsWidget;
-export '/insurances/insurances_widget.dart' show InsurancesWidget;
-export '/wallet/wallet_widget.dart' show WalletWidget;
+export '/withdraw/withdraw_widget.dart' show WithdrawWidget;
+export '/allcards/allcards_widget.dart' show AllcardsWidget;
 export '/loans/loans_widget.dart' show LoansWidget;
+export '/onboarding/onboarding_widget.dart' show OnboardingWidget;
+export '/saving_account/saving_account_widget.dart' show SavingAccountWidget;
+export '/homescreen/homescreen_widget.dart' show HomescreenWidget;
+export '/menumoon/menumoon_widget.dart' show MenumoonWidget;
+export '/buy_u_s_d_c/buy_u_s_d_c_widget.dart' show BuyUSDCWidget;
+export '/reviewoder/reviewoder_widget.dart' show ReviewoderWidget;

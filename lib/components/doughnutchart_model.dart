@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'creditcard4_widget.dart' show Creditcard4Widget;
+import 'doughnutchart_widget.dart' show DoughnutchartWidget;
 import 'package:flutter/material.dart';
 
-class Creditcard4Model extends FlutterFlowModel<Creditcard4Widget> {
+class DoughnutchartModel extends FlutterFlowModel<DoughnutchartWidget> {
   @override
   void initState(BuildContext context) {}
 

@@ -6,6 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 const kThemeModeKey = '__theme_mode__';
+
 SharedPreferences? _prefs;
 
 enum DeviceSize {
@@ -19,6 +20,7 @@ abstract class FlutterFlowTheme {
 
   static Future initialize() async =>
       _prefs = await SharedPreferences.getInstance();
+
   static ThemeMode get themeMode {
     final darkMode = _prefs?.getBool(kThemeModeKey);
     return darkMode == null
@@ -62,6 +64,12 @@ abstract class FlutterFlowTheme {
   late Color warning;
   late Color error;
   late Color info;
+
+  late Color richBlackFOGRA39;
+  late Color blue;
+  late Color turquoise;
+  late Color cultured;
+  late Color cerise;
 
   @Deprecated('Use displaySmallFamily instead')
   String get title1Family => displaySmallFamily;
@@ -165,6 +173,12 @@ class LightModeTheme extends FlutterFlowTheme {
   late Color warning = const Color(0xFFFCDC0C);
   late Color error = const Color(0xFFFF5963);
   late Color info = const Color(0xFFFFFFFF);
+
+  late Color richBlackFOGRA39 = Color(0xFF070707);
+  late Color blue = Color(0xFF3A28DE);
+  late Color turquoise = Color(0xFF34D1BF);
+  late Color cultured = Color(0xFFEFEFEF);
+  late Color cerise = Color(0xFFD1345B);
 }
 
 abstract class Typography {
@@ -206,105 +220,90 @@ class MobileTypography extends Typography {
   final FlutterFlowTheme theme;
 
   String get displayLargeFamily => 'Outfit';
-  TextStyle get displayLarge => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get displayLarge => GoogleFonts.outfit(
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 64.0,
       );
   String get displayMediumFamily => 'Outfit';
-  TextStyle get displayMedium => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get displayMedium => GoogleFonts.outfit(
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 45.0,
       );
   String get displaySmallFamily => 'Outfit';
-  TextStyle get displaySmall => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get displaySmall => GoogleFonts.outfit(
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 36.0,
       );
   String get headlineLargeFamily => 'Outfit';
-  TextStyle get headlineLarge => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get headlineLarge => GoogleFonts.outfit(
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 32.0,
       );
   String get headlineMediumFamily => 'Outfit';
-  TextStyle get headlineMedium => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get headlineMedium => GoogleFonts.outfit(
         color: theme.primaryText,
         fontWeight: FontWeight.w500,
         fontSize: 28.0,
       );
   String get headlineSmallFamily => 'Outfit';
-  TextStyle get headlineSmall => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get headlineSmall => GoogleFonts.outfit(
         color: theme.primaryText,
         fontWeight: FontWeight.bold,
         fontSize: 24.0,
       );
   String get titleLargeFamily => 'Outfit';
-  TextStyle get titleLarge => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get titleLarge => GoogleFonts.outfit(
         color: theme.primaryText,
         fontWeight: FontWeight.w500,
         fontSize: 22.0,
       );
   String get titleMediumFamily => 'Plus Jakarta Sans';
-  TextStyle get titleMedium => GoogleFonts.getFont(
-        'Plus Jakarta Sans',
+  TextStyle get titleMedium => GoogleFonts.plusJakartaSans(
         color: theme.info,
         fontWeight: FontWeight.w500,
         fontSize: 20.0,
       );
   String get titleSmallFamily => 'Plus Jakarta Sans';
-  TextStyle get titleSmall => GoogleFonts.getFont(
-        'Plus Jakarta Sans',
+  TextStyle get titleSmall => GoogleFonts.plusJakartaSans(
         color: theme.info,
         fontWeight: FontWeight.w500,
         fontSize: 18.0,
       );
   String get labelLargeFamily => 'Outfit';
-  TextStyle get labelLarge => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get labelLarge => GoogleFonts.outfit(
         color: theme.secondaryText,
         fontWeight: FontWeight.w500,
         fontSize: 16.0,
       );
   String get labelMediumFamily => 'Outfit';
-  TextStyle get labelMedium => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get labelMedium => GoogleFonts.outfit(
         color: theme.secondaryText,
         fontWeight: FontWeight.w500,
         fontSize: 14.0,
       );
   String get labelSmallFamily => 'Outfit';
-  TextStyle get labelSmall => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get labelSmall => GoogleFonts.outfit(
         color: theme.secondaryText,
         fontWeight: FontWeight.w500,
         fontSize: 14.0,
       );
   String get bodyLargeFamily => 'Plus Jakarta Sans';
-  TextStyle get bodyLarge => GoogleFonts.getFont(
-        'Plus Jakarta Sans',
+  TextStyle get bodyLarge => GoogleFonts.plusJakartaSans(
         color: theme.primaryText,
         fontSize: 14.0,
       );
   String get bodyMediumFamily => 'Plus Jakarta Sans';
-  TextStyle get bodyMedium => GoogleFonts.getFont(
-        'Plus Jakarta Sans',
+  TextStyle get bodyMedium => GoogleFonts.plusJakartaSans(
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 14.0,
       );
   String get bodySmallFamily => 'Plus Jakarta Sans';
-  TextStyle get bodySmall => GoogleFonts.getFont(
-        'Plus Jakarta Sans',
+  TextStyle get bodySmall => GoogleFonts.plusJakartaSans(
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 14.0,
@@ -317,105 +316,90 @@ class TabletTypography extends Typography {
   final FlutterFlowTheme theme;
 
   String get displayLargeFamily => 'Outfit';
-  TextStyle get displayLarge => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get displayLarge => GoogleFonts.outfit(
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 64.0,
       );
   String get displayMediumFamily => 'Outfit';
-  TextStyle get displayMedium => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get displayMedium => GoogleFonts.outfit(
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 45.0,
       );
   String get displaySmallFamily => 'Outfit';
-  TextStyle get displaySmall => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get displaySmall => GoogleFonts.outfit(
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 36.0,
       );
   String get headlineLargeFamily => 'Outfit';
-  TextStyle get headlineLarge => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get headlineLarge => GoogleFonts.outfit(
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 32.0,
       );
   String get headlineMediumFamily => 'Outfit';
-  TextStyle get headlineMedium => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get headlineMedium => GoogleFonts.outfit(
         color: theme.primaryText,
         fontWeight: FontWeight.w500,
         fontSize: 28.0,
       );
   String get headlineSmallFamily => 'Outfit';
-  TextStyle get headlineSmall => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get headlineSmall => GoogleFonts.outfit(
         color: theme.primaryText,
         fontWeight: FontWeight.bold,
         fontSize: 24.0,
       );
   String get titleLargeFamily => 'Outfit';
-  TextStyle get titleLarge => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get titleLarge => GoogleFonts.outfit(
         color: theme.primaryText,
         fontWeight: FontWeight.w500,
         fontSize: 22.0,
       );
   String get titleMediumFamily => 'Plus Jakarta Sans';
-  TextStyle get titleMedium => GoogleFonts.getFont(
-        'Plus Jakarta Sans',
+  TextStyle get titleMedium => GoogleFonts.plusJakartaSans(
         color: theme.info,
         fontWeight: FontWeight.w500,
         fontSize: 20.0,
       );
   String get titleSmallFamily => 'Plus Jakarta Sans';
-  TextStyle get titleSmall => GoogleFonts.getFont(
-        'Plus Jakarta Sans',
+  TextStyle get titleSmall => GoogleFonts.plusJakartaSans(
         color: theme.info,
         fontWeight: FontWeight.w500,
         fontSize: 18.0,
       );
   String get labelLargeFamily => 'Outfit';
-  TextStyle get labelLarge => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get labelLarge => GoogleFonts.outfit(
         color: theme.secondaryText,
         fontWeight: FontWeight.w500,
         fontSize: 16.0,
       );
   String get labelMediumFamily => 'Outfit';
-  TextStyle get labelMedium => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get labelMedium => GoogleFonts.outfit(
         color: theme.secondaryText,
         fontWeight: FontWeight.w500,
         fontSize: 14.0,
       );
   String get labelSmallFamily => 'Outfit';
-  TextStyle get labelSmall => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get labelSmall => GoogleFonts.outfit(
         color: theme.secondaryText,
         fontWeight: FontWeight.w500,
         fontSize: 14.0,
       );
   String get bodyLargeFamily => 'Plus Jakarta Sans';
-  TextStyle get bodyLarge => GoogleFonts.getFont(
-        'Plus Jakarta Sans',
+  TextStyle get bodyLarge => GoogleFonts.plusJakartaSans(
         color: theme.primaryText,
         fontSize: 14.0,
       );
   String get bodyMediumFamily => 'Plus Jakarta Sans';
-  TextStyle get bodyMedium => GoogleFonts.getFont(
-        'Plus Jakarta Sans',
+  TextStyle get bodyMedium => GoogleFonts.plusJakartaSans(
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 14.0,
       );
   String get bodySmallFamily => 'Plus Jakarta Sans';
-  TextStyle get bodySmall => GoogleFonts.getFont(
-        'Plus Jakarta Sans',
+  TextStyle get bodySmall => GoogleFonts.plusJakartaSans(
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 14.0,
@@ -428,105 +412,90 @@ class DesktopTypography extends Typography {
   final FlutterFlowTheme theme;
 
   String get displayLargeFamily => 'Outfit';
-  TextStyle get displayLarge => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get displayLarge => GoogleFonts.outfit(
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 64.0,
       );
   String get displayMediumFamily => 'Outfit';
-  TextStyle get displayMedium => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get displayMedium => GoogleFonts.outfit(
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 45.0,
       );
   String get displaySmallFamily => 'Outfit';
-  TextStyle get displaySmall => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get displaySmall => GoogleFonts.outfit(
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 36.0,
       );
   String get headlineLargeFamily => 'Outfit';
-  TextStyle get headlineLarge => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get headlineLarge => GoogleFonts.outfit(
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 32.0,
       );
   String get headlineMediumFamily => 'Outfit';
-  TextStyle get headlineMedium => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get headlineMedium => GoogleFonts.outfit(
         color: theme.primaryText,
         fontWeight: FontWeight.w500,
         fontSize: 28.0,
       );
   String get headlineSmallFamily => 'Outfit';
-  TextStyle get headlineSmall => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get headlineSmall => GoogleFonts.outfit(
         color: theme.primaryText,
         fontWeight: FontWeight.bold,
         fontSize: 24.0,
       );
   String get titleLargeFamily => 'Outfit';
-  TextStyle get titleLarge => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get titleLarge => GoogleFonts.outfit(
         color: theme.primaryText,
         fontWeight: FontWeight.w500,
         fontSize: 22.0,
       );
   String get titleMediumFamily => 'Plus Jakarta Sans';
-  TextStyle get titleMedium => GoogleFonts.getFont(
-        'Plus Jakarta Sans',
+  TextStyle get titleMedium => GoogleFonts.plusJakartaSans(
         color: theme.info,
         fontWeight: FontWeight.w500,
         fontSize: 20.0,
       );
   String get titleSmallFamily => 'Plus Jakarta Sans';
-  TextStyle get titleSmall => GoogleFonts.getFont(
-        'Plus Jakarta Sans',
+  TextStyle get titleSmall => GoogleFonts.plusJakartaSans(
         color: theme.info,
         fontWeight: FontWeight.w500,
         fontSize: 18.0,
       );
   String get labelLargeFamily => 'Outfit';
-  TextStyle get labelLarge => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get labelLarge => GoogleFonts.outfit(
         color: theme.secondaryText,
         fontWeight: FontWeight.w500,
         fontSize: 16.0,
       );
   String get labelMediumFamily => 'Outfit';
-  TextStyle get labelMedium => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get labelMedium => GoogleFonts.outfit(
         color: theme.secondaryText,
         fontWeight: FontWeight.w500,
         fontSize: 14.0,
       );
   String get labelSmallFamily => 'Outfit';
-  TextStyle get labelSmall => GoogleFonts.getFont(
-        'Outfit',
+  TextStyle get labelSmall => GoogleFonts.outfit(
         color: theme.secondaryText,
         fontWeight: FontWeight.w500,
         fontSize: 14.0,
       );
   String get bodyLargeFamily => 'Plus Jakarta Sans';
-  TextStyle get bodyLarge => GoogleFonts.getFont(
-        'Plus Jakarta Sans',
+  TextStyle get bodyLarge => GoogleFonts.plusJakartaSans(
         color: theme.primaryText,
         fontSize: 14.0,
       );
   String get bodyMediumFamily => 'Plus Jakarta Sans';
-  TextStyle get bodyMedium => GoogleFonts.getFont(
-        'Plus Jakarta Sans',
+  TextStyle get bodyMedium => GoogleFonts.plusJakartaSans(
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 14.0,
       );
   String get bodySmallFamily => 'Plus Jakarta Sans';
-  TextStyle get bodySmall => GoogleFonts.getFont(
-        'Plus Jakarta Sans',
+  TextStyle get bodySmall => GoogleFonts.plusJakartaSans(
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 14.0,
@@ -545,54 +514,67 @@ class DarkModeTheme extends FlutterFlowTheme {
   late Color secondary = const Color(0xFF39D2C0);
   late Color tertiary = const Color(0xFFEE8B60);
   late Color alternate = const Color(0xFF313442);
-  late Color primaryText = const Color(0xFFFFFFFF);
-  late Color secondaryText = const Color(0xFFA9ADC6);
+  late Color primaryText = const Color(0xFFD7D9DA);
+  late Color secondaryText = const Color(0xFFC1C2C5);
   late Color primaryBackground = const Color(0xFF15161E);
-  late Color secondaryBackground = const Color(0xFF1B1D27);
+  late Color secondaryBackground = const Color(0xFF0C0C0C);
   late Color accent1 = const Color(0x4D9489F5);
   late Color accent2 = const Color(0x4C39D2C0);
-  late Color accent3 = const Color(0x4CEE8B60);
+  late Color accent3 = const Color(0xFF000000);
   late Color accent4 = const Color(0x981D2428);
   late Color success = const Color(0xFF048178);
   late Color warning = const Color(0xFFFCDC0C);
   late Color error = const Color(0xFFFF5963);
-  late Color info = const Color(0xFFFFFFFF);
+  late Color info = const Color(0xFFEEEAEA);
+
+  late Color richBlackFOGRA39 = Color(0xFF070707);
+  late Color blue = Color(0xFF3A28DE);
+  late Color turquoise = Color(0xFF34D1BF);
+  late Color cultured = Color(0xFFEFEFEF);
+  late Color cerise = Color(0xFFD1345B);
 }
 
 extension TextStyleHelper on TextStyle {
   TextStyle override({
+    TextStyle? font,
     String? fontFamily,
     Color? color,
     double? fontSize,
     FontWeight? fontWeight,
     double? letterSpacing,
     FontStyle? fontStyle,
-    bool useGoogleFonts = true,
+    bool useGoogleFonts = false,
     TextDecoration? decoration,
     double? lineHeight,
     List<Shadow>? shadows,
-  }) =>
-      useGoogleFonts
-          ? GoogleFonts.getFont(
-              fontFamily!,
-              color: color ?? this.color,
-              fontSize: fontSize ?? this.fontSize,
-              letterSpacing: letterSpacing ?? this.letterSpacing,
-              fontWeight: fontWeight ?? this.fontWeight,
-              fontStyle: fontStyle ?? this.fontStyle,
-              decoration: decoration,
-              height: lineHeight,
-              shadows: shadows,
-            )
-          : copyWith(
-              fontFamily: fontFamily,
-              color: color,
-              fontSize: fontSize,
-              letterSpacing: letterSpacing,
-              fontWeight: fontWeight,
-              fontStyle: fontStyle,
-              decoration: decoration,
-              height: lineHeight,
-              shadows: shadows,
-            );
+  }) {
+    if (useGoogleFonts && fontFamily != null) {
+      font = GoogleFonts.getFont(fontFamily,
+          fontWeight: fontWeight ?? this.fontWeight,
+          fontStyle: fontStyle ?? this.fontStyle);
+    }
+
+    return font != null
+        ? font.copyWith(
+            color: color ?? this.color,
+            fontSize: fontSize ?? this.fontSize,
+            letterSpacing: letterSpacing ?? this.letterSpacing,
+            fontWeight: fontWeight ?? this.fontWeight,
+            fontStyle: fontStyle ?? this.fontStyle,
+            decoration: decoration,
+            height: lineHeight,
+            shadows: shadows,
+          )
+        : copyWith(
+            fontFamily: fontFamily,
+            color: color,
+            fontSize: fontSize,
+            letterSpacing: letterSpacing,
+            fontWeight: fontWeight,
+            fontStyle: fontStyle,
+            decoration: decoration,
+            height: lineHeight,
+            shadows: shadows,
+          );
+  }
 }

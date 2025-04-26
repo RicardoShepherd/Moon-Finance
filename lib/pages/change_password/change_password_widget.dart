@@ -4,7 +4,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'change_password_model.dart';
 export 'change_password_model.dart';
 
@@ -72,10 +71,8 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
             'l5iggwaz' /* Change Password */,
           ),
           style: FlutterFlowTheme.of(context).headlineSmall.override(
-                fontFamily: FlutterFlowTheme.of(context).headlineSmallFamily,
+                font: FlutterFlowTheme.of(context).headlineSmall,
                 letterSpacing: 0.0,
-                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                    FlutterFlowTheme.of(context).headlineSmallFamily),
               ),
         ),
         actions: [],
@@ -128,15 +125,11 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodySmall
                                       .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .bodySmallFamily,
+                                        font: FlutterFlowTheme.of(context)
+                                            .bodySmall,
                                         fontSize: 14.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w600,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .bodySmallFamily),
                                       ),
                                 ),
                               ),
@@ -161,22 +154,14 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                             labelStyle: FlutterFlowTheme.of(context)
                                 .bodySmall
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodySmallFamily,
+                                  font: FlutterFlowTheme.of(context).bodySmall,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .bodySmallFamily),
                                 ),
                             hintStyle: FlutterFlowTheme.of(context)
                                 .bodySmall
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .bodySmallFamily,
+                                  font: FlutterFlowTheme.of(context).bodySmall,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .bodySmallFamily),
                                 ),
                             enabledBorder: OutlineInputBorder(
                               borderSide: BorderSide(
@@ -229,12 +214,8 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                           style: FlutterFlowTheme.of(context)
                               .bodyMedium
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .bodyMediumFamily,
+                                font: FlutterFlowTheme.of(context).bodyMedium,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily),
                               ),
                           validator: _model.passwordTextControllerValidator
                               .asValidator(context),
@@ -277,15 +258,11 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .titleSmallFamily,
+                                  font: FlutterFlowTheme.of(context).titleSmall,
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
                                   fontSize: 15.0,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .titleSmallFamily),
                                 ),
                             elevation: 3.0,
                             borderSide: BorderSide(

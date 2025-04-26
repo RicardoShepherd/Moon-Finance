@@ -251,10 +251,10 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           ),
         ),
         FFRoute(
-          name: MoonDebitcardWidget.routeName,
-          path: MoonDebitcardWidget.routePath,
+          name: WalletWidget.routeName,
+          path: WalletWidget.routePath,
           requireAuth: true,
-          builder: (context, params) => MoonDebitcardWidget(),
+          builder: (context, params) => WalletWidget(),
         ),
         FFRoute(
           name: LinkyourbankaccountWidget.routeName,
@@ -313,19 +313,52 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => TransactiondetailsWidget(),
         ),
         FFRoute(
-          name: InsurancesWidget.routeName,
-          path: InsurancesWidget.routePath,
-          builder: (context, params) => InsurancesWidget(),
+          name: WithdrawWidget.routeName,
+          path: WithdrawWidget.routePath,
+          builder: (context, params) => WithdrawWidget(),
         ),
         FFRoute(
-          name: WalletWidget.routeName,
-          path: WalletWidget.routePath,
-          builder: (context, params) => WalletWidget(),
+          name: AllcardsWidget.routeName,
+          path: AllcardsWidget.routePath,
+          builder: (context, params) => AllcardsWidget(),
         ),
         FFRoute(
           name: LoansWidget.routeName,
           path: LoansWidget.routePath,
           builder: (context, params) => LoansWidget(),
+        ),
+        FFRoute(
+          name: OnboardingWidget.routeName,
+          path: OnboardingWidget.routePath,
+          builder: (context, params) => OnboardingWidget(),
+        ),
+        FFRoute(
+          name: SavingAccountWidget.routeName,
+          path: SavingAccountWidget.routePath,
+          builder: (context, params) => SavingAccountWidget(),
+        ),
+        FFRoute(
+          name: HomescreenWidget.routeName,
+          path: HomescreenWidget.routePath,
+          builder: (context, params) => NavBarPage(
+            initialPage: '',
+            page: HomescreenWidget(),
+          ),
+        ),
+        FFRoute(
+          name: MenumoonWidget.routeName,
+          path: MenumoonWidget.routePath,
+          builder: (context, params) => MenumoonWidget(),
+        ),
+        FFRoute(
+          name: BuyUSDCWidget.routeName,
+          path: BuyUSDCWidget.routePath,
+          builder: (context, params) => BuyUSDCWidget(),
+        ),
+        FFRoute(
+          name: ReviewoderWidget.routeName,
+          path: ReviewoderWidget.routePath,
+          builder: (context, params) => ReviewoderWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],

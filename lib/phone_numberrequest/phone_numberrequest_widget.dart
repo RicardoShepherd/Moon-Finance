@@ -8,7 +8,6 @@ import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'phone_numberrequest_model.dart';
 export 'phone_numberrequest_model.dart';
 
@@ -115,16 +114,13 @@ class _PhoneNumberrequestWidgetState extends State<PhoneNumberrequestWidget> {
                           'fgyy3ymr' /* Enter Your Phone Number */,
                         ),
                         textAlign: TextAlign.center,
-                        style:
-                            FlutterFlowTheme.of(context).displaySmall.override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .displaySmallFamily,
-                                  fontSize: 25.0,
-                                  letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .displaySmallFamily),
-                                ),
+                        style: FlutterFlowTheme.of(context)
+                            .displaySmall
+                            .override(
+                              font: FlutterFlowTheme.of(context).displaySmall,
+                              fontSize: 25.0,
+                              letterSpacing: 0.0,
+                            ),
                       ),
                     ),
                   ),
@@ -142,14 +138,10 @@ class _PhoneNumberrequestWidgetState extends State<PhoneNumberrequestWidget> {
                           'nr2e0hvz' /* We'll Send  a verifacation lin... */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyMediumFamily,
+                              font: FlutterFlowTheme.of(context).bodyMedium,
                               fontSize: 15.0,
                               letterSpacing: 0.0,
                               fontWeight: FontWeight.w500,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context)
-                                      .bodyMediumFamily),
                             ),
                       ),
                     ),
@@ -175,12 +167,9 @@ class _PhoneNumberrequestWidgetState extends State<PhoneNumberrequestWidget> {
                             labelStyle: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelMediumFamily,
+                                  font:
+                                      FlutterFlowTheme.of(context).labelMedium,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .labelMediumFamily),
                                 ),
                             hintText: FFLocalizations.of(context).getText(
                               '6jpnfc86' /* Phone Numbr */,
@@ -188,12 +177,9 @@ class _PhoneNumberrequestWidgetState extends State<PhoneNumberrequestWidget> {
                             hintStyle: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .labelMediumFamily,
+                                  font:
+                                      FlutterFlowTheme.of(context).labelMedium,
                                   letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .labelMediumFamily),
                                 ),
                             enabledBorder: OutlineInputBorder(
                               borderSide: BorderSide(
@@ -230,12 +216,8 @@ class _PhoneNumberrequestWidgetState extends State<PhoneNumberrequestWidget> {
                           style: FlutterFlowTheme.of(context)
                               .bodyMedium
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .bodyMediumFamily,
+                                font: FlutterFlowTheme.of(context).bodyMedium,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily),
                               ),
                           textAlign: TextAlign.center,
                           maxLength: 11,
@@ -297,13 +279,10 @@ class _PhoneNumberrequestWidgetState extends State<PhoneNumberrequestWidget> {
                         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: Colors.white,
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily:
-                              FlutterFlowTheme.of(context).titleSmallFamily,
+                          font: FlutterFlowTheme.of(context).titleSmall,
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
                           letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).titleSmallFamily),
                         ),
                     elevation: 0.0,
                     borderRadius: BorderRadius.circular(8.0),

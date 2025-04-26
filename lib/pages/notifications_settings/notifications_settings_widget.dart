@@ -3,7 +3,6 @@ import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'notifications_settings_model.dart';
 export 'notifications_settings_model.dart';
 
@@ -70,10 +69,8 @@ class _NotificationsSettingsWidgetState
             'sc4ff4ce' /* Notifications */,
           ),
           style: FlutterFlowTheme.of(context).headlineSmall.override(
-                fontFamily: FlutterFlowTheme.of(context).headlineSmallFamily,
+                font: FlutterFlowTheme.of(context).headlineSmall,
                 letterSpacing: 0.0,
-                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                    FlutterFlowTheme.of(context).headlineSmallFamily),
               ),
         ),
         actions: [],
@@ -122,13 +119,9 @@ class _NotificationsSettingsWidgetState
                           style: FlutterFlowTheme.of(context)
                               .bodySmall
                               .override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .bodySmallFamily,
+                                font: FlutterFlowTheme.of(context).bodySmall,
                                 fontSize: 14.0,
                                 letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .bodySmallFamily),
                               ),
                         ),
                       ),
@@ -149,26 +142,20 @@ class _NotificationsSettingsWidgetState
                         FFLocalizations.of(context).getText(
                           'gjygkr0n' /* Push Notifications */,
                         ),
-                        style:
-                            FlutterFlowTheme.of(context).headlineSmall.override(
-                                  fontFamily: FlutterFlowTheme.of(context)
-                                      .headlineSmallFamily,
-                                  letterSpacing: 0.0,
-                                  useGoogleFonts: GoogleFonts.asMap()
-                                      .containsKey(FlutterFlowTheme.of(context)
-                                          .headlineSmallFamily),
-                                ),
+                        style: FlutterFlowTheme.of(context)
+                            .headlineSmall
+                            .override(
+                              font: FlutterFlowTheme.of(context).headlineSmall,
+                              letterSpacing: 0.0,
+                            ),
                       ),
                       subtitle: Text(
                         FFLocalizations.of(context).getText(
                           '3y3yhxbk' /* Receive Push notifications fro... */,
                         ),
                         style: FlutterFlowTheme.of(context).bodySmall.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodySmallFamily,
+                              font: FlutterFlowTheme.of(context).bodySmall,
                               letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context).bodySmallFamily),
                             ),
                       ),
                       tileColor: Color(0x00101213),
@@ -193,26 +180,20 @@ class _NotificationsSettingsWidgetState
                       FFLocalizations.of(context).getText(
                         '1ytebj35' /* Email Notifications */,
                       ),
-                      style:
-                          FlutterFlowTheme.of(context).headlineSmall.override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .headlineSmallFamily,
-                                letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .headlineSmallFamily),
-                              ),
+                      style: FlutterFlowTheme.of(context)
+                          .headlineSmall
+                          .override(
+                            font: FlutterFlowTheme.of(context).headlineSmall,
+                            letterSpacing: 0.0,
+                          ),
                     ),
                     subtitle: Text(
                       FFLocalizations.of(context).getText(
                         '9lvh5nst' /* Receive email notifications fr... */,
                       ),
                       style: FlutterFlowTheme.of(context).bodySmall.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).bodySmallFamily,
+                            font: FlutterFlowTheme.of(context).bodySmall,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).bodySmallFamily),
                           ),
                     ),
                     tileColor: Color(0x00101213),
@@ -236,26 +217,20 @@ class _NotificationsSettingsWidgetState
                       FFLocalizations.of(context).getText(
                         '69d2j74u' /* Location Services */,
                       ),
-                      style:
-                          FlutterFlowTheme.of(context).headlineSmall.override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .headlineSmallFamily,
-                                letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .headlineSmallFamily),
-                              ),
+                      style: FlutterFlowTheme.of(context)
+                          .headlineSmall
+                          .override(
+                            font: FlutterFlowTheme.of(context).headlineSmall,
+                            letterSpacing: 0.0,
+                          ),
                     ),
                     subtitle: Text(
                       FFLocalizations.of(context).getText(
                         '3k8cuv0d' /* Allow us to track your locatio... */,
                       ),
                       style: FlutterFlowTheme.of(context).bodySmall.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).bodySmallFamily,
+                            font: FlutterFlowTheme.of(context).bodySmall,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).bodySmallFamily),
                           ),
                     ),
                     tileColor: Color(0x00101213),
@@ -279,26 +254,20 @@ class _NotificationsSettingsWidgetState
                       FFLocalizations.of(context).getText(
                         'pofurllk' /* Bank Activity */,
                       ),
-                      style:
-                          FlutterFlowTheme.of(context).headlineSmall.override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .headlineSmallFamily,
-                                letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .headlineSmallFamily),
-                              ),
+                      style: FlutterFlowTheme.of(context)
+                          .headlineSmall
+                          .override(
+                            font: FlutterFlowTheme.of(context).headlineSmall,
+                            letterSpacing: 0.0,
+                          ),
                     ),
                     subtitle: Text(
                       FFLocalizations.of(context).getText(
                         'hptnkg2w' /* Get notified about imporant ch... */,
                       ),
                       style: FlutterFlowTheme.of(context).bodySmall.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).bodySmallFamily,
+                            font: FlutterFlowTheme.of(context).bodySmall,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).bodySmallFamily),
                           ),
                     ),
                     tileColor: Color(0x00101213),
@@ -322,26 +291,20 @@ class _NotificationsSettingsWidgetState
                       FFLocalizations.of(context).getText(
                         'mn1lkcja' /* Subcription */,
                       ),
-                      style:
-                          FlutterFlowTheme.of(context).headlineSmall.override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .headlineSmallFamily,
-                                letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .headlineSmallFamily),
-                              ),
+                      style: FlutterFlowTheme.of(context)
+                          .headlineSmall
+                          .override(
+                            font: FlutterFlowTheme.of(context).headlineSmall,
+                            letterSpacing: 0.0,
+                          ),
                     ),
                     subtitle: Text(
                       FFLocalizations.of(context).getText(
                         'abfijbff' /* Recive Notifications for when ... */,
                       ),
                       style: FlutterFlowTheme.of(context).bodySmall.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).bodySmallFamily,
+                            font: FlutterFlowTheme.of(context).bodySmall,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).bodySmallFamily),
                           ),
                     ),
                     tileColor: Color(0x00101213),
@@ -365,26 +328,20 @@ class _NotificationsSettingsWidgetState
                       FFLocalizations.of(context).getText(
                         'g71s9fzn' /* Active Trades */,
                       ),
-                      style:
-                          FlutterFlowTheme.of(context).headlineSmall.override(
-                                fontFamily: FlutterFlowTheme.of(context)
-                                    .headlineSmallFamily,
-                                letterSpacing: 0.0,
-                                useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                    FlutterFlowTheme.of(context)
-                                        .headlineSmallFamily),
-                              ),
+                      style: FlutterFlowTheme.of(context)
+                          .headlineSmall
+                          .override(
+                            font: FlutterFlowTheme.of(context).headlineSmall,
+                            letterSpacing: 0.0,
+                          ),
                     ),
                     subtitle: Text(
                       FFLocalizations.of(context).getText(
                         'rscqh7ln' /* Play stop loss and take profit... */,
                       ),
                       style: FlutterFlowTheme.of(context).bodySmall.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).bodySmallFamily,
+                            font: FlutterFlowTheme.of(context).bodySmall,
                             letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).bodySmallFamily),
                           ),
                     ),
                     tileColor: Color(0x00101213),
