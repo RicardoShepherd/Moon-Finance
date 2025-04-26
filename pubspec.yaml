@@ -58,6 +58,7 @@ dependencies:
     git:
       url: https://github.com/FlutterFlow/flutter_credit_card
       ref: v4.0.2
+  flutter_markdown: 0.7.3+1
   flutter_native_splash: 2.4.1
   font_awesome_flutter: 10.7.0
   from_css_color: 2.0.0
