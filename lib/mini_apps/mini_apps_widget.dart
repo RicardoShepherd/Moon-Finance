@@ -1,7 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'mini_apps_model.dart';
@@ -57,29 +56,17 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                InkWell(
-                  splashColor: Colors.transparent,
-                  focusColor: Colors.transparent,
-                  hoverColor: Colors.transparent,
-                  highlightColor: Colors.transparent,
-                  onTap: () async {
-                    logFirebaseEvent('MINI_APPS_CircleImage_aqbp6m9s_ON_TAP');
-                    logFirebaseEvent('CircleImage_navigate_to');
-
-                    context.pushNamed(MenuWidget.routeName);
-                  },
-                  child: Container(
-                    width: 36.0,
-                    height: 36.0,
-                    clipBehavior: Clip.antiAlias,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                    ),
-                    child: Image.asset(
-                      'assets/images/2024-12-16_17.17.58.jpg',
-                      fit: BoxFit.cover,
-                      alignment: Alignment(0.0, -1.0),
-                    ),
+                Container(
+                  width: 36.0,
+                  height: 36.0,
+                  clipBehavior: Clip.antiAlias,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                  ),
+                  child: Image.asset(
+                    'assets/images/2024-12-16_17.17.58.jpg',
+                    fit: BoxFit.cover,
+                    alignment: Alignment(0.0, -1.0),
                   ),
                 ),
                 Expanded(

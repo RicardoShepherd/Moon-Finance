@@ -140,7 +140,7 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                                 child: Image.asset(
                                   Theme.of(context).brightness ==
                                           Brightness.dark
-                                      ? 'assets/images/Cryptocurrency-Tether-Usdt-Logo-Graphics-13393983-1.jpg'
+                                      ? 'assets/images/images_(3).png'
                                       : 'assets/images/Brown_Neutral_Moon_Photograph_Inspirational_Quote_Instagram_Story.png',
                                   width: 100.0,
                                   height: 100.0,
@@ -175,7 +175,7 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                 ),
                 style: FlutterFlowTheme.of(context).titleSmall.override(
                       font: FlutterFlowTheme.of(context).titleSmall,
-                      color: Color(0xFF44B4A7),
+                      color: Color(0xFFAA9FF1),
                       fontSize: 13.0,
                       letterSpacing: 0.0,
                     ),

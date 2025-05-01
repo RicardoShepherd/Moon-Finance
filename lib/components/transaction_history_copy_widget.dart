@@ -1,20 +1,23 @@
+import '/flutter_flow/flutter_flow_choice_chips.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/form_field_controller.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
-import 'transaction_history_model.dart';
-export 'transaction_history_model.dart';
+import 'transaction_history_copy_model.dart';
+export 'transaction_history_copy_model.dart';
 
-class TransactionHistoryWidget extends StatefulWidget {
-  const TransactionHistoryWidget({super.key});
+class TransactionHistoryCopyWidget extends StatefulWidget {
+  const TransactionHistoryCopyWidget({super.key});
 
   @override
-  State<TransactionHistoryWidget> createState() =>
-      _TransactionHistoryWidgetState();
+  State<TransactionHistoryCopyWidget> createState() =>
+      _TransactionHistoryCopyWidgetState();
 }
 
-class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
-  late TransactionHistoryModel _model;
+class _TransactionHistoryCopyWidgetState
+    extends State<TransactionHistoryCopyWidget> {
+  late TransactionHistoryCopyModel _model;
 
   @override
   void setState(VoidCallback callback) {
@@ -25,7 +28,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => TransactionHistoryModel());
+    _model = createModel(context, () => TransactionHistoryCopyModel());
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
@@ -92,10 +95,10 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                         children: [
                           Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
-                                10.0, 0.0, 0.0, 3.0),
+                                10.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'rjkznc8n' /* Transaction */,
+                                '3y1hgw8e' /* Transaction */,
                               ),
                               textAlign: TextAlign.end,
                               style: FlutterFlowTheme.of(context)
@@ -117,7 +120,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                         highlightColor: Colors.transparent,
                         onTap: () async {
                           logFirebaseEvent(
-                              'TRANSACTION_HISTORY_Icon_1f0mpufh_ON_TAP');
+                              'TRANSACTION_HISTORY_COPY_Icon_en9f612c_O');
                           logFirebaseEvent('Icon_navigate_to');
 
                           context.pushNamed(TransactionWidget.routeName);
@@ -129,6 +132,70 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                         ),
                       ),
                     ],
+                  ),
+                ),
+                Align(
+                  alignment: AlignmentDirectional(-1.0, 0.0),
+                  child: FlutterFlowChoiceChips(
+                    options: [
+                      ChipData(FFLocalizations.of(context).getText(
+                        'hzjqsr7u' /* All */,
+                      )),
+                      ChipData(FFLocalizations.of(context).getText(
+                        'pifuc4hy' /* Income */,
+                      )),
+                      ChipData(FFLocalizations.of(context).getText(
+                        'gtiq3b23' /* Expenses */,
+                      ))
+                    ],
+                    onChanged: (val) => safeSetState(
+                        () => _model.choiceChipsValue = val?.firstOrNull),
+                    selectedChipStyle: ChipStyle(
+                      backgroundColor: Color(0x4C202020),
+                      textStyle:
+                          FlutterFlowTheme.of(context).bodyMedium.override(
+                                font: FlutterFlowTheme.of(context).bodyMedium,
+                                color: FlutterFlowTheme.of(context).primaryText,
+                                letterSpacing: 0.0,
+                                fontWeight: FontWeight.bold,
+                              ),
+                      iconColor: Color(0xFF817F7F),
+                      iconSize: 18.0,
+                      elevation: 0.0,
+                      borderColor: Color(0xFF727473),
+                      borderWidth: 1.0,
+                      borderRadius: BorderRadius.circular(8.0),
+                    ),
+                    unselectedChipStyle: ChipStyle(
+                      backgroundColor: Color(0xFF282727),
+                      textStyle: FlutterFlowTheme.of(context)
+                          .bodyMedium
+                          .override(
+                            font: FlutterFlowTheme.of(context).bodyMedium,
+                            color: FlutterFlowTheme.of(context).secondaryText,
+                            letterSpacing: 0.0,
+                          ),
+                      iconColor: Color(0xFF636366),
+                      iconSize: 18.0,
+                      elevation: 0.0,
+                      borderColor: FlutterFlowTheme.of(context).alternate,
+                      borderWidth: 2.0,
+                      borderRadius: BorderRadius.circular(8.0),
+                    ),
+                    chipSpacing: 8.0,
+                    rowSpacing: 8.0,
+                    multiselect: false,
+                    initialized: _model.choiceChipsValue != null,
+                    alignment: WrapAlignment.start,
+                    controller: _model.choiceChipsValueController ??=
+                        FormFieldController<List<String>>(
+                      [
+                        FFLocalizations.of(context).getText(
+                          'em7gcuts' /* All */,
+                        )
+                      ],
+                    ),
+                    wrapped: false,
                   ),
                 ),
                 ListView(
@@ -167,7 +234,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                           highlightColor: Colors.transparent,
                           onTap: () async {
                             logFirebaseEvent(
-                                'TRANSACTION_HISTORY_Row_nwaem0bh_ON_TAP');
+                                'TRANSACTION_HISTORY_COPY_Row_1t5mxvmn_ON');
                             logFirebaseEvent('Row_navigate_to');
 
                             context
@@ -210,7 +277,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                                     children: [
                                       Text(
                                         FFLocalizations.of(context).getText(
-                                          'w4400saf' /* Sony Playstation */,
+                                          'p18sfx8k' /* Sony Playstation */,
                                         ),
                                         textAlign: TextAlign.end,
                                         style: FlutterFlowTheme.of(context)
@@ -228,7 +295,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                                             0.0, 4.0, 0.0, 0.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
-                                            'awjh06kj' /* Moon */,
+                                            'vt4lvgsy' /* Moon */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
@@ -246,7 +313,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                               ),
                               Text(
                                 FFLocalizations.of(context).getText(
-                                  '6pywo7v2' /* $50.21 */,
+                                  '3wihvofo' /* $50.21 */,
                                 ),
                                 textAlign: TextAlign.end,
                                 style: FlutterFlowTheme.of(context)
@@ -290,7 +357,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                           highlightColor: Colors.transparent,
                           onTap: () async {
                             logFirebaseEvent(
-                                'TRANSACTION_HISTORY_Row_bmqvz81i_ON_TAP');
+                                'TRANSACTION_HISTORY_COPY_Row_b96fyt7p_ON');
                             logFirebaseEvent('Row_navigate_to');
 
                             context
@@ -329,7 +396,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                                     children: [
                                       Text(
                                         FFLocalizations.of(context).getText(
-                                          '19j68hio' /* Starbucks */,
+                                          'odqb2cdp' /* Starbucks */,
                                         ),
                                         textAlign: TextAlign.end,
                                         style: FlutterFlowTheme.of(context)
@@ -347,7 +414,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                                             0.0, 4.0, 0.0, 0.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
-                                            '676pfhwq' /* ScotioBank */,
+                                            '15r7iqf7' /* ScotioBank */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
@@ -365,7 +432,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                               ),
                               Text(
                                 FFLocalizations.of(context).getText(
-                                  'ig61dbf2' /* $5.53 */,
+                                  'usakpufl' /* $5.53 */,
                                 ),
                                 textAlign: TextAlign.end,
                                 style: FlutterFlowTheme.of(context)
@@ -409,7 +476,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                           highlightColor: Colors.transparent,
                           onTap: () async {
                             logFirebaseEvent(
-                                'TRANSACTION_HISTORY_Row_eht55ktk_ON_TAP');
+                                'TRANSACTION_HISTORY_COPY_Row_7kr8wxcm_ON');
                             logFirebaseEvent('Row_navigate_to');
 
                             context
@@ -452,7 +519,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                                     children: [
                                       Text(
                                         FFLocalizations.of(context).getText(
-                                          'eyvz95n5' /* Amozan */,
+                                          'db76299g' /* Amozan */,
                                         ),
                                         textAlign: TextAlign.end,
                                         style: FlutterFlowTheme.of(context)
@@ -470,7 +537,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                                             0.0, 4.0, 0.0, 0.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
-                                            'ksw945gl' /* Cashapp */,
+                                            '4d9052gz' /* Cashapp */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
@@ -488,7 +555,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                               ),
                               Text(
                                 FFLocalizations.of(context).getText(
-                                  'y82pm3ri' /* $8.51 */,
+                                  'hl5exyx4' /* $8.51 */,
                                 ),
                                 textAlign: TextAlign.end,
                                 style: FlutterFlowTheme.of(context)
@@ -532,7 +599,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                           highlightColor: Colors.transparent,
                           onTap: () async {
                             logFirebaseEvent(
-                                'TRANSACTION_HISTORY_Row_qois9zfw_ON_TAP');
+                                'TRANSACTION_HISTORY_COPY_Row_0xla7fzl_ON');
                             logFirebaseEvent('Row_navigate_to');
 
                             context
@@ -575,7 +642,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                                     children: [
                                       Text(
                                         FFLocalizations.of(context).getText(
-                                          'ghmqwy2e' /* Protraders Fund */,
+                                          'vv28m9df' /* Protraders Fund */,
                                         ),
                                         textAlign: TextAlign.end,
                                         style: FlutterFlowTheme.of(context)
@@ -593,7 +660,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                                             0.0, 4.0, 0.0, 0.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
-                                            's06upp41' /* Paypal */,
+                                            'apydzsm7' /* Paypal */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
@@ -611,7 +678,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                               ),
                               Text(
                                 FFLocalizations.of(context).getText(
-                                  'fu4cqy32' /* $40.81 */,
+                                  '60o57yoh' /* $40.81 */,
                                 ),
                                 textAlign: TextAlign.end,
                                 style: FlutterFlowTheme.of(context)
@@ -655,7 +722,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                           highlightColor: Colors.transparent,
                           onTap: () async {
                             logFirebaseEvent(
-                                'TRANSACTION_HISTORY_Row_e330w9m4_ON_TAP');
+                                'TRANSACTION_HISTORY_COPY_Row_9apvhs70_ON');
                             logFirebaseEvent('Row_navigate_to');
 
                             context
@@ -698,7 +765,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                                     children: [
                                       Text(
                                         FFLocalizations.of(context).getText(
-                                          'wcbl9bbb' /* FlutterFlow */,
+                                          'wt3qqph3' /* FlutterFlow */,
                                         ),
                                         textAlign: TextAlign.end,
                                         style: FlutterFlowTheme.of(context)
@@ -716,7 +783,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                                             0.0, 4.0, 0.0, 0.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
-                                            'vkmgnmv9' /* American Express */,
+                                            'h8r5hh3d' /* American Express */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
@@ -734,7 +801,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                               ),
                               Text(
                                 FFLocalizations.of(context).getText(
-                                  '64znr1nw' /* $20.71 */,
+                                  'yvujhlfe' /* $20.71 */,
                                 ),
                                 textAlign: TextAlign.end,
                                 style: FlutterFlowTheme.of(context)
@@ -778,7 +845,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                           highlightColor: Colors.transparent,
                           onTap: () async {
                             logFirebaseEvent(
-                                'TRANSACTION_HISTORY_Row_h16dg826_ON_TAP');
+                                'TRANSACTION_HISTORY_COPY_Row_111faxn8_ON');
                             logFirebaseEvent('Row_navigate_to');
 
                             context
@@ -821,7 +888,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                                     children: [
                                       Text(
                                         FFLocalizations.of(context).getText(
-                                          '71yqeydv' /* Apple */,
+                                          'm59fcjzj' /* Apple */,
                                         ),
                                         textAlign: TextAlign.end,
                                         style: FlutterFlowTheme.of(context)
@@ -839,7 +906,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                                             0.0, 4.0, 0.0, 0.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
-                                            'pon5lr99' /* JPMorgan Chase */,
+                                            'n28zadhp' /* JPMorgan Chase */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
@@ -863,7 +930,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                               ),
                               Text(
                                 FFLocalizations.of(context).getText(
-                                  '1cvj3nct' /* $1,250.81 */,
+                                  'ulluy3le' /* $1,250.81 */,
                                 ),
                                 textAlign: TextAlign.end,
                                 style: FlutterFlowTheme.of(context)
@@ -907,7 +974,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                           highlightColor: Colors.transparent,
                           onTap: () async {
                             logFirebaseEvent(
-                                'TRANSACTION_HISTORY_Row_nak917hk_ON_TAP');
+                                'TRANSACTION_HISTORY_COPY_Row_pqwyckde_ON');
                             logFirebaseEvent('Row_navigate_to');
 
                             context
@@ -946,7 +1013,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                                     children: [
                                       Text(
                                         FFLocalizations.of(context).getText(
-                                          'nvm3uhye' /* Moon subcription */,
+                                          'o7qwavqv' /* Moon subcription */,
                                         ),
                                         textAlign: TextAlign.end,
                                         style: FlutterFlowTheme.of(context)
@@ -964,7 +1031,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                                             0.0, 4.0, 0.0, 0.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
-                                            '3m3v31e4' /* Citybank */,
+                                            'w4bxkdid' /* Citybank */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
@@ -982,7 +1049,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
                               ),
                               Text(
                                 FFLocalizations.of(context).getText(
-                                  'o0k58xeb' /* $8.99 */,
+                                  'tqefqqw7' /* $8.99 */,
                                 ),
                                 textAlign: TextAlign.end,
                                 style: FlutterFlowTheme.of(context)

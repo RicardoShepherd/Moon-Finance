@@ -188,14 +188,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => InvoicesWidget(),
         ),
         FFRoute(
-          name: PhoneNumberrequestWidget.routeName,
-          path: PhoneNumberrequestWidget.routePath,
-          builder: (context, params) => PhoneNumberrequestWidget(),
+          name: CreateWalletWidget.routeName,
+          path: CreateWalletWidget.routePath,
+          builder: (context, params) => CreateWalletWidget(),
         ),
         FFRoute(
-          name: PhonenumberverficationWidget.routeName,
-          path: PhonenumberverficationWidget.routePath,
-          builder: (context, params) => PhonenumberverficationWidget(),
+          name: SecureWalletWidget.routeName,
+          path: SecureWalletWidget.routePath,
+          builder: (context, params) => SecureWalletWidget(),
         ),
         FFRoute(
           name: FundraiserWidget.routeName,
@@ -359,6 +359,21 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: ReviewoderWidget.routeName,
           path: ReviewoderWidget.routePath,
           builder: (context, params) => ReviewoderWidget(),
+        ),
+        FFRoute(
+          name: SecraterecoveryphraseinfoWidget.routeName,
+          path: SecraterecoveryphraseinfoWidget.routePath,
+          builder: (context, params) => SecraterecoveryphraseinfoWidget(),
+        ),
+        FFRoute(
+          name: SecraterecoveryphraseWidget.routeName,
+          path: SecraterecoveryphraseWidget.routePath,
+          builder: (context, params) => SecraterecoveryphraseWidget(),
+        ),
+        FFRoute(
+          name: ConfirmsecraterecoveryphraseWidget.routeName,
+          path: ConfirmsecraterecoveryphraseWidget.routePath,
+          builder: (context, params) => ConfirmsecraterecoveryphraseWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],

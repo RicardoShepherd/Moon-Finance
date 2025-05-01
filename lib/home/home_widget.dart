@@ -126,7 +126,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                 'ld66yeri' /* Earn $50 */,
                               ),
                               options: FFButtonOptions(
-                                height: 25.0,
+                                width: 94.0,
+                                height: 26.64,
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 iconPadding: EdgeInsetsDirectional.fromSTEB(
@@ -141,7 +142,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                           .secondaryBackground,
                                       fontSize: 4.0,
                                       letterSpacing: 0.0,
-                                      fontWeight: FontWeight.w600,
+                                      fontWeight: FontWeight.w800,
                                     ),
                                 elevation: 0.0,
                                 borderRadius: BorderRadius.circular(24.0),
@@ -151,21 +152,27 @@ class _HomeWidgetState extends State<HomeWidget> {
                         ),
                         Align(
                           alignment: AlignmentDirectional(1.0, 0.0),
-                          child: ToggleIcon(
-                            onPressed: () async {
-                              safeSetState(() =>
-                                  FFAppState().NavOpen = !FFAppState().NavOpen);
-                            },
-                            value: FFAppState().NavOpen,
-                            onIcon: FaIcon(
-                              FontAwesomeIcons.solidEyeSlash,
-                              color: FlutterFlowTheme.of(context).secondaryText,
-                              size: 16.0,
-                            ),
-                            offIcon: Icon(
-                              Icons.remove_red_eye_rounded,
-                              color: FlutterFlowTheme.of(context).secondaryText,
-                              size: 18.0,
+                          child: Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                5.0, 0.0, 0.0, 0.0),
+                            child: ToggleIcon(
+                              onPressed: () async {
+                                safeSetState(() => FFAppState().NavOpen =
+                                    !FFAppState().NavOpen);
+                              },
+                              value: FFAppState().NavOpen,
+                              onIcon: FaIcon(
+                                FontAwesomeIcons.solidEyeSlash,
+                                color:
+                                    FlutterFlowTheme.of(context).secondaryText,
+                                size: 16.0,
+                              ),
+                              offIcon: Icon(
+                                Icons.remove_red_eye_rounded,
+                                color:
+                                    FlutterFlowTheme.of(context).secondaryText,
+                                size: 22.0,
+                              ),
                             ),
                           ),
                         ),
@@ -251,13 +258,6 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                     mainAxisSize:
                                                         MainAxisSize.max,
                                                     children: [
-                                                      Icon(
-                                                        Icons
-                                                            .signal_cellular_alt,
-                                                        color:
-                                                            Color(0xFF26E08F),
-                                                        size: 28.0,
-                                                      ),
                                                       InkWell(
                                                         splashColor:
                                                             Colors.transparent,
@@ -269,60 +269,50 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                             Colors.transparent,
                                                         onTap: () async {
                                                           logFirebaseEvent(
-                                                              'HOME_PAGE_RichText_u0i1y89h_ON_TAP');
+                                                              'HOME_PAGE_Text_wiq7xt6k_ON_TAP');
                                                           logFirebaseEvent(
-                                                              'RichText_navigate_to');
+                                                              'Text_navigate_to');
 
                                                           context.pushNamed(
                                                               NetbalanceWidget
                                                                   .routeName);
                                                         },
-                                                        child: RichText(
-                                                          textScaler:
-                                                              MediaQuery.of(
-                                                                      context)
-                                                                  .textScaler,
-                                                          text: TextSpan(
-                                                            children: [
-                                                              TextSpan(
-                                                                text: FFLocalizations.of(
-                                                                        context)
-                                                                    .getText(
-                                                                  'wti5elrd' /* $ 282,150 */,
-                                                                ),
-                                                                style: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium
-                                                                    .override(
-                                                                      font: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodyMedium,
-                                                                      color: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .primaryText,
-                                                                      fontSize:
-                                                                          28.0,
-                                                                      letterSpacing:
-                                                                          0.0,
-                                                                      fontWeight:
-                                                                          FontWeight
-                                                                              .bold,
-                                                                    ),
-                                                              )
-                                                            ],
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .labelMedium
-                                                                .override(
-                                                                  font: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelMedium,
-                                                                  fontSize:
-                                                                      100.0,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                ),
+                                                        child: Text(
+                                                          FFLocalizations.of(
+                                                                  context)
+                                                              .getText(
+                                                            'kspmbiqm' /* $ 282,150 */,
                                                           ),
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                font: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium,
+                                                                fontSize: 27.0,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w900,
+                                                              ),
+                                                        ),
+                                                      ),
+                                                      Padding(
+                                                        padding:
+                                                            EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    5.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0),
+                                                        child: Icon(
+                                                          Icons
+                                                              .signal_cellular_alt_rounded,
+                                                          color:
+                                                              Color(0xFFAA9FF1),
+                                                          size: 24.0,
                                                         ),
                                                       ),
                                                     ],
@@ -330,288 +320,279 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                 ),
                                               ),
                                             ),
-                                            Expanded(
-                                              child: Align(
-                                                alignment: AlignmentDirectional(
-                                                    0.0, 0.0),
-                                                child: Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 5.0, 20.0, 0.0),
-                                                  child: Row(
-                                                    mainAxisSize:
-                                                        MainAxisSize.max,
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment.start,
-                                                    children: [
-                                                      Expanded(
-                                                        child: FFButtonWidget(
-                                                          onPressed: () async {
-                                                            logFirebaseEvent(
-                                                                'HOME_PAGE_DEPOSIT_BTN_ON_TAP');
-                                                            logFirebaseEvent(
-                                                                'Button_bottom_sheet');
-                                                            await showModalBottomSheet(
-                                                              isScrollControlled:
-                                                                  true,
-                                                              backgroundColor:
-                                                                  Colors
-                                                                      .transparent,
-                                                              enableDrag: false,
-                                                              context: context,
-                                                              builder:
-                                                                  (context) {
-                                                                return GestureDetector(
-                                                                  onTap: () {
-                                                                    FocusScope.of(
-                                                                            context)
-                                                                        .unfocus();
-                                                                    FocusManager
-                                                                        .instance
-                                                                        .primaryFocus
-                                                                        ?.unfocus();
-                                                                  },
-                                                                  child:
-                                                                      Padding(
-                                                                    padding: MediaQuery
-                                                                        .viewInsetsOf(
-                                                                            context),
-                                                                    child:
-                                                                        AddmoneyWidget(),
-                                                                  ),
-                                                                );
-                                                              },
-                                                            ).then((value) =>
-                                                                safeSetState(
-                                                                    () {}));
-                                                          },
-                                                          text: FFLocalizations
-                                                                  .of(context)
-                                                              .getText(
-                                                            '3ssj85ut' /* Deposit */,
-                                                          ),
-                                                          icon: Icon(
-                                                            Icons.add_card,
-                                                            size: 15.0,
-                                                          ),
-                                                          options:
-                                                              FFButtonOptions(
-                                                            width: 10.3,
-                                                            height: 25.0,
-                                                            padding:
-                                                                EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        4.0,
-                                                                        5.0,
-                                                                        4.0,
-                                                                        5.0),
-                                                            iconPadding:
-                                                                EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0),
-                                                            color: Color(
-                                                                0xFF222230),
-                                                            textStyle:
-                                                                FlutterFlowTheme.of(
+                                            Align(
+                                              alignment: AlignmentDirectional(
+                                                  0.0, 0.0),
+                                              child: Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        0.0, 5.0, 20.0, 0.0),
+                                                child: Row(
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.start,
+                                                  children: [
+                                                    FFButtonWidget(
+                                                      onPressed: () async {
+                                                        logFirebaseEvent(
+                                                            'HOME_PAGE_DEPOSIT_BTN_ON_TAP');
+                                                        logFirebaseEvent(
+                                                            'Button_bottom_sheet');
+                                                        await showModalBottomSheet(
+                                                          isScrollControlled:
+                                                              true,
+                                                          backgroundColor:
+                                                              Colors
+                                                                  .transparent,
+                                                          enableDrag: false,
+                                                          context: context,
+                                                          builder: (context) {
+                                                            return GestureDetector(
+                                                              onTap: () {
+                                                                FocusScope.of(
                                                                         context)
-                                                                    .titleSmall
-                                                                    .override(
-                                                                      font: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .titleSmall,
-                                                                      color: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .primaryText,
-                                                                      fontSize:
-                                                                          1.0,
-                                                                      letterSpacing:
-                                                                          0.0,
-                                                                    ),
-                                                            elevation: 0.0,
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        24.0),
-                                                          ),
-                                                        ),
+                                                                    .unfocus();
+                                                                FocusManager
+                                                                    .instance
+                                                                    .primaryFocus
+                                                                    ?.unfocus();
+                                                              },
+                                                              child: Padding(
+                                                                padding: MediaQuery
+                                                                    .viewInsetsOf(
+                                                                        context),
+                                                                child:
+                                                                    AddmoneyWidget(),
+                                                              ),
+                                                            );
+                                                          },
+                                                        ).then((value) =>
+                                                            safeSetState(
+                                                                () {}));
+                                                      },
+                                                      text: FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        '3ssj85ut' /* Deposit */,
                                                       ),
-                                                      Expanded(
-                                                        child: Padding(
+                                                      icon: Icon(
+                                                        Icons.add_card,
+                                                        size: 15.0,
+                                                      ),
+                                                      options: FFButtonOptions(
+                                                        width: 93.0,
+                                                        height: 30.0,
+                                                        padding:
+                                                            EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    4.0,
+                                                                    5.0,
+                                                                    4.0,
+                                                                    5.0),
+                                                        iconPadding:
+                                                            EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0),
+                                                        color:
+                                                            Color(0xFF222230),
+                                                        textStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleSmall
+                                                                .override(
+                                                                  font: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .titleSmall,
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primaryText,
+                                                                  fontSize: 2.0,
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w600,
+                                                                ),
+                                                        elevation: 0.0,
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(24.0),
+                                                      ),
+                                                    ),
+                                                    Padding(
+                                                      padding:
+                                                          EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  6.0,
+                                                                  0.0,
+                                                                  6.0,
+                                                                  0.0),
+                                                      child: FFButtonWidget(
+                                                        onPressed: () async {
+                                                          logFirebaseEvent(
+                                                              'HOME_PAGE_ADD_CARD_BTN_ON_TAP');
+                                                          logFirebaseEvent(
+                                                              'Button_bottom_sheet');
+                                                          await showModalBottomSheet(
+                                                            isScrollControlled:
+                                                                true,
+                                                            backgroundColor:
+                                                                Colors
+                                                                    .transparent,
+                                                            enableDrag: false,
+                                                            context: context,
+                                                            builder: (context) {
+                                                              return GestureDetector(
+                                                                onTap: () {
+                                                                  FocusScope.of(
+                                                                          context)
+                                                                      .unfocus();
+                                                                  FocusManager
+                                                                      .instance
+                                                                      .primaryFocus
+                                                                      ?.unfocus();
+                                                                },
+                                                                child: Padding(
+                                                                  padding: MediaQuery
+                                                                      .viewInsetsOf(
+                                                                          context),
+                                                                  child:
+                                                                      AddtowalletWidget(),
+                                                                ),
+                                                              );
+                                                            },
+                                                          ).then((value) =>
+                                                              safeSetState(
+                                                                  () {}));
+                                                        },
+                                                        text:
+                                                            FFLocalizations.of(
+                                                                    context)
+                                                                .getText(
+                                                          'itn4itt4' /* Add Card */,
+                                                        ),
+                                                        icon: Icon(
+                                                          Icons.add,
+                                                          size: 15.0,
+                                                        ),
+                                                        options:
+                                                            FFButtonOptions(
+                                                          width: 96.5,
+                                                          height: 30.0,
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(
-                                                                      6.0,
+                                                                      1.0,
                                                                       0.0,
-                                                                      6.0,
+                                                                      3.0,
                                                                       0.0),
-                                                          child: FFButtonWidget(
-                                                            onPressed:
-                                                                () async {
-                                                              logFirebaseEvent(
-                                                                  'HOME_PAGE_ADD_CARD_BTN_ON_TAP');
-                                                              logFirebaseEvent(
-                                                                  'Button_bottom_sheet');
-                                                              await showModalBottomSheet(
-                                                                isScrollControlled:
-                                                                    true,
-                                                                backgroundColor:
-                                                                    Colors
-                                                                        .transparent,
-                                                                enableDrag:
-                                                                    false,
-                                                                context:
-                                                                    context,
-                                                                builder:
-                                                                    (context) {
-                                                                  return GestureDetector(
-                                                                    onTap: () {
-                                                                      FocusScope.of(
-                                                                              context)
-                                                                          .unfocus();
-                                                                      FocusManager
-                                                                          .instance
-                                                                          .primaryFocus
-                                                                          ?.unfocus();
-                                                                    },
-                                                                    child:
-                                                                        Padding(
-                                                                      padding: MediaQuery
-                                                                          .viewInsetsOf(
-                                                                              context),
-                                                                      child:
-                                                                          AddtowalletWidget(),
-                                                                    ),
-                                                                  );
-                                                                },
-                                                              ).then((value) =>
-                                                                  safeSetState(
-                                                                      () {}));
-                                                            },
-                                                            text: FFLocalizations
-                                                                    .of(context)
-                                                                .getText(
-                                                              'itn4itt4' /* Add Card */,
-                                                            ),
-                                                            icon: Icon(
-                                                              Icons.add,
-                                                              size: 15.0,
-                                                            ),
-                                                            options:
-                                                                FFButtonOptions(
-                                                              width: 91.3,
-                                                              height: 25.0,
-                                                              padding:
-                                                                  EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          1.0,
-                                                                          0.0,
-                                                                          3.0,
-                                                                          0.0),
-                                                              iconPadding:
-                                                                  EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0),
-                                                              color: Color(
-                                                                  0xFF222230),
-                                                              textStyle:
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .titleSmall
-                                                                      .override(
-                                                                        font: FlutterFlowTheme.of(context)
-                                                                            .titleSmall,
-                                                                        color: FlutterFlowTheme.of(context)
-                                                                            .primaryText,
-                                                                        fontSize:
-                                                                            1.0,
-                                                                        letterSpacing:
-                                                                            0.0,
-                                                                      ),
-                                                              elevation: 0.0,
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          24.0),
-                                                            ),
-                                                          ),
+                                                          iconPadding:
+                                                              EdgeInsetsDirectional
+                                                                  .fromSTEB(
+                                                                      0.0,
+                                                                      0.0,
+                                                                      0.0,
+                                                                      0.0),
+                                                          color:
+                                                              Color(0xFF222230),
+                                                          textStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleSmall
+                                                                  .override(
+                                                                    font: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleSmall,
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primaryText,
+                                                                    fontSize:
+                                                                        1.0,
+                                                                    letterSpacing:
+                                                                        0.0,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w600,
+                                                                  ),
+                                                          elevation: 0.0,
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(
+                                                                      24.0),
                                                         ),
                                                       ),
-                                                      Expanded(
-                                                        child: FFButtonWidget(
-                                                          onPressed: () async {
-                                                            logFirebaseEvent(
-                                                                'HOME_PAGE_WITHDRAW_BTN_ON_TAP');
-                                                            logFirebaseEvent(
-                                                                'Button_navigate_to');
+                                                    ),
+                                                    FFButtonWidget(
+                                                      onPressed: () async {
+                                                        logFirebaseEvent(
+                                                            'HOME_PAGE_WITHDRAW_BTN_ON_TAP');
+                                                        logFirebaseEvent(
+                                                            'Button_navigate_to');
 
-                                                            context.pushNamed(
-                                                                WithdrawWidget
-                                                                    .routeName);
-                                                          },
-                                                          text: FFLocalizations
-                                                                  .of(context)
-                                                              .getText(
-                                                            'mnmfdkvq' /* Withdraw */,
-                                                          ),
-                                                          icon: Icon(
-                                                            Icons
-                                                                .stacked_line_chart,
-                                                            color: Color(
-                                                                0xFF207772),
-                                                            size: 15.0,
-                                                          ),
-                                                          options:
-                                                              FFButtonOptions(
-                                                            width: 120.8,
-                                                            height: 25.0,
-                                                            padding:
-                                                                EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0),
-                                                            iconPadding:
-                                                                EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0),
-                                                            color: Color(
-                                                                0xFF222230),
-                                                            textStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .titleSmall
-                                                                    .override(
-                                                                      font: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .titleSmall,
-                                                                      color: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .primaryText,
-                                                                      fontSize:
-                                                                          1.0,
-                                                                      letterSpacing:
-                                                                          0.0,
-                                                                    ),
-                                                            elevation: 0.0,
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        24.0),
-                                                          ),
-                                                        ),
+                                                        context.pushNamed(
+                                                            WithdrawWidget
+                                                                .routeName);
+                                                      },
+                                                      text: FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'mnmfdkvq' /* Withdraw */,
                                                       ),
-                                                    ],
-                                                  ),
+                                                      icon: Icon(
+                                                        Icons
+                                                            .stacked_line_chart,
+                                                        color:
+                                                            Color(0xFFAA9FF1),
+                                                        size: 13.0,
+                                                      ),
+                                                      options: FFButtonOptions(
+                                                        width: 111.3,
+                                                        height: 30.0,
+                                                        padding:
+                                                            EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0),
+                                                        iconPadding:
+                                                            EdgeInsetsDirectional
+                                                                .fromSTEB(
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0),
+                                                        color:
+                                                            Color(0xFF222230),
+                                                        textStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleSmall
+                                                                .override(
+                                                                  font: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .titleSmall,
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primaryText,
+                                                                  fontSize: 1.0,
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w600,
+                                                                ),
+                                                        elevation: 0.0,
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(24.0),
+                                                      ),
+                                                    ),
+                                                  ],
                                                 ),
                                               ),
                                             ),

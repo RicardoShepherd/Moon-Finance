@@ -478,7 +478,7 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget> {
                 logFirebaseEvent('COMPLETE_PROFILE_CONTINUE_BTN_ON_TAP');
                 logFirebaseEvent('Button_navigate_to');
 
-                context.pushNamed(PhoneNumberrequestWidget.routeName);
+                context.pushNamed(CreateWalletWidget.routeName);
               },
               text: FFLocalizations.of(context).getText(
                 '29qt0fhm' /* Continue */,

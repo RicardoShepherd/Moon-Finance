@@ -103,7 +103,7 @@ class _NetbalanceWidgetState extends State<NetbalanceWidget> {
                           EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
                       child: FaIcon(
                         FontAwesomeIcons.connectdevelop,
-                        color: Color(0xFFB8B5B5),
+                        color: Color(0xFFAA9FF1),
                         size: 22.0,
                       ),
                     ),

@@ -168,32 +168,34 @@ class _WalletWidgetState extends State<WalletWidget> {
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Container(
-                          width: 203.13,
-                          height: 34.1,
-                          decoration: BoxDecoration(
-                            color: Color(0xB91B1D27),
-                            borderRadius: BorderRadius.circular(24.0),
-                          ),
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 3.0, 0.0, 3.0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: [
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      10.0, 0.0, 10.0, 0.0),
-                                  child: FaIcon(
-                                    FontAwesomeIcons.connectdevelop,
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryText,
-                                    size: 17.0,
+                        Flexible(
+                          child: Container(
+                            width: 191.7,
+                            height: 34.1,
+                            decoration: BoxDecoration(
+                              color: Color(0xB91B1D27),
+                              borderRadius: BorderRadius.circular(24.0),
+                            ),
+                            child: Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 3.0, 0.0, 3.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
+                                children: [
+                                  Flexible(
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          10.0, 0.0, 10.0, 0.0),
+                                      child: FaIcon(
+                                        FontAwesomeIcons.connectdevelop,
+                                        color: Color(0xFFAA9FF1),
+                                        size: 16.0,
+                                      ),
+                                    ),
                                   ),
-                                ),
-                                Expanded(
-                                  child: Align(
+                                  Align(
                                     alignment: AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
@@ -212,6 +214,7 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                       .bodyMedium
                                                       .fontStyle,
                                             ),
+                                            color: Color(0xFFAA9FF1),
                                             fontSize: 12.0,
                                             letterSpacing: 0.0,
                                             fontWeight:
@@ -225,18 +228,19 @@ class _WalletWidgetState extends State<WalletWidget> {
                                           ),
                                     ),
                                   ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      10.0, 0.0, 10.0, 0.0),
-                                  child: Icon(
-                                    Icons.keyboard_arrow_right_sharp,
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryText,
-                                    size: 24.0,
+                                  Flexible(
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          10.0, 0.0, 10.0, 0.0),
+                                      child: Icon(
+                                        Icons.keyboard_arrow_right_sharp,
+                                        color: Color(0xFFAA9FF1),
+                                        size: 23.0,
+                                      ),
+                                    ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
                           ),
                         ),

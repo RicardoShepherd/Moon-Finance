@@ -1,8 +1,9 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'mini_apps_widget.dart' show MiniAppsWidget;
+import '/index.dart';
+import 'create_wallet_widget.dart' show CreateWalletWidget;
 import 'package:flutter/material.dart';
 
-class MiniAppsModel extends FlutterFlowModel<MiniAppsWidget> {
+class CreateWalletModel extends FlutterFlowModel<CreateWalletWidget> {
   @override
   void initState(BuildContext context) {}
 

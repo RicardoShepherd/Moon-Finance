@@ -93,13 +93,20 @@ class _SinglecardWidgetState extends State<SinglecardWidget> {
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(8.0),
-                          child: Image.asset(
-                            'assets/images/images_(3).png',
-                            width: 17.0,
-                            height: 17.0,
-                            fit: BoxFit.cover,
+                        Flexible(
+                          child: Container(
+                            width: 15.0,
+                            height: 15.0,
+                            decoration: BoxDecoration(),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(8.0),
+                              child: Image.asset(
+                                'assets/images/images_(3).png',
+                                width: 17.0,
+                                height: 17.0,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
                           ),
                         ),
                         Padding(
@@ -194,7 +201,7 @@ class _SinglecardWidgetState extends State<SinglecardWidget> {
                                       color: Colors.white,
                                       fontSize: 6.0,
                                       letterSpacing: 0.0,
-                                      fontWeight: FontWeight.normal,
+                                      fontWeight: FontWeight.w600,
                                     ),
                                 elevation: 0.0,
                                 borderRadius: BorderRadius.circular(18.0),

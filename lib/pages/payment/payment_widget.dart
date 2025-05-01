@@ -803,48 +803,49 @@ class _PaymentWidgetState extends State<PaymentWidget> {
                         ],
                       ),
                     ),
-                    Expanded(
-                      child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            20.0, 0.0, 20.0, 0.0),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
-                              child: Text(
-                                FFLocalizations.of(context).getText(
-                                  'n6w8cb8u' /* $ */,
-                                ),
-                                style: FlutterFlowTheme.of(context)
-                                    .displayLarge
-                                    .override(
-                                      font: FlutterFlowTheme.of(context)
-                                          .displayLarge,
-                                      fontSize: 100.0,
-                                      letterSpacing: 0.0,
-                                    ),
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(
+                          20.0, 90.0, 20.0, 90.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Align(
+                            alignment: AlignmentDirectional(0.0, 0.0),
+                            child: Text(
+                              FFLocalizations.of(context).getText(
+                                'n6w8cb8u' /* $ */,
                               ),
+                              style: FlutterFlowTheme.of(context)
+                                  .displayLarge
+                                  .override(
+                                    font: FlutterFlowTheme.of(context)
+                                        .displayLarge,
+                                    fontSize: 100.0,
+                                    letterSpacing: 0.0,
+                                    fontWeight: FontWeight.w600,
+                                  ),
                             ),
-                            Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
-                              child: Text(
-                                FFLocalizations.of(context).getText(
-                                  'z3wdy1p0' /* 0 */,
-                                ),
-                                style: FlutterFlowTheme.of(context)
-                                    .displayLarge
-                                    .override(
-                                      font: FlutterFlowTheme.of(context)
-                                          .displayLarge,
-                                      fontSize: 100.0,
-                                      letterSpacing: 0.0,
-                                    ),
+                          ),
+                          Align(
+                            alignment: AlignmentDirectional(0.0, 0.0),
+                            child: Text(
+                              FFLocalizations.of(context).getText(
+                                'z3wdy1p0' /* 0 */,
                               ),
+                              style: FlutterFlowTheme.of(context)
+                                  .displayLarge
+                                  .override(
+                                    font: FlutterFlowTheme.of(context)
+                                        .displayLarge,
+                                    fontSize: 100.0,
+                                    letterSpacing: 0.0,
+                                    fontWeight: FontWeight.w600,
+                                  ),
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
                     ),
                     Padding(
@@ -1355,7 +1356,7 @@ class _PaymentWidgetState extends State<PaymentWidget> {
                                           height: 65.0,
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  50.0, 0.0, 50.0, 0.0),
+                                                  50.0, 0.0, 50.0, 20.0),
                                           iconPadding:
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
@@ -1373,7 +1374,7 @@ class _PaymentWidgetState extends State<PaymentWidget> {
                                               ),
                                           elevation: 0.0,
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(4.0),
                                         ),
                                       ),
                                     ),
@@ -1475,7 +1476,7 @@ class _PaymentWidgetState extends State<PaymentWidget> {
                               alignment: AlignmentDirectional(0.0, 0.0),
                               child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 15.0, 0.0, 15.0),
+                                    0.0, 25.0, 0.0, 70.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -1517,7 +1518,7 @@ class _PaymentWidgetState extends State<PaymentWidget> {
                                                       fontSize: 17.0,
                                                       letterSpacing: 0.0,
                                                       fontWeight:
-                                                          FontWeight.w600,
+                                                          FontWeight.w800,
                                                     ),
                                             elevation: 0.0,
                                             borderRadius:
@@ -1563,7 +1564,7 @@ class _PaymentWidgetState extends State<PaymentWidget> {
                                                       fontSize: 17.0,
                                                       letterSpacing: 0.0,
                                                       fontWeight:
-                                                          FontWeight.w600,
+                                                          FontWeight.w800,
                                                     ),
                                             elevation: 0.0,
                                             borderRadius:

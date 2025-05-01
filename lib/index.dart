@@ -25,10 +25,8 @@ export '/details39_transaction_transfer_responsive/details39_transaction_transfe
 export '/transaction/transaction_widget.dart' show TransactionWidget;
 export '/support_page/support_page_widget.dart' show SupportPageWidget;
 export '/invoices/invoices_widget.dart' show InvoicesWidget;
-export '/phone_numberrequest/phone_numberrequest_widget.dart'
-    show PhoneNumberrequestWidget;
-export '/phonenumberverfication/phonenumberverfication_widget.dart'
-    show PhonenumberverficationWidget;
+export '/create_wallet/create_wallet_widget.dart' show CreateWalletWidget;
+export '/secure_wallet/secure_wallet_widget.dart' show SecureWalletWidget;
 export '/fundraiser/fundraiser_widget.dart' show FundraiserWidget;
 export '/charts/charts_widget.dart' show ChartsWidget;
 export '/mini_apps/mini_apps_widget.dart' show MiniAppsWidget;
@@ -64,3 +62,9 @@ export '/homescreen/homescreen_widget.dart' show HomescreenWidget;
 export '/menumoon/menumoon_widget.dart' show MenumoonWidget;
 export '/buy_u_s_d_c/buy_u_s_d_c_widget.dart' show BuyUSDCWidget;
 export '/reviewoder/reviewoder_widget.dart' show ReviewoderWidget;
+export '/secraterecoveryphraseinfo/secraterecoveryphraseinfo_widget.dart'
+    show SecraterecoveryphraseinfoWidget;
+export '/secraterecoveryphrase/secraterecoveryphrase_widget.dart'
+    show SecraterecoveryphraseWidget;
+export '/confirmsecraterecoveryphrase/confirmsecraterecoveryphrase_widget.dart'
+    show ConfirmsecraterecoveryphraseWidget;
