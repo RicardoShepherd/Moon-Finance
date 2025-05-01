@@ -16,3 +16,4 @@ class PlaidClient {
 
   static PlaidApi get client => _plaidApi;
 }
+  
