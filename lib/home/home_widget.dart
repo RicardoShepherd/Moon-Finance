@@ -142,7 +142,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                           .secondaryBackground,
                                       fontSize: 4.0,
                                       letterSpacing: 0.0,
-                                      fontWeight: FontWeight.w800,
+                                      fontWeight: FontWeight.bold,
                                     ),
                                 elevation: 0.0,
                                 borderRadius: BorderRadius.circular(24.0),
@@ -290,7 +290,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                                 font: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium,
-                                                                fontSize: 27.0,
+                                                                fontSize: 26.0,
                                                                 letterSpacing:
                                                                     0.0,
                                                                 fontWeight:
