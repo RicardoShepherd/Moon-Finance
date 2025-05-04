@@ -86,12 +86,13 @@ class _LinkyourcardWidgetState extends State<LinkyourcardWidget> {
                         'ud2rykh1' /* Add to Wallet */,
                       ),
                       textAlign: TextAlign.center,
-                      style:
-                          FlutterFlowTheme.of(context).headlineMedium.override(
-                                fontFamily: 'Outfit',
-                                fontSize: 16.0,
-                                letterSpacing: 0.0,
-                              ),
+                      style: FlutterFlowTheme.of(context)
+                          .headlineMedium
+                          .override(
+                            font: FlutterFlowTheme.of(context).headlineMedium,
+                            fontSize: 16.0,
+                            letterSpacing: 0.0,
+                          ),
                     ),
                   ),
                 ),
@@ -129,7 +130,8 @@ class _LinkyourcardWidgetState extends State<LinkyourcardWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: 'Plus Jakarta Sans',
+                                      font: FlutterFlowTheme.of(context)
+                                          .bodyMedium,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
                                     ),
@@ -175,7 +177,8 @@ class _LinkyourcardWidgetState extends State<LinkyourcardWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: 'Plus Jakarta Sans',
+                                      font: FlutterFlowTheme.of(context)
+                                          .bodyMedium,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
                                     ),

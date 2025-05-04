@@ -142,7 +142,7 @@ class _LoansWidgetState extends State<LoansWidget> {
                       ),
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Plus Jakarta Sans',
+                            font: FlutterFlowTheme.of(context).bodyMedium,
                             letterSpacing: 0.0,
                           ),
                     ),
@@ -159,7 +159,7 @@ class _LoansWidgetState extends State<LoansWidget> {
                       ),
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Plus Jakarta Sans',
+                            font: FlutterFlowTheme.of(context).bodyMedium,
                             letterSpacing: 0.0,
                           ),
                     ),
@@ -220,7 +220,7 @@ class _LoansWidgetState extends State<LoansWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   fontSize: 13.0,
                                   letterSpacing: 0.0,
                                 ),
@@ -273,7 +273,7 @@ class _LoansWidgetState extends State<LoansWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   fontSize: 13.0,
                                   letterSpacing: 0.0,
                                 ),
@@ -330,7 +330,7 @@ class _LoansWidgetState extends State<LoansWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   fontSize: 13.0,
                                   letterSpacing: 0.0,
                                 ),
@@ -395,7 +395,7 @@ class _LoansWidgetState extends State<LoansWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   fontSize: 13.0,
                                   letterSpacing: 0.0,
                                 ),
@@ -448,7 +448,7 @@ class _LoansWidgetState extends State<LoansWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   fontSize: 13.0,
                                   letterSpacing: 0.0,
                                 ),
@@ -505,7 +505,7 @@ class _LoansWidgetState extends State<LoansWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   fontSize: 13.0,
                                   letterSpacing: 0.0,
                                 ),

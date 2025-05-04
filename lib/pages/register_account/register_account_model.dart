@@ -6,6 +6,10 @@ import 'package:flutter/material.dart';
 class RegisterAccountModel extends FlutterFlowModel<RegisterAccountWidget> {
   ///  State fields for stateful widgets in this page.
 
+  // State field(s) for username widget.
+  FocusNode? usernameFocusNode;
+  TextEditingController? usernameTextController;
+  String? Function(BuildContext, String?)? usernameTextControllerValidator;
   // State field(s) for emailAddress widget.
   FocusNode? emailAddressFocusNode;
   TextEditingController? emailAddressTextController;
@@ -31,6 +35,9 @@ class RegisterAccountModel extends FlutterFlowModel<RegisterAccountWidget> {
 
   @override
   void dispose() {
+    usernameFocusNode?.dispose();
+    usernameTextController?.dispose();
+
     emailAddressFocusNode?.dispose();
     emailAddressTextController?.dispose();
 

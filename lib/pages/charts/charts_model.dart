@@ -1,5 +1,4 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import '/index.dart';
 import 'charts_widget.dart' show ChartsWidget;
 import 'package:flutter/material.dart';
 

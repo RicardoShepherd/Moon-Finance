@@ -4,6 +4,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'mooncreditcardinfo_model.dart';
 export 'mooncreditcardinfo_model.dart';
 
@@ -128,7 +129,8 @@ class _MooncreditcardinfoWidgetState extends State<MooncreditcardinfoWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .titleLarge
                                     .override(
-                                      fontFamily: 'Outfit',
+                                      font: FlutterFlowTheme.of(context)
+                                          .titleLarge,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w600,
                                     ),
@@ -151,7 +153,7 @@ class _MooncreditcardinfoWidgetState extends State<MooncreditcardinfoWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   color: Color(0xFFCEC8C8),
                                   fontSize: 14.0,
                                   letterSpacing: 0.0,
@@ -193,25 +195,31 @@ class _MooncreditcardinfoWidgetState extends State<MooncreditcardinfoWidget> {
                                               .getText(
                                             '22hichyf' /* First Name */,
                                           ),
-                                          labelStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelLarge
-                                                  .override(
-                                                    fontFamily: 'Outfit',
-                                                    letterSpacing: 0.0,
-                                                  ),
-                                          hintStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMedium
-                                                  .override(
-                                                    fontFamily: 'Outfit',
-                                                    letterSpacing: 0.0,
-                                                  ),
+                                          labelStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .labelLarge
+                                              .override(
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelLarge,
+                                                letterSpacing: 0.0,
+                                              ),
+                                          hintStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .labelMedium
+                                              .override(
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium,
+                                                letterSpacing: 0.0,
+                                              ),
                                           errorStyle: FlutterFlowTheme.of(
                                                   context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Plus Jakarta Sans',
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .error,
@@ -272,7 +280,8 @@ class _MooncreditcardinfoWidgetState extends State<MooncreditcardinfoWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily: 'Plus Jakarta Sans',
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               letterSpacing: 0.0,
                                             ),
                                         cursorColor:
@@ -296,25 +305,31 @@ class _MooncreditcardinfoWidgetState extends State<MooncreditcardinfoWidget> {
                                               .getText(
                                             '43iv113i' /* Last Name */,
                                           ),
-                                          labelStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelLarge
-                                                  .override(
-                                                    fontFamily: 'Outfit',
-                                                    letterSpacing: 0.0,
-                                                  ),
-                                          hintStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMedium
-                                                  .override(
-                                                    fontFamily: 'Outfit',
-                                                    letterSpacing: 0.0,
-                                                  ),
+                                          labelStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .labelLarge
+                                              .override(
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelLarge,
+                                                letterSpacing: 0.0,
+                                              ),
+                                          hintStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .labelMedium
+                                              .override(
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium,
+                                                letterSpacing: 0.0,
+                                              ),
                                           errorStyle: FlutterFlowTheme.of(
                                                   context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Plus Jakarta Sans',
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .error,
@@ -375,7 +390,8 @@ class _MooncreditcardinfoWidgetState extends State<MooncreditcardinfoWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily: 'Plus Jakarta Sans',
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               letterSpacing: 0.0,
                                             ),
                                         cursorColor:
@@ -398,25 +414,31 @@ class _MooncreditcardinfoWidgetState extends State<MooncreditcardinfoWidget> {
                                               .getText(
                                             'lgb2v0el' /* Age */,
                                           ),
-                                          labelStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelLarge
-                                                  .override(
-                                                    fontFamily: 'Outfit',
-                                                    letterSpacing: 0.0,
-                                                  ),
-                                          hintStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMedium
-                                                  .override(
-                                                    fontFamily: 'Outfit',
-                                                    letterSpacing: 0.0,
-                                                  ),
+                                          labelStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .labelLarge
+                                              .override(
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelLarge,
+                                                letterSpacing: 0.0,
+                                              ),
+                                          hintStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .labelMedium
+                                              .override(
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium,
+                                                letterSpacing: 0.0,
+                                              ),
                                           errorStyle: FlutterFlowTheme.of(
                                                   context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Plus Jakarta Sans',
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .error,
@@ -477,7 +499,8 @@ class _MooncreditcardinfoWidgetState extends State<MooncreditcardinfoWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily: 'Plus Jakarta Sans',
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               letterSpacing: 0.0,
                                             ),
                                         cursorColor:
@@ -486,6 +509,19 @@ class _MooncreditcardinfoWidgetState extends State<MooncreditcardinfoWidget> {
                                         validator: _model
                                             .ageTextControllerValidator
                                             .asValidator(context),
+                                        inputFormatters: [
+                                          if (!isAndroid && !isiOS)
+                                            TextInputFormatter.withFunction(
+                                                (oldValue, newValue) {
+                                              return TextEditingValue(
+                                                selection: newValue.selection,
+                                                text: newValue.text
+                                                    .toCapitalization(
+                                                        TextCapitalization
+                                                            .words),
+                                              );
+                                            }),
+                                        ],
                                       ),
                                       TextFormField(
                                         controller:
@@ -500,25 +536,31 @@ class _MooncreditcardinfoWidgetState extends State<MooncreditcardinfoWidget> {
                                               .getText(
                                             '36g2lpgz' /* Date of Birth */,
                                           ),
-                                          labelStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelLarge
-                                                  .override(
-                                                    fontFamily: 'Outfit',
-                                                    letterSpacing: 0.0,
-                                                  ),
-                                          hintStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMedium
-                                                  .override(
-                                                    fontFamily: 'Outfit',
-                                                    letterSpacing: 0.0,
-                                                  ),
+                                          labelStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .labelLarge
+                                              .override(
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelLarge,
+                                                letterSpacing: 0.0,
+                                              ),
+                                          hintStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .labelMedium
+                                              .override(
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium,
+                                                letterSpacing: 0.0,
+                                              ),
                                           errorStyle: FlutterFlowTheme.of(
                                                   context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Plus Jakarta Sans',
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .error,
@@ -580,7 +622,8 @@ class _MooncreditcardinfoWidgetState extends State<MooncreditcardinfoWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily: 'Plus Jakarta Sans',
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               letterSpacing: 0.0,
                                             ),
                                         cursorColor:
@@ -589,6 +632,19 @@ class _MooncreditcardinfoWidgetState extends State<MooncreditcardinfoWidget> {
                                         validator: _model
                                             .phoneNumberTextControllerValidator
                                             .asValidator(context),
+                                        inputFormatters: [
+                                          if (!isAndroid && !isiOS)
+                                            TextInputFormatter.withFunction(
+                                                (oldValue, newValue) {
+                                              return TextEditingValue(
+                                                selection: newValue.selection,
+                                                text: newValue.text
+                                                    .toCapitalization(
+                                                        TextCapitalization
+                                                            .words),
+                                              );
+                                            }),
+                                        ],
                                       ),
                                       TextFormField(
                                         controller:
@@ -603,25 +659,31 @@ class _MooncreditcardinfoWidgetState extends State<MooncreditcardinfoWidget> {
                                               .getText(
                                             '06md87cd' /* Phone number */,
                                           ),
-                                          labelStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelLarge
-                                                  .override(
-                                                    fontFamily: 'Outfit',
-                                                    letterSpacing: 0.0,
-                                                  ),
-                                          hintStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMedium
-                                                  .override(
-                                                    fontFamily: 'Outfit',
-                                                    letterSpacing: 0.0,
-                                                  ),
+                                          labelStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .labelLarge
+                                              .override(
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelLarge,
+                                                letterSpacing: 0.0,
+                                              ),
+                                          hintStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .labelMedium
+                                              .override(
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium,
+                                                letterSpacing: 0.0,
+                                              ),
                                           errorStyle: FlutterFlowTheme.of(
                                                   context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Plus Jakarta Sans',
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium,
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .error,
@@ -683,7 +745,8 @@ class _MooncreditcardinfoWidgetState extends State<MooncreditcardinfoWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily: 'Plus Jakarta Sans',
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               letterSpacing: 0.0,
                                             ),
                                         cursorColor:
@@ -752,7 +815,8 @@ class _MooncreditcardinfoWidgetState extends State<MooncreditcardinfoWidget> {
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: 'Plus Jakarta Sans',
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     color: Colors.white,
                                     letterSpacing: 0.0,
                                   ),

@@ -69,7 +69,7 @@ class _NotificationsSettingsWidgetState
             'sc4ff4ce' /* Notifications */,
           ),
           style: FlutterFlowTheme.of(context).headlineSmall.override(
-                fontFamily: 'Outfit',
+                font: FlutterFlowTheme.of(context).headlineSmall,
                 letterSpacing: 0.0,
               ),
         ),
@@ -90,11 +90,11 @@ class _NotificationsSettingsWidgetState
             if (!snapshot.hasData) {
               return Center(
                 child: SizedBox(
-                  width: 50.0,
-                  height: 50.0,
+                  width: 40.0,
+                  height: 40.0,
                   child: CircularProgressIndicator(
                     valueColor: AlwaysStoppedAnimation<Color>(
-                      FlutterFlowTheme.of(context).primary,
+                      Color(0xFFEAE9ED),
                     ),
                   ),
                 ),
@@ -116,12 +116,13 @@ class _NotificationsSettingsWidgetState
                           FFLocalizations.of(context).getText(
                             'r72zvrv5' /* Choose what notifcations you w... */,
                           ),
-                          style:
-                              FlutterFlowTheme.of(context).bodySmall.override(
-                                    fontFamily: 'Plus Jakarta Sans',
-                                    fontSize: 14.0,
-                                    letterSpacing: 0.0,
-                                  ),
+                          style: FlutterFlowTheme.of(context)
+                              .bodySmall
+                              .override(
+                                font: FlutterFlowTheme.of(context).bodySmall,
+                                fontSize: 14.0,
+                                letterSpacing: 0.0,
+                              ),
                         ),
                       ),
                     ],
@@ -141,18 +142,19 @@ class _NotificationsSettingsWidgetState
                         FFLocalizations.of(context).getText(
                           'gjygkr0n' /* Push Notifications */,
                         ),
-                        style:
-                            FlutterFlowTheme.of(context).headlineSmall.override(
-                                  fontFamily: 'Outfit',
-                                  letterSpacing: 0.0,
-                                ),
+                        style: FlutterFlowTheme.of(context)
+                            .headlineSmall
+                            .override(
+                              font: FlutterFlowTheme.of(context).headlineSmall,
+                              letterSpacing: 0.0,
+                            ),
                       ),
                       subtitle: Text(
                         FFLocalizations.of(context).getText(
                           '3y3yhxbk' /* Receive Push notifications fro... */,
                         ),
                         style: FlutterFlowTheme.of(context).bodySmall.override(
-                              fontFamily: 'Plus Jakarta Sans',
+                              font: FlutterFlowTheme.of(context).bodySmall,
                               letterSpacing: 0.0,
                             ),
                       ),
@@ -178,18 +180,19 @@ class _NotificationsSettingsWidgetState
                       FFLocalizations.of(context).getText(
                         '1ytebj35' /* Email Notifications */,
                       ),
-                      style:
-                          FlutterFlowTheme.of(context).headlineSmall.override(
-                                fontFamily: 'Outfit',
-                                letterSpacing: 0.0,
-                              ),
+                      style: FlutterFlowTheme.of(context)
+                          .headlineSmall
+                          .override(
+                            font: FlutterFlowTheme.of(context).headlineSmall,
+                            letterSpacing: 0.0,
+                          ),
                     ),
                     subtitle: Text(
                       FFLocalizations.of(context).getText(
                         '9lvh5nst' /* Receive email notifications fr... */,
                       ),
                       style: FlutterFlowTheme.of(context).bodySmall.override(
-                            fontFamily: 'Plus Jakarta Sans',
+                            font: FlutterFlowTheme.of(context).bodySmall,
                             letterSpacing: 0.0,
                           ),
                     ),
@@ -214,18 +217,19 @@ class _NotificationsSettingsWidgetState
                       FFLocalizations.of(context).getText(
                         '69d2j74u' /* Location Services */,
                       ),
-                      style:
-                          FlutterFlowTheme.of(context).headlineSmall.override(
-                                fontFamily: 'Outfit',
-                                letterSpacing: 0.0,
-                              ),
+                      style: FlutterFlowTheme.of(context)
+                          .headlineSmall
+                          .override(
+                            font: FlutterFlowTheme.of(context).headlineSmall,
+                            letterSpacing: 0.0,
+                          ),
                     ),
                     subtitle: Text(
                       FFLocalizations.of(context).getText(
                         '3k8cuv0d' /* Allow us to track your locatio... */,
                       ),
                       style: FlutterFlowTheme.of(context).bodySmall.override(
-                            fontFamily: 'Plus Jakarta Sans',
+                            font: FlutterFlowTheme.of(context).bodySmall,
                             letterSpacing: 0.0,
                           ),
                     ),
@@ -250,18 +254,19 @@ class _NotificationsSettingsWidgetState
                       FFLocalizations.of(context).getText(
                         'pofurllk' /* Bank Activity */,
                       ),
-                      style:
-                          FlutterFlowTheme.of(context).headlineSmall.override(
-                                fontFamily: 'Outfit',
-                                letterSpacing: 0.0,
-                              ),
+                      style: FlutterFlowTheme.of(context)
+                          .headlineSmall
+                          .override(
+                            font: FlutterFlowTheme.of(context).headlineSmall,
+                            letterSpacing: 0.0,
+                          ),
                     ),
                     subtitle: Text(
                       FFLocalizations.of(context).getText(
                         'hptnkg2w' /* Get notified about imporant ch... */,
                       ),
                       style: FlutterFlowTheme.of(context).bodySmall.override(
-                            fontFamily: 'Plus Jakarta Sans',
+                            font: FlutterFlowTheme.of(context).bodySmall,
                             letterSpacing: 0.0,
                           ),
                     ),
@@ -286,18 +291,19 @@ class _NotificationsSettingsWidgetState
                       FFLocalizations.of(context).getText(
                         'mn1lkcja' /* Subcription */,
                       ),
-                      style:
-                          FlutterFlowTheme.of(context).headlineSmall.override(
-                                fontFamily: 'Outfit',
-                                letterSpacing: 0.0,
-                              ),
+                      style: FlutterFlowTheme.of(context)
+                          .headlineSmall
+                          .override(
+                            font: FlutterFlowTheme.of(context).headlineSmall,
+                            letterSpacing: 0.0,
+                          ),
                     ),
                     subtitle: Text(
                       FFLocalizations.of(context).getText(
                         'abfijbff' /* Recive Notifications for when ... */,
                       ),
                       style: FlutterFlowTheme.of(context).bodySmall.override(
-                            fontFamily: 'Plus Jakarta Sans',
+                            font: FlutterFlowTheme.of(context).bodySmall,
                             letterSpacing: 0.0,
                           ),
                     ),
@@ -322,18 +328,19 @@ class _NotificationsSettingsWidgetState
                       FFLocalizations.of(context).getText(
                         'g71s9fzn' /* Active Trades */,
                       ),
-                      style:
-                          FlutterFlowTheme.of(context).headlineSmall.override(
-                                fontFamily: 'Outfit',
-                                letterSpacing: 0.0,
-                              ),
+                      style: FlutterFlowTheme.of(context)
+                          .headlineSmall
+                          .override(
+                            font: FlutterFlowTheme.of(context).headlineSmall,
+                            letterSpacing: 0.0,
+                          ),
                     ),
                     subtitle: Text(
                       FFLocalizations.of(context).getText(
                         'rscqh7ln' /* Play stop loss and take profit... */,
                       ),
                       style: FlutterFlowTheme.of(context).bodySmall.override(
-                            fontFamily: 'Plus Jakarta Sans',
+                            font: FlutterFlowTheme.of(context).bodySmall,
                             letterSpacing: 0.0,
                           ),
                     ),

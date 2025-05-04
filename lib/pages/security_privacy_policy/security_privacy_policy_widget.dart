@@ -69,7 +69,7 @@ class _SecurityPrivacyPolicyWidgetState
             'alczfiiy' /* Security & Privacy Policy */,
           ),
           style: FlutterFlowTheme.of(context).headlineSmall.override(
-                fontFamily: 'Outfit',
+                font: FlutterFlowTheme.of(context).headlineSmall,
                 letterSpacing: 0.0,
               ),
         ),
@@ -86,11 +86,11 @@ class _SecurityPrivacyPolicyWidgetState
               if (!snapshot.hasData) {
                 return Center(
                   child: SizedBox(
-                    width: 50.0,
-                    height: 50.0,
+                    width: 40.0,
+                    height: 40.0,
                     child: CircularProgressIndicator(
                       valueColor: AlwaysStoppedAnimation<Color>(
-                        FlutterFlowTheme.of(context).primary,
+                        Color(0xFFEAE9ED),
                       ),
                     ),
                   ),
@@ -117,7 +117,8 @@ class _SecurityPrivacyPolicyWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .headlineMedium
                                   .override(
-                                    fontFamily: 'Outfit',
+                                    font: FlutterFlowTheme.of(context)
+                                        .headlineMedium,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -139,7 +140,8 @@ class _SecurityPrivacyPolicyWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .bodySmall
                                   .override(
-                                    fontFamily: 'Plus Jakarta Sans',
+                                    font:
+                                        FlutterFlowTheme.of(context).bodySmall,
                                     letterSpacing: 0.0,
                                   ),
                             ),

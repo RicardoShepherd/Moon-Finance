@@ -167,7 +167,8 @@ class _SupportPageWidgetState extends State<SupportPageWidget>
                             style: FlutterFlowTheme.of(context)
                                 .headlineMedium
                                 .override(
-                                  fontFamily: 'Outfit',
+                                  font: FlutterFlowTheme.of(context)
+                                      .headlineMedium,
                                   letterSpacing: 0.0,
                                 ),
                           ),
@@ -218,8 +219,9 @@ class _SupportPageWidgetState extends State<SupportPageWidget>
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
@@ -274,8 +276,9 @@ class _SupportPageWidgetState extends State<SupportPageWidget>
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
@@ -330,8 +333,9 @@ class _SupportPageWidgetState extends State<SupportPageWidget>
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
@@ -355,7 +359,7 @@ class _SupportPageWidgetState extends State<SupportPageWidget>
                             style: FlutterFlowTheme.of(context)
                                 .labelLarge
                                 .override(
-                                  fontFamily: 'Outfit',
+                                  font: FlutterFlowTheme.of(context).labelLarge,
                                   letterSpacing: 0.0,
                                 ),
                           ),
@@ -392,7 +396,8 @@ class _SupportPageWidgetState extends State<SupportPageWidget>
                                   style: FlutterFlowTheme.of(context)
                                       .bodyLarge
                                       .override(
-                                        fontFamily: 'Plus Jakarta Sans',
+                                        font: FlutterFlowTheme.of(context)
+                                            .bodyLarge,
                                         fontSize: 14.0,
                                         letterSpacing: 0.0,
                                       ),
@@ -446,7 +451,8 @@ class _SupportPageWidgetState extends State<SupportPageWidget>
                                       style: FlutterFlowTheme.of(context)
                                           .bodyLarge
                                           .override(
-                                            fontFamily: 'Plus Jakarta Sans',
+                                            font: FlutterFlowTheme.of(context)
+                                                .bodyLarge,
                                             fontSize: 14.0,
                                             letterSpacing: 0.0,
                                           ),
@@ -496,7 +502,8 @@ class _SupportPageWidgetState extends State<SupportPageWidget>
                                   style: FlutterFlowTheme.of(context)
                                       .bodyLarge
                                       .override(
-                                        fontFamily: 'Plus Jakarta Sans',
+                                        font: FlutterFlowTheme.of(context)
+                                            .bodyLarge,
                                         fontSize: 14.0,
                                         letterSpacing: 0.0,
                                       ),
@@ -546,7 +553,8 @@ class _SupportPageWidgetState extends State<SupportPageWidget>
                                   style: FlutterFlowTheme.of(context)
                                       .bodyLarge
                                       .override(
-                                        fontFamily: 'Plus Jakarta Sans',
+                                        font: FlutterFlowTheme.of(context)
+                                            .bodyLarge,
                                         fontSize: 14.0,
                                         letterSpacing: 0.0,
                                       ),
@@ -596,7 +604,8 @@ class _SupportPageWidgetState extends State<SupportPageWidget>
                                   style: FlutterFlowTheme.of(context)
                                       .bodyLarge
                                       .override(
-                                        fontFamily: 'Plus Jakarta Sans',
+                                        font: FlutterFlowTheme.of(context)
+                                            .bodyLarge,
                                         fontSize: 14.0,
                                         letterSpacing: 0.0,
                                       ),
@@ -646,7 +655,8 @@ class _SupportPageWidgetState extends State<SupportPageWidget>
                                   style: FlutterFlowTheme.of(context)
                                       .bodyLarge
                                       .override(
-                                        fontFamily: 'Plus Jakarta Sans',
+                                        font: FlutterFlowTheme.of(context)
+                                            .bodyLarge,
                                         fontSize: 14.0,
                                         letterSpacing: 0.0,
                                       ),
@@ -696,7 +706,8 @@ class _SupportPageWidgetState extends State<SupportPageWidget>
                                   style: FlutterFlowTheme.of(context)
                                       .bodyLarge
                                       .override(
-                                        fontFamily: 'Plus Jakarta Sans',
+                                        font: FlutterFlowTheme.of(context)
+                                            .bodyLarge,
                                         fontSize: 14.0,
                                         letterSpacing: 0.0,
                                       ),
@@ -746,7 +757,8 @@ class _SupportPageWidgetState extends State<SupportPageWidget>
                                   style: FlutterFlowTheme.of(context)
                                       .bodyLarge
                                       .override(
-                                        fontFamily: 'Plus Jakarta Sans',
+                                        font: FlutterFlowTheme.of(context)
+                                            .bodyLarge,
                                         fontSize: 14.0,
                                         letterSpacing: 0.0,
                                       ),
@@ -796,7 +808,8 @@ class _SupportPageWidgetState extends State<SupportPageWidget>
                                   style: FlutterFlowTheme.of(context)
                                       .bodyLarge
                                       .override(
-                                        fontFamily: 'Plus Jakarta Sans',
+                                        font: FlutterFlowTheme.of(context)
+                                            .bodyLarge,
                                         fontSize: 14.0,
                                         letterSpacing: 0.0,
                                       ),
@@ -839,7 +852,7 @@ class _SupportPageWidgetState extends State<SupportPageWidget>
                         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).primaryText,
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily: 'Plus Jakarta Sans',
+                          font: FlutterFlowTheme.of(context).titleSmall,
                           color: FlutterFlowTheme.of(context).primaryBackground,
                           letterSpacing: 0.0,
                         ),

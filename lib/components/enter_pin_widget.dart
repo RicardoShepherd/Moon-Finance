@@ -122,7 +122,7 @@ class _EnterPinWidgetState extends State<EnterPinWidget>
                         style: FlutterFlowTheme.of(context)
                             .headlineMedium
                             .override(
-                              fontFamily: 'Outfit',
+                              font: FlutterFlowTheme.of(context).headlineMedium,
                               letterSpacing: 0.0,
                             ),
                       ),
@@ -134,11 +134,12 @@ class _EnterPinWidgetState extends State<EnterPinWidget>
                         FFLocalizations.of(context).getText(
                           'gz9t3psz' /* Your project has been created,... */,
                         ),
-                        style:
-                            FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: 'Outfit',
-                                  letterSpacing: 0.0,
-                                ),
+                        style: FlutterFlowTheme.of(context)
+                            .labelMedium
+                            .override(
+                              font: FlutterFlowTheme.of(context).labelMedium,
+                              letterSpacing: 0.0,
+                            ),
                       ),
                     ),
                     Padding(
@@ -157,7 +158,8 @@ class _EnterPinWidgetState extends State<EnterPinWidget>
                               textStyle: FlutterFlowTheme.of(context)
                                   .bodyLarge
                                   .override(
-                                    fontFamily: 'Plus Jakarta Sans',
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyLarge,
                                     letterSpacing: 0.0,
                                   ),
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -224,7 +226,8 @@ class _EnterPinWidgetState extends State<EnterPinWidget>
                                       textStyle: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Plus Jakarta Sans',
+                                            font: FlutterFlowTheme.of(context)
+                                                .bodyMedium,
                                             letterSpacing: 0.0,
                                           ),
                                       elevation: 0.0,
@@ -269,7 +272,8 @@ class _EnterPinWidgetState extends State<EnterPinWidget>
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
-                                            fontFamily: 'Plus Jakarta Sans',
+                                            font: FlutterFlowTheme.of(context)
+                                                .titleSmall,
                                             letterSpacing: 0.0,
                                           ),
                                       elevation: 3.0,

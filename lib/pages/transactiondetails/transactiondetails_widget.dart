@@ -160,7 +160,8 @@ class _TransactiondetailsWidgetState extends State<TransactiondetailsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Plus Jakarta Sans',
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                     color: Color(0xFF62C37B),
                                     fontSize: 17.0,
                                     letterSpacing: 0.0,
@@ -181,7 +182,7 @@ class _TransactiondetailsWidgetState extends State<TransactiondetailsWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   letterSpacing: 0.0,
                                 ),
                           ),
@@ -212,7 +213,7 @@ class _TransactiondetailsWidgetState extends State<TransactiondetailsWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   fontSize: 16.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w600,
@@ -239,7 +240,8 @@ class _TransactiondetailsWidgetState extends State<TransactiondetailsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    fontFamily: 'Outfit',
+                                    font: FlutterFlowTheme.of(context)
+                                        .labelMedium,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -253,7 +255,8 @@ class _TransactiondetailsWidgetState extends State<TransactiondetailsWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: 'Outfit',
+                                      font: FlutterFlowTheme.of(context)
+                                          .labelMedium,
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -280,7 +283,8 @@ class _TransactiondetailsWidgetState extends State<TransactiondetailsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    fontFamily: 'Outfit',
+                                    font: FlutterFlowTheme.of(context)
+                                        .labelMedium,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -294,7 +298,8 @@ class _TransactiondetailsWidgetState extends State<TransactiondetailsWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: 'Outfit',
+                                      font: FlutterFlowTheme.of(context)
+                                          .labelMedium,
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -329,7 +334,8 @@ class _TransactiondetailsWidgetState extends State<TransactiondetailsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    fontFamily: 'Outfit',
+                                    font: FlutterFlowTheme.of(context)
+                                        .labelMedium,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -343,7 +349,8 @@ class _TransactiondetailsWidgetState extends State<TransactiondetailsWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: 'Outfit',
+                                      font: FlutterFlowTheme.of(context)
+                                          .labelMedium,
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -378,7 +385,8 @@ class _TransactiondetailsWidgetState extends State<TransactiondetailsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    fontFamily: 'Outfit',
+                                    font: FlutterFlowTheme.of(context)
+                                        .labelMedium,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -392,7 +400,8 @@ class _TransactiondetailsWidgetState extends State<TransactiondetailsWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: 'Outfit',
+                                      font: FlutterFlowTheme.of(context)
+                                          .labelMedium,
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -419,7 +428,8 @@ class _TransactiondetailsWidgetState extends State<TransactiondetailsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    fontFamily: 'Outfit',
+                                    font: FlutterFlowTheme.of(context)
+                                        .labelMedium,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -433,7 +443,8 @@ class _TransactiondetailsWidgetState extends State<TransactiondetailsWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: 'Outfit',
+                                      font: FlutterFlowTheme.of(context)
+                                          .labelMedium,
                                       letterSpacing: 0.0,
                                     ),
                               ),
@@ -460,7 +471,8 @@ class _TransactiondetailsWidgetState extends State<TransactiondetailsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .labelMedium
                                   .override(
-                                    fontFamily: 'Outfit',
+                                    font: FlutterFlowTheme.of(context)
+                                        .labelMedium,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -474,7 +486,8 @@ class _TransactiondetailsWidgetState extends State<TransactiondetailsWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: 'Outfit',
+                                      font: FlutterFlowTheme.of(context)
+                                          .labelMedium,
                                       letterSpacing: 0.0,
                                     ),
                               ),

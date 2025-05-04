@@ -71,7 +71,7 @@ class _Dropdown02OptionsWidgetState extends State<Dropdown02OptionsWidget> {
                   ),
                   textAlign: TextAlign.start,
                   style: FlutterFlowTheme.of(context).labelMedium.override(
-                        fontFamily: 'Outfit',
+                        font: FlutterFlowTheme.of(context).labelMedium,
                         letterSpacing: 0.0,
                       ),
                 ),
@@ -106,7 +106,7 @@ class _Dropdown02OptionsWidgetState extends State<Dropdown02OptionsWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   letterSpacing: 0.0,
                                 ),
                           ),
@@ -153,7 +153,8 @@ class _Dropdown02OptionsWidgetState extends State<Dropdown02OptionsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Plus Jakarta Sans',
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -207,7 +208,8 @@ class _Dropdown02OptionsWidgetState extends State<Dropdown02OptionsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Plus Jakarta Sans',
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -236,7 +238,7 @@ class _Dropdown02OptionsWidgetState extends State<Dropdown02OptionsWidget> {
                   ),
                   textAlign: TextAlign.start,
                   style: FlutterFlowTheme.of(context).labelMedium.override(
-                        fontFamily: 'Outfit',
+                        font: FlutterFlowTheme.of(context).labelMedium,
                         letterSpacing: 0.0,
                       ),
                 ),
@@ -278,7 +280,8 @@ class _Dropdown02OptionsWidgetState extends State<Dropdown02OptionsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Plus Jakarta Sans',
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -332,7 +335,8 @@ class _Dropdown02OptionsWidgetState extends State<Dropdown02OptionsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Plus Jakarta Sans',
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -386,7 +390,8 @@ class _Dropdown02OptionsWidgetState extends State<Dropdown02OptionsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Plus Jakarta Sans',
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -424,7 +429,7 @@ class _Dropdown02OptionsWidgetState extends State<Dropdown02OptionsWidget> {
                         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                     textStyle: FlutterFlowTheme.of(context).bodyLarge.override(
-                          fontFamily: 'Plus Jakarta Sans',
+                          font: FlutterFlowTheme.of(context).bodyLarge,
                           letterSpacing: 0.0,
                         ),
                     borderSide: BorderSide(

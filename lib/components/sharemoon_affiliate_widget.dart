@@ -60,7 +60,7 @@ class _SharemoonAffiliateWidgetState extends State<SharemoonAffiliateWidget> {
             iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
             color: FlutterFlowTheme.of(context).primaryText,
             textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                  fontFamily: 'Plus Jakarta Sans',
+                  font: FlutterFlowTheme.of(context).titleSmall,
                   color: FlutterFlowTheme.of(context).primaryBackground,
                   letterSpacing: 0.0,
                 ),

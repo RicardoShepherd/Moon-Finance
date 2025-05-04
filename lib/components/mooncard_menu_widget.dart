@@ -87,12 +87,13 @@ class _MooncardMenuWidgetState extends State<MooncardMenuWidget> {
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'coowrt7r' /* Check Credit Score */,
+                                'coowrt7r' /* Invoice */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Plus Jakarta Sans',
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -133,7 +134,7 @@ class _MooncardMenuWidgetState extends State<MooncardMenuWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   letterSpacing: 0.0,
                                 ),
                           ),
@@ -173,7 +174,7 @@ class _MooncardMenuWidgetState extends State<MooncardMenuWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   letterSpacing: 0.0,
                                 ),
                           ),
@@ -213,7 +214,7 @@ class _MooncardMenuWidgetState extends State<MooncardMenuWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   letterSpacing: 0.0,
                                 ),
                           ),

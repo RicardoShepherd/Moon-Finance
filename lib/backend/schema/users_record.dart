@@ -30,11 +30,6 @@ class UsersRecord extends FirestoreRecord {
   String get password => _password ?? '';
   bool hasPassword() => _password != null;
 
-  // "uid" field.
-  String? _uid;
-  String get uid => _uid ?? '';
-  bool hasUid() => _uid != null;
-
   // "age" field.
   int? _age;
   int get age => _age ?? 0;
@@ -60,11 +55,6 @@ class UsersRecord extends FirestoreRecord {
   DateTime? get createdTime => _createdTime;
   bool hasCreatedTime() => _createdTime != null;
 
-  // "userTitle" field.
-  String? _userTitle;
-  String get userTitle => _userTitle ?? '';
-  bool hasUserTitle() => _userTitle != null;
-
   // "shortDescription" field.
   String? _shortDescription;
   String get shortDescription => _shortDescription ?? '';
@@ -74,16 +64,6 @@ class UsersRecord extends FirestoreRecord {
   DateTime? _lastActiveTime;
   DateTime? get lastActiveTime => _lastActiveTime;
   bool hasLastActiveTime() => _lastActiveTime != null;
-
-  // "role" field.
-  String? _role;
-  String get role => _role ?? '';
-  bool hasRole() => _role != null;
-
-  // "title" field.
-  String? _title;
-  String get title => _title ?? '';
-  bool hasTitle() => _title != null;
 
   // "user_first_name" field.
   String? _userFirstName;
@@ -100,24 +80,26 @@ class UsersRecord extends FirestoreRecord {
   String get userDateOfBirth => _userDateOfBirth ?? '';
   bool hasUserDateOfBirth() => _userDateOfBirth != null;
 
+  // "uid" field.
+  String? _uid;
+  String get uid => _uid ?? '';
+  bool hasUid() => _uid != null;
+
   void _initializeFields() {
     _displayName = snapshotData['display_name'] as String?;
     _email = snapshotData['email'] as String?;
     _password = snapshotData['password'] as String?;
-    _uid = snapshotData['uid'] as String?;
     _age = castToType<int>(snapshotData['age']);
     _location = snapshotData['location'] as LatLng?;
     _phoneNumber = snapshotData['phone_number'] as String?;
     _photoUrl = snapshotData['photo_url'] as String?;
     _createdTime = snapshotData['created_time'] as DateTime?;
-    _userTitle = snapshotData['userTitle'] as String?;
     _shortDescription = snapshotData['shortDescription'] as String?;
     _lastActiveTime = snapshotData['last_active_time'] as DateTime?;
-    _role = snapshotData['role'] as String?;
-    _title = snapshotData['title'] as String?;
     _userFirstName = snapshotData['user_first_name'] as String?;
     _userLastName = snapshotData['user_last_name'] as String?;
     _userDateOfBirth = snapshotData['user_date_of_birth'] as String?;
+    _uid = snapshotData['uid'] as String?;
   }
 
   static CollectionReference get collection =>
@@ -157,40 +139,34 @@ Map<String, dynamic> createUsersRecordData({
   String? displayName,
   String? email,
   String? password,
-  String? uid,
   int? age,
   LatLng? location,
   String? phoneNumber,
   String? photoUrl,
   DateTime? createdTime,
-  String? userTitle,
   String? shortDescription,
   DateTime? lastActiveTime,
-  String? role,
-  String? title,
   String? userFirstName,
   String? userLastName,
   String? userDateOfBirth,
+  String? uid,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
       'display_name': displayName,
       'email': email,
       'password': password,
-      'uid': uid,
       'age': age,
       'location': location,
       'phone_number': phoneNumber,
       'photo_url': photoUrl,
       'created_time': createdTime,
-      'userTitle': userTitle,
       'shortDescription': shortDescription,
       'last_active_time': lastActiveTime,
-      'role': role,
-      'title': title,
       'user_first_name': userFirstName,
       'user_last_name': userLastName,
       'user_date_of_birth': userDateOfBirth,
+      'uid': uid,
     }.withoutNulls,
   );
 
@@ -205,20 +181,17 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
     return e1?.displayName == e2?.displayName &&
         e1?.email == e2?.email &&
         e1?.password == e2?.password &&
-        e1?.uid == e2?.uid &&
         e1?.age == e2?.age &&
         e1?.location == e2?.location &&
         e1?.phoneNumber == e2?.phoneNumber &&
         e1?.photoUrl == e2?.photoUrl &&
         e1?.createdTime == e2?.createdTime &&
-        e1?.userTitle == e2?.userTitle &&
         e1?.shortDescription == e2?.shortDescription &&
         e1?.lastActiveTime == e2?.lastActiveTime &&
-        e1?.role == e2?.role &&
-        e1?.title == e2?.title &&
         e1?.userFirstName == e2?.userFirstName &&
         e1?.userLastName == e2?.userLastName &&
-        e1?.userDateOfBirth == e2?.userDateOfBirth;
+        e1?.userDateOfBirth == e2?.userDateOfBirth &&
+        e1?.uid == e2?.uid;
   }
 
   @override
@@ -226,20 +199,17 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e?.displayName,
         e?.email,
         e?.password,
-        e?.uid,
         e?.age,
         e?.location,
         e?.phoneNumber,
         e?.photoUrl,
         e?.createdTime,
-        e?.userTitle,
         e?.shortDescription,
         e?.lastActiveTime,
-        e?.role,
-        e?.title,
         e?.userFirstName,
         e?.userLastName,
-        e?.userDateOfBirth
+        e?.userDateOfBirth,
+        e?.uid
       ]);
 
   @override

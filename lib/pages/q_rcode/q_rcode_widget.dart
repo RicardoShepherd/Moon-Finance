@@ -88,7 +88,7 @@ class _QRcodeWidgetState extends State<QRcodeWidget> {
                       's37dwm4h' /* QR code */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Plus Jakarta Sans',
+                          font: FlutterFlowTheme.of(context).bodyMedium,
                           fontSize: 17.0,
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.w600,
@@ -117,7 +117,7 @@ class _QRcodeWidgetState extends State<QRcodeWidget> {
                       color: Color(0x006F61EF),
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
-                                fontFamily: 'Plus Jakarta Sans',
+                                font: FlutterFlowTheme.of(context).titleSmall,
                                 color: Colors.white,
                                 letterSpacing: 0.0,
                               ),
@@ -161,13 +161,14 @@ class _QRcodeWidgetState extends State<QRcodeWidget> {
                           iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).primaryText,
-                          textStyle:
-                              FlutterFlowTheme.of(context).titleSmall.override(
-                                    fontFamily: 'Plus Jakarta Sans',
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryBackground,
-                                    letterSpacing: 0.0,
-                                  ),
+                          textStyle: FlutterFlowTheme.of(context)
+                              .titleSmall
+                              .override(
+                                font: FlutterFlowTheme.of(context).titleSmall,
+                                color: FlutterFlowTheme.of(context)
+                                    .primaryBackground,
+                                letterSpacing: 0.0,
+                              ),
                           elevation: 0.0,
                           borderRadius: BorderRadius.circular(24.0),
                         ),
@@ -187,13 +188,14 @@ class _QRcodeWidgetState extends State<QRcodeWidget> {
                           iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).primaryText,
-                          textStyle:
-                              FlutterFlowTheme.of(context).titleSmall.override(
-                                    fontFamily: 'Plus Jakarta Sans',
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryBackground,
-                                    letterSpacing: 0.0,
-                                  ),
+                          textStyle: FlutterFlowTheme.of(context)
+                              .titleSmall
+                              .override(
+                                font: FlutterFlowTheme.of(context).titleSmall,
+                                color: FlutterFlowTheme.of(context)
+                                    .primaryBackground,
+                                letterSpacing: 0.0,
+                              ),
                           elevation: 0.0,
                           borderRadius: BorderRadius.circular(24.0),
                         ),
@@ -220,7 +222,7 @@ class _QRcodeWidgetState extends State<QRcodeWidget> {
                       'ce7n70nv' /* @Ricardoshepherd */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Plus Jakarta Sans',
+                          font: FlutterFlowTheme.of(context).bodyMedium,
                           color: Color(0xFF44B4A7),
                           fontSize: 16.0,
                           letterSpacing: 0.0,
@@ -271,12 +273,13 @@ class _QRcodeWidgetState extends State<QRcodeWidget> {
                           iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: Color(0x006F61EF),
-                          textStyle:
-                              FlutterFlowTheme.of(context).titleSmall.override(
-                                    fontFamily: 'Plus Jakarta Sans',
-                                    color: Colors.white,
-                                    letterSpacing: 0.0,
-                                  ),
+                          textStyle: FlutterFlowTheme.of(context)
+                              .titleSmall
+                              .override(
+                                font: FlutterFlowTheme.of(context).titleSmall,
+                                color: Colors.white,
+                                letterSpacing: 0.0,
+                              ),
                           elevation: 0.0,
                           borderRadius: BorderRadius.circular(8.0),
                         ),
@@ -325,7 +328,7 @@ class _QRcodeWidgetState extends State<QRcodeWidget> {
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).titleSmall,
                                   color: Colors.white,
                                   letterSpacing: 0.0,
                                 ),

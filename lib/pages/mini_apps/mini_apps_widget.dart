@@ -1,7 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'mini_apps_model.dart';
@@ -57,29 +56,17 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                InkWell(
-                  splashColor: Colors.transparent,
-                  focusColor: Colors.transparent,
-                  hoverColor: Colors.transparent,
-                  highlightColor: Colors.transparent,
-                  onTap: () async {
-                    logFirebaseEvent('MINI_APPS_CircleImage_aqbp6m9s_ON_TAP');
-                    logFirebaseEvent('CircleImage_navigate_to');
-
-                    context.pushNamed(MenuWidget.routeName);
-                  },
-                  child: Container(
-                    width: 36.0,
-                    height: 36.0,
-                    clipBehavior: Clip.antiAlias,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                    ),
-                    child: Image.asset(
-                      'assets/images/2024-12-16_17.17.58.jpg',
-                      fit: BoxFit.cover,
-                      alignment: Alignment(0.0, -1.0),
-                    ),
+                Container(
+                  width: 36.0,
+                  height: 36.0,
+                  clipBehavior: Clip.antiAlias,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                  ),
+                  child: Image.asset(
+                    'assets/images/2024-12-16_17.17.58.jpg',
+                    fit: BoxFit.cover,
+                    alignment: Alignment(0.0, -1.0),
                   ),
                 ),
                 Expanded(
@@ -93,7 +80,7 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                           'pjrop8jb' /* Mini Apps */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyLarge.override(
-                              fontFamily: 'Plus Jakarta Sans',
+                              font: FlutterFlowTheme.of(context).bodyLarge,
                               fontSize: 16.0,
                               letterSpacing: 0.0,
                               fontWeight: FontWeight.bold,
@@ -155,7 +142,8 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Plus Jakarta Sans',
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyMedium,
                                               fontSize: 14.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.w600,
@@ -214,7 +202,8 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          fontFamily: 'Plus Jakarta Sans',
+                                          font: FlutterFlowTheme.of(context)
+                                              .titleSmall,
                                           color: FlutterFlowTheme.of(context)
                                               .primaryBackground,
                                           fontSize: 11.0,
@@ -247,7 +236,8 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          fontFamily: 'Plus Jakarta Sans',
+                                          font: FlutterFlowTheme.of(context)
+                                              .titleSmall,
                                           color: Colors.white,
                                           fontSize: 11.0,
                                           letterSpacing: 0.0,
@@ -274,7 +264,8 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          fontFamily: 'Plus Jakarta Sans',
+                                          font: FlutterFlowTheme.of(context)
+                                              .titleSmall,
                                           color: Colors.white,
                                           fontSize: 11.0,
                                           letterSpacing: 0.0,
@@ -301,7 +292,8 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          fontFamily: 'Plus Jakarta Sans',
+                                          font: FlutterFlowTheme.of(context)
+                                              .titleSmall,
                                           color: Colors.white,
                                           fontSize: 11.0,
                                           letterSpacing: 0.0,
@@ -328,7 +320,8 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          fontFamily: 'Plus Jakarta Sans',
+                                          font: FlutterFlowTheme.of(context)
+                                              .titleSmall,
                                           color: Colors.white,
                                           fontSize: 11.0,
                                           letterSpacing: 0.0,
@@ -355,7 +348,8 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          fontFamily: 'Plus Jakarta Sans',
+                                          font: FlutterFlowTheme.of(context)
+                                              .titleSmall,
                                           color: Colors.white,
                                           fontSize: 11.0,
                                           letterSpacing: 0.0,
@@ -427,7 +421,8 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Plus Jakarta Sans',
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                     fontSize: 13.0,
                                     letterSpacing: 0.0,
                                   ),
@@ -480,7 +475,8 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Plus Jakarta Sans',
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                     fontSize: 13.0,
                                     letterSpacing: 0.0,
                                   ),
@@ -536,7 +532,8 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Plus Jakarta Sans',
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                     fontSize: 13.0,
                                     letterSpacing: 0.0,
                                   ),
@@ -602,7 +599,8 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Plus Jakarta Sans',
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                     fontSize: 13.0,
                                     letterSpacing: 0.0,
                                   ),
@@ -655,7 +653,8 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Plus Jakarta Sans',
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                     fontSize: 13.0,
                                     letterSpacing: 0.0,
                                   ),
@@ -712,7 +711,8 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Plus Jakarta Sans',
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                     fontSize: 13.0,
                                     letterSpacing: 0.0,
                                   ),
@@ -734,7 +734,7 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                           'ar1uvdnh' /* Poplar */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Plus Jakarta Sans',
+                              font: FlutterFlowTheme.of(context).bodyMedium,
                               fontSize: 14.0,
                               letterSpacing: 0.0,
                               fontWeight: FontWeight.w600,
@@ -794,8 +794,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
                                                 ),
@@ -822,8 +823,10 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -841,7 +844,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Plus Jakarta Sans',
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
                                               ),
                                         ),
@@ -900,8 +905,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
                                                 ),
@@ -928,8 +934,10 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -947,7 +955,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Plus Jakarta Sans',
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
                                               ),
                                         ),
@@ -1006,8 +1016,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
                                                 ),
@@ -1034,8 +1045,10 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -1053,7 +1066,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Plus Jakarta Sans',
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
                                               ),
                                         ),
@@ -1118,8 +1133,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
                                                 ),
@@ -1146,8 +1162,10 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -1165,7 +1183,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Plus Jakarta Sans',
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
                                               ),
                                         ),
@@ -1218,8 +1238,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
                                                 ),
@@ -1246,8 +1267,10 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -1265,7 +1288,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Plus Jakarta Sans',
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
                                               ),
                                         ),
@@ -1318,8 +1343,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
                                                 ),
@@ -1346,8 +1372,10 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -1365,7 +1393,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Plus Jakarta Sans',
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
                                               ),
                                         ),
@@ -1424,8 +1454,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
                                                 ),
@@ -1452,8 +1483,10 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -1471,7 +1504,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Plus Jakarta Sans',
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
                                               ),
                                         ),
@@ -1524,8 +1559,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
                                                 ),
@@ -1552,8 +1588,10 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -1571,7 +1609,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Plus Jakarta Sans',
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
                                               ),
                                         ),
@@ -1624,8 +1664,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
                                                 ),
@@ -1652,8 +1693,10 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -1671,7 +1714,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Plus Jakarta Sans',
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium,
                                                 letterSpacing: 0.0,
                                               ),
                                         ),
@@ -1750,8 +1795,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
                                                 ),
@@ -1778,8 +1824,10 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -1796,8 +1844,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
@@ -1831,7 +1880,7 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                           '0no4r548' /* Recommended for you */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Plus Jakarta Sans',
+                              font: FlutterFlowTheme.of(context).bodyMedium,
                               fontSize: 14.0,
                               letterSpacing: 0.0,
                               fontWeight: FontWeight.w600,
@@ -1892,16 +1941,16 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                   .getText(
                                                 'zc5wyfx5' /* Booking.com - Hotel and More */,
                                               ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FontWeight.w600,
-                                                      ),
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    font: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyMedium,
+                                                    letterSpacing: 0.0,
+                                                    fontWeight: FontWeight.w600,
+                                                  ),
                                             ),
                                           ),
                                         ],
@@ -1924,8 +1973,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Plus Jakarta Sans',
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium,
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),
@@ -1943,8 +1993,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
@@ -2002,16 +2053,16 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                   .getText(
                                                 'maxyoa7q' /* Airbnb */,
                                               ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FontWeight.w600,
-                                                      ),
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    font: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyMedium,
+                                                    letterSpacing: 0.0,
+                                                    fontWeight: FontWeight.w600,
+                                                  ),
                                             ),
                                           ),
                                         ],
@@ -2034,8 +2085,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Plus Jakarta Sans',
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium,
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),
@@ -2053,8 +2105,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
@@ -2112,16 +2165,16 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                   .getText(
                                                 'fwufsqkw' /* Tripadvisor - Plan & Book Trip */,
                                               ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FontWeight.w600,
-                                                      ),
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    font: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyMedium,
+                                                    letterSpacing: 0.0,
+                                                    fontWeight: FontWeight.w600,
+                                                  ),
                                             ),
                                           ),
                                         ],
@@ -2144,8 +2197,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Plus Jakarta Sans',
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium,
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),
@@ -2163,8 +2217,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
@@ -2228,16 +2283,16 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                   .getText(
                                                 '8389g810' /* State Form */,
                                               ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FontWeight.w600,
-                                                      ),
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    font: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyMedium,
+                                                    letterSpacing: 0.0,
+                                                    fontWeight: FontWeight.w600,
+                                                  ),
                                             ),
                                           ),
                                         ],
@@ -2260,8 +2315,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Plus Jakarta Sans',
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium,
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),
@@ -2279,8 +2335,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
@@ -2332,16 +2389,16 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                   .getText(
                                                 'i453vhjr' /* Progressive */,
                                               ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FontWeight.w600,
-                                                      ),
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    font: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyMedium,
+                                                    letterSpacing: 0.0,
+                                                    fontWeight: FontWeight.w600,
+                                                  ),
                                             ),
                                           ),
                                         ],
@@ -2364,8 +2421,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Plus Jakarta Sans',
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium,
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),
@@ -2383,8 +2441,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
@@ -2436,16 +2495,16 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                   .getText(
                                                 'oezkjmje' /* GEICO - Car Insurance */,
                                               ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FontWeight.w600,
-                                                      ),
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    font: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyMedium,
+                                                    letterSpacing: 0.0,
+                                                    fontWeight: FontWeight.w600,
+                                                  ),
                                             ),
                                           ),
                                         ],
@@ -2468,8 +2527,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Plus Jakarta Sans',
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium,
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),
@@ -2487,8 +2547,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
@@ -2546,16 +2607,16 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                   .getText(
                                                 '6c5psf8t' /* Fidelity Investment */,
                                               ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FontWeight.w600,
-                                                      ),
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    font: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyMedium,
+                                                    letterSpacing: 0.0,
+                                                    fontWeight: FontWeight.w600,
+                                                  ),
                                             ),
                                           ),
                                         ],
@@ -2578,8 +2639,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Plus Jakarta Sans',
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium,
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),
@@ -2597,8 +2659,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
@@ -2650,16 +2713,16 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                   .getText(
                                                 'auma6b0e' /* Bank of America  */,
                                               ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FontWeight.w600,
-                                                      ),
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    font: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyMedium,
+                                                    letterSpacing: 0.0,
+                                                    fontWeight: FontWeight.w600,
+                                                  ),
                                             ),
                                           ),
                                         ],
@@ -2682,8 +2745,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Plus Jakarta Sans',
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium,
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),
@@ -2701,8 +2765,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
@@ -2754,16 +2819,16 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                   .getText(
                                                 'va3s2mds' /* Chase Mobile  US */,
                                               ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FontWeight.w600,
-                                                      ),
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    font: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyMedium,
+                                                    letterSpacing: 0.0,
+                                                    fontWeight: FontWeight.w600,
+                                                  ),
                                             ),
                                           ),
                                         ],
@@ -2786,8 +2851,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
                                                         .override(
-                                                          fontFamily:
-                                                              'Plus Jakarta Sans',
+                                                          font: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium,
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),
@@ -2805,8 +2871,9 @@ class _MiniAppsWidgetState extends State<MiniAppsWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),

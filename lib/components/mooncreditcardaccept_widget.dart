@@ -98,11 +98,12 @@ class _MooncreditcardacceptWidgetState
                         FFLocalizations.of(context).getText(
                           'epjdkj6f' /* Please let us know what is goi... */,
                         ),
-                        style:
-                            FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: 'Outfit',
-                                  letterSpacing: 0.0,
-                                ),
+                        style: FlutterFlowTheme.of(context)
+                            .labelMedium
+                            .override(
+                              font: FlutterFlowTheme.of(context).labelMedium,
+                              letterSpacing: 0.0,
+                            ),
                       ),
                     ),
                     Expanded(
@@ -118,7 +119,8 @@ class _MooncreditcardacceptWidgetState
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
-                                  fontFamily: 'Outfit',
+                                  font:
+                                      FlutterFlowTheme.of(context).labelMedium,
                                   color: Color(0xFF4A5ED6),
                                   letterSpacing: 0.0,
                                 ),
@@ -148,12 +150,13 @@ class _MooncreditcardacceptWidgetState
                           iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: Color(0xFF1A2144),
-                          textStyle:
-                              FlutterFlowTheme.of(context).titleSmall.override(
-                                    fontFamily: 'Plus Jakarta Sans',
-                                    color: Colors.white,
-                                    letterSpacing: 0.0,
-                                  ),
+                          textStyle: FlutterFlowTheme.of(context)
+                              .titleSmall
+                              .override(
+                                font: FlutterFlowTheme.of(context).titleSmall,
+                                color: Colors.white,
+                                letterSpacing: 0.0,
+                              ),
                           elevation: 2.0,
                           borderSide: BorderSide(
                             color: Colors.transparent,
@@ -176,7 +179,8 @@ class _MooncreditcardacceptWidgetState
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
-                                  fontFamily: 'Outfit',
+                                  font:
+                                      FlutterFlowTheme.of(context).labelMedium,
                                   color: Color(0xFF4A5ED6),
                                   fontSize: 17.0,
                                   letterSpacing: 0.0,

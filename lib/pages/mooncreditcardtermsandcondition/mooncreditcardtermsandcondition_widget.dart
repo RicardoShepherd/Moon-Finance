@@ -99,7 +99,7 @@ and Conditio... */
                         ),
                         textAlign: TextAlign.center,
                         style: FlutterFlowTheme.of(context).titleLarge.override(
-                              fontFamily: 'Outfit',
+                              font: FlutterFlowTheme.of(context).titleLarge,
                               fontSize: 27.0,
                               letterSpacing: 0.0,
                             ),
@@ -121,7 +121,7 @@ and Conditio... */
                         ),
                         textAlign: TextAlign.center,
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Plus Jakarta Sans',
+                              font: FlutterFlowTheme.of(context).bodyMedium,
                               fontSize: 15.0,
                               letterSpacing: 0.0,
                             ),
@@ -144,11 +144,12 @@ and Conditio... */
                             'pkw2pc9i' /* Your Social Security Number wi... */,
                           ),
                           textAlign: TextAlign.center,
-                          style:
-                              FlutterFlowTheme.of(context).labelSmall.override(
-                                    fontFamily: 'Outfit',
-                                    letterSpacing: 0.0,
-                                  ),
+                          style: FlutterFlowTheme.of(context)
+                              .labelSmall
+                              .override(
+                                font: FlutterFlowTheme.of(context).labelSmall,
+                                letterSpacing: 0.0,
+                              ),
                         ),
                       ),
                     ),
@@ -188,7 +189,7 @@ and Conditio... */
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).titleSmall,
                                   color: Colors.white,
                                   letterSpacing: 0.0,
                                 ),
@@ -229,7 +230,7 @@ and Conditio... */
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).titleSmall,
                                   color: Colors.white,
                                   letterSpacing: 0.0,
                                 ),

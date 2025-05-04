@@ -105,7 +105,7 @@ Identity */
                         ),
                         textAlign: TextAlign.center,
                         style: FlutterFlowTheme.of(context).titleLarge.override(
-                              fontFamily: 'Outfit',
+                              font: FlutterFlowTheme.of(context).titleLarge,
                               fontSize: 27.0,
                               letterSpacing: 0.0,
                             ),
@@ -127,7 +127,7 @@ Identity */
                         ),
                         textAlign: TextAlign.center,
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Plus Jakarta Sans',
+                              font: FlutterFlowTheme.of(context).bodyMedium,
                               fontSize: 15.0,
                               letterSpacing: 0.0,
                             ),
@@ -158,7 +158,8 @@ Identity */
                             labelStyle: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
-                                  fontFamily: 'Outfit',
+                                  font:
+                                      FlutterFlowTheme.of(context).labelMedium,
                                   letterSpacing: 0.0,
                                 ),
                             hintText: FFLocalizations.of(context).getText(
@@ -167,7 +168,8 @@ Identity */
                             hintStyle: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
-                                  fontFamily: 'Outfit',
+                                  font:
+                                      FlutterFlowTheme.of(context).labelMedium,
                                   letterSpacing: 0.0,
                                 ),
                             enabledBorder: OutlineInputBorder(
@@ -222,11 +224,12 @@ Identity */
                             fillColor: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
                           ),
-                          style:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Plus Jakarta Sans',
-                                    letterSpacing: 0.0,
-                                  ),
+                          style: FlutterFlowTheme.of(context)
+                              .bodyMedium
+                              .override(
+                                font: FlutterFlowTheme.of(context).bodyMedium,
+                                letterSpacing: 0.0,
+                              ),
                           cursorColor: FlutterFlowTheme.of(context).primaryText,
                           validator: _model.textController1Validator
                               .asValidator(context),
@@ -242,19 +245,21 @@ Identity */
                         obscureText: false,
                         decoration: InputDecoration(
                           isDense: true,
-                          labelStyle:
-                              FlutterFlowTheme.of(context).labelMedium.override(
-                                    fontFamily: 'Outfit',
-                                    letterSpacing: 0.0,
-                                  ),
+                          labelStyle: FlutterFlowTheme.of(context)
+                              .labelMedium
+                              .override(
+                                font: FlutterFlowTheme.of(context).labelMedium,
+                                letterSpacing: 0.0,
+                              ),
                           hintText: FFLocalizations.of(context).getText(
                             'g2lokte7' /* Citizenship */,
                           ),
-                          hintStyle:
-                              FlutterFlowTheme.of(context).labelMedium.override(
-                                    fontFamily: 'Outfit',
-                                    letterSpacing: 0.0,
-                                  ),
+                          hintStyle: FlutterFlowTheme.of(context)
+                              .labelMedium
+                              .override(
+                                font: FlutterFlowTheme.of(context).labelMedium,
+                                letterSpacing: 0.0,
+                              ),
                           enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Color(0x00000000),
@@ -308,7 +313,7 @@ Identity */
                               FlutterFlowTheme.of(context).secondaryBackground,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Plus Jakarta Sans',
+                              font: FlutterFlowTheme.of(context).bodyMedium,
                               letterSpacing: 0.0,
                             ),
                         keyboardType: TextInputType.datetime,
@@ -334,11 +339,12 @@ Identity */
                             'l8v7pm2o' /* Your Social Security Number wi... */,
                           ),
                           textAlign: TextAlign.center,
-                          style:
-                              FlutterFlowTheme.of(context).labelSmall.override(
-                                    fontFamily: 'Outfit',
-                                    letterSpacing: 0.0,
-                                  ),
+                          style: FlutterFlowTheme.of(context)
+                              .labelSmall
+                              .override(
+                                font: FlutterFlowTheme.of(context).labelSmall,
+                                letterSpacing: 0.0,
+                              ),
                         ),
                       ),
                     ),
@@ -368,7 +374,7 @@ Identity */
                         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: Color(0xFF1A2144),
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily: 'Plus Jakarta Sans',
+                          font: FlutterFlowTheme.of(context).titleSmall,
                           color: Colors.white,
                           letterSpacing: 0.0,
                         ),

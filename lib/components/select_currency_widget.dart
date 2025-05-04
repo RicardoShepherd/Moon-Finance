@@ -97,7 +97,7 @@ class _SelectCurrencyWidgetState extends State<SelectCurrencyWidget> {
                     'wolilv6a' /* Select Card */,
                   ),
                   style: FlutterFlowTheme.of(context).headlineSmall.override(
-                        fontFamily: 'Outfit',
+                        font: FlutterFlowTheme.of(context).headlineSmall,
                         letterSpacing: 0.0,
                       ),
                 ),
@@ -137,7 +137,7 @@ class _SelectCurrencyWidgetState extends State<SelectCurrencyWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   fontSize: 19.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w600,
@@ -151,7 +151,7 @@ class _SelectCurrencyWidgetState extends State<SelectCurrencyWidget> {
                           style: FlutterFlowTheme.of(context)
                               .bodyMedium
                               .override(
-                                fontFamily: 'Plus Jakarta Sans',
+                                font: FlutterFlowTheme.of(context).bodyMedium,
                                 color:
                                     FlutterFlowTheme.of(context).secondaryText,
                                 fontSize: 14.0,
@@ -185,16 +185,18 @@ class _SelectCurrencyWidgetState extends State<SelectCurrencyWidget> {
                               FlutterFlowTheme.of(context).primaryBackground,
                           checkboxBorderColor:
                               FlutterFlowTheme.of(context).secondaryText,
-                          textStyle:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Plus Jakarta Sans',
-                                    letterSpacing: 0.0,
-                                  ),
-                          unselectedTextStyle:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Plus Jakarta Sans',
-                                    letterSpacing: 0.0,
-                                  ),
+                          textStyle: FlutterFlowTheme.of(context)
+                              .bodyMedium
+                              .override(
+                                font: FlutterFlowTheme.of(context).bodyMedium,
+                                letterSpacing: 0.0,
+                              ),
+                          unselectedTextStyle: FlutterFlowTheme.of(context)
+                              .bodyMedium
+                              .override(
+                                font: FlutterFlowTheme.of(context).bodyMedium,
+                                letterSpacing: 0.0,
+                              ),
                           checkboxBorderRadius: BorderRadius.circular(4.0),
                           initialized: _model.checkboxGroupValues1 != null,
                         ),
@@ -238,7 +240,7 @@ class _SelectCurrencyWidgetState extends State<SelectCurrencyWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   fontSize: 19.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w600,
@@ -252,7 +254,7 @@ class _SelectCurrencyWidgetState extends State<SelectCurrencyWidget> {
                           style: FlutterFlowTheme.of(context)
                               .bodyMedium
                               .override(
-                                fontFamily: 'Plus Jakarta Sans',
+                                font: FlutterFlowTheme.of(context).bodyMedium,
                                 color:
                                     FlutterFlowTheme.of(context).secondaryText,
                                 fontSize: 14.0,
@@ -286,16 +288,18 @@ class _SelectCurrencyWidgetState extends State<SelectCurrencyWidget> {
                               FlutterFlowTheme.of(context).primaryBackground,
                           checkboxBorderColor:
                               FlutterFlowTheme.of(context).secondaryText,
-                          textStyle:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Plus Jakarta Sans',
-                                    letterSpacing: 0.0,
-                                  ),
-                          unselectedTextStyle:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Plus Jakarta Sans',
-                                    letterSpacing: 0.0,
-                                  ),
+                          textStyle: FlutterFlowTheme.of(context)
+                              .bodyMedium
+                              .override(
+                                font: FlutterFlowTheme.of(context).bodyMedium,
+                                letterSpacing: 0.0,
+                              ),
+                          unselectedTextStyle: FlutterFlowTheme.of(context)
+                              .bodyMedium
+                              .override(
+                                font: FlutterFlowTheme.of(context).bodyMedium,
+                                letterSpacing: 0.0,
+                              ),
                           checkboxBorderRadius: BorderRadius.circular(4.0),
                           initialized: _model.checkboxGroupValues2 != null,
                         ),
@@ -339,7 +343,7 @@ class _SelectCurrencyWidgetState extends State<SelectCurrencyWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   fontSize: 19.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w600,
@@ -359,7 +363,8 @@ class _SelectCurrencyWidgetState extends State<SelectCurrencyWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Plus Jakarta Sans',
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryText,
                                     fontSize: 14.0,
@@ -395,16 +400,18 @@ class _SelectCurrencyWidgetState extends State<SelectCurrencyWidget> {
                               FlutterFlowTheme.of(context).primaryBackground,
                           checkboxBorderColor:
                               FlutterFlowTheme.of(context).secondaryText,
-                          textStyle:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Plus Jakarta Sans',
-                                    letterSpacing: 0.0,
-                                  ),
-                          unselectedTextStyle:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Plus Jakarta Sans',
-                                    letterSpacing: 0.0,
-                                  ),
+                          textStyle: FlutterFlowTheme.of(context)
+                              .bodyMedium
+                              .override(
+                                font: FlutterFlowTheme.of(context).bodyMedium,
+                                letterSpacing: 0.0,
+                              ),
+                          unselectedTextStyle: FlutterFlowTheme.of(context)
+                              .bodyMedium
+                              .override(
+                                font: FlutterFlowTheme.of(context).bodyMedium,
+                                letterSpacing: 0.0,
+                              ),
                           checkboxBorderRadius: BorderRadius.circular(4.0),
                           initialized: _model.checkboxGroupValues3 != null,
                         ),
@@ -430,7 +437,7 @@ class _SelectCurrencyWidgetState extends State<SelectCurrencyWidget> {
                         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).primaryText,
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily: 'Plus Jakarta Sans',
+                          font: FlutterFlowTheme.of(context).titleSmall,
                           color: FlutterFlowTheme.of(context).primaryBackground,
                           letterSpacing: 0.0,
                         ),

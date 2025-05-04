@@ -70,7 +70,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
             'g416xg9f' /* Forgot Password */,
           ),
           style: FlutterFlowTheme.of(context).headlineSmall.override(
-                fontFamily: 'Outfit',
+                font: FlutterFlowTheme.of(context).headlineSmall,
                 letterSpacing: 0.0,
               ),
         ),
@@ -112,7 +112,8 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Plus Jakarta Sans',
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -128,19 +129,21 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                         focusNode: _model.emailAddressFocusNode,
                         obscureText: false,
                         decoration: InputDecoration(
-                          labelStyle:
-                              FlutterFlowTheme.of(context).bodySmall.override(
-                                    fontFamily: 'Plus Jakarta Sans',
-                                    letterSpacing: 0.0,
-                                  ),
+                          labelStyle: FlutterFlowTheme.of(context)
+                              .bodySmall
+                              .override(
+                                font: FlutterFlowTheme.of(context).bodySmall,
+                                letterSpacing: 0.0,
+                              ),
                           hintText: FFLocalizations.of(context).getText(
                             '1p7smaeg' /* Enter your email */,
                           ),
-                          hintStyle:
-                              FlutterFlowTheme.of(context).bodySmall.override(
-                                    fontFamily: 'Plus Jakarta Sans',
-                                    letterSpacing: 0.0,
-                                  ),
+                          hintStyle: FlutterFlowTheme.of(context)
+                              .bodySmall
+                              .override(
+                                font: FlutterFlowTheme.of(context).bodySmall,
+                                letterSpacing: 0.0,
+                              ),
                           enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Color(0x00000000),
@@ -176,7 +179,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                               20.0, 24.0, 20.0, 24.0),
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Plus Jakarta Sans',
+                              font: FlutterFlowTheme.of(context).bodyMedium,
                               letterSpacing: 0.0,
                             ),
                         validator: _model.emailAddressTextControllerValidator
@@ -217,12 +220,13 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget> {
                           iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).primaryText,
-                          textStyle:
-                              FlutterFlowTheme.of(context).titleSmall.override(
-                                    fontFamily: 'Plus Jakarta Sans',
-                                    color: Color(0xFC000000),
-                                    letterSpacing: 0.0,
-                                  ),
+                          textStyle: FlutterFlowTheme.of(context)
+                              .titleSmall
+                              .override(
+                                font: FlutterFlowTheme.of(context).titleSmall,
+                                color: Color(0xFC000000),
+                                letterSpacing: 0.0,
+                              ),
                           elevation: 3.0,
                           borderSide: BorderSide(
                             color: Colors.transparent,

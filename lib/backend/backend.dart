@@ -6,13 +6,10 @@ import '../flutter_flow/flutter_flow_util.dart';
 import 'schema/util/firestore_util.dart';
 
 import 'schema/users_record.dart';
-import 'schema/appointments_record.dart';
 import 'schema/transactions_record.dart';
 import 'schema/transaction_categories_record.dart';
-import 'schema/budgets_record.dart';
 import 'schema/user_list_record.dart';
 import 'schema/budget_list_record.dart';
-import 'schema/support_tickets_record.dart';
 
 export 'dart:async' show StreamSubscription;
 export 'package:cloud_firestore/cloud_firestore.dart' hide Order;
@@ -22,13 +19,10 @@ export 'schema/util/firestore_util.dart';
 export 'schema/util/schema_util.dart';
 
 export 'schema/users_record.dart';
-export 'schema/appointments_record.dart';
 export 'schema/transactions_record.dart';
 export 'schema/transaction_categories_record.dart';
-export 'schema/budgets_record.dart';
 export 'schema/user_list_record.dart';
 export 'schema/budget_list_record.dart';
-export 'schema/support_tickets_record.dart';
 
 /// Functions to query UsersRecords (as a Stream and as a Future).
 Future<int> queryUsersRecordCount({
@@ -62,43 +56,6 @@ Future<List<UsersRecord>> queryUsersRecordOnce({
     queryCollectionOnce(
       UsersRecord.collection,
       UsersRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
-/// Functions to query AppointmentsRecords (as a Stream and as a Future).
-Future<int> queryAppointmentsRecordCount({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-}) =>
-    queryCollectionCount(
-      AppointmentsRecord.collection,
-      queryBuilder: queryBuilder,
-      limit: limit,
-    );
-
-Stream<List<AppointmentsRecord>> queryAppointmentsRecord({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollection(
-      AppointmentsRecord.collection,
-      AppointmentsRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
-Future<List<AppointmentsRecord>> queryAppointmentsRecordOnce({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollectionOnce(
-      AppointmentsRecord.collection,
-      AppointmentsRecord.fromSnapshot,
       queryBuilder: queryBuilder,
       limit: limit,
       singleRecord: singleRecord,
@@ -178,43 +135,6 @@ Future<List<TransactionCategoriesRecord>> queryTransactionCategoriesRecordOnce({
       singleRecord: singleRecord,
     );
 
-/// Functions to query BudgetsRecords (as a Stream and as a Future).
-Future<int> queryBudgetsRecordCount({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-}) =>
-    queryCollectionCount(
-      BudgetsRecord.collection,
-      queryBuilder: queryBuilder,
-      limit: limit,
-    );
-
-Stream<List<BudgetsRecord>> queryBudgetsRecord({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollection(
-      BudgetsRecord.collection,
-      BudgetsRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
-Future<List<BudgetsRecord>> queryBudgetsRecordOnce({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollectionOnce(
-      BudgetsRecord.collection,
-      BudgetsRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
 /// Functions to query UserListRecords (as a Stream and as a Future).
 Future<int> queryUserListRecordCount({
   Query Function(Query)? queryBuilder,
@@ -284,43 +204,6 @@ Future<List<BudgetListRecord>> queryBudgetListRecordOnce({
     queryCollectionOnce(
       BudgetListRecord.collection,
       BudgetListRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
-/// Functions to query SupportTicketsRecords (as a Stream and as a Future).
-Future<int> querySupportTicketsRecordCount({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-}) =>
-    queryCollectionCount(
-      SupportTicketsRecord.collection,
-      queryBuilder: queryBuilder,
-      limit: limit,
-    );
-
-Stream<List<SupportTicketsRecord>> querySupportTicketsRecord({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollection(
-      SupportTicketsRecord.collection,
-      SupportTicketsRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
-Future<List<SupportTicketsRecord>> querySupportTicketsRecordOnce({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollectionOnce(
-      SupportTicketsRecord.collection,
-      SupportTicketsRecord.fromSnapshot,
       queryBuilder: queryBuilder,
       limit: limit,
       singleRecord: singleRecord,

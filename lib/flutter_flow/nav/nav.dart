@@ -141,16 +141,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => MySubcriptionsAccountWidget(),
         ),
         FFRoute(
-          name: ProfileWidget.routeName,
-          path: ProfileWidget.routePath,
-          builder: (context, params) => ProfileWidget(
-            pieChart: params.getParam(
-              'pieChart',
-              ParamType.bool,
-            ),
-          ),
-        ),
-        FFRoute(
           name: PaymentWidget.routeName,
           path: PaymentWidget.routePath,
           builder: (context, params) => NavBarPage(
@@ -198,14 +188,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => InvoicesWidget(),
         ),
         FFRoute(
-          name: PhoneNumberrequestWidget.routeName,
-          path: PhoneNumberrequestWidget.routePath,
-          builder: (context, params) => PhoneNumberrequestWidget(),
+          name: CreateWalletWidget.routeName,
+          path: CreateWalletWidget.routePath,
+          builder: (context, params) => CreateWalletWidget(),
         ),
         FFRoute(
-          name: PhonenumberverficationWidget.routeName,
-          path: PhonenumberverficationWidget.routePath,
-          builder: (context, params) => PhonenumberverficationWidget(),
+          name: SecureWalletWidget.routeName,
+          path: SecureWalletWidget.routePath,
+          builder: (context, params) => SecureWalletWidget(),
         ),
         FFRoute(
           name: FundraiserWidget.routeName,
@@ -261,10 +251,10 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           ),
         ),
         FFRoute(
-          name: MoonDebitcardWidget.routeName,
-          path: MoonDebitcardWidget.routePath,
+          name: WalletWidget.routeName,
+          path: WalletWidget.routePath,
           requireAuth: true,
-          builder: (context, params) => MoonDebitcardWidget(),
+          builder: (context, params) => WalletWidget(),
         ),
         FFRoute(
           name: LinkyourbankaccountWidget.routeName,
@@ -323,21 +313,70 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => TransactiondetailsWidget(),
         ),
         FFRoute(
-          name: InsurancesWidget.routeName,
-          path: InsurancesWidget.routePath,
-          builder: (context, params) => InsurancesWidget(),
+          name: WithdrawWidget.routeName,
+          path: WithdrawWidget.routePath,
+          builder: (context, params) => WithdrawWidget(),
         ),
         FFRoute(
-          name: WalletWidget.routeName,
-          path: WalletWidget.routePath,
-          builder: (context, params) => WalletWidget(),
+          name: AllcardsWidget.routeName,
+          path: AllcardsWidget.routePath,
+          builder: (context, params) => AllcardsWidget(),
         ),
         FFRoute(
           name: LoansWidget.routeName,
           path: LoansWidget.routePath,
           builder: (context, params) => LoansWidget(),
+        ),
+        FFRoute(
+          name: OnboardingWidget.routeName,
+          path: OnboardingWidget.routePath,
+          builder: (context, params) => OnboardingWidget(),
+        ),
+        FFRoute(
+          name: SavingAccountWidget.routeName,
+          path: SavingAccountWidget.routePath,
+          builder: (context, params) => SavingAccountWidget(),
+        ),
+        FFRoute(
+          name: HomescreenWidget.routeName,
+          path: HomescreenWidget.routePath,
+          builder: (context, params) => NavBarPage(
+            initialPage: '',
+            page: HomescreenWidget(),
+          ),
+        ),
+        FFRoute(
+          name: MenumoonWidget.routeName,
+          path: MenumoonWidget.routePath,
+          builder: (context, params) => MenumoonWidget(),
+        ),
+        FFRoute(
+          name: BuyUSDCWidget.routeName,
+          path: BuyUSDCWidget.routePath,
+          builder: (context, params) => BuyUSDCWidget(),
+        ),
+        FFRoute(
+          name: ReviewoderWidget.routeName,
+          path: ReviewoderWidget.routePath,
+          builder: (context, params) => ReviewoderWidget(),
+        ),
+        FFRoute(
+          name: SecraterecoveryphraseinfoWidget.routeName,
+          path: SecraterecoveryphraseinfoWidget.routePath,
+          builder: (context, params) => SecraterecoveryphraseinfoWidget(),
+        ),
+        FFRoute(
+          name: SecraterecoveryphraseWidget.routeName,
+          path: SecraterecoveryphraseWidget.routePath,
+          builder: (context, params) => SecraterecoveryphraseWidget(),
+        ),
+        FFRoute(
+          name: ConfirmsecraterecoveryphraseWidget.routeName,
+          path: ConfirmsecraterecoveryphraseWidget.routePath,
+          builder: (context, params) => ConfirmsecraterecoveryphraseWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
+      observers: [routeObserver],
     );
 
 extension NavParamExtensions on Map<String, String?> {
@@ -523,7 +562,7 @@ class FFRoute {
               ? Container(
                   color: Colors.transparent,
                   child: Image.asset(
-                    'assets/images/nt_Tyjjj.jpg',
+                    'assets/images/photo_2025-03-13_23.38.57.jpeg',
                     fit: BoxFit.cover,
                   ),
                 )

@@ -1,5 +1,4 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import '/index.dart';
 import 'mini_apps_widget.dart' show MiniAppsWidget;
 import 'package:flutter/material.dart';
 

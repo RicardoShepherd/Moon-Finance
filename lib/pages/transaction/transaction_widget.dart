@@ -81,42 +81,61 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                           onPressed: () async {
                             logFirebaseEvent(
                                 'TRANSACTION_PAGE_close_ICN_ON_TAP');
-                            logFirebaseEvent('IconButton_navigate_back');
-                            context.safePop();
-                          },
-                        ),
-                      ),
-                      Expanded(
-                        child: Align(
-                          alignment: AlignmentDirectional(1.0, 0.0),
-                          child: Icon(
-                            Icons.search,
-                            color: FlutterFlowTheme.of(context).primaryText,
-                            size: 26.0,
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            10.0, 0.0, 10.0, 0.0),
-                        child: InkWell(
-                          splashColor: Colors.transparent,
-                          focusColor: Colors.transparent,
-                          hoverColor: Colors.transparent,
-                          highlightColor: Colors.transparent,
-                          onTap: () async {
-                            logFirebaseEvent(
-                                'TRANSACTION_PAGE_Icon_d2xzk77o_ON_TAP');
-                            logFirebaseEvent('Icon_navigate_to');
+                            logFirebaseEvent('IconButton_navigate_to');
 
-                            context.pushNamed(BillsWidget.routeName);
+                            context.pushNamed(TransactionWidget.routeName);
                           },
-                          child: Icon(
-                            Icons.subscriptions_rounded,
-                            color: Color(0xFFE3EBDA),
-                            size: 24.0,
-                          ),
                         ),
+                      ),
+                      Column(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 0.0, 10.0, 0.0),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 5.0, 0.0),
+                                  child: InkWell(
+                                    splashColor: Colors.transparent,
+                                    focusColor: Colors.transparent,
+                                    hoverColor: Colors.transparent,
+                                    highlightColor: Colors.transparent,
+                                    onTap: () async {
+                                      logFirebaseEvent(
+                                          'TRANSACTION_PAGE_Icon_d2xzk77o_ON_TAP');
+                                      logFirebaseEvent('Icon_navigate_to');
+
+                                      context.pushNamed(BillsWidget.routeName);
+                                    },
+                                    child: Icon(
+                                      Icons.subscriptions_rounded,
+                                      color: Color(0xFFE3EBDA),
+                                      size: 24.0,
+                                    ),
+                                  ),
+                                ),
+                                Text(
+                                  FFLocalizations.of(context).getText(
+                                    'pf7ecxz7' /* Spending */,
+                                  ),
+                                  style: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .override(
+                                        font: FlutterFlowTheme.of(context)
+                                            .bodyMedium,
+                                        fontSize: 18.0,
+                                        letterSpacing: 0.0,
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
@@ -131,12 +150,13 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                         FFLocalizations.of(context).getText(
                           'e7oc90nx' /* Transactions */,
                         ),
-                        style:
-                            FlutterFlowTheme.of(context).displaySmall.override(
-                                  fontFamily: 'Outfit',
-                                  fontSize: 25.0,
-                                  letterSpacing: 0.0,
-                                ),
+                        style: FlutterFlowTheme.of(context)
+                            .displaySmall
+                            .override(
+                              font: FlutterFlowTheme.of(context).displaySmall,
+                              fontSize: 25.0,
+                              letterSpacing: 0.0,
+                            ),
                       ),
                     ),
                   ],
@@ -185,7 +205,7 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                   selectedChipStyle: ChipStyle(
                     backgroundColor: Color(0xFF121212),
                     textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Plus Jakarta Sans',
+                          font: FlutterFlowTheme.of(context).bodyMedium,
                           color: FlutterFlowTheme.of(context).info,
                           letterSpacing: 0.0,
                         ),
@@ -200,7 +220,7 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                     backgroundColor:
                         FlutterFlowTheme.of(context).primaryBackground,
                     textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Plus Jakarta Sans',
+                          font: FlutterFlowTheme.of(context).bodyMedium,
                           color: FlutterFlowTheme.of(context).secondaryText,
                           letterSpacing: 0.0,
                         ),
@@ -281,7 +301,10 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelSmall
                                                       .override(
-                                                        fontFamily: 'Outfit',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelSmall,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -330,8 +353,10 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium,
                                                         color:
                                                             Color(0xFFF1EEEE),
                                                         fontSize: 18.0,
@@ -361,19 +386,19 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                     .getText(
                                                   '1sdpfkv7' /* +$100.99 */,
                                                 ),
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              'Plus Jakarta Sans',
-                                                          color:
-                                                              Color(0xFF8ED386),
-                                                          fontSize: 17.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                        ),
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      font: FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium,
+                                                      color: Color(0xFF8ED386),
+                                                      fontSize: 17.0,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                    ),
                                               ),
                                             ),
                                           ),
@@ -428,7 +453,10 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelSmall
                                                       .override(
-                                                        fontFamily: 'Outfit',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelSmall,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -477,8 +505,10 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium,
                                                         color:
                                                             Color(0xFFF1EEEE),
                                                         fontSize: 18.0,
@@ -508,19 +538,19 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                     .getText(
                                                   '241mt5ru' /* +$100.99 */,
                                                 ),
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              'Plus Jakarta Sans',
-                                                          color:
-                                                              Color(0xFF8ED386),
-                                                          fontSize: 17.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                        ),
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      font: FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium,
+                                                      color: Color(0xFF8ED386),
+                                                      fontSize: 17.0,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                    ),
                                               ),
                                             ),
                                           ),
@@ -575,7 +605,10 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelSmall
                                                       .override(
-                                                        fontFamily: 'Outfit',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelSmall,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -624,8 +657,10 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium,
                                                         color:
                                                             Color(0xFFF1EEEE),
                                                         fontSize: 18.0,
@@ -655,19 +690,19 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                     .getText(
                                                   'k77s4b35' /* +$100.99 */,
                                                 ),
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              'Plus Jakarta Sans',
-                                                          color:
-                                                              Color(0xFF8ED386),
-                                                          fontSize: 17.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                        ),
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      font: FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium,
+                                                      color: Color(0xFF8ED386),
+                                                      fontSize: 17.0,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                    ),
                                               ),
                                             ),
                                           ),
@@ -722,7 +757,10 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelSmall
                                                       .override(
-                                                        fontFamily: 'Outfit',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelSmall,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -771,8 +809,10 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium,
                                                         color:
                                                             Color(0xFFF1EEEE),
                                                         fontSize: 18.0,
@@ -802,19 +842,19 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                     .getText(
                                                   'nwo28pw1' /* +$100.99 */,
                                                 ),
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              'Plus Jakarta Sans',
-                                                          color:
-                                                              Color(0xFF8ED386),
-                                                          fontSize: 17.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                        ),
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      font: FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium,
+                                                      color: Color(0xFF8ED386),
+                                                      fontSize: 17.0,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                    ),
                                               ),
                                             ),
                                           ),
@@ -869,7 +909,10 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelSmall
                                                       .override(
-                                                        fontFamily: 'Outfit',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelSmall,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -918,8 +961,10 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium,
                                                         color:
                                                             Color(0xFFF1EEEE),
                                                         fontSize: 18.0,
@@ -949,19 +994,19 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                     .getText(
                                                   'rg6x3tgm' /* +$100.99 */,
                                                 ),
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              'Plus Jakarta Sans',
-                                                          color:
-                                                              Color(0xFF8ED386),
-                                                          fontSize: 17.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                        ),
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      font: FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium,
+                                                      color: Color(0xFF8ED386),
+                                                      fontSize: 17.0,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                    ),
                                               ),
                                             ),
                                           ),
@@ -1016,7 +1061,10 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelSmall
                                                       .override(
-                                                        fontFamily: 'Outfit',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelSmall,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -1065,8 +1113,10 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium,
                                                         color:
                                                             Color(0xFFF1EEEE),
                                                         fontSize: 18.0,
@@ -1096,19 +1146,19 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                     .getText(
                                                   '5bolacb2' /* +$100.99 */,
                                                 ),
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              'Plus Jakarta Sans',
-                                                          color:
-                                                              Color(0xFF8ED386),
-                                                          fontSize: 17.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                        ),
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      font: FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium,
+                                                      color: Color(0xFF8ED386),
+                                                      fontSize: 17.0,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                    ),
                                               ),
                                             ),
                                           ),
@@ -1163,7 +1213,10 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelSmall
                                                       .override(
-                                                        fontFamily: 'Outfit',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelSmall,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -1212,8 +1265,10 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium,
                                                         color:
                                                             Color(0xFFF1EEEE),
                                                         fontSize: 18.0,
@@ -1243,19 +1298,19 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                     .getText(
                                                   'z6sy86p8' /* +$100.99 */,
                                                 ),
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              'Plus Jakarta Sans',
-                                                          color:
-                                                              Color(0xFF8ED386),
-                                                          fontSize: 17.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                        ),
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      font: FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium,
+                                                      color: Color(0xFF8ED386),
+                                                      fontSize: 17.0,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                    ),
                                               ),
                                             ),
                                           ),
@@ -1310,7 +1365,10 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelSmall
                                                       .override(
-                                                        fontFamily: 'Outfit',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelSmall,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -1359,8 +1417,10 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium,
                                                         color:
                                                             Color(0xFFF1EEEE),
                                                         fontSize: 18.0,
@@ -1390,19 +1450,19 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                     .getText(
                                                   'td9jzpx1' /* +$100.99 */,
                                                 ),
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              'Plus Jakarta Sans',
-                                                          color:
-                                                              Color(0xFF8ED386),
-                                                          fontSize: 17.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                        ),
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      font: FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium,
+                                                      color: Color(0xFF8ED386),
+                                                      fontSize: 17.0,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                    ),
                                               ),
                                             ),
                                           ),
@@ -1457,7 +1517,10 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .labelSmall
                                                       .override(
-                                                        fontFamily: 'Outfit',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .labelSmall,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -1506,8 +1569,10 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                           context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium,
                                                         color:
                                                             Color(0xFFF1EEEE),
                                                         fontSize: 18.0,
@@ -1537,19 +1602,19 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                                                     .getText(
                                                   '8loovom8' /* +$100.99 */,
                                                 ),
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              'Plus Jakarta Sans',
-                                                          color:
-                                                              Color(0xFF8ED386),
-                                                          fontSize: 17.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                        ),
+                                                style: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      font: FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium,
+                                                      color: Color(0xFF8ED386),
+                                                      fontSize: 17.0,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                    ),
                                               ),
                                             ),
                                           ),
@@ -1567,31 +1632,6 @@ class _TransactionWidgetState extends State<TransactionWidget> {
                   ],
                 ),
               ),
-            ),
-            Row(
-              mainAxisSize: MainAxisSize.max,
-              children: [
-                Column(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 0.0, 20.0),
-                      child: Text(
-                        FFLocalizations.of(context).getText(
-                          '4mxeeioc' /* Transactions */,
-                        ),
-                        style:
-                            FlutterFlowTheme.of(context).displaySmall.override(
-                                  fontFamily: 'Outfit',
-                                  fontSize: 25.0,
-                                  letterSpacing: 0.0,
-                                ),
-                      ),
-                    ),
-                  ],
-                ),
-              ],
             ),
           ],
         ),

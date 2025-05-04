@@ -120,7 +120,8 @@ class _CreatemooncardWidgetState extends State<CreatemooncardWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily: 'Plus Jakarta Sans',
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyLarge,
                                               fontSize: 18.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.bold,
@@ -146,7 +147,8 @@ class _CreatemooncardWidgetState extends State<CreatemooncardWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: 'Plus Jakarta Sans',
+                                      font: FlutterFlowTheme.of(context)
+                                          .bodyMedium,
                                       letterSpacing: 0.0,
                                     ),
                               ),

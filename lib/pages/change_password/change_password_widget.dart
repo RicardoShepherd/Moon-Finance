@@ -71,7 +71,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
             'l5iggwaz' /* Change Password */,
           ),
           style: FlutterFlowTheme.of(context).headlineSmall.override(
-                fontFamily: 'Outfit',
+                font: FlutterFlowTheme.of(context).headlineSmall,
                 letterSpacing: 0.0,
               ),
         ),
@@ -92,11 +92,11 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                   if (!snapshot.hasData) {
                     return Center(
                       child: SizedBox(
-                        width: 50.0,
-                        height: 50.0,
+                        width: 40.0,
+                        height: 40.0,
                         child: CircularProgressIndicator(
                           valueColor: AlwaysStoppedAnimation<Color>(
-                            FlutterFlowTheme.of(context).primary,
+                            Color(0xFFEAE9ED),
                           ),
                         ),
                       ),
@@ -125,7 +125,8 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodySmall
                                       .override(
-                                        fontFamily: 'Plus Jakarta Sans',
+                                        font: FlutterFlowTheme.of(context)
+                                            .bodySmall,
                                         fontSize: 14.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w600,
@@ -150,16 +151,18 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                           focusNode: _model.passwordFocusNode,
                           obscureText: !_model.passwordVisibility,
                           decoration: InputDecoration(
-                            labelStyle:
-                                FlutterFlowTheme.of(context).bodySmall.override(
-                                      fontFamily: 'Plus Jakarta Sans',
-                                      letterSpacing: 0.0,
-                                    ),
-                            hintStyle:
-                                FlutterFlowTheme.of(context).bodySmall.override(
-                                      fontFamily: 'Plus Jakarta Sans',
-                                      letterSpacing: 0.0,
-                                    ),
+                            labelStyle: FlutterFlowTheme.of(context)
+                                .bodySmall
+                                .override(
+                                  font: FlutterFlowTheme.of(context).bodySmall,
+                                  letterSpacing: 0.0,
+                                ),
+                            hintStyle: FlutterFlowTheme.of(context)
+                                .bodySmall
+                                .override(
+                                  font: FlutterFlowTheme.of(context).bodySmall,
+                                  letterSpacing: 0.0,
+                                ),
                             enabledBorder: OutlineInputBorder(
                               borderSide: BorderSide(
                                 color: FlutterFlowTheme.of(context).alternate,
@@ -208,11 +211,12 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                               ),
                             ),
                           ),
-                          style:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Plus Jakarta Sans',
-                                    letterSpacing: 0.0,
-                                  ),
+                          style: FlutterFlowTheme.of(context)
+                              .bodyMedium
+                              .override(
+                                font: FlutterFlowTheme.of(context).bodyMedium,
+                                letterSpacing: 0.0,
+                              ),
                           validator: _model.passwordTextControllerValidator
                               .asValidator(context),
                         ),
@@ -254,7 +258,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget> {
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).titleSmall,
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
                                   fontSize: 15.0,

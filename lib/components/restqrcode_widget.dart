@@ -102,7 +102,8 @@ class _RestqrcodeWidgetState extends State<RestqrcodeWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
-                                  fontFamily: 'Outfit',
+                                  font:
+                                      FlutterFlowTheme.of(context).labelMedium,
                                   letterSpacing: 0.0,
                                 ),
                           ),
@@ -122,7 +123,8 @@ class _RestqrcodeWidgetState extends State<RestqrcodeWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
-                                  fontFamily: 'Outfit',
+                                  font:
+                                      FlutterFlowTheme.of(context).labelMedium,
                                   color: Color(0xFF4A5ED6),
                                   letterSpacing: 0.0,
                                 ),
@@ -148,12 +150,13 @@ class _RestqrcodeWidgetState extends State<RestqrcodeWidget> {
                           iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: Color(0xFF1A2144),
-                          textStyle:
-                              FlutterFlowTheme.of(context).titleSmall.override(
-                                    fontFamily: 'Plus Jakarta Sans',
-                                    color: Colors.white,
-                                    letterSpacing: 0.0,
-                                  ),
+                          textStyle: FlutterFlowTheme.of(context)
+                              .titleSmall
+                              .override(
+                                font: FlutterFlowTheme.of(context).titleSmall,
+                                color: Colors.white,
+                                letterSpacing: 0.0,
+                              ),
                           elevation: 2.0,
                           borderSide: BorderSide(
                             color: Colors.transparent,
@@ -176,7 +179,8 @@ class _RestqrcodeWidgetState extends State<RestqrcodeWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
-                                  fontFamily: 'Outfit',
+                                  font:
+                                      FlutterFlowTheme.of(context).labelMedium,
                                   color: Color(0xFF4A5ED6),
                                   fontSize: 17.0,
                                   letterSpacing: 0.0,

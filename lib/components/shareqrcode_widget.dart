@@ -86,12 +86,13 @@ class _ShareqrcodeWidgetState extends State<ShareqrcodeWidget> {
                         '8i7neviu' /* Share QR code */,
                       ),
                       textAlign: TextAlign.center,
-                      style:
-                          FlutterFlowTheme.of(context).headlineMedium.override(
-                                fontFamily: 'Outfit',
-                                fontSize: 16.0,
-                                letterSpacing: 0.0,
-                              ),
+                      style: FlutterFlowTheme.of(context)
+                          .headlineMedium
+                          .override(
+                            font: FlutterFlowTheme.of(context).headlineMedium,
+                            fontSize: 16.0,
+                            letterSpacing: 0.0,
+                          ),
                     ),
                   ),
                 ),
@@ -128,7 +129,8 @@ class _ShareqrcodeWidgetState extends State<ShareqrcodeWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: 'Plus Jakarta Sans',
+                                      font: FlutterFlowTheme.of(context)
+                                          .bodyMedium,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
                                     ),
@@ -168,7 +170,7 @@ class _ShareqrcodeWidgetState extends State<ShareqrcodeWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   letterSpacing: 0.0,
                                 ),
                           ),
@@ -205,7 +207,7 @@ class _ShareqrcodeWidgetState extends State<ShareqrcodeWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   letterSpacing: 0.0,
                                 ),
                           ),
@@ -242,7 +244,7 @@ class _ShareqrcodeWidgetState extends State<ShareqrcodeWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   letterSpacing: 0.0,
                                 ),
                           ),
@@ -279,7 +281,7 @@ class _ShareqrcodeWidgetState extends State<ShareqrcodeWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   letterSpacing: 0.0,
                                 ),
                           ),
@@ -316,7 +318,7 @@ class _ShareqrcodeWidgetState extends State<ShareqrcodeWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   letterSpacing: 0.0,
                                 ),
                           ),
@@ -353,7 +355,7 @@ class _ShareqrcodeWidgetState extends State<ShareqrcodeWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   letterSpacing: 0.0,
                                 ),
                           ),

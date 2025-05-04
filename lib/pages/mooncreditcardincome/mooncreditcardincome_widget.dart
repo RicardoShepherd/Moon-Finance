@@ -100,7 +100,7 @@ class _MooncreditcardincomeWidgetState
                         ),
                         textAlign: TextAlign.center,
                         style: FlutterFlowTheme.of(context).titleLarge.override(
-                              fontFamily: 'Outfit',
+                              font: FlutterFlowTheme.of(context).titleLarge,
                               fontSize: 27.0,
                               letterSpacing: 0.0,
                             ),
@@ -122,7 +122,7 @@ class _MooncreditcardincomeWidgetState
                         ),
                         textAlign: TextAlign.center,
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Plus Jakarta Sans',
+                              font: FlutterFlowTheme.of(context).bodyMedium,
                               fontSize: 15.0,
                               letterSpacing: 0.0,
                             ),
@@ -153,7 +153,8 @@ class _MooncreditcardincomeWidgetState
                             labelStyle: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
-                                  fontFamily: 'Outfit',
+                                  font:
+                                      FlutterFlowTheme.of(context).labelMedium,
                                   letterSpacing: 0.0,
                                 ),
                             hintText: FFLocalizations.of(context).getText(
@@ -162,7 +163,8 @@ class _MooncreditcardincomeWidgetState
                             hintStyle: FlutterFlowTheme.of(context)
                                 .labelMedium
                                 .override(
-                                  fontFamily: 'Outfit',
+                                  font:
+                                      FlutterFlowTheme.of(context).labelMedium,
                                   letterSpacing: 0.0,
                                 ),
                             enabledBorder: OutlineInputBorder(
@@ -197,11 +199,12 @@ class _MooncreditcardincomeWidgetState
                             fillColor: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
                           ),
-                          style:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Plus Jakarta Sans',
-                                    letterSpacing: 0.0,
-                                  ),
+                          style: FlutterFlowTheme.of(context)
+                              .bodyMedium
+                              .override(
+                                font: FlutterFlowTheme.of(context).bodyMedium,
+                                letterSpacing: 0.0,
+                              ),
                           cursorColor: FlutterFlowTheme.of(context).primaryText,
                           validator: _model.textControllerValidator
                               .asValidator(context),
@@ -225,11 +228,12 @@ class _MooncreditcardincomeWidgetState
                             'iqpua8o9' /* This information is required b... */,
                           ),
                           textAlign: TextAlign.center,
-                          style:
-                              FlutterFlowTheme.of(context).labelSmall.override(
-                                    fontFamily: 'Outfit',
-                                    letterSpacing: 0.0,
-                                  ),
+                          style: FlutterFlowTheme.of(context)
+                              .labelSmall
+                              .override(
+                                font: FlutterFlowTheme.of(context).labelSmall,
+                                letterSpacing: 0.0,
+                              ),
                         ),
                       ),
                     ),
@@ -260,7 +264,7 @@ class _MooncreditcardincomeWidgetState
                         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: Color(0xFF1A2144),
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily: 'Plus Jakarta Sans',
+                          font: FlutterFlowTheme.of(context).titleSmall,
                           color: Colors.white,
                           letterSpacing: 0.0,
                         ),

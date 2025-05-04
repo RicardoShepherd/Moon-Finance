@@ -92,7 +92,8 @@ class _MoonpaylatermenuWidgetState extends State<MoonpaylatermenuWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Plus Jakarta Sans',
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                     letterSpacing: 0.0,
                                   ),
                             ),
@@ -133,7 +134,7 @@ class _MoonpaylatermenuWidgetState extends State<MoonpaylatermenuWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   letterSpacing: 0.0,
                                 ),
                           ),
@@ -173,7 +174,7 @@ class _MoonpaylatermenuWidgetState extends State<MoonpaylatermenuWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   letterSpacing: 0.0,
                                 ),
                           ),
@@ -213,7 +214,7 @@ class _MoonpaylatermenuWidgetState extends State<MoonpaylatermenuWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).bodyMedium,
                                   letterSpacing: 0.0,
                                 ),
                           ),

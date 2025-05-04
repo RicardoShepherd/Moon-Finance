@@ -147,7 +147,8 @@ class _LinkyourbankaccountWidgetState extends State<LinkyourbankaccountWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .titleMedium
                                             .override(
-                                              fontFamily: 'Plus Jakarta Sans',
+                                              font: FlutterFlowTheme.of(context)
+                                                  .titleMedium,
                                               letterSpacing: 0.0,
                                             ),
                                       ),
@@ -198,7 +199,8 @@ class _LinkyourbankaccountWidgetState extends State<LinkyourbankaccountWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Plus Jakarta Sans',
+                                            font: FlutterFlowTheme.of(context)
+                                                .bodyMedium,
                                             fontSize: 16.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.bold,
@@ -233,7 +235,8 @@ class _LinkyourbankaccountWidgetState extends State<LinkyourbankaccountWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Plus Jakarta Sans',
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyMedium,
                                               letterSpacing: 0.0,
                                             ),
                                       ),
@@ -267,7 +270,8 @@ class _LinkyourbankaccountWidgetState extends State<LinkyourbankaccountWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Plus Jakarta Sans',
+                                              font: FlutterFlowTheme.of(context)
+                                                  .bodyMedium,
                                               letterSpacing: 0.0,
                                             ),
                                       ),
@@ -288,7 +292,8 @@ class _LinkyourbankaccountWidgetState extends State<LinkyourbankaccountWidget> {
                                   labelStyle: FlutterFlowTheme.of(context)
                                       .bodySmall
                                       .override(
-                                        fontFamily: 'Plus Jakarta Sans',
+                                        font: FlutterFlowTheme.of(context)
+                                            .bodySmall,
                                         letterSpacing: 0.0,
                                       ),
                                   hintText: FFLocalizations.of(context).getText(
@@ -297,7 +302,8 @@ class _LinkyourbankaccountWidgetState extends State<LinkyourbankaccountWidget> {
                                   hintStyle: FlutterFlowTheme.of(context)
                                       .bodySmall
                                       .override(
-                                        fontFamily: 'Plus Jakarta Sans',
+                                        font: FlutterFlowTheme.of(context)
+                                            .bodySmall,
                                         fontSize: 15.0,
                                         letterSpacing: 0.0,
                                       ),
@@ -339,7 +345,8 @@ class _LinkyourbankaccountWidgetState extends State<LinkyourbankaccountWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: 'Plus Jakarta Sans',
+                                      font: FlutterFlowTheme.of(context)
+                                          .bodyMedium,
                                       letterSpacing: 0.0,
                                     ),
                                 validator: _model
@@ -356,7 +363,8 @@ class _LinkyourbankaccountWidgetState extends State<LinkyourbankaccountWidget> {
                                 labelStyle: FlutterFlowTheme.of(context)
                                     .bodySmall
                                     .override(
-                                      fontFamily: 'Plus Jakarta Sans',
+                                      font: FlutterFlowTheme.of(context)
+                                          .bodySmall,
                                       letterSpacing: 0.0,
                                     ),
                                 hintText: FFLocalizations.of(context).getText(
@@ -365,7 +373,8 @@ class _LinkyourbankaccountWidgetState extends State<LinkyourbankaccountWidget> {
                                 hintStyle: FlutterFlowTheme.of(context)
                                     .bodySmall
                                     .override(
-                                      fontFamily: 'Plus Jakarta Sans',
+                                      font: FlutterFlowTheme.of(context)
+                                          .bodySmall,
                                       fontSize: 15.0,
                                       letterSpacing: 0.0,
                                     ),
@@ -406,7 +415,8 @@ class _LinkyourbankaccountWidgetState extends State<LinkyourbankaccountWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Plus Jakarta Sans',
+                                    font:
+                                        FlutterFlowTheme.of(context).bodyMedium,
                                     letterSpacing: 0.0,
                                   ),
                               validator: _model
@@ -436,7 +446,8 @@ class _LinkyourbankaccountWidgetState extends State<LinkyourbankaccountWidget> {
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          fontFamily: 'Plus Jakarta Sans',
+                                          font: FlutterFlowTheme.of(context)
+                                              .titleSmall,
                                           color: Colors.white,
                                           letterSpacing: 0.0,
                                         ),

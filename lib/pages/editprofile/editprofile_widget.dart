@@ -140,7 +140,7 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                                 child: Image.asset(
                                   Theme.of(context).brightness ==
                                           Brightness.dark
-                                      ? 'assets/images/Cryptocurrency-Tether-Usdt-Logo-Graphics-13393983-1.jpg'
+                                      ? 'assets/images/images_(3).png'
                                       : 'assets/images/Brown_Neutral_Moon_Photograph_Inspirational_Quote_Instagram_Story.png',
                                   width: 100.0,
                                   height: 100.0,
@@ -163,7 +163,7 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                   ),
                   textAlign: TextAlign.center,
                   style: FlutterFlowTheme.of(context).headlineSmall.override(
-                        fontFamily: 'Outfit',
+                        font: FlutterFlowTheme.of(context).headlineSmall,
                         color: FlutterFlowTheme.of(context).info,
                         letterSpacing: 0.0,
                       ),
@@ -174,8 +174,8 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                   'acpbusj2' /* Ricardoshepherd49@gmail.com */,
                 ),
                 style: FlutterFlowTheme.of(context).titleSmall.override(
-                      fontFamily: 'Plus Jakarta Sans',
-                      color: Color(0xFF44B4A7),
+                      font: FlutterFlowTheme.of(context).titleSmall,
+                      color: Color(0xFFAA9FF1),
                       fontSize: 13.0,
                       letterSpacing: 0.0,
                     ),
@@ -217,7 +217,7 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).titleSmall,
                                   fontSize: 14.0,
                                   letterSpacing: 0.0,
                                 ),
@@ -257,7 +257,7 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  font: FlutterFlowTheme.of(context).titleSmall,
                                   fontSize: 14.0,
                                   letterSpacing: 0.0,
                                 ),
@@ -300,7 +300,8 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
-                                    fontFamily: 'Plus Jakarta Sans',
+                                    font:
+                                        FlutterFlowTheme.of(context).titleSmall,
                                     fontSize: 14.0,
                                     letterSpacing: 0.0,
                                   ),
@@ -317,7 +318,7 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                   width: 55555555.0,
                   height: 10.0,
                   decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).secondaryBackground,
+                    color: Color(0xFF18181A),
                     boxShadow: [
                       BoxShadow(
                         blurRadius: 3.0,
@@ -355,7 +356,8 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .headlineSmall
                                         .override(
-                                          fontFamily: 'Outfit',
+                                          font: FlutterFlowTheme.of(context)
+                                              .headlineSmall,
                                           letterSpacing: 0.0,
                                         ),
                                   ),
@@ -390,8 +392,9 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
@@ -425,8 +428,10 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .titleSmall
                                                       .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleSmall,
                                                         color: Colors.white,
                                                         letterSpacing: 0.0,
                                                       ),
@@ -470,8 +475,9 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
@@ -505,8 +511,10 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .titleSmall
                                                       .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleSmall,
                                                         color: Colors.white,
                                                         letterSpacing: 0.0,
                                                       ),
@@ -550,8 +558,9 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
@@ -578,15 +587,16 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                           color: Color(0x00F83B46),
-                                          textStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmall
-                                                  .override(
-                                                    fontFamily:
-                                                        'Plus Jakarta Sans',
-                                                    color: Colors.white,
-                                                    letterSpacing: 0.0,
-                                                  ),
+                                          textStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .titleSmall
+                                              .override(
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall,
+                                                color: Colors.white,
+                                                letterSpacing: 0.0,
+                                              ),
                                           elevation: 0.0,
                                           borderRadius:
                                               BorderRadius.circular(8.0),
@@ -625,8 +635,9 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
@@ -653,15 +664,16 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                           color: Color(0x00F83B46),
-                                          textStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmall
-                                                  .override(
-                                                    fontFamily:
-                                                        'Plus Jakarta Sans',
-                                                    color: Colors.white,
-                                                    letterSpacing: 0.0,
-                                                  ),
+                                          textStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .titleSmall
+                                              .override(
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall,
+                                                color: Colors.white,
+                                                letterSpacing: 0.0,
+                                              ),
                                           elevation: 0.0,
                                           borderRadius:
                                               BorderRadius.circular(8.0),
@@ -718,8 +730,10 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
-                                                        fontFamily:
-                                                            'Plus Jakarta Sans',
+                                                        font:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium,
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
@@ -750,8 +764,9 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                                                 FlutterFlowTheme.of(context)
                                                     .titleSmall
                                                     .override(
-                                                      fontFamily:
-                                                          'Plus Jakarta Sans',
+                                                      font: FlutterFlowTheme.of(
+                                                              context)
+                                                          .titleSmall,
                                                       color: Colors.white,
                                                       letterSpacing: 0.0,
                                                     ),
@@ -794,8 +809,9 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
@@ -822,15 +838,16 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                           color: Color(0x00F83B46),
-                                          textStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmall
-                                                  .override(
-                                                    fontFamily:
-                                                        'Plus Jakarta Sans',
-                                                    color: Colors.white,
-                                                    letterSpacing: 0.0,
-                                                  ),
+                                          textStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .titleSmall
+                                              .override(
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall,
+                                                color: Colors.white,
+                                                letterSpacing: 0.0,
+                                              ),
                                           elevation: 0.0,
                                           borderRadius:
                                               BorderRadius.circular(8.0),
@@ -869,8 +886,9 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily:
-                                                      'Plus Jakarta Sans',
+                                                  font: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
@@ -897,15 +915,16 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                           color: Color(0x009489F5),
-                                          textStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmall
-                                                  .override(
-                                                    fontFamily:
-                                                        'Plus Jakarta Sans',
-                                                    color: Colors.white,
-                                                    letterSpacing: 0.0,
-                                                  ),
+                                          textStyle: FlutterFlowTheme.of(
+                                                  context)
+                                              .titleSmall
+                                              .override(
+                                                font:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall,
+                                                color: Colors.white,
+                                                letterSpacing: 0.0,
+                                              ),
                                           elevation: 0.0,
                                           borderRadius:
                                               BorderRadius.circular(8.0),
