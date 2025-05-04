@@ -865,7 +865,7 @@ class _PaymentWidgetState extends State<PaymentWidget> {
                                   await showModalBottomSheet(
                                     isScrollControlled: true,
                                     backgroundColor: Colors.transparent,
-                                    enableDrag: false,
+                                    isDismissible: false,
                                     context: context,
                                     builder: (context) {
                                       return Padding(

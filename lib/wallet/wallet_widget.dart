@@ -1,7 +1,7 @@
 import '/components/addmoney_widget.dart';
-import '/components/mooncard_menu_widget.dart';
 import '/components/singlecard_widget.dart';
 import '/components/transaction_history_widget.dart';
+import '/components/walletoption_widget.dart';
 import '/flutter_flow/flutter_flow_charts.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -105,7 +105,7 @@ class _WalletWidgetState extends State<WalletWidget> {
                               },
                               child: Padding(
                                 padding: MediaQuery.viewInsetsOf(context),
-                                child: MooncardMenuWidget(),
+                                child: WalletoptionWidget(),
                               ),
                             );
                           },
@@ -169,42 +169,83 @@ class _WalletWidgetState extends State<WalletWidget> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Flexible(
-                          child: Container(
-                            width: 191.7,
-                            height: 34.1,
-                            decoration: BoxDecoration(
-                              color: Color(0xB91B1D27),
-                              borderRadius: BorderRadius.circular(24.0),
-                            ),
-                            child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 3.0, 0.0, 3.0),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceAround,
-                                children: [
-                                  Flexible(
+                          child: InkWell(
+                            splashColor: Colors.transparent,
+                            focusColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            onTap: () async {
+                              logFirebaseEvent(
+                                  'WALLET_PAGE_Container_vz418ml0_ON_TAP');
+                              logFirebaseEvent('Container_bottom_sheet');
+                              await showModalBottomSheet(
+                                isScrollControlled: true,
+                                backgroundColor: Colors.transparent,
+                                isDismissible: false,
+                                context: context,
+                                builder: (context) {
+                                  return GestureDetector(
+                                    onTap: () {
+                                      FocusScope.of(context).unfocus();
+                                      FocusManager.instance.primaryFocus
+                                          ?.unfocus();
+                                    },
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          10.0, 0.0, 10.0, 0.0),
-                                      child: FaIcon(
-                                        FontAwesomeIcons.connectdevelop,
-                                        color: Color(0xFFAA9FF1),
-                                        size: 16.0,
+                                      padding: MediaQuery.viewInsetsOf(context),
+                                      child: WalletoptionWidget(),
+                                    ),
+                                  );
+                                },
+                              ).then((value) => safeSetState(() {}));
+                            },
+                            child: Container(
+                              width: 191.7,
+                              height: 34.1,
+                              decoration: BoxDecoration(
+                                color: Color(0xB91B1D27),
+                                borderRadius: BorderRadius.circular(24.0),
+                              ),
+                              child: Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 3.0, 0.0, 3.0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Flexible(
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            10.0, 0.0, 10.0, 0.0),
+                                        child: FaIcon(
+                                          FontAwesomeIcons.connectdevelop,
+                                          color: Color(0xFFAA9FF1),
+                                          size: 16.0,
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
-                                    child: Text(
-                                      FFLocalizations.of(context).getText(
-                                        'qgd9166c' /* @RicardoShepherd */,
-                                      ),
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            font: GoogleFonts.notoSans(
+                                    Align(
+                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      child: Text(
+                                        FFLocalizations.of(context).getText(
+                                          'qgd9166c' /* @RicardoShepherd */,
+                                        ),
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              font: GoogleFonts.notoSans(
+                                                fontWeight:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontWeight,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontStyle,
+                                              ),
+                                              color: Color(0xFFAA9FF1),
+                                              fontSize: 12.0,
+                                              letterSpacing: 0.0,
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
@@ -214,32 +255,21 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                       .bodyMedium
                                                       .fontStyle,
                                             ),
-                                            color: Color(0xFFAA9FF1),
-                                            fontSize: 12.0,
-                                            letterSpacing: 0.0,
-                                            fontWeight:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMedium
-                                                    .fontWeight,
-                                            fontStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMedium
-                                                    .fontStyle,
-                                          ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          10.0, 0.0, 10.0, 0.0),
-                                      child: Icon(
-                                        Icons.keyboard_arrow_right_sharp,
-                                        color: Color(0xFFAA9FF1),
-                                        size: 23.0,
                                       ),
                                     ),
-                                  ),
-                                ],
+                                    Flexible(
+                                      child: Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            10.0, 0.0, 10.0, 0.0),
+                                        child: Icon(
+                                          Icons.keyboard_arrow_right_sharp,
+                                          color: Color(0xFFAA9FF1),
+                                          size: 23.0,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
                           ),

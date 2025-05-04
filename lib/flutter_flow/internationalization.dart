@@ -10558,7 +10558,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ja': '',
     },
     '846mfmyk': {
-      'en': 'Start',
+      'en': 'Create Wallet',
       'ar': '',
       'de': '',
       'es': '',
@@ -11015,10 +11015,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ja': '',
     },
   },
-  // MooncardMenu
+  // Walletoption
   {
     'coowrt7r': {
-      'en': 'Invoice',
+      'en': 'Select a Network',
       'ar': '',
       'de': '',
       'es': '',
@@ -11027,7 +11027,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ja': '',
     },
     '1q31tcqo': {
-      'en': 'Daily Cash',
+      'en': 'Polygon',
       'ar': '',
       'de': '',
       'es': '',
@@ -11035,8 +11035,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'ntn79v7a': {
-      'en': 'Cards Details',
+    'mi1ry3ux': {
+      'en': 'Ethereum',
       'ar': '',
       'de': '',
       'es': '',
@@ -11044,8 +11044,18 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'it': '',
       'ja': '',
     },
-    'hunkxm18': {
-      'en': 'Card Settings',
+    'oj3w76sj': {
+      'en': 'Things to Keep in mind',
+      'ar': '',
+      'de': '',
+      'es': '',
+      'fr': '',
+      'it': '',
+      'ja': '',
+    },
+    '0xwyrqp0': {
+      'en':
+          'IF you attemp to send assets directly form one network to another, this may result in permanent loss of funds. Make sure to use bridg. Learn more ',
       'ar': '',
       'de': '',
       'es': '',

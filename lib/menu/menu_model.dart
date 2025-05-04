@@ -1,8 +1,9 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'mooncard_menu_widget.dart' show MooncardMenuWidget;
+import '/index.dart';
+import 'menu_widget.dart' show MenuWidget;
 import 'package:flutter/material.dart';
 
-class MooncardMenuModel extends FlutterFlowModel<MooncardMenuWidget> {
+class MenuModel extends FlutterFlowModel<MenuWidget> {
   @override
   void initState(BuildContext context) {}
 

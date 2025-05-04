@@ -345,7 +345,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                           backgroundColor:
                                                               Colors
                                                                   .transparent,
-                                                          enableDrag: false,
+                                                          isDismissible: false,
                                                           context: context,
                                                           builder: (context) {
                                                             return GestureDetector(
@@ -443,7 +443,8 @@ class _HomeWidgetState extends State<HomeWidget> {
                                                             backgroundColor:
                                                                 Colors
                                                                     .transparent,
-                                                            enableDrag: false,
+                                                            isDismissible:
+                                                                false,
                                                             context: context,
                                                             builder: (context) {
                                                               return GestureDetector(

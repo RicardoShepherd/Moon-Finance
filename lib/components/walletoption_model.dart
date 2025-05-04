@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'doughnutchart_widget.dart' show DoughnutchartWidget;
+import 'walletoption_widget.dart' show WalletoptionWidget;
 import 'package:flutter/material.dart';
 
-class DoughnutchartModel extends FlutterFlowModel<DoughnutchartWidget> {
+class WalletoptionModel extends FlutterFlowModel<WalletoptionWidget> {
   @override
   void initState(BuildContext context) {}
 

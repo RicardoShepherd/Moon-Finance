@@ -611,14 +611,14 @@ class _SecraterecoveryphraseinfoWidgetState
                               child: FFButtonWidget(
                                 onPressed: () async {
                                   logFirebaseEvent(
-                                      'SECRATERECOVERYPHRASEINFO_START_BTN_ON_T');
+                                      'SECRATERECOVERYPHRASEINFO_CREATE_WALLET_');
                                   logFirebaseEvent('Button_navigate_to');
 
                                   context.pushNamed(
                                       SecraterecoveryphraseWidget.routeName);
                                 },
                                 text: FFLocalizations.of(context).getText(
-                                  '846mfmyk' /* Start */,
+                                  '846mfmyk' /* Create Wallet */,
                                 ),
                                 options: FFButtonOptions(
                                   width: double.infinity,

@@ -1,4 +1,4 @@
-import '/components/mooncard_menu_widget.dart';
+import '/components/walletoption_widget.dart';
 import '/flutter_flow/flutter_flow_choice_chips.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -103,7 +103,7 @@ class _MoonCreditcardWidgetState extends State<MoonCreditcardWidget> {
                               },
                               child: Padding(
                                 padding: MediaQuery.viewInsetsOf(context),
-                                child: MooncardMenuWidget(),
+                                child: WalletoptionWidget(),
                               ),
                             );
                           },
