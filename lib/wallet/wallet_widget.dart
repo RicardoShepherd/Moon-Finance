@@ -2,6 +2,7 @@ import '/components/addmoney_widget.dart';
 import '/components/singlecard_widget.dart';
 import '/components/transaction_history_widget.dart';
 import '/components/walletoption_widget.dart';
+import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_charts.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -9,6 +10,7 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/random_data_util.dart' as random_data;
 import '/index.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'wallet_model.dart';
@@ -24,10 +26,13 @@ class WalletWidget extends StatefulWidget {
   State<WalletWidget> createState() => _WalletWidgetState();
 }
 
-class _WalletWidgetState extends State<WalletWidget> {
+class _WalletWidgetState extends State<WalletWidget>
+    with TickerProviderStateMixin {
   late WalletModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
+
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void initState() {
@@ -35,6 +40,21 @@ class _WalletWidgetState extends State<WalletWidget> {
     _model = createModel(context, () => WalletModel());
 
     logFirebaseEvent('screen_view', parameters: {'screen_name': 'Wallet'});
+    animationsMap.addAll({
+      'singlecardOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 1560.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+        ],
+      ),
+    });
+
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
@@ -151,7 +171,8 @@ class _WalletWidgetState extends State<WalletWidget> {
                                 model: _model.singlecardModel,
                                 updateCallback: () => safeSetState(() {}),
                                 child: SinglecardWidget(),
-                              ),
+                              ).animateOnPageLoad(animationsMap[
+                                  'singlecardOnPageLoadAnimation']!),
                             ),
                           ),
                         ],
@@ -474,30 +495,31 @@ class _WalletWidgetState extends State<WalletWidget> {
                 ),
                 Expanded(
                   child: Align(
-                    alignment: AlignmentDirectional(-1.0, 0.0),
+                    alignment: AlignmentDirectional(0.0, -1.0),
                     child: Padding(
                       padding:
                           EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Expanded(
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Expanded(
-                                    child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            7.0, 10.0, 0.0, 0.0),
+                              alignment: AlignmentDirectional(0.0, -1.0),
+                              child: Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    7.0, 0.0, 2.5, 0.0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Expanded(
+                                      child: Align(
+                                        alignment:
+                                            AlignmentDirectional(0.0, -1.0),
                                         child: Container(
-                                          width: 180.0,
-                                          height: 64.38,
+                                          width: double.infinity,
+                                          height: 64.4,
                                           decoration: BoxDecoration(
                                             color: Color(0xFF18181A),
                                             borderRadius:
@@ -585,219 +607,53 @@ class _WalletWidgetState extends State<WalletWidget> {
                                         ),
                                       ),
                                     ),
-                                  ),
-                                  Expanded(
-                                    child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            7.0, 10.0, 0.0, 0.0),
-                                        child: Container(
-                                          width: 180.0,
-                                          height: 113.0,
-                                          decoration: BoxDecoration(
-                                            color: Color(0xFF18181A),
-                                            borderRadius:
-                                                BorderRadius.circular(12.0),
-                                          ),
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    7.0, 0.0, 0.0, 0.0),
-                                            child: Row(
-                                              mainAxisSize: MainAxisSize.max,
-                                              children: [
-                                                Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          5.0, 5.0, 0.0, 0.0),
-                                                  child: Column(
-                                                    mainAxisSize:
-                                                        MainAxisSize.max,
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment.start,
-                                                    children: [
-                                                      Padding(
-                                                        padding:
-                                                            EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    0.0,
-                                                                    0.0,
-                                                                    0.0,
-                                                                    5.0),
-                                                        child: Text(
-                                                          FFLocalizations.of(
-                                                                  context)
-                                                              .getText(
-                                                            '82n41doh' /* Weekly Activity */,
-                                                          ),
-                                                          style: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .bodyMedium
-                                                              .override(
-                                                                font: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium,
-                                                                fontSize: 13.0,
-                                                                letterSpacing:
-                                                                    0.0,
-                                                              ),
-                                                        ),
-                                                      ),
-                                                      Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          '3kx4nhdr' /* +$542.98 Cash Back */,
-                                                        ),
-                                                        textAlign:
-                                                            TextAlign.start,
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .labelSmall
-                                                                .override(
-                                                                  font: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .labelSmall,
-                                                                  fontSize:
-                                                                      12.0,
-                                                                  letterSpacing:
-                                                                      0.0,
-                                                                ),
-                                                      ),
-                                                      Container(
-                                                        width: 151.3,
-                                                        height: 60.0,
-                                                        child:
-                                                            FlutterFlowBarChart(
-                                                          barData: [
-                                                            FFBarChartData(
-                                                              yData: List.generate(
-                                                                  random_data
-                                                                      .randomInteger(
-                                                                          1, 7),
-                                                                  (index) =>
-                                                                      random_data
-                                                                          .randomInteger(
-                                                                              1,
-                                                                              7)),
-                                                              color: Color(
-                                                                  0xFF5AE643),
-                                                              borderColor: Color(
-                                                                  0x006F61EF),
-                                                            )
-                                                          ],
-                                                          xLabels: List.generate(
-                                                                  random_data
-                                                                      .randomInteger(
-                                                                          1, 7),
-                                                                  (index) =>
-                                                                      random_data
-                                                                          .randomInteger(
-                                                                              0,
-                                                                              10))
-                                                              .map((e) =>
-                                                                  e.toString())
-                                                              .toList(),
-                                                          barWidth: 16.0,
-                                                          barBorderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      22.0),
-                                                          groupSpace: 8.0,
-                                                          alignment:
-                                                              BarChartAlignment
-                                                                  .spaceAround,
-                                                          chartStylingInfo:
-                                                              ChartStylingInfo(
-                                                            backgroundColor:
-                                                                Color(
-                                                                    0x007A7F94),
-                                                            showBorder: false,
-                                                          ),
-                                                          axisBounds:
-                                                              AxisBounds(),
-                                                          xAxisLabelInfo:
-                                                              AxisLabelInfo(
-                                                            reservedSize: 28.0,
-                                                          ),
-                                                          yAxisLabelInfo:
-                                                              AxisLabelInfo(
-                                                            reservedSize: 42.0,
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                          Expanded(
-                            child: Column(
-                              mainAxisSize: MainAxisSize.max,
-                              children: [
-                                Expanded(
-                                  child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
-                                    child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          5.0, 0.0, 5.0, 0.0),
-                                      child: Container(
-                                        width: 180.0,
-                                        height: 182.5,
-                                        decoration: BoxDecoration(
-                                          color: Color(0xFF18181A),
-                                          borderRadius:
-                                              BorderRadius.circular(12.0),
-                                        ),
+                                    Expanded(
+                                      child: Align(
+                                        alignment:
+                                            AlignmentDirectional(0.0, -1.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 5.0, 0.0, 0.0),
-                                          child: Row(
-                                            mainAxisSize: MainAxisSize.max,
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Expanded(
-                                                child: Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          5.0, 10.0, 5.0, 0.0),
-                                                  child: Column(
-                                                    mainAxisSize:
-                                                        MainAxisSize.max,
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .center,
-                                                    children: [
-                                                      Align(
-                                                        alignment:
-                                                            AlignmentDirectional(
-                                                                -1.0, 0.0),
-                                                        child: Padding(
+                                          child: Container(
+                                            width: double.infinity,
+                                            height: 113.0,
+                                            decoration: BoxDecoration(
+                                              color: Color(0xFF18181A),
+                                              borderRadius:
+                                                  BorderRadius.circular(12.0),
+                                            ),
+                                            child: Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(7.0, 0.0, 0.0, 0.0),
+                                              child: Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                children: [
+                                                  Padding(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(5.0, 5.0,
+                                                                0.0, 0.0),
+                                                    child: Column(
+                                                      mainAxisSize:
+                                                          MainAxisSize.max,
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(
-                                                                      5.0,
                                                                       0.0,
                                                                       0.0,
-                                                                      10.0),
+                                                                      0.0,
+                                                                      5.0),
                                                           child: Text(
                                                             FFLocalizations.of(
                                                                     context)
                                                                 .getText(
-                                                              '0tw0zwug' /* Debit Card */,
+                                                              '82n41doh' /* Weekly Activity */,
                                                             ),
                                                             style: FlutterFlowTheme
                                                                     .of(context)
@@ -807,141 +663,321 @@ class _WalletWidgetState extends State<WalletWidget> {
                                                                           context)
                                                                       .bodyMedium,
                                                                   fontSize:
-                                                                      16.0,
+                                                                      13.0,
                                                                   letterSpacing:
                                                                       0.0,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w600,
                                                                 ),
                                                           ),
                                                         ),
-                                                      ),
-                                                      Expanded(
-                                                        child: Align(
-                                                          alignment:
-                                                              AlignmentDirectional(
-                                                                  0.0, -1.0),
-                                                          child: Padding(
-                                                            padding:
-                                                                EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0,
-                                                                        10.0),
-                                                            child: Text(
-                                                              FFLocalizations.of(
-                                                                      context)
-                                                                  .getText(
-                                                                'edqnq9oj' /* Send Your Money directly to yo... */,
+                                                        Text(
+                                                          FFLocalizations.of(
+                                                                  context)
+                                                              .getText(
+                                                            '3kx4nhdr' /* +$542.98 Cash Back */,
+                                                          ),
+                                                          textAlign:
+                                                              TextAlign.start,
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .labelSmall
+                                                              .override(
+                                                                font: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .labelSmall,
+                                                                fontSize: 12.0,
+                                                                letterSpacing:
+                                                                    0.0,
                                                               ),
-                                                              textAlign:
-                                                                  TextAlign
-                                                                      .start,
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .labelSmall
-                                                                  .override(
-                                                                    font: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .labelSmall,
-                                                                    fontSize:
-                                                                        12.0,
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                    fontWeight:
-                                                                        FontWeight
-                                                                            .normal,
-                                                                  ),
+                                                        ),
+                                                        Container(
+                                                          width: 151.3,
+                                                          height: 60.0,
+                                                          child:
+                                                              FlutterFlowBarChart(
+                                                            barData: [
+                                                              FFBarChartData(
+                                                                yData: List.generate(
+                                                                    random_data
+                                                                        .randomInteger(
+                                                                            1,
+                                                                            7),
+                                                                    (index) => random_data
+                                                                        .randomInteger(
+                                                                            1,
+                                                                            7)),
+                                                                color: Color(
+                                                                    0xFF5AE643),
+                                                                borderColor: Color(
+                                                                    0x006F61EF),
+                                                              )
+                                                            ],
+                                                            xLabels: List.generate(
+                                                                    random_data
+                                                                        .randomInteger(
+                                                                            1,
+                                                                            7),
+                                                                    (index) => random_data
+                                                                        .randomInteger(
+                                                                            0,
+                                                                            10))
+                                                                .map((e) => e
+                                                                    .toString())
+                                                                .toList(),
+                                                            barWidth: 16.0,
+                                                            barBorderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        22.0),
+                                                            groupSpace: 8.0,
+                                                            alignment:
+                                                                BarChartAlignment
+                                                                    .spaceAround,
+                                                            chartStylingInfo:
+                                                                ChartStylingInfo(
+                                                              backgroundColor:
+                                                                  Color(
+                                                                      0x007A7F94),
+                                                              showBorder: false,
+                                                            ),
+                                                            axisBounds:
+                                                                AxisBounds(),
+                                                            xAxisLabelInfo:
+                                                                AxisLabelInfo(
+                                                              reservedSize:
+                                                                  28.0,
+                                                            ),
+                                                            yAxisLabelInfo:
+                                                                AxisLabelInfo(
+                                                              reservedSize:
+                                                                  42.0,
                                                             ),
                                                           ),
                                                         ),
-                                                      ),
-                                                      Expanded(
-                                                        child: Align(
-                                                          alignment:
-                                                              AlignmentDirectional(
-                                                                  0.0, 1.0),
-                                                          child: Padding(
-                                                            padding:
-                                                                EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        5.0,
-                                                                        0.0,
-                                                                        5.0,
-                                                                        10.0),
-                                                            child:
-                                                                FFButtonWidget(
-                                                              onPressed: () {
-                                                                print(
-                                                                    'Button pressed ...');
-                                                              },
-                                                              text: FFLocalizations
-                                                                      .of(context)
-                                                                  .getText(
-                                                                '4vdbk6v6' /* Withdraw */,
-                                                              ),
-                                                              options:
-                                                                  FFButtonOptions(
-                                                                width: double
-                                                                    .infinity,
-                                                                height: 40.0,
-                                                                padding: EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        16.0,
-                                                                        0.0,
-                                                                        16.0,
-                                                                        0.0),
-                                                                iconPadding:
-                                                                    EdgeInsetsDirectional
-                                                                        .fromSTEB(
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                color: Color(
-                                                                    0xFFEEEEF2),
-                                                                textStyle: FlutterFlowTheme.of(
+                                                      ],
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            child: Align(
+                              alignment: AlignmentDirectional(0.0, -1.0),
+                              child: Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    2.5, 0.0, 7.0, 0.0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  crossAxisAlignment: CrossAxisAlignment.end,
+                                  children: [
+                                    Expanded(
+                                      child: Align(
+                                        alignment:
+                                            AlignmentDirectional(0.0, -1.0),
+                                        child: Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 5.0, 0.0),
+                                          child: Container(
+                                            width: double.infinity,
+                                            height: 182.5,
+                                            decoration: BoxDecoration(
+                                              color: Color(0xFF18181A),
+                                              borderRadius:
+                                                  BorderRadius.circular(12.0),
+                                            ),
+                                            child: Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(0.0, 5.0, 0.0, 0.0),
+                                              child: Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  Expanded(
+                                                    child: Padding(
+                                                      padding:
+                                                          EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  5.0,
+                                                                  10.0,
+                                                                  5.0,
+                                                                  0.0),
+                                                      child: Column(
+                                                        mainAxisSize:
+                                                            MainAxisSize.max,
+                                                        mainAxisAlignment:
+                                                            MainAxisAlignment
+                                                                .center,
+                                                        children: [
+                                                          Align(
+                                                            alignment:
+                                                                AlignmentDirectional(
+                                                                    -1.0, 0.0),
+                                                            child: Padding(
+                                                              padding:
+                                                                  EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          5.0,
+                                                                          0.0,
+                                                                          0.0,
+                                                                          10.0),
+                                                              child: Text(
+                                                                FFLocalizations.of(
                                                                         context)
-                                                                    .titleSmall
+                                                                    .getText(
+                                                                  '0tw0zwug' /* Debit Card */,
+                                                                ),
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
                                                                     .override(
                                                                       font: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .titleSmall,
-                                                                      color: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .secondaryBackground,
+                                                                          .bodyMedium,
                                                                       fontSize:
                                                                           16.0,
                                                                       letterSpacing:
                                                                           0.0,
                                                                       fontWeight:
                                                                           FontWeight
-                                                                              .w800,
+                                                                              .w600,
                                                                     ),
-                                                                elevation: 0.0,
-                                                                borderRadius:
-                                                                    BorderRadius
-                                                                        .circular(
-                                                                            14.0),
                                                               ),
                                                             ),
                                                           ),
-                                                        ),
+                                                          Expanded(
+                                                            child: Align(
+                                                              alignment:
+                                                                  AlignmentDirectional(
+                                                                      0.0,
+                                                                      -1.0),
+                                                              child: Padding(
+                                                                padding:
+                                                                    EdgeInsetsDirectional
+                                                                        .fromSTEB(
+                                                                            5.0,
+                                                                            0.0,
+                                                                            5.0,
+                                                                            10.0),
+                                                                child: Text(
+                                                                  FFLocalizations.of(
+                                                                          context)
+                                                                      .getText(
+                                                                    'edqnq9oj' /* Send Your Money directly to yo... */,
+                                                                  ),
+                                                                  textAlign:
+                                                                      TextAlign
+                                                                          .start,
+                                                                  style: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .labelSmall
+                                                                      .override(
+                                                                        font: FlutterFlowTheme.of(context)
+                                                                            .labelSmall,
+                                                                        fontSize:
+                                                                            12.0,
+                                                                        letterSpacing:
+                                                                            0.0,
+                                                                        fontWeight:
+                                                                            FontWeight.normal,
+                                                                      ),
+                                                                ),
+                                                              ),
+                                                            ),
+                                                          ),
+                                                          Expanded(
+                                                            child: Align(
+                                                              alignment:
+                                                                  AlignmentDirectional(
+                                                                      0.0, 1.0),
+                                                              child: Padding(
+                                                                padding:
+                                                                    EdgeInsetsDirectional
+                                                                        .fromSTEB(
+                                                                            5.0,
+                                                                            0.0,
+                                                                            5.0,
+                                                                            10.0),
+                                                                child:
+                                                                    FFButtonWidget(
+                                                                  onPressed:
+                                                                      () {
+                                                                    print(
+                                                                        'Button pressed ...');
+                                                                  },
+                                                                  text: FFLocalizations.of(
+                                                                          context)
+                                                                      .getText(
+                                                                    '4vdbk6v6' /* Withdraw */,
+                                                                  ),
+                                                                  options:
+                                                                      FFButtonOptions(
+                                                                    width: double
+                                                                        .infinity,
+                                                                    height:
+                                                                        40.0,
+                                                                    padding: EdgeInsetsDirectional
+                                                                        .fromSTEB(
+                                                                            16.0,
+                                                                            0.0,
+                                                                            16.0,
+                                                                            0.0),
+                                                                    iconPadding:
+                                                                        EdgeInsetsDirectional.fromSTEB(
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0),
+                                                                    color: Color(
+                                                                        0xFFEEEEF2),
+                                                                    textStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .titleSmall
+                                                                        .override(
+                                                                          font:
+                                                                              FlutterFlowTheme.of(context).titleSmall,
+                                                                          color:
+                                                                              FlutterFlowTheme.of(context).secondaryBackground,
+                                                                          fontSize:
+                                                                              16.0,
+                                                                          letterSpacing:
+                                                                              0.0,
+                                                                          fontWeight:
+                                                                              FontWeight.w800,
+                                                                        ),
+                                                                    elevation:
+                                                                        0.0,
+                                                                    borderRadius:
+                                                                        BorderRadius.circular(
+                                                                            14.0),
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                            ),
+                                                          ),
+                                                        ],
                                                       ),
-                                                    ],
+                                                    ),
                                                   ),
-                                                ),
+                                                ],
                                               ),
-                                            ],
+                                            ),
                                           ),
                                         ),
                                       ),
                                     ),
-                                  ),
+                                  ],
                                 ),
-                              ],
+                              ),
                             ),
                           ),
                         ],

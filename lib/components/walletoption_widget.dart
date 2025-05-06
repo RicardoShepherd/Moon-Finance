@@ -57,12 +57,13 @@ class _WalletoptionWidgetState extends State<WalletoptionWidget> {
               )
             ],
             borderRadius: BorderRadius.only(
-              bottomLeft: Radius.circular(5.0),
-              bottomRight: Radius.circular(5.0),
+              bottomLeft: Radius.circular(0.0),
+              bottomRight: Radius.circular(0.0),
               topLeft: Radius.circular(24.0),
               topRight: Radius.circular(24.0),
             ),
           ),
+          alignment: AlignmentDirectional(0.0, 1.0),
           child: Column(
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.start,
