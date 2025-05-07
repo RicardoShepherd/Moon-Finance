@@ -1,0 +1,131 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:provider/provider.dart';
+import 'package:flutterflow_ui/flutterflow_ui.dart';
+import 'package:web3_wallet/providers/wallet_provider.dart';
+import 'confirmsecraterecoveryphrase_widget.dart';
+
+class SecretRecoveryPhrasePage extends StatefulWidget {
+  const SecretRecoveryPhrasePage({Key? key}) : super(key: key);
+
+  @override
+  State<SecretRecoveryPhrasePage> createState() => _SecretRecoveryPhrasePageState();
+}
+
+class _SecretRecoveryPhrasePageState extends State<SecretRecoveryPhrasePage> {
+  late String mnemonic;
+
+  @override
+  void initState() {
+    super.initState();
+    final walletProvider = Provider.of<WalletProvider>(context, listen: false);
+    mnemonic = walletProvider.generateMnemonic(); // generate once
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final mnemonicWords = mnemonic.split(' ');
+    final halfLength = (mnemonicWords.length / 2).ceil();
+    final leftColumn = mnemonicWords.sublist(0, halfLength);
+    final rightColumn = mnemonicWords.sublist(halfLength);
+
+    return Scaffold(
+      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+      appBar: AppBar(
+        title: const Text('Your Secret Recovery Phrase'),
+        backgroundColor: FlutterFlowTheme.of(context).primary,
+      ),
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  color: FlutterFlowTheme.of(context).secondaryBackground,
+                  borderRadius: BorderRadius.circular(12.0),
+                  border: Border.all(
+                    color: FlutterFlowTheme.of(context).primaryText,
+                  ),
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 0.0, 10.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: List.generate(
+                            leftColumn.length,
+                            (index) => Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 4.0),
+                              child: Text(
+                                '${index + 1}. ${leftColumn[index]}',
+                                style: FlutterFlowTheme.of(context).bodyMedium,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 10.0, 10.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: List.generate(
+                            rightColumn.length,
+                            (index) => Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 4.0),
+                              child: Text(
+                                '${index + 1 + leftColumn.length}. ${rightColumn[index]}',
+                                style: FlutterFlowTheme.of(context).bodyMedium,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const Spacer(),
+              Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(70.0, 0.0, 70.0, 0.0),
+                child: FFButtonWidget(
+                  onPressed: () async {
+                    await Clipboard.setData(ClipboardData(text: mnemonic));
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(content: Text('Mnemonic copied to clipboard')),
+                    );
+                    context.pushNamed(ConfirmsecraterecoveryphraseWidget.routeName);
+                  },
+                  text: FFLocalizations.of(context).getText(
+                    'vqnv2a1h' /* Copy & Continue */,
+                  ),
+                  options: FFButtonOptions(
+                    width: double.infinity,
+                    height: 40.0,
+                    padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                    color: Colors.white,
+                    textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                          fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
+                          color: Colors.black,
+                          fontSize: 14.0,
+                          letterSpacing: 0.0,
+                          useGoogleFonts: GoogleFonts.asMap().containsKey(
+                              FlutterFlowTheme.of(context).titleSmallFamily),
+                        ),
+                    elevation: 0.0,
+                    borderRadius: BorderRadius.circular(24.0),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
