@@ -4,6 +4,9 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:collection/collection.dart';
+
 import 'confirmsecraterecoveryphrase_model.dart';
 export 'confirmsecraterecoveryphrase_model.dart';
 
@@ -21,23 +24,37 @@ class ConfirmsecraterecoveryphraseWidget extends StatefulWidget {
 class _ConfirmsecraterecoveryphraseWidgetState
     extends State<ConfirmsecraterecoveryphraseWidget> {
   late ConfirmsecraterecoveryphraseModel _model;
-
   final scaffoldKey = GlobalKey<ScaffoldState>();
+
+  final correctPhrase = [
+    'word1', 'word2', 'word3', 'word4',
+    'word5', 'word6', 'word7', 'word8',
+    'word9', 'word10', 'word11', 'word12'
+  ]; // Replace with the actual seed phrase
 
   @override
   void initState() {
     super.initState();
     _model = createModel(context, () => ConfirmsecraterecoveryphraseModel());
 
-    logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'confirmsecraterecoveryphrase'});
+    _model.recoveryWordControllers = List.generate(
+      12,
+      (_) => TextEditingController(),
+    );
+
+    logFirebaseEvent('screen_view', parameters: {
+      'screen_name': 'confirmsecraterecoveryphrase',
+    });
+
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
   void dispose() {
+    for (var controller in _model.recoveryWordControllers) {
+      controller.dispose();
+    }
     _model.dispose();
-
     super.dispose();
   }
 
@@ -65,12 +82,9 @@ class _ConfirmsecraterecoveryphraseWidgetState
               size: 30.0,
             ),
             onPressed: () async {
-              logFirebaseEvent('CONFIRMSECRATERECOVERYPHRASE_chevron_lef');
-              logFirebaseEvent('IconButton_navigate_back');
               context.pop();
             },
           ),
-          actions: [],
           centerTitle: true,
           elevation: 2.0,
         ),
@@ -79,56 +93,67 @@ class _ConfirmsecraterecoveryphraseWidgetState
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
-              Row(
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Flexible(
-                    child: Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
-                      child: Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 17.0),
-                        child: Text(
-                          FFLocalizations.of(context).getText(
-                            'xcpqmje9' /* Write down your Secret Recover... */,
-                          ),
-                          style: FlutterFlowTheme.of(context)
-                              .headlineMedium
-                              .override(
-                                font:
-                                    FlutterFlowTheme.of(context).headlineMedium,
-                                fontSize: 19.0,
-                                letterSpacing: 0.0,
-                                fontWeight: FontWeight.w600,
-                              ),
-                        ),
+              Padding(
+                padding: EdgeInsets.only(bottom: 17.0),
+                child: Text(
+                  'Write down your Secret Recovery Phrase',
+                  textAlign: TextAlign.center,
+                  style: FlutterFlowTheme.of(context)
+                      .headlineMedium
+                      .override(
+                        font: FlutterFlowTheme.of(context).headlineMedium,
+                        fontSize: 19.0,
+                        letterSpacing: 0.0,
+                        fontWeight: FontWeight.w600,
                       ),
-                    ),
-                  ),
-                ],
-              ),
-              Row(
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Flexible(
-                    child: Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
-                      child: Text(
-                        FFLocalizations.of(context).getText(
-                          '3zbc9res' /* Type, select or paste in order... */,
-                        ),
-                        textAlign: TextAlign.center,
-                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              font: FlutterFlowTheme.of(context).bodyMedium,
-                              letterSpacing: 0.0,
-                            ),
-                      ),
-                    ),
-                  ),
-                ],
+                ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
+                padding: EdgeInsets.symmetric(horizontal: 16.0),
+                child: Text(
+                  'Type, select or paste in order...',
+                  textAlign: TextAlign.center,
+                  style: FlutterFlowTheme.of(context).bodyMedium,
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 12.0),
+                child: FFButtonWidget(
+                  onPressed: () async {
+                    final clipboardData =
+                        await Clipboard.getData('text/plain');
+                    final phrase = clipboardData?.text?.trim().toLowerCase();
+
+                    if (phrase == null || phrase.split(' ').length != 12) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text(
+                              'Invalid recovery phrase. Must be 12 words.'),
+                        ),
+                      );
+                      return;
+                    }
+
+                    final words = phrase.split(' ');
+                    for (int i = 0; i < 12; i++) {
+                      _model.recoveryWordControllers[i].text = words[i];
+                    }
+                  },
+                  text: 'Paste Phrase',
+                  options: FFButtonOptions(
+                    height: 40,
+                    padding: EdgeInsets.symmetric(horizontal: 24.0),
+                    color: FlutterFlowTheme.of(context).accent1,
+                    textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                          font: FlutterFlowTheme.of(context).titleSmall,
+                          color: FlutterFlowTheme.of(context).primaryText,
+                        ),
+                    borderRadius: BorderRadius.circular(24.0),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 30.0),
                 child: Container(
                   width: 356.4,
                   height: 395.88,
@@ -140,11 +165,33 @@ class _ConfirmsecraterecoveryphraseWidgetState
                     ),
                   ),
                   child: Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [],
+                    padding: EdgeInsets.all(10.0),
+                    child: GridView.builder(
+                      physics: NeverScrollableScrollPhysics(),
+                      shrinkWrap: true,
+                      itemCount: 12,
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 3,
+                        crossAxisSpacing: 8.0,
+                        mainAxisSpacing: 8.0,
+                        childAspectRatio: 2.8,
+                      ),
+                      itemBuilder: (context, index) {
+                        return TextFormField(
+                          controller: _model.recoveryWordControllers[index],
+                          style: FlutterFlowTheme.of(context).bodyMedium,
+                          decoration: InputDecoration(
+                            labelText: 'Word ${index + 1}',
+                            filled: true,
+                            fillColor: Colors.white12,
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(12.0),
+                            ),
+                            contentPadding:
+                                EdgeInsets.symmetric(horizontal: 8.0),
+                          ),
+                        );
+                      },
                     ),
                   ),
                 ),
@@ -154,25 +201,29 @@ class _ConfirmsecraterecoveryphraseWidgetState
                   alignment: AlignmentDirectional(0.0, 1.0),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(70.0, 0.0, 70.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(70.0, 0.0, 70.0, 20.0),
                     child: FFButtonWidget(
                       onPressed: () async {
-                        logFirebaseEvent(
-                            'CONFIRMSECRATERECOVERYPHRASE_PASTE__CONT');
-                        logFirebaseEvent('Button_navigate_to');
+                        final enteredWords = _model.recoveryWordControllers
+                            .map((c) => c.text.trim().toLowerCase())
+                            .toList();
 
-                        context.pushNamed(HomeWidget.routeName);
+                        if (ListEquality().equals(enteredWords, correctPhrase)) {
+                          context.pushNamed(HomeWidget.routeName);
+                        } else {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              content: Text(
+                                  'Incorrect recovery phrase. Please check and try again.'),
+                            ),
+                          );
+                        }
                       },
-                      text: FFLocalizations.of(context).getText(
-                        '0opd0efr' /* Paste & Continue */,
-                      ),
+                      text: 'Continue',
                       options: FFButtonOptions(
                         width: double.infinity,
                         height: 40.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            16.0, 0.0, 16.0, 0.0),
-                        iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        padding: EdgeInsets.symmetric(horizontal: 16.0),
                         color: FlutterFlowTheme.of(context).primaryText,
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
