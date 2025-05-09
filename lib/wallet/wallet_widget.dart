@@ -521,7 +521,7 @@ class _WalletWidgetState extends State<WalletWidget>
                                           width: double.infinity,
                                           height: 64.4,
                                           decoration: BoxDecoration(
-                                            color: Color(0xFF18181A),
+                                            color: Color(0xFF1A1A1A),
                                             borderRadius:
                                                 BorderRadius.circular(12.0),
                                           ),
@@ -619,7 +619,7 @@ class _WalletWidgetState extends State<WalletWidget>
                                             width: double.infinity,
                                             height: 113.0,
                                             decoration: BoxDecoration(
-                                              color: Color(0xFF18181A),
+                                              color: Color(0xFF1A1A1A),
                                               borderRadius:
                                                   BorderRadius.circular(12.0),
                                             ),
@@ -790,7 +790,7 @@ class _WalletWidgetState extends State<WalletWidget>
                                             width: double.infinity,
                                             height: 182.5,
                                             decoration: BoxDecoration(
-                                              color: Color(0xFF18181A),
+                                              color: Color(0xFF1A1A1A),
                                               borderRadius:
                                                   BorderRadius.circular(12.0),
                                             ),

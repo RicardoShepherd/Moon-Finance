@@ -3805,7 +3805,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ja': '',
     },
   },
-  // SecureWallet
+  // SecureyourWallet
   {
     'r1v4fnna': {
       'en': 'Secure your Wallet',
@@ -10619,7 +10619,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // confirmsecraterecoveryphrase
   {
     'xcpqmje9': {
-      'en': 'Write down your Secret Recovery Phrase',
+      'en': 'Paste your Secret Recovery Phrase',
       'ar': '',
       'de': '',
       'es': '',

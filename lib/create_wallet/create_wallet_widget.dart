@@ -205,7 +205,7 @@ class _CreateWalletWidgetState extends State<CreateWalletWidget> {
                               'CREATE_WALLET_PAGE_CONTINUE_BTN_ON_TAP');
                           logFirebaseEvent('Button_navigate_to');
 
-                          context.pushNamed(SecureWalletWidget.routeName);
+                          context.pushNamed(SecureyourWalletWidget.routeName);
                         },
                         text: FFLocalizations.of(context).getText(
                           'k4hvioie' /* Continue */,

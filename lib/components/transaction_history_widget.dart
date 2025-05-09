@@ -49,7 +49,7 @@ class _TransactionHistoryWidgetState extends State<TransactionHistoryWidget> {
             maxWidth: 570.0,
           ),
           decoration: BoxDecoration(
-            color: Color(0xFF121111),
+            color: Color(0xFF1A1A1A),
             borderRadius: BorderRadius.circular(24.0),
             border: Border.all(
               color: FlutterFlowTheme.of(context).primaryBackground,

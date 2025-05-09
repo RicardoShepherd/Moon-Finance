@@ -1,88 +1,111 @@
+import '/flutter_flow/flutter_flow_icon_button.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
+import '/index.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:provider/provider.dart';
-import 'package:flutterflow_ui/flutterflow_ui.dart';
-import 'package:web3_wallet/providers/wallet_provider.dart';
-import 'confirmsecraterecoveryphrase_widget.dart';
+import 'secraterecoveryphrase_model.dart';
+export 'secraterecoveryphrase_model.dart';
 
-class SecretRecoveryPhrasePage extends StatefulWidget {
-  const SecretRecoveryPhrasePage({Key? key}) : super(key: key);
+class SecraterecoveryphraseWidget extends StatefulWidget {
+  const SecraterecoveryphraseWidget({super.key});
+
+  static String routeName = 'secraterecoveryphrase';
+  static String routePath = '/secraterecoveryphrase';
 
   @override
-  State<SecretRecoveryPhrasePage> createState() => _SecretRecoveryPhrasePageState();
+  State<SecraterecoveryphraseWidget> createState() =>
+      _SecraterecoveryphraseWidgetState();
 }
 
-class _SecretRecoveryPhrasePageState extends State<SecretRecoveryPhrasePage> {
-  late String mnemonic;
+class _SecraterecoveryphraseWidgetState
+    extends State<SecraterecoveryphraseWidget> {
+  late SecraterecoveryphraseModel _model;
+
+  final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    final walletProvider = Provider.of<WalletProvider>(context, listen: false);
-    mnemonic = walletProvider.generateMnemonic(); // generate once
+    _model = createModel(context, () => SecraterecoveryphraseModel());
+
+    logFirebaseEvent('screen_view',
+        parameters: {'screen_name': 'secraterecoveryphrase'});
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
+  }
+
+  @override
+  void dispose() {
+    _model.dispose();
+
+    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    final mnemonicWords = mnemonic.split(' ');
-    final halfLength = (mnemonicWords.length / 2).ceil();
-    final leftColumn = mnemonicWords.sublist(0, halfLength);
-    final rightColumn = mnemonicWords.sublist(halfLength);
-
-    return Scaffold(
-      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-      appBar: AppBar(
-        title: const Text('Your Secret Recovery Phrase'),
-        backgroundColor: FlutterFlowTheme.of(context).primary,
-      ),
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
+    return GestureDetector(
+      onTap: () {
+        FocusScope.of(context).unfocus();
+        FocusManager.instance.primaryFocus?.unfocus();
+      },
+      child: Scaffold(
+        key: scaffoldKey,
+        backgroundColor: Colors.black,
+        appBar: PreferredSize(
+          preferredSize: Size.fromHeight(42.0),
+          child: AppBar(
+            backgroundColor: Colors.black,
+            automaticallyImplyLeading: false,
+            leading: FlutterFlowIconButton(
+              borderColor: Colors.transparent,
+              borderRadius: 30.0,
+              borderWidth: 1.0,
+              buttonSize: 60.0,
+              icon: Icon(
+                Icons.chevron_left,
+                color: Colors.white,
+                size: 30.0,
+              ),
+              onPressed: () async {
+                logFirebaseEvent('SECRATERECOVERYPHRASE_chevron_left_ICN_O');
+                logFirebaseEvent('IconButton_navigate_back');
+                context.pop();
+              },
+            ),
+            actions: [],
+            centerTitle: true,
+            elevation: 1.0,
+          ),
+        ),
+        body: SafeArea(
+          top: true,
           child: Column(
+            mainAxisSize: MainAxisSize.max,
             children: [
-              Container(
-                decoration: BoxDecoration(
-                  color: FlutterFlowTheme.of(context).secondaryBackground,
-                  borderRadius: BorderRadius.circular(12.0),
-                  border: Border.all(
-                    color: FlutterFlowTheme.of(context).primaryText,
-                  ),
-                ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    Expanded(
-                      child: Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 0.0, 10.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: List.generate(
-                            leftColumn.length,
-                            (index) => Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 4.0),
-                              child: Text(
-                                '${index + 1}. ${leftColumn[index]}',
-                                style: FlutterFlowTheme.of(context).bodyMedium,
-                              ),
+                    Flexible(
+                      child: Align(
+                        alignment: AlignmentDirectional(0.0, 0.0),
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 10.0, 0.0, 17.0),
+                          child: Text(
+                            FFLocalizations.of(context).getText(
+                              'dhfhz2wj' /* Write down your Secret Recover... */,
                             ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Expanded(
-                      child: Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 10.0, 10.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: List.generate(
-                            rightColumn.length,
-                            (index) => Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 4.0),
-                              child: Text(
-                                '${index + 1 + leftColumn.length}. ${rightColumn[index]}',
-                                style: FlutterFlowTheme.of(context).bodyMedium,
-                              ),
-                            ),
+                            style: FlutterFlowTheme.of(context)
+                                .headlineMedium
+                                .override(
+                                  font: FlutterFlowTheme.of(context)
+                                      .headlineMedium,
+                                  fontSize: 19.0,
+                                  letterSpacing: 0.0,
+                                  fontWeight: FontWeight.w600,
+                                ),
                           ),
                         ),
                       ),
@@ -90,35 +113,96 @@ class _SecretRecoveryPhrasePageState extends State<SecretRecoveryPhrasePage> {
                   ],
                 ),
               ),
-              const Spacer(),
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(70.0, 0.0, 70.0, 0.0),
-                child: FFButtonWidget(
-                  onPressed: () async {
-                    await Clipboard.setData(ClipboardData(text: mnemonic));
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(content: Text('Mnemonic copied to clipboard')),
-                    );
-                    context.pushNamed(ConfirmsecraterecoveryphraseWidget.routeName);
-                  },
-                  text: FFLocalizations.of(context).getText(
-                    'vqnv2a1h' /* Copy & Continue */,
+                padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 10.0),
+                child: Text(
+                  FFLocalizations.of(context).getText(
+                    'inrhl2c9' /* This is your Secret Recovery P... */,
                   ),
-                  options: FFButtonOptions(
-                    width: double.infinity,
-                    height: 40.0,
-                    padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                    color: Colors.white,
-                    textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
-                          color: Colors.black,
-                          fontSize: 14.0,
-                          letterSpacing: 0.0,
-                          useGoogleFonts: GoogleFonts.asMap().containsKey(
-                              FlutterFlowTheme.of(context).titleSmallFamily),
-                        ),
-                    elevation: 0.0,
+                  textAlign: TextAlign.center,
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        font: FlutterFlowTheme.of(context).bodyMedium,
+                        fontSize: 13.0,
+                        letterSpacing: 0.0,
+                      ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
+                child: Container(
+                  width: 372.2,
+                  height: 338.06,
+                  decoration: BoxDecoration(
+                    color: Color(0x380C0C0C),
                     borderRadius: BorderRadius.circular(24.0),
+                    border: Border.all(
+                      color: FlutterFlowTheme.of(context).primaryText,
+                    ),
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Expanded(
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              10.0, 10.0, 0.0, 10.0),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [],
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 10.0, 10.0, 10.0),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Align(
+                  alignment: AlignmentDirectional(0.0, 1.0),
+                  child: Padding(
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(70.0, 0.0, 70.0, 0.0),
+                    child: FFButtonWidget(
+                      onPressed: () async {
+                        logFirebaseEvent(
+                            'SECRATERECOVERYPHRASE_COPY__CONTINUE_BTN');
+                        logFirebaseEvent('Button_navigate_to');
+
+                        context.pushNamed(
+                            ConfirmsecraterecoveryphraseWidget.routeName);
+                      },
+                      text: FFLocalizations.of(context).getText(
+                        'vqnv2a1h' /* Copy & Continue */,
+                      ),
+                      options: FFButtonOptions(
+                        width: double.infinity,
+                        height: 40.0,
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            16.0, 0.0, 16.0, 0.0),
+                        iconPadding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: Colors.white,
+                        textStyle:
+                            FlutterFlowTheme.of(context).titleSmall.override(
+                                  font: FlutterFlowTheme.of(context).titleSmall,
+                                  color: Colors.black,
+                                  fontSize: 14.0,
+                                  letterSpacing: 0.0,
+                                ),
+                        elevation: 0.0,
+                        borderRadius: BorderRadius.circular(24.0),
+                      ),
+                    ),
                   ),
                 ),
               ),

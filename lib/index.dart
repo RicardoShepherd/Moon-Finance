@@ -26,7 +26,8 @@ export '/transaction/transaction_widget.dart' show TransactionWidget;
 export '/support_page/support_page_widget.dart' show SupportPageWidget;
 export '/invoices/invoices_widget.dart' show InvoicesWidget;
 export '/create_wallet/create_wallet_widget.dart' show CreateWalletWidget;
-export '/secure_wallet/secure_wallet_widget.dart' show SecureWalletWidget;
+export '/secureyour_wallet/secureyour_wallet_widget.dart'
+    show SecureyourWalletWidget;
 export '/fundraiser/fundraiser_widget.dart' show FundraiserWidget;
 export '/charts/charts_widget.dart' show ChartsWidget;
 export '/mini_apps/mini_apps_widget.dart' show MiniAppsWidget;

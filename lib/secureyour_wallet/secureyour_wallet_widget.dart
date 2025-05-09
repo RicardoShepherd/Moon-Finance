@@ -5,31 +5,31 @@ import '/flutter_flow/flutter_flow_video_player.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
-import 'secure_wallet_model.dart';
-export 'secure_wallet_model.dart';
+import 'secureyour_wallet_model.dart';
+export 'secureyour_wallet_model.dart';
 
-class SecureWalletWidget extends StatefulWidget {
-  const SecureWalletWidget({super.key});
+class SecureyourWalletWidget extends StatefulWidget {
+  const SecureyourWalletWidget({super.key});
 
-  static String routeName = 'SecureWallet';
-  static String routePath = '/SecureWallet';
+  static String routeName = 'SecureyourWallet';
+  static String routePath = '/SecureyourWallet';
 
   @override
-  State<SecureWalletWidget> createState() => _SecureWalletWidgetState();
+  State<SecureyourWalletWidget> createState() => _SecureyourWalletWidgetState();
 }
 
-class _SecureWalletWidgetState extends State<SecureWalletWidget> {
-  late SecureWalletModel _model;
+class _SecureyourWalletWidgetState extends State<SecureyourWalletWidget> {
+  late SecureyourWalletModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => SecureWalletModel());
+    _model = createModel(context, () => SecureyourWalletModel());
 
     logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'SecureWallet'});
+        parameters: {'screen_name': 'SecureyourWallet'});
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
@@ -64,7 +64,7 @@ class _SecureWalletWidgetState extends State<SecureWalletWidget> {
               size: 30.0,
             ),
             onPressed: () async {
-              logFirebaseEvent('SECURE_WALLET_chevron_left_ICN_ON_TAP');
+              logFirebaseEvent('SECUREYOUR_WALLET_chevron_left_ICN_ON_TA');
               logFirebaseEvent('IconButton_navigate_back');
               context.pop();
             },
@@ -226,7 +226,7 @@ class _SecureWalletWidgetState extends State<SecureWalletWidget> {
                                 child: FFButtonWidget(
                                   onPressed: () async {
                                     logFirebaseEvent(
-                                        'SECURE_WALLET_PAGE_START_BTN_ON_TAP');
+                                        'SECUREYOUR_WALLET_PAGE_START_BTN_ON_TAP');
                                     logFirebaseEvent('Button_navigate_to');
 
                                     context.pushNamed(

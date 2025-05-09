@@ -1,9 +1,9 @@
 import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
-import 'secure_wallet_widget.dart' show SecureWalletWidget;
+import 'secureyour_wallet_widget.dart' show SecureyourWalletWidget;
 import 'package:flutter/material.dart';
 
-class SecureWalletModel extends FlutterFlowModel<SecureWalletWidget> {
+class SecureyourWalletModel extends FlutterFlowModel<SecureyourWalletWidget> {
   @override
   void initState(BuildContext context) {}
 

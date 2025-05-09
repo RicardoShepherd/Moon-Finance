@@ -321,7 +321,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                 font: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium,
-                                                                fontSize: 26.0,
+                                                                fontSize: 22.0,
                                                                 letterSpacing:
                                                                     0.0,
                                                                 fontWeight:
@@ -430,7 +430,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                     0.0,
                                                                     0.0),
                                                         color:
-                                                            Color(0xFF222230),
+                                                            Color(0xFF1A1A1A),
                                                         textStyle:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -531,7 +531,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                       0.0,
                                                                       0.0),
                                                           color:
-                                                              Color(0xFF222230),
+                                                              Color(0xFF1A1A1A),
                                                           textStyle:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -600,7 +600,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                     0.0,
                                                                     0.0),
                                                         color:
-                                                            Color(0xFF222230),
+                                                            Color(0xFF1A1A1A),
                                                         textStyle:
                                                             FlutterFlowTheme.of(
                                                                     context)

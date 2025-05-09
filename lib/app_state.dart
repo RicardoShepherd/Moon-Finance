@@ -34,6 +34,13 @@ class FFAppState extends ChangeNotifier {
     _NavOpen = value;
     prefs.setBool('ff_NavOpen', value);
   }
+
+  /// Payment amount when transfering money
+  String _Amount = '';
+  String get Amount => _Amount;
+  set Amount(String value) {
+    _Amount = value;
+  }
 }
 
 void _safeInit(Function() initializeField) {

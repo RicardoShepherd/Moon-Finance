@@ -193,9 +193,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => CreateWalletWidget(),
         ),
         FFRoute(
-          name: SecureWalletWidget.routeName,
-          path: SecureWalletWidget.routePath,
-          builder: (context, params) => SecureWalletWidget(),
+          name: SecureyourWalletWidget.routeName,
+          path: SecureyourWalletWidget.routePath,
+          builder: (context, params) => SecureyourWalletWidget(),
         ),
         FFRoute(
           name: FundraiserWidget.routeName,
