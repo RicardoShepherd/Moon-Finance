@@ -1,3 +1,10 @@
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:2957500145.
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:2082436712.
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:871300330.
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:817590371.
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:1498152074.
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:3037055343.
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:756948354.
 import 'dart:async';
 
 import 'package:flutter/foundation.dart' show kIsWeb;
@@ -50,9 +57,9 @@ class FirebaseAuthManager extends AuthManager
         GithubSignInManager,
         PhoneSignInManager {
   // Set when using phone verification (after phone number is provided).
-  String? _phoneAuthVerificationCode;
+  String? phoneAuthVerificationCode;
   // Set when using phone sign in in web mode (ignored otherwise).
-  ConfirmationResult? _webPhoneAuthConfirmationResult;
+  ConfirmationResult? webPhoneAuthConfirmationResult;
   FirebasePhoneAuthManager phoneAuthManager = FirebasePhoneAuthManager();
 
   @override
@@ -121,7 +128,11 @@ class FirebaseAuthManager extends AuthManager
       if (e.code == 'requires-recent-login') {
         ScaffoldMessenger.of(context).hideCurrentSnackBar();
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error: ${e.message!}')),
+          SnackBar(
+              content: Text(
+                  'Too long since most recent sign in. Sign in again before updating your password.')),
+        );
+      } else {
         );
       }
     }

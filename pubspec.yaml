@@ -32,93 +32,93 @@ dependencies:
   cached_network_image_platform_interface: 4.1.1
   cached_network_image_web: 1.3.1
   carousel_slider: 5.0.0
-  chewie: 1.8.5
-  cloud_firestore: 5.5.0
-  cloud_firestore_platform_interface: 6.5.0
-  cloud_firestore_web: 4.3.4
-  collection: 1.19.0
-  csslib: 0.17.3
-  firebase_analytics: 11.3.5
-  firebase_analytics_platform_interface: 4.2.7
-  firebase_analytics_web: 0.5.10+4
-  firebase_auth: 5.3.3
-  firebase_auth_platform_interface: 7.4.9
-  firebase_auth_web: 5.13.4
-  firebase_core: 3.8.0
-  firebase_core_platform_interface: 5.3.0
-  firebase_core_web: 2.18.1
-  firebase_performance: 0.10.0+10
-  firebase_performance_platform_interface: 0.1.4+46
-  firebase_performance_web: 0.1.7+4
-  fl_chart: 0.68.0
+  chewie: ^1.11.3
+  cloud_firestore: ^5.6.7
+  cloud_firestore_platform_interface: ^6.6.7
+  cloud_firestore_web: ^4.4.7
+  collection: 1.19.1
+  csslib: ^1.0.2
+  firebase_analytics: ^11.4.5
+  firebase_analytics_platform_interface: ^4.3.5
+  firebase_analytics_web: ^0.5.10+11
+  firebase_auth: ^5.5.3
+  firebase_auth_platform_interface: ^7.6.2
+  firebase_auth_web: ^5.14.2
+  firebase_core: ^3.13.0
+  firebase_core_platform_interface: ^5.4.0
+  firebase_core_web: ^2.22.0
+  firebase_performance: ^0.10.1+5
+  firebase_performance_platform_interface: ^0.1.5+5
+  firebase_performance_web: ^0.1.7+11
+  fl_chart: ^1.0.0
   floating_bottom_navigation_bar: 1.5.2
-  flutter_animate: 4.5.0
+  flutter_animate: ^4.5.2
   flutter_cache_manager: 3.4.1
   flutter_credit_card: 
     git:
       url: https://github.com/FlutterFlow/flutter_credit_card
       ref: v4.0.2
-  flutter_markdown: 0.7.3+1
-  flutter_native_splash: 2.4.1
-  font_awesome_flutter: 10.7.0
+  flutter_markdown: ^0.7.7+1
+  flutter_native_splash: ^2.4.6
+  font_awesome_flutter: ^10.8.0
   from_css_color: 2.0.0
-  go_router: 12.1.3
-  google_fonts: 6.1.0
-  google_sign_in: 6.2.1
-  google_sign_in_android: 6.1.30
-  google_sign_in_ios: 5.7.7
-  google_sign_in_platform_interface: 2.4.5
-  google_sign_in_web: 0.12.4+2
-  html: 0.15.4
-  intl: 0.19.0
-  json_path: 0.7.2
+  go_router: ^15.1.2
+  google_fonts: ^6.2.1
+  google_sign_in: ^6.3.0
+  google_sign_in_android: ^6.2.1
+  google_sign_in_ios: ^5.9.0
+  google_sign_in_platform_interface: ^2.5.0
+  google_sign_in_web: ^0.12.4+4
+  html: ^0.15.6
+  intl: ^0.20.2
+  json_path: ^0.7.5
   mask_text_input_formatter: 2.9.0
-  page_transition: 2.1.0
-  path_provider: 2.1.4
-  path_provider_android: 2.2.10
-  path_provider_foundation: 2.4.0
+  page_transition: ^2.2.1
+  path_provider: ^2.1.5
+  path_provider_android: ^2.2.17
+  path_provider_foundation: ^2.4.1
   path_provider_linux: 2.2.1
   path_provider_platform_interface: 2.1.2
   path_provider_windows: 2.3.0
-  percent_indicator: 4.2.2
+  percent_indicator: ^4.2.5
   pin_code_fields: 8.0.1
   pin_plus_keyboard: ^2.0.6
   plugin_platform_interface: 2.1.8
-  provider: 6.1.2
-  rive: 0.12.2
-  rive_common: 0.2.8
-  rxdart: 0.27.7
-  shared_preferences: 2.3.2
-  shared_preferences_android: 2.3.2
-  shared_preferences_foundation: 2.5.2
+  provider: ^6.1.5
+  rive: ^0.13.20
+  rive_common: ^0.4.15
+  rxdart: ^0.28.0
+  shared_preferences: ^2.5.3
+  shared_preferences_android: ^2.4.10
+  shared_preferences_foundation: ^2.5.4
   shared_preferences_linux: 2.4.1
   shared_preferences_platform_interface: 2.4.1
-  shared_preferences_web: 2.4.2
+  shared_preferences_web: ^2.4.3
   shared_preferences_windows: 2.4.1
-  sign_in_with_apple: 6.1.2
-  sign_in_with_apple_platform_interface: 1.1.0
-  sign_in_with_apple_web: 2.1.0
-  smooth_page_indicator: 1.1.0
-  sqflite: 2.3.3+1
-  sqflite_common: 2.5.4+3
-  stream_transform: 2.1.0
-  timeago: 3.6.1
+  sign_in_with_apple: ^7.0.1
+  sign_in_with_apple_platform_interface: ^2.0.0
+  sign_in_with_apple_web: ^3.0.0
+  smooth_page_indicator: ^1.2.1
+  sqflite: ^2.4.2
+  sqflite_common: ^2.5.5
+  stream_transform: ^2.1.1
+  timeago: ^3.7.1
   universal_io: 2.2.2
-  url_launcher: 6.3.0
-  url_launcher_android: 6.3.10
-  url_launcher_ios: 6.3.1
-  url_launcher_linux: 3.2.0
-  url_launcher_macos: 3.2.1
+  url_launcher: ^6.3.1
+  url_launcher_android: ^6.3.16
+  url_launcher_ios: ^6.3.3
+  url_launcher_linux: ^3.2.1
+  url_launcher_macos: ^3.2.2
   url_launcher_platform_interface: 2.3.2
-  url_launcher_web: 2.3.3
-  url_launcher_windows: 3.1.2
-  video_player: 2.9.2
-  video_player_android: 2.7.13
-  video_player_avfoundation: 2.6.2
-  video_player_platform_interface: 6.2.3
-  video_player_web: 2.3.2
-  wakelock_plus: 1.2.8
-  wakelock_plus_platform_interface: 1.2.1
+  url_launcher_web: ^2.4.1
+  url_launcher_windows: ^3.1.4
+  video_player: ^2.9.5
+  video_player_android: ^2.8.3
+  video_player_avfoundation: ^2.7.1
+  video_player_platform_interface: ^6.3.0
+  video_player_web: ^2.3.5
+  wakelock_plus: ^1.3.2
+  wakelock_plus_platform_interface: ^1.2.3
   xml: 6.5.0
 
   # The following adds the Cupertino Icons font to your application.
@@ -130,10 +130,10 @@ dependency_overrides:
   uuid: ^4.0.0
 
 dev_dependencies:
-  flutter_launcher_icons: 0.13.1
-  flutter_lints: 4.0.0
-  image: 4.2.0
-  lints: 4.0.0
+  flutter_launcher_icons: ^0.14.3
+  flutter_lints: ^5.0.0
+  image: ^4.5.4
+  lints: ^5.1.1
   flutter_test:
     sdk: flutter
 

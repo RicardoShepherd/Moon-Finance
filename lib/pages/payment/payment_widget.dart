@@ -1,3 +1,4 @@
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:2597280711.
 import '/components/select_currency_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -7,7 +8,6 @@ import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'payment_model.dart';
 export 'payment_model.dart';
 
 // Minimal PaymentModel for demonstration (replace with your actual PaymentModel)
@@ -44,7 +44,9 @@ class _PaymentWidgetState extends State<PaymentWidget> {
     _model = createModel(context, () => PaymentModel());
 
     logFirebaseEvent('screen_view', parameters: {'screen_name': 'Payment'});
-    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
+    // The following line forces a rebuild after the first frame, which is often unnecessary
+    // and can sometimes lead to performance issues or unexpected behavior.
+    // WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

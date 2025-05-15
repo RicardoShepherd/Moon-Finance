@@ -2,6 +2,12 @@ import 'package:flutter/foundation.dart';
 import 'package:rive/rive.dart';
 
 class FlutterFlowRiveController extends SimpleAnimation {
+  /// Creates a custom Rive animation controller for FlutterFlow.
+  ///
+  /// [animationName]: The name of the animation to control.
+  /// [mix]: The mixing value for the animation.
+  /// [autoplay]: Whether the animation should autoplay when initialized.
+  /// [shouldLoop]: Whether the animation should loop continuously.
   FlutterFlowRiveController(
     String animationName, {
     double mix = 1,
@@ -9,17 +15,28 @@ class FlutterFlowRiveController extends SimpleAnimation {
     this.shouldLoop = false,
   }) : super(animationName, mix: mix, autoplay: autoplay);
 
+  /// Whether the animation should loop continuously.
   bool shouldLoop;
-  final _reactivate = ValueNotifier<bool>(false);
-  ValueListenable<bool> get changeReactivate => _reactivate;
 
+  /// Notifies listeners when the animation should be reactivated.
+  final _reactivate = ValueNotifier<bool>(false);
+
+  /// Returns the current value of the reactivate flag.
   bool get reactivate => _reactivate.value;
+
+  /// Sets the reactivate flag and notifies listeners if the value changes.
   set reactivate(bool value) {
     if (_reactivate.value != value) {
       _reactivate.value = value;
     }
   }
 
+  /// Returns the ValueListenable for the reactivate flag.
+  /// This can be used to listen for changes to the reactivate flag.
+  ValueListenable<bool> get changeReactivate => _reactivate;
+
+  /// Checks if the animation instance has reached the end of its timeline.
+  /// Returns true if the animation is at its end time, false otherwise.
   bool endOfAnimation(LinearAnimationInstance? instance) {
     if (instance == null) {
       return false;
@@ -27,17 +44,19 @@ class FlutterFlowRiveController extends SimpleAnimation {
     return instance.time == instance.animation.endTime;
   }
 
+  /// Initializes the controller with the given artboard.
+  /// Sets the reactivate flag to false and calls the super class's init method.
   @override
   bool init(RuntimeArtboard artboard) {
+    // The listener for reactivate is handled in the apply method for simplicity
+    // and to avoid potential issues with multiple listeners.
     reactivate = false;
-    changeReactivate.addListener(() {
-      if (reactivate) {
-        isActive = true;
-      }
-    });
     return super.init(artboard);
   }
 
+  /// Applies the animation for the elapsed time.
+  /// Manages the animation's playback based on reactivate, shouldLoop, and
+  /// whether the animation has reached its end.
   @override
   void apply(RuntimeArtboard artboard, double elapsedSeconds) {
     if (instance == null) {
@@ -64,8 +83,16 @@ class FlutterFlowRiveController extends SimpleAnimation {
       isActive = false;
     }
 
+    // If the animation has reached the end and isActive is false (meaning it
+    // wasn't set to loop), set isActive to false to stop playback.
+    if (!isActive && endOfAnimation(instance)) {
+      isActive = false;
+    }
+
     instance!
       ..animation.apply(instance!.time, coreContext: artboard, mix: mix)
       ..advance(elapsedSeconds);
+
+    return isActive;
   }
 }

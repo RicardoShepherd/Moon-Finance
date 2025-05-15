@@ -97,8 +97,6 @@ class _SecurityPrivacyPolicyWidgetState
                 );
               }
 
-              final columnUsersRecord = snapshot.data!;
-
               return SingleChildScrollView(
                 child: Column(
                   mainAxisSize: MainAxisSize.max,

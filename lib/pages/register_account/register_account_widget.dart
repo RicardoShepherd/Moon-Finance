@@ -172,9 +172,6 @@ class _RegisterAccountWidgetState extends State<RegisterAccountWidget> {
                                             );
                                           }
 
-                                          final usernameUsersRecord =
-                                              snapshot.data!;
-
                                           return TextFormField(
                                             controller:
                                                 _model.usernameTextController,

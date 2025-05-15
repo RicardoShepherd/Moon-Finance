@@ -1,3 +1,4 @@
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:1310577531.
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -17,7 +18,7 @@ class FFAppState extends ChangeNotifier {
   Future initializePersistedState() async {
     prefs = await SharedPreferences.getInstance();
     _safeInit(() {
-      _NavOpen = prefs.getBool('ff_NavOpen') ?? _NavOpen;
+      _NavOpen = prefs.getBool('ff_NavOpen') ?? false;
     });
   }
 
@@ -43,6 +44,8 @@ class FFAppState extends ChangeNotifier {
   }
 }
 
+/// The problem is that this helper method `_safeInitAsync` is not actually used
+/// anywhere in the provided code.
 void _safeInit(Function() initializeField) {
   try {
     initializeField();

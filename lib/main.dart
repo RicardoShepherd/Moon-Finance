@@ -181,8 +181,10 @@ class _NavBarPageState extends State<NavBarPage> {
     final MediaQueryData queryData = MediaQuery.of(context);
 
     return Scaffold(
-      body: MediaQuery(
-          data: queryData
+      body:
+          // TODO: Consider using IndexedStack for lazy loading of tab content
+          // This will improve performance by only building the visible tab.
+          MediaQuery( data: queryData
               .removeViewInsets(removeBottom: true)
               .removeViewPadding(removeBottom: true),
           child: _currentPage ?? tabs[_currentPageName]!),
@@ -193,9 +195,9 @@ class _NavBarPageState extends State<NavBarPage> {
           _currentPage = null;
           _currentPageName = tabs.keys.toList()[i];
         }),
-        backgroundColor: Colors.black,
-        selectedItemColor: FlutterFlowTheme.of(context).primaryText,
-        unselectedItemColor: FlutterFlowTheme.of(context).secondaryText,
+        backgroundColor: FlutterFlowTheme.of(context).primaryBackground, // Use theme color
+        selectedItemColor: FlutterFlowTheme.of(context).primaryText, // Use theme color
+        unselectedItemColor: FlutterFlowTheme.of(context).secondaryText, // Use theme color
         selectedBackgroundColor: Colors.black,
         borderRadius: 1.0,
         itemBorderRadius: 10.0,
@@ -217,7 +219,8 @@ class _NavBarPageState extends State<NavBarPage> {
                 ),
                 Text(
                   FFLocalizations.of(context).getText(
-                    'hliaovc5' /* Home */,
+                    // TODO: Use more descriptive localization keys
+                    'home_tab_label' /* Home */,
                   ),
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
@@ -243,7 +246,8 @@ class _NavBarPageState extends State<NavBarPage> {
                 ),
                 Text(
                   FFLocalizations.of(context).getText(
-                    'rfs4vi7x' /* Charts */,
+                    // TODO: Use more descriptive localization keys
+                    'charts_tab_label' /* Charts */,
                   ),
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
@@ -269,7 +273,8 @@ class _NavBarPageState extends State<NavBarPage> {
                 ),
                 Text(
                   FFLocalizations.of(context).getText(
-                    'vfsunw8z' /* Fundraiser */,
+                    // TODO: Use more descriptive localization keys
+                    'fundraiser_tab_label' /* Fundraiser */,
                   ),
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
@@ -295,7 +300,8 @@ class _NavBarPageState extends State<NavBarPage> {
                 ),
                 Text(
                   FFLocalizations.of(context).getText(
-                    'z1urvjhv' /* Apps */,
+                    // TODO: Use more descriptive localization keys
+                    'apps_tab_label' /* Apps */,
                   ),
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
