@@ -54,6 +54,7 @@ class FlutterFlowRiveController extends SimpleAnimation {
     return super.init(artboard);
   }
 
+  // ignore: avoid_renaming_method_parameters
   /// Applies the animation for the elapsed time.
   /// Manages the animation's playback based on reactivate, shouldLoop, and
   /// whether the animation has reached its end.
@@ -89,6 +90,8 @@ class FlutterFlowRiveController extends SimpleAnimation {
       isActive = false;
     }
 
+    // The issue here is that `instance!` is being accessed potentially before
+    // it's guaranteed to be non-null after the checks above.
     instance!
       ..animation.apply(instance!.time, coreContext: artboard, mix: mix)
       ..advance(elapsedSeconds);

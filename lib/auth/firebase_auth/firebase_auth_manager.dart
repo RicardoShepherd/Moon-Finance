@@ -114,6 +114,7 @@ class FirebaseAuthManager extends AuthManager
   }
 
   @override
+  // ignore: override_on_non_overriding_member
   Future updatePassword({
     required String newPassword,
     required BuildContext context,
@@ -133,7 +134,6 @@ class FirebaseAuthManager extends AuthManager
                   'Too long since most recent sign in. Sign in again before updating your password.')),
         );
       } else {
-        );
       }
     }
   }

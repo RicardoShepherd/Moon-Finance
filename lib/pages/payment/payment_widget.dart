@@ -39,11 +39,11 @@ class _PaymentWidgetState extends State<PaymentWidget> {
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
+  @override
   void initState() {
     super.initState();
     _model = createModel(context, () => PaymentModel());
 
-    logFirebaseEvent('screen_view', parameters: {'screen_name': 'Payment'});
     // The following line forces a rebuild after the first frame, which is often unnecessary
     // and can sometimes lead to performance issues or unexpected behavior.
     // WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
