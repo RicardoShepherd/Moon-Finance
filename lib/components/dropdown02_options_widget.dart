@@ -120,7 +120,7 @@ class _Dropdown02OptionsWidgetState extends State<Dropdown02OptionsWidget> {
               ),
               MouseRegion(
                 opaque: false,
-                cursor: SystemMouseCursors.basic ?? MouseCursor.defer,
+                cursor: SystemMouseCursors.basic,
                 child: AnimatedContainer(
                   duration: Duration(milliseconds: 150),
                   curve: Curves.easeInOut,
@@ -175,7 +175,7 @@ class _Dropdown02OptionsWidgetState extends State<Dropdown02OptionsWidget> {
               ),
               MouseRegion(
                 opaque: false,
-                cursor: SystemMouseCursors.click ?? MouseCursor.defer,
+                cursor: SystemMouseCursors.click,
                 child: AnimatedContainer(
                   duration: Duration(milliseconds: 150),
                   curve: Curves.easeInOut,
@@ -247,7 +247,7 @@ class _Dropdown02OptionsWidgetState extends State<Dropdown02OptionsWidget> {
               ),
               MouseRegion(
                 opaque: false,
-                cursor: SystemMouseCursors.click ?? MouseCursor.defer,
+                cursor: SystemMouseCursors.click,
                 child: AnimatedContainer(
                   duration: Duration(milliseconds: 150),
                   curve: Curves.easeInOut,
@@ -302,7 +302,7 @@ class _Dropdown02OptionsWidgetState extends State<Dropdown02OptionsWidget> {
               ),
               MouseRegion(
                 opaque: false,
-                cursor: SystemMouseCursors.click ?? MouseCursor.defer,
+                cursor: SystemMouseCursors.click,
                 child: AnimatedContainer(
                   duration: Duration(milliseconds: 150),
                   curve: Curves.easeInOut,
@@ -357,7 +357,7 @@ class _Dropdown02OptionsWidgetState extends State<Dropdown02OptionsWidget> {
               ),
               MouseRegion(
                 opaque: false,
-                cursor: SystemMouseCursors.click ?? MouseCursor.defer,
+                cursor: SystemMouseCursors.click,
                 child: AnimatedContainer(
                   duration: Duration(milliseconds: 150),
                   curve: Curves.easeInOut,

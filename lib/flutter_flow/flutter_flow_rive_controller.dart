@@ -59,20 +59,20 @@ class FlutterFlowRiveController extends SimpleAnimation {
   /// Manages the animation's playback based on reactivate, shouldLoop, and
   /// whether the animation has reached its end.
   @override
-  void apply(RuntimeArtboard artboard, double elapsedSeconds) {
+  bool apply(RuntimeArtboard artboard, double elapsedSeconds) {
     if (instance == null) {
-      return;
+ return false;
     }
 
     /// Reset on button press
     if (reactivate) {
-      if (endOfAnimation(instance)) {
+      if (endOfAnimation(instance as LinearAnimationInstance?)) {
         instance?.time = 0;
       }
       reactivate = false;
     }
 
-    if (instance == null || endOfAnimation(instance)) {
+    if (instance == null || endOfAnimation(instance as LinearAnimationInstance?)) {
       isActive = false;
     }
 
@@ -86,7 +86,7 @@ class FlutterFlowRiveController extends SimpleAnimation {
 
     // If the animation has reached the end and isActive is false (meaning it
     // wasn't set to loop), set isActive to false to stop playback.
-    if (!isActive && endOfAnimation(instance)) {
+    if (!isActive && endOfAnimation(instance as LinearAnimationInstance?)) {
       isActive = false;
     }
 

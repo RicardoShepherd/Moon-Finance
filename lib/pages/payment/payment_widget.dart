@@ -1,4 +1,6 @@
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:2597280711.
+import 'package:moon/pages/payment/payment_model.dart';
+
 import '/components/select_currency_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -10,18 +12,6 @@ import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 export 'payment_model.dart';
 
-// Minimal PaymentModel for demonstration (replace with your actual PaymentModel)
-class PaymentModel {
-  String amount = '0'; // Store the amount as a string
-
-  void updateAmount(String newAmount) {
-    amount = newAmount;
-  }
-
-  void dispose() {
-    // Any cleanup logic
-  }
-}
 
 class PaymentWidget extends StatefulWidget {
   const PaymentWidget({super.key});
@@ -37,7 +27,6 @@ class _PaymentWidgetState extends State<PaymentWidget> {
   late PaymentModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
-
   @override
   @override
   void initState() {
