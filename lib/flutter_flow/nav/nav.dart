@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:moon/pages/q_rcode/q_rcode_widget.dart';
 import 'package:provider/provider.dart';
 
 import '/auth/base_auth_user_provider.dart';

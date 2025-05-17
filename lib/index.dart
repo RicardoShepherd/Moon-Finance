@@ -34,7 +34,7 @@ export '/mini_apps/mini_apps_widget.dart' show MiniAppsWidget;
 export '/criptomarket/criptomarket_widget.dart' show CriptomarketWidget;
 export '/betting_market/betting_market_widget.dart' show BettingMarketWidget;
 export '/affiliate/affiliate_widget.dart' show AffiliateWidget;
-export '/paylater/paylater_widget.dart' show PaylaterWidget;
+export 'pages/paylater/paylater_widget.dart' show PaylaterWidget;
 export '/wallet/wallet_widget.dart' show WalletWidget;
 export '/linkyourbankaccount/linkyourbankaccount_widget.dart'
     show LinkyourbankaccountWidget;
@@ -50,7 +50,7 @@ export '/mooncreditcardincome/mooncreditcardincome_widget.dart'
     show MooncreditcardincomeWidget;
 export '/mooncreditcardtermsandcondition/mooncreditcardtermsandcondition_widget.dart'
     show MooncreditcardtermsandconditionWidget;
-export '/q_rcode/q_rcode_widget.dart' show QRcodeWidget;
+export '/q_rcode/q_rcode_widget.dart';
 export '/netbalance/netbalance_widget.dart' show NetbalanceWidget;
 export '/transactiondetails/transactiondetails_widget.dart'
     show TransactiondetailsWidget;

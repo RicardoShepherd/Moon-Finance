@@ -1,12 +1,12 @@
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:2597280711.
 import 'package:moon/pages/payment/payment_model.dart';
+import 'package:moon/pages/q_rcode/q_rcode_widget.dart';
 
 import '/components/select_currency_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';

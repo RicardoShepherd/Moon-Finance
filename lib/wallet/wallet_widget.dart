@@ -1,3 +1,5 @@
+import 'package:moon/pages/q_rcode/q_rcode_widget.dart';
+
 import '/components/addmoney_widget.dart';
 import '/components/singlecard_widget.dart';
 import '/components/transaction_history_widget.dart';

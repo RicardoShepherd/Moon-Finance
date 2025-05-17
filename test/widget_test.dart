@@ -8,9 +8,13 @@
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:moon/main.dart';
+import 'package:moon/backend/firebase/firebase_config.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
+    // Initialize Firebase
+    await initFirebase();
+
     // Build our app and trigger a frame.
     await tester.pumpWidget(MyApp());
   });
