@@ -806,6 +806,7 @@ class _MenumoonWidgetState extends State<MenumoonWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 5.0, 0.0),
                             child: FaIcon(
+                              // ignore: deprecated_member_use
                               FontAwesomeIcons.handsHelping,
                               color: FlutterFlowTheme.of(context).secondaryText,
                               size: 24.0,

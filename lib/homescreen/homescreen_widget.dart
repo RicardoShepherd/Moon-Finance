@@ -826,6 +826,7 @@ class _HomescreenWidgetState extends State<HomescreenWidget> {
                                         child: Padding(
                                           padding: EdgeInsets.all(4.0),
                                           child: FaIcon(
+                                            // ignore: deprecated_member_use
                                             FontAwesomeIcons.handsHelping,
                                             color: FlutterFlowTheme.of(context)
                                                 .primaryText,

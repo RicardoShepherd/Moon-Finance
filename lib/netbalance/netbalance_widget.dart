@@ -145,6 +145,7 @@ class _NetbalanceWidgetState extends State<NetbalanceWidget> {
                         padding: EdgeInsetsDirectional.fromSTEB(
                             10.0, 0.0, 20.0, 0.0),
                         child: FaIcon(
+                          // ignore: deprecated_member_use
                           FontAwesomeIcons.solidMoneyBillAlt,
                           color: FlutterFlowTheme.of(context).primaryText,
                           size: 28.0,

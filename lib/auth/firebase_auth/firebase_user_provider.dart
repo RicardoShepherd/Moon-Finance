@@ -25,7 +25,7 @@ class MoonFirebaseUser extends BaseAuthUser {
   @override
   Future? updateEmail(String email) async {
     try {
-      await user?.updateEmail(email);
+      await user?.verifyBeforeUpdateEmail(email);
     } catch (_) {
       await user?.verifyBeforeUpdateEmail(email);
     }

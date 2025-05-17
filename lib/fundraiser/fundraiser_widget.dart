@@ -427,6 +427,7 @@ class _FundraiserWidgetState extends State<FundraiserWidget> {
                                           child: Padding(
                                             padding: EdgeInsets.all(4.0),
                                             child: FaIcon(
+                                              // ignore: deprecated_member_use
                                               FontAwesomeIcons.moneyBillAlt,
                                               color:
                                                   FlutterFlowTheme.of(context)

@@ -106,6 +106,7 @@ class _LoansWidgetState extends State<LoansWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(
                               280.0, 0.0, 0.0, 0.0),
                           child: FaIcon(
+                            // ignore: deprecated_member_use
                             FontAwesomeIcons.questionCircle,
                             color: FlutterFlowTheme.of(context).primaryText,
                             size: 24.0,

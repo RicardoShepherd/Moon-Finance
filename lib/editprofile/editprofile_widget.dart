@@ -790,6 +790,7 @@ class _EditprofileWidgetState extends State<EditprofileWidget> {
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 8.0, 16.0, 8.0),
                                         child: FaIcon(
+                                          // ignore: deprecated_member_use
                                           FontAwesomeIcons.questionCircle,
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryText,

@@ -147,10 +147,9 @@ class _MyAppState extends State<MyApp> {
 }
 
 class NavBarPage extends StatefulWidget {
-  NavBarPage({Key? key, this.initialPage, this.page}) : super(key: key);
+  NavBarPage({Key? key, this.initialPage}) : super(key: key);
 
   final String? initialPage;
-  final Widget? page;
 
   @override
   _NavBarPageState createState() => _NavBarPageState();
@@ -158,14 +157,25 @@ class NavBarPage extends StatefulWidget {
 
 /// This is the private State class that goes with NavBarPage.
 class _NavBarPageState extends State<NavBarPage> {
-  String _currentPageName = 'Home';
-  late Widget? _currentPage;
+  int _currentIndex = 0;
 
   @override
   void initState() {
     super.initState();
-    _currentPageName = widget.initialPage ?? _currentPageName;
-    _currentPage = widget.page;
+    final tabs = {
+      'Home': HomeWidget(),
+      'Charts': ChartsWidget(),
+      'Fundraiser': FundraiserWidget(),
+      'miniApps': MiniAppsWidget(),
+    };
+    if (widget.initialPage != null) {
+       _currentIndex = tabs.keys.toList().indexOf(widget.initialPage!);
+       if (_currentIndex == -1) {
+         _currentIndex = 0;
+       }
+    } else {
+       _currentIndex = 0;
+    }
   }
 
   @override
@@ -176,28 +186,22 @@ class _NavBarPageState extends State<NavBarPage> {
       'Fundraiser': FundraiserWidget(),
       'miniApps': MiniAppsWidget(),
     };
-    final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
-
-    final MediaQueryData queryData = MediaQuery.of(context);
+    final currentIndex = _currentIndex;
 
     return Scaffold(
-      body:
-          // TODO: Consider using IndexedStack for lazy loading of tab content
-          // This will improve performance by only building the visible tab.
-          MediaQuery( data: queryData
-              .removeViewInsets(removeBottom: true)
-              .removeViewPadding(removeBottom: true),
-          child: _currentPage ?? tabs[_currentPageName]!),
+      body: IndexedStack(
+        index: _currentIndex,
+        children: tabs.values.toList(),
+      ),
       extendBody: true,
       bottomNavigationBar: FloatingNavbar(
         currentIndex: currentIndex,
         onTap: (i) => safeSetState(() {
-          _currentPage = null;
-          _currentPageName = tabs.keys.toList()[i];
+          _currentIndex = i;
         }),
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground, // Use theme color
-        selectedItemColor: FlutterFlowTheme.of(context).primaryText, // Use theme color
-        unselectedItemColor: FlutterFlowTheme.of(context).secondaryText, // Use theme color
+        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        selectedItemColor: FlutterFlowTheme.of(context).primaryText,
+        unselectedItemColor: FlutterFlowTheme.of(context).secondaryText,
         selectedBackgroundColor: Colors.black,
         borderRadius: 1.0,
         itemBorderRadius: 10.0,
@@ -219,8 +223,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 ),
                 Text(
                   FFLocalizations.of(context).getText(
-                    // TODO: Use more descriptive localization keys
-                    'home_tab_label' /* Home */,
+                    'home_tab_label',
                   ),
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
@@ -246,8 +249,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 ),
                 Text(
                   FFLocalizations.of(context).getText(
-                    // TODO: Use more descriptive localization keys
-                    'charts_tab_label' /* Charts */,
+                    'charts_tab_label',
                   ),
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
@@ -265,6 +267,7 @@ class _NavBarPageState extends State<NavBarPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
+                  // ignore: deprecated_member_use
                   FontAwesomeIcons.moneyBillAlt,
                   color: currentIndex == 2
                       ? FlutterFlowTheme.of(context).primaryText
@@ -273,8 +276,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 ),
                 Text(
                   FFLocalizations.of(context).getText(
-                    // TODO: Use more descriptive localization keys
-                    'fundraiser_tab_label' /* Fundraiser */,
+                    'fundraiser_tab_label',
                   ),
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
@@ -300,8 +302,7 @@ class _NavBarPageState extends State<NavBarPage> {
                 ),
                 Text(
                   FFLocalizations.of(context).getText(
-                    // TODO: Use more descriptive localization keys
-                    'apps_tab_label' /* Apps */,
+                    'apps_tab_label',
                   ),
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(

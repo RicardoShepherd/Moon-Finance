@@ -931,6 +931,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                           child: Padding(
                                             padding: EdgeInsets.all(4.0),
                                             child: FaIcon(
+                                              // ignore: deprecated_member_use
                                               FontAwesomeIcons.handsHelping,
                                               color:
                                                   FlutterFlowTheme.of(context)

@@ -165,6 +165,7 @@ class _BettingMarketWidgetState extends State<BettingMarketWidget> {
                                 'qme5dmx4' /* Live */,
                               ),
                               icon: FaIcon(
+                                // ignore: deprecated_member_use
                                 FontAwesomeIcons.solidDotCircle,
                                 size: 11.0,
                               ),

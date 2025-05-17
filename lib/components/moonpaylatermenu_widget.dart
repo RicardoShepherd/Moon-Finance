@@ -144,6 +144,7 @@ class _MoonpaylatermenuWidgetState extends State<MoonpaylatermenuWidget> {
                         padding: EdgeInsetsDirectional.fromSTEB(
                             12.0, 0.0, 12.0, 0.0),
                         child: FaIcon(
+                          // ignore: deprecated_member_use
                           FontAwesomeIcons.donate,
                           color: FlutterFlowTheme.of(context).primaryText,
                           size: 20.0,

@@ -157,6 +157,7 @@ class _SecraterecoveryphraseinfoWidgetState
                           padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 7.0, 0.0),
                           child: FaIcon(
+                            // ignore: deprecated_member_use
                             FontAwesomeIcons.infoCircle,
                             color: Color(0xFFAA9FF1),
                             size: 17.0,
